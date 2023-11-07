@@ -1,5 +1,5 @@
 
 # folders & files
 .vs 
-StudentPortal/StudentPortal/bin
-StudentPortal/StudentPortal/obj
+src/StudentPortal/bin
+src/StudentPortal/obj
