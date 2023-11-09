@@ -68,22 +68,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.label4.Location = new System.Drawing.Point(55, 276);
+            this.label4.Location = new System.Drawing.Point(63, 264);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 25);
+            this.label4.Size = new System.Drawing.Size(117, 37);
             this.label4.TabIndex = 7;
             this.label4.Text = "Password";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.label3.Location = new System.Drawing.Point(55, 198);
+            this.label3.Location = new System.Drawing.Point(63, 186);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 25);
+            this.label3.Size = new System.Drawing.Size(74, 37);
             this.label3.TabIndex = 6;
             this.label3.Text = "Email";
             // 
@@ -118,22 +118,23 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.label2.Location = new System.Drawing.Point(105, 35);
+            this.label2.Location = new System.Drawing.Point(84, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 31);
+            this.label2.Size = new System.Drawing.Size(210, 48);
             this.label2.TabIndex = 2;
             this.label2.Text = "Student Portal";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.label1.Location = new System.Drawing.Point(194, 129);
+            this.label1.Location = new System.Drawing.Point(171, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 43);
+            this.label1.Size = new System.Drawing.Size(239, 65);
             this.label1.TabIndex = 1;
             this.label1.Text = "Let\'s Login!";
             // 
@@ -193,17 +194,19 @@
             this.label6.Size = new System.Drawing.Size(215, 23);
             this.label6.TabIndex = 1;
             this.label6.Text = "Sign up and start being part of";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(27, 180);
+            this.label5.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.label5.Location = new System.Drawing.Point(11, 168);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 43);
+            this.label5.Size = new System.Drawing.Size(228, 65);
             this.label5.TabIndex = 0;
-            this.label5.Text = "New Here? ";
+            this.label5.Text = "New Here?";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LoginForm
             // 
