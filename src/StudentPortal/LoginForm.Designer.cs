@@ -28,246 +28,246 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LoginPanel = new System.Windows.Forms.Panel();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.NewHereLabel = new System.Windows.Forms.Label();
+            this.DescLabel = new System.Windows.Forms.Label();
+            this.SignUpBtn = new System.Windows.Forms.Button();
+            this.LoginBtn = new System.Windows.Forms.Button();
+            this.EmailTextbox = new System.Windows.Forms.TextBox();
+            this.BrandNameLabel = new System.Windows.Forms.Label();
+            this.HeaderLabel = new System.Windows.Forms.Label();
+            this.Icon = new System.Windows.Forms.PictureBox();
+            this.SignUpBg = new System.Windows.Forms.Panel();
+            this.EmailLabel = new System.Windows.Forms.Label();
+            this.EmailBg = new System.Windows.Forms.Panel();
+            this.PasswordTextbox = new System.Windows.Forms.TextBox();
+            this.PasswordBg = new System.Windows.Forms.Panel();
+            this.LoginBg = new System.Windows.Forms.Panel();
+            this.LoginPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Icon)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // LoginPanel
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LoginPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1424, 985);
-            this.panel1.TabIndex = 0;
+            this.LoginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.LoginPanel.Controls.Add(this.Icon);
+            this.LoginPanel.Controls.Add(this.PasswordTextbox);
+            this.LoginPanel.Controls.Add(this.EmailTextbox);
+            this.LoginPanel.Controls.Add(this.EmailLabel);
+            this.LoginPanel.Controls.Add(this.PasswordLabel);
+            this.LoginPanel.Controls.Add(this.NewHereLabel);
+            this.LoginPanel.Controls.Add(this.DescLabel);
+            this.LoginPanel.Controls.Add(this.BrandNameLabel);
+            this.LoginPanel.Controls.Add(this.HeaderLabel);
+            this.LoginPanel.Controls.Add(this.SignUpBtn);
+            this.LoginPanel.Controls.Add(this.LoginBtn);
+            this.LoginPanel.Controls.Add(this.EmailBg);
+            this.LoginPanel.Controls.Add(this.PasswordBg);
+            this.LoginPanel.Controls.Add(this.LoginBg);
+            this.LoginPanel.Controls.Add(this.SignUpBg);
+            this.LoginPanel.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginPanel.Location = new System.Drawing.Point(0, 0);
+            this.LoginPanel.Name = "LoginPanel";
+            this.LoginPanel.Size = new System.Drawing.Size(1424, 985);
+            this.LoginPanel.TabIndex = 0;
             // 
-            // label4
+            // PasswordLabel
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.label4.Location = new System.Drawing.Point(130, 569);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 40);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Password";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.PasswordLabel.Location = new System.Drawing.Point(130, 569);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(137, 40);
+            this.PasswordLabel.TabIndex = 7;
+            this.PasswordLabel.Text = "Password";
+            this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // NewHereLabel
             // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.label5.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.label5.Location = new System.Drawing.Point(1052, 349);
-            this.label5.Margin = new System.Windows.Forms.Padding(0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(336, 77);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "New Here?";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NewHereLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.NewHereLabel.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewHereLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.NewHereLabel.Location = new System.Drawing.Point(1052, 349);
+            this.NewHereLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.NewHereLabel.Name = "NewHereLabel";
+            this.NewHereLabel.Size = new System.Drawing.Size(336, 77);
+            this.NewHereLabel.TabIndex = 0;
+            this.NewHereLabel.Text = "New Here?";
+            this.NewHereLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // DescLabel
             // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.label6.Location = new System.Drawing.Point(1036, 476);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(367, 68);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Sign up and start being part of this amazing community!";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DescLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.DescLabel.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.DescLabel.Location = new System.Drawing.Point(1036, 476);
+            this.DescLabel.Name = "DescLabel";
+            this.DescLabel.Size = new System.Drawing.Size(367, 68);
+            this.DescLabel.TabIndex = 1;
+            this.DescLabel.Text = "Sign up and start being part of this amazing community!";
+            this.DescLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // SignUpBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.button2.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.button2.Location = new System.Drawing.Point(1070, 594);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(300, 80);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Sign Up";
-            this.button2.UseVisualStyleBackColor = false;
+            this.SignUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.SignUpBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.SignUpBtn.Location = new System.Drawing.Point(1070, 594);
+            this.SignUpBtn.Name = "SignUpBtn";
+            this.SignUpBtn.Size = new System.Drawing.Size(300, 80);
+            this.SignUpBtn.TabIndex = 8;
+            this.SignUpBtn.Text = "Sign Up";
+            this.SignUpBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.button1.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(350, 809);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 80);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LoginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.LoginBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.ForeColor = System.Drawing.Color.White;
+            this.LoginBtn.Location = new System.Drawing.Point(350, 809);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(300, 80);
+            this.LoginBtn.TabIndex = 5;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // EmailTextbox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.textBox1.Location = new System.Drawing.Point(130, 468);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(739, 32);
-            this.textBox1.TabIndex = 3;
+            this.EmailTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.EmailTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmailTextbox.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.EmailTextbox.Location = new System.Drawing.Point(130, 468);
+            this.EmailTextbox.Name = "EmailTextbox";
+            this.EmailTextbox.Size = new System.Drawing.Size(739, 32);
+            this.EmailTextbox.TabIndex = 3;
             // 
-            // label2
+            // BrandNameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.label2.Location = new System.Drawing.Point(134, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 48);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Student Portal";
+            this.BrandNameLabel.AutoSize = true;
+            this.BrandNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.BrandNameLabel.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrandNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.BrandNameLabel.Location = new System.Drawing.Point(134, 56);
+            this.BrandNameLabel.Name = "BrandNameLabel";
+            this.BrandNameLabel.Size = new System.Drawing.Size(210, 48);
+            this.BrandNameLabel.TabIndex = 2;
+            this.BrandNameLabel.Text = "Student Portal";
             // 
-            // label1
+            // HeaderLabel
             // 
-            this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.label1.Location = new System.Drawing.Point(280, 199);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 96);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Let\'s Login!";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HeaderLabel.Font = new System.Drawing.Font("Poppins SemiBold", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeaderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.HeaderLabel.Location = new System.Drawing.Point(280, 199);
+            this.HeaderLabel.Name = "HeaderLabel";
+            this.HeaderLabel.Size = new System.Drawing.Size(439, 96);
+            this.HeaderLabel.TabIndex = 1;
+            this.HeaderLabel.Text = "Let\'s Login!";
+            this.HeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // Icon
             // 
-            this.pictureBox1.Image = global::StudentPortal.Properties.Resources.icon;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Icon.Image = global::StudentPortal.Properties.Resources.icon;
+            this.Icon.Location = new System.Drawing.Point(29, 30);
+            this.Icon.Name = "Icon";
+            this.Icon.Size = new System.Drawing.Size(100, 100);
+            this.Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Icon.TabIndex = 0;
+            this.Icon.TabStop = false;
             // 
-            // panel2
+            // SignUpBg
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(984, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(440, 985);
-            this.panel2.TabIndex = 1;
+            this.SignUpBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.SignUpBg.Dock = System.Windows.Forms.DockStyle.Right;
+            this.SignUpBg.Location = new System.Drawing.Point(984, 0);
+            this.SignUpBg.Name = "SignUpBg";
+            this.SignUpBg.Size = new System.Drawing.Size(440, 985);
+            this.SignUpBg.TabIndex = 1;
             // 
-            // label3
+            // EmailLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.label3.Location = new System.Drawing.Point(130, 395);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 40);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Email";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EmailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.EmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.EmailLabel.Location = new System.Drawing.Point(130, 395);
+            this.EmailLabel.Name = "EmailLabel";
+            this.EmailLabel.Size = new System.Drawing.Size(78, 40);
+            this.EmailLabel.TabIndex = 9;
+            this.EmailLabel.Text = "Email";
+            this.EmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel3
+            // EmailBg
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.panel3.Location = new System.Drawing.Point(100, 435);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 100);
-            this.panel3.TabIndex = 10;
+            this.EmailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.EmailBg.Location = new System.Drawing.Point(100, 435);
+            this.EmailBg.Name = "EmailBg";
+            this.EmailBg.Size = new System.Drawing.Size(800, 100);
+            this.EmailBg.TabIndex = 10;
             // 
-            // textBox2
+            // PasswordTextbox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.textBox2.Location = new System.Drawing.Point(130, 642);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(739, 32);
-            this.textBox2.TabIndex = 11;
+            this.PasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.PasswordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PasswordTextbox.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.PasswordTextbox.Location = new System.Drawing.Point(130, 642);
+            this.PasswordTextbox.Name = "PasswordTextbox";
+            this.PasswordTextbox.Size = new System.Drawing.Size(739, 32);
+            this.PasswordTextbox.TabIndex = 11;
             // 
-            // panel4
+            // PasswordBg
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.panel4.Location = new System.Drawing.Point(100, 609);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(800, 100);
-            this.panel4.TabIndex = 11;
+            this.PasswordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.PasswordBg.Location = new System.Drawing.Point(100, 609);
+            this.PasswordBg.Name = "PasswordBg";
+            this.PasswordBg.Size = new System.Drawing.Size(800, 100);
+            this.PasswordBg.TabIndex = 11;
             // 
-            // panel5
+            // LoginBg
             // 
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1000, 1024);
-            this.panel5.TabIndex = 13;
+            this.LoginBg.Location = new System.Drawing.Point(0, 0);
+            this.LoginBg.Name = "LoginBg";
+            this.LoginBg.Size = new System.Drawing.Size(1000, 1024);
+            this.LoginBg.TabIndex = 13;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 985);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.LoginPanel);
             this.Name = "LoginForm";
             this.Text = "Login";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.LoginPanel.ResumeLayout(false);
+            this.LoginPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Icon)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel LoginPanel;
+        private System.Windows.Forms.Panel SignUpBg;
+        private System.Windows.Forms.Label PasswordLabel;
+        private System.Windows.Forms.Button LoginBtn;
+        private System.Windows.Forms.TextBox EmailTextbox;
+        private System.Windows.Forms.Label BrandNameLabel;
+        private System.Windows.Forms.Label HeaderLabel;
+        private System.Windows.Forms.PictureBox Icon;
+        private System.Windows.Forms.Button SignUpBtn;
+        private System.Windows.Forms.Label DescLabel;
+        private System.Windows.Forms.Label NewHereLabel;
+        private System.Windows.Forms.Label EmailLabel;
+        private System.Windows.Forms.Panel EmailBg;
+        private System.Windows.Forms.TextBox PasswordTextbox;
+        private System.Windows.Forms.Panel PasswordBg;
+        private System.Windows.Forms.Panel LoginBg;
     }
 }
 
