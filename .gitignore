@@ -1,0 +1,5 @@
+
+# folders & files
+.vs 
+src/StudentPortal/bin
+src/StudentPortal/obj
