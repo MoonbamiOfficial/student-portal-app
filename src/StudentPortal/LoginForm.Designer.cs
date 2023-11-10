@@ -174,6 +174,7 @@
             // 
             this.SignUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SignUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SignUpBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.SignUpBtn.Location = new System.Drawing.Point(1070, 594);
@@ -187,6 +188,7 @@
             // 
             this.LoginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.LoginBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.Color.White;
             this.LoginBtn.Location = new System.Drawing.Point(350, 809);
