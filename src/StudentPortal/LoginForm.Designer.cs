@@ -199,6 +199,7 @@
             // EmailBg
             // 
             this.EmailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.EmailBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.EmailBg.Location = new System.Drawing.Point(100, 435);
             this.EmailBg.Name = "EmailBg";
             this.EmailBg.Size = new System.Drawing.Size(800, 100);
@@ -207,6 +208,7 @@
             // PasswordBg
             // 
             this.PasswordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.PasswordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PasswordBg.Location = new System.Drawing.Point(100, 609);
             this.PasswordBg.Name = "PasswordBg";
             this.PasswordBg.Size = new System.Drawing.Size(800, 100);
