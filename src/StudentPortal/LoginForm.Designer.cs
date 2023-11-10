@@ -206,6 +206,7 @@
             this.EmailBg.Name = "EmailBg";
             this.EmailBg.Size = new System.Drawing.Size(800, 100);
             this.EmailBg.TabIndex = 10;
+            this.EmailBg.Click += new System.EventHandler(this.EmailBg_Click);
             // 
             // PasswordBg
             // 
@@ -215,6 +216,7 @@
             this.PasswordBg.Name = "PasswordBg";
             this.PasswordBg.Size = new System.Drawing.Size(800, 100);
             this.PasswordBg.TabIndex = 11;
+            this.PasswordBg.Click += new System.EventHandler(this.PasswordBg_Click);
             // 
             // LoginBg
             // 

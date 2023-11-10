@@ -16,5 +16,15 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
+
+        private void EmailBg_Click(object sender, EventArgs e)
+        {
+            EmailTextbox.Focus();
+        }
+
+        private void PasswordBg_Click(object sender, EventArgs e)
+        {
+            PasswordTextbox.Focus();
+        }
     }
 }
