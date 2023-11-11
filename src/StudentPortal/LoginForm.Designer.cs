@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.LoginPanel = new System.Windows.Forms.Panel();
+            this.BrandIcon = new System.Windows.Forms.PictureBox();
             this.PasswordTextbox = new System.Windows.Forms.TextBox();
             this.EmailTextbox = new System.Windows.Forms.TextBox();
             this.EmailLabel = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.PasswordBg = new System.Windows.Forms.Panel();
             this.LoginBg = new System.Windows.Forms.Panel();
             this.SignUpBg = new System.Windows.Forms.Panel();
-            this.BrandIcon = new System.Windows.Forms.PictureBox();
             this.LoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrandIcon)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +75,16 @@
             this.LoginPanel.Name = "LoginPanel";
             this.LoginPanel.Size = new System.Drawing.Size(1424, 985);
             this.LoginPanel.TabIndex = 0;
+            // 
+            // BrandIcon
+            // 
+            this.BrandIcon.Image = global::StudentPortal.Properties.Resources.icon;
+            this.BrandIcon.Location = new System.Drawing.Point(29, 30);
+            this.BrandIcon.Name = "BrandIcon";
+            this.BrandIcon.Size = new System.Drawing.Size(100, 100);
+            this.BrandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BrandIcon.TabIndex = 0;
+            this.BrandIcon.TabStop = false;
             // 
             // PasswordTextbox
             // 
@@ -234,16 +244,6 @@
             this.SignUpBg.Size = new System.Drawing.Size(440, 985);
             this.SignUpBg.TabIndex = 1;
             // 
-            // BrandIcon
-            // 
-            this.BrandIcon.Image = global::StudentPortal.Properties.Resources.icon;
-            this.BrandIcon.Location = new System.Drawing.Point(29, 30);
-            this.BrandIcon.Name = "BrandIcon";
-            this.BrandIcon.Size = new System.Drawing.Size(100, 100);
-            this.BrandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BrandIcon.TabIndex = 0;
-            this.BrandIcon.TabStop = false;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,6 +252,7 @@
             this.Controls.Add(this.LoginPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.LoginPanel.ResumeLayout(false);
             this.LoginPanel.PerformLayout();
