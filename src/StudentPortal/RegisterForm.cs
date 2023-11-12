@@ -16,5 +16,12 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm LoginForm = new LoginForm();
+            LoginForm.Show();
+        }
     }
 }
