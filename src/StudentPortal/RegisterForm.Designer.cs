@@ -61,6 +61,7 @@
             this.CourseComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
             this.StatusComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
             this.SexComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
+            this.button1 = new System.Windows.Forms.Button();
             this.RegisterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrandIcon)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +91,7 @@
             this.RegisterPanel.Controls.Add(this.StatusComboBox);
             this.RegisterPanel.Controls.Add(this.SexComboBox);
             this.RegisterPanel.Controls.Add(this.LoginBtn);
+            this.RegisterPanel.Controls.Add(this.button1);
             this.RegisterPanel.Controls.Add(this.FirstNameBg);
             this.RegisterPanel.Controls.Add(this.MiddleNameBg);
             this.RegisterPanel.Controls.Add(this.BirthdayBg);
@@ -284,6 +286,9 @@
             this.FirstNameTextbox.Name = "FirstNameTextbox";
             this.FirstNameTextbox.Size = new System.Drawing.Size(340, 29);
             this.FirstNameTextbox.TabIndex = 0;
+            this.FirstNameTextbox.Text = "Aa";
+            this.FirstNameTextbox.Enter += new System.EventHandler(this.FirstNameTextbox_Enter);
+            this.FirstNameTextbox.Leave += new System.EventHandler(this.FirstNameTextbox_Leave);
             // 
             // MiddleNameTextbox
             // 
@@ -295,6 +300,9 @@
             this.MiddleNameTextbox.Name = "MiddleNameTextbox";
             this.MiddleNameTextbox.Size = new System.Drawing.Size(340, 29);
             this.MiddleNameTextbox.TabIndex = 5;
+            this.MiddleNameTextbox.Text = "Aa";
+            this.MiddleNameTextbox.Enter += new System.EventHandler(this.MiddleNameTextbox_Enter);
+            this.MiddleNameTextbox.Leave += new System.EventHandler(this.MiddleNameTextbox_Leave);
             // 
             // EmailTextbox
             // 
@@ -306,6 +314,9 @@
             this.EmailTextbox.Name = "EmailTextbox";
             this.EmailTextbox.Size = new System.Drawing.Size(340, 29);
             this.EmailTextbox.TabIndex = 14;
+            this.EmailTextbox.Text = "student_portal@gmail.com";
+            this.EmailTextbox.Enter += new System.EventHandler(this.EmailTextbox_Enter);
+            this.EmailTextbox.Leave += new System.EventHandler(this.EmailTextbox_Leave);
             // 
             // LastNameTextbox
             // 
@@ -317,6 +328,9 @@
             this.LastNameTextbox.Name = "LastNameTextbox";
             this.LastNameTextbox.Size = new System.Drawing.Size(340, 29);
             this.LastNameTextbox.TabIndex = 12;
+            this.LastNameTextbox.Text = "Aa";
+            this.LastNameTextbox.Click += new System.EventHandler(this.LastNameTextbox_Click);
+            this.LastNameTextbox.Leave += new System.EventHandler(this.LastNameTextbox_Leave);
             // 
             // LoginBtn
             // 
@@ -523,6 +537,19 @@
             this.SexComboBox.TabIndex = 18;
             this.SexComboBox.Texts = "Male";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(790, 893);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(300, 80);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Sign Up";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,5 +601,6 @@
         private System.Windows.Forms.Label SexLabel;
         private StudentPortalControls.ComboBoxCustom SexComboBox;
         private System.Windows.Forms.Panel SexBg;
+        private System.Windows.Forms.Button button1;
     }
 }
