@@ -102,7 +102,6 @@
             this.PasswordTextbox.Size = new System.Drawing.Size(739, 32);
             this.PasswordTextbox.TabIndex = 11;
             this.PasswordTextbox.Text = "Password";
-            this.PasswordTextbox.Click += new System.EventHandler(this.PasswordTextbox_Click);
             this.PasswordTextbox.Enter += new System.EventHandler(this.PasswordTextbox_Enter);
             this.PasswordTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTextbox_KeyPress);
             this.PasswordTextbox.Leave += new System.EventHandler(this.PasswordTextbox_Leave);
@@ -118,7 +117,6 @@
             this.EmailTextbox.Size = new System.Drawing.Size(739, 32);
             this.EmailTextbox.TabIndex = 3;
             this.EmailTextbox.Text = "student_portal@gmail.com";
-            this.EmailTextbox.Click += new System.EventHandler(this.EmailTextbox_Click);
             this.EmailTextbox.Enter += new System.EventHandler(this.EmailTextbox_Enter);
             this.EmailTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EmailTextbox_KeyPress);
             this.EmailTextbox.Leave += new System.EventHandler(this.EmailTextbox_Leave);

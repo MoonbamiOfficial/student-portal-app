@@ -50,17 +50,9 @@ namespace StudentPortal
         }
 
         // Text field events
-        private void EmailTextbox_Click(object sender, EventArgs e)
-        {
-            WrongEmailLabel.Text = null;
-        }
         private void EmailTextbox_KeyPress(object sender, KeyPressEventArgs e)
         {
             WrongEmailLabel.Text = null;
-        }
-        private void PasswordTextbox_Click(object sender, EventArgs e)
-        {
-            WrongPasswordLabel.Text = null;
         }
         private void PasswordTextbox_KeyPress(object sender, KeyPressEventArgs e)
         {
