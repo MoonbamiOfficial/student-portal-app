@@ -30,8 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.LoginPanel = new System.Windows.Forms.Panel();
+            this.BrandIcon = new System.Windows.Forms.PictureBox();
             this.PasswordTextbox = new System.Windows.Forms.TextBox();
             this.EmailTextbox = new System.Windows.Forms.TextBox();
+            this.WrongPasswordLabel = new System.Windows.Forms.Label();
+            this.WrongEmailLabel = new System.Windows.Forms.Label();
             this.EmailLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.NewHereLabel = new System.Windows.Forms.Label();
@@ -44,7 +47,6 @@
             this.PasswordBg = new System.Windows.Forms.Panel();
             this.LoginBg = new System.Windows.Forms.Panel();
             this.SignUpBg = new System.Windows.Forms.Panel();
-            this.BrandIcon = new System.Windows.Forms.PictureBox();
             this.LoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrandIcon)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +60,8 @@
             this.LoginPanel.Controls.Add(this.BrandIcon);
             this.LoginPanel.Controls.Add(this.PasswordTextbox);
             this.LoginPanel.Controls.Add(this.EmailTextbox);
+            this.LoginPanel.Controls.Add(this.WrongPasswordLabel);
+            this.LoginPanel.Controls.Add(this.WrongEmailLabel);
             this.LoginPanel.Controls.Add(this.EmailLabel);
             this.LoginPanel.Controls.Add(this.PasswordLabel);
             this.LoginPanel.Controls.Add(this.NewHereLabel);
@@ -76,6 +80,16 @@
             this.LoginPanel.Size = new System.Drawing.Size(1424, 985);
             this.LoginPanel.TabIndex = 0;
             // 
+            // BrandIcon
+            // 
+            this.BrandIcon.Image = global::StudentPortal.Properties.Resources.icon;
+            this.BrandIcon.Location = new System.Drawing.Point(29, 30);
+            this.BrandIcon.Name = "BrandIcon";
+            this.BrandIcon.Size = new System.Drawing.Size(100, 100);
+            this.BrandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BrandIcon.TabIndex = 0;
+            this.BrandIcon.TabStop = false;
+            // 
             // PasswordTextbox
             // 
             this.PasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
@@ -83,9 +97,14 @@
             this.PasswordTextbox.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.PasswordTextbox.Location = new System.Drawing.Point(130, 642);
+            this.PasswordTextbox.MaxLength = 50;
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.Size = new System.Drawing.Size(739, 32);
             this.PasswordTextbox.TabIndex = 11;
+            this.PasswordTextbox.Text = "Password";
+            this.PasswordTextbox.Enter += new System.EventHandler(this.PasswordTextbox_Enter);
+            this.PasswordTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTextbox_KeyPress);
+            this.PasswordTextbox.Leave += new System.EventHandler(this.PasswordTextbox_Leave);
             // 
             // EmailTextbox
             // 
@@ -97,6 +116,34 @@
             this.EmailTextbox.Name = "EmailTextbox";
             this.EmailTextbox.Size = new System.Drawing.Size(739, 32);
             this.EmailTextbox.TabIndex = 3;
+            this.EmailTextbox.Text = "student_portal@gmail.com";
+            this.EmailTextbox.Enter += new System.EventHandler(this.EmailTextbox_Enter);
+            this.EmailTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EmailTextbox_KeyPress);
+            this.EmailTextbox.Leave += new System.EventHandler(this.EmailTextbox_Leave);
+            // 
+            // WrongPasswordLabel
+            // 
+            this.WrongPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongPasswordLabel.Location = new System.Drawing.Point(100, 538);
+            this.WrongPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongPasswordLabel.Name = "WrongPasswordLabel";
+            this.WrongPasswordLabel.Size = new System.Drawing.Size(800, 34);
+            this.WrongPasswordLabel.TabIndex = 24;
+            this.WrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // WrongEmailLabel
+            // 
+            this.WrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongEmailLabel.Location = new System.Drawing.Point(100, 361);
+            this.WrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongEmailLabel.Name = "WrongEmailLabel";
+            this.WrongEmailLabel.Size = new System.Drawing.Size(800, 34);
+            this.WrongEmailLabel.TabIndex = 23;
+            this.WrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // EmailLabel
             // 
@@ -109,6 +156,7 @@
             this.EmailLabel.TabIndex = 9;
             this.EmailLabel.Text = "Email";
             this.EmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EmailLabel.Click += new System.EventHandler(this.EmailLabel_Click);
             // 
             // PasswordLabel
             // 
@@ -121,6 +169,7 @@
             this.PasswordLabel.TabIndex = 7;
             this.PasswordLabel.Text = "Password";
             this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PasswordLabel.Click += new System.EventHandler(this.PasswordLabel_Click);
             // 
             // NewHereLabel
             // 
@@ -183,6 +232,7 @@
             this.SignUpBtn.TabIndex = 8;
             this.SignUpBtn.Text = "Sign Up";
             this.SignUpBtn.UseVisualStyleBackColor = false;
+            this.SignUpBtn.Click += new System.EventHandler(this.SignUpBtn_Click);
             // 
             // LoginBtn
             // 
@@ -197,6 +247,7 @@
             this.LoginBtn.TabIndex = 5;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // EmailBg
             // 
@@ -234,16 +285,6 @@
             this.SignUpBg.Size = new System.Drawing.Size(440, 985);
             this.SignUpBg.TabIndex = 1;
             // 
-            // BrandIcon
-            // 
-            this.BrandIcon.Image = global::StudentPortal.Properties.Resources.icon;
-            this.BrandIcon.Location = new System.Drawing.Point(29, 30);
-            this.BrandIcon.Name = "BrandIcon";
-            this.BrandIcon.Size = new System.Drawing.Size(100, 100);
-            this.BrandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BrandIcon.TabIndex = 0;
-            this.BrandIcon.TabStop = false;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,6 +293,7 @@
             this.Controls.Add(this.LoginPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.LoginPanel.ResumeLayout(false);
             this.LoginPanel.PerformLayout();
@@ -278,6 +320,8 @@
         private System.Windows.Forms.TextBox PasswordTextbox;
         private System.Windows.Forms.Panel PasswordBg;
         private System.Windows.Forms.Panel LoginBg;
+        private System.Windows.Forms.Label WrongEmailLabel;
+        private System.Windows.Forms.Label WrongPasswordLabel;
     }
 }
 
