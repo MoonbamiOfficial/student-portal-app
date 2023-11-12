@@ -49,12 +49,31 @@ namespace StudentPortal
             PasswordTextbox.Focus();
         }
 
+        // Text field events
+        private void EmailTextbox_Click(object sender, EventArgs e)
+        {
+            WrongEmailLabel.Text = null;
+        }
+        private void EmailTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            WrongEmailLabel.Text = null;
+        }
+        private void PasswordTextbox_Click(object sender, EventArgs e)
+        {
+            WrongPasswordLabel.Text = null;
+        }
+        private void PasswordTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            WrongPasswordLabel.Text = null;
+        }
+
         // Simple placeholders
         private void EmailTextbox_Enter(object sender, EventArgs e)
         {
             if (EmailTextbox.Text == emailPlaceholder || EmailTextbox.Text == emailPlaceholder.ToLower() || EmailTextbox.Text == emailPlaceholder.ToUpper())
             {
                 EmailTextbox.Text = "";
+                WrongEmailLabel.Text = null;
             }
         }
 
@@ -71,6 +90,8 @@ namespace StudentPortal
             if (PasswordTextbox.Text == passwordPlaceholder || PasswordTextbox.Text == passwordPlaceholder.ToLower() || PasswordTextbox.Text == passwordPlaceholder.ToUpper())
             {
                 PasswordTextbox.Text = "";
+                WrongPasswordLabel.Text = null;
+                PasswordTextbox.UseSystemPasswordChar = true;
             }
         }
 
@@ -79,7 +100,60 @@ namespace StudentPortal
             if (PasswordTextbox.Text == "")
             {
                 PasswordTextbox.Text = passwordPlaceholder;
+                PasswordTextbox.UseSystemPasswordChar = true;
             }
         }
+
+        // Login btn
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            char[] emailChars = EmailTextbox.Text.ToCharArray();
+            char[] passChars = PasswordTextbox.Text.ToCharArray();
+
+            if (EmailTextbox.Text == emailPlaceholder || EmailTextbox.Text == emailPlaceholder.ToLower() || EmailTextbox.Text == emailPlaceholder.ToUpper())
+            {
+                WrongEmailLabel.Text = "* Please enter a different email.";
+            }
+            else if (!EmailTextbox.Text.EndsWith("gmail.com") &&
+                !EmailTextbox.Text.EndsWith("yahoo.com") &&
+                !EmailTextbox.Text.EndsWith("email.com"))
+            {
+                WrongEmailLabel.Text = "* Please enter a proper domain name";
+            }
+            else WrongEmailLabel.Text = null;
+
+            for (int i = 0; i < EmailTextbox.Text.Length; i++)
+            {
+                if (!emailChars.Contains('@'))
+                {
+                    WrongEmailLabel.Text = "* Please enter proper a email.";
+                }
+            };
+
+            if (PasswordTextbox.Text == passwordPlaceholder || PasswordTextbox.Text == passwordPlaceholder.ToLower() || PasswordTextbox.Text == passwordPlaceholder.ToUpper())
+            {
+                WrongPasswordLabel.Text = "* Please enter a password";
+            }
+
+            if(PasswordTextbox.Text.Length < 8)
+            {
+                WrongPasswordLabel.Text = "* Please enter atleast 8 and above characters";
+            }
+            else if (!passChars.Contains('_') &&
+                !passChars.Contains('-') &&
+                !passChars.Contains('.') &&
+                !passChars.Contains('*') &&
+                !passChars.Contains('!') &&
+                !passChars.Contains('#') &&
+                !passChars.Contains('%') &&
+                !passChars.Contains('%') &&
+                !passChars.Contains('@'))
+            {
+                WrongPasswordLabel.Text = "* Low security. Please add characters like (e.g !*@#_$-%.)";
+            }
+            
+        }
+
+        
     }
 }

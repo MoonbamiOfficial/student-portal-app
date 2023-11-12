@@ -33,6 +33,8 @@
             this.BrandIcon = new System.Windows.Forms.PictureBox();
             this.PasswordTextbox = new System.Windows.Forms.TextBox();
             this.EmailTextbox = new System.Windows.Forms.TextBox();
+            this.WrongPasswordLabel = new System.Windows.Forms.Label();
+            this.WrongEmailLabel = new System.Windows.Forms.Label();
             this.EmailLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.NewHereLabel = new System.Windows.Forms.Label();
@@ -45,7 +47,6 @@
             this.PasswordBg = new System.Windows.Forms.Panel();
             this.LoginBg = new System.Windows.Forms.Panel();
             this.SignUpBg = new System.Windows.Forms.Panel();
-            this.WrongEmailLabel = new System.Windows.Forms.Label();
             this.LoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrandIcon)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             this.LoginPanel.Controls.Add(this.BrandIcon);
             this.LoginPanel.Controls.Add(this.PasswordTextbox);
             this.LoginPanel.Controls.Add(this.EmailTextbox);
+            this.LoginPanel.Controls.Add(this.WrongPasswordLabel);
             this.LoginPanel.Controls.Add(this.WrongEmailLabel);
             this.LoginPanel.Controls.Add(this.EmailLabel);
             this.LoginPanel.Controls.Add(this.PasswordLabel);
@@ -95,10 +97,14 @@
             this.PasswordTextbox.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.PasswordTextbox.Location = new System.Drawing.Point(130, 642);
+            this.PasswordTextbox.MaxLength = 50;
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.Size = new System.Drawing.Size(739, 32);
             this.PasswordTextbox.TabIndex = 11;
+            this.PasswordTextbox.Text = "Password";
+            this.PasswordTextbox.Click += new System.EventHandler(this.PasswordTextbox_Click);
             this.PasswordTextbox.Enter += new System.EventHandler(this.PasswordTextbox_Enter);
+            this.PasswordTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTextbox_KeyPress);
             this.PasswordTextbox.Leave += new System.EventHandler(this.PasswordTextbox_Leave);
             // 
             // EmailTextbox
@@ -112,8 +118,34 @@
             this.EmailTextbox.Size = new System.Drawing.Size(739, 32);
             this.EmailTextbox.TabIndex = 3;
             this.EmailTextbox.Text = "student_portal@gmail.com";
+            this.EmailTextbox.Click += new System.EventHandler(this.EmailTextbox_Click);
             this.EmailTextbox.Enter += new System.EventHandler(this.EmailTextbox_Enter);
+            this.EmailTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EmailTextbox_KeyPress);
             this.EmailTextbox.Leave += new System.EventHandler(this.EmailTextbox_Leave);
+            // 
+            // WrongPasswordLabel
+            // 
+            this.WrongPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongPasswordLabel.Location = new System.Drawing.Point(100, 538);
+            this.WrongPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongPasswordLabel.Name = "WrongPasswordLabel";
+            this.WrongPasswordLabel.Size = new System.Drawing.Size(800, 34);
+            this.WrongPasswordLabel.TabIndex = 24;
+            this.WrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // WrongEmailLabel
+            // 
+            this.WrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongEmailLabel.Location = new System.Drawing.Point(100, 361);
+            this.WrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongEmailLabel.Name = "WrongEmailLabel";
+            this.WrongEmailLabel.Size = new System.Drawing.Size(800, 34);
+            this.WrongEmailLabel.TabIndex = 23;
+            this.WrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // EmailLabel
             // 
@@ -217,6 +249,7 @@
             this.LoginBtn.TabIndex = 5;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // EmailBg
             // 
@@ -254,18 +287,6 @@
             this.SignUpBg.Size = new System.Drawing.Size(440, 985);
             this.SignUpBg.TabIndex = 1;
             // 
-            // WrongEmailLabel
-            // 
-            this.WrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.WrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.WrongEmailLabel.Location = new System.Drawing.Point(100, 361);
-            this.WrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.WrongEmailLabel.Name = "WrongEmailLabel";
-            this.WrongEmailLabel.Size = new System.Drawing.Size(800, 34);
-            this.WrongEmailLabel.TabIndex = 23;
-            this.WrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,6 +323,7 @@
         private System.Windows.Forms.Panel PasswordBg;
         private System.Windows.Forms.Panel LoginBg;
         private System.Windows.Forms.Label WrongEmailLabel;
+        private System.Windows.Forms.Label WrongPasswordLabel;
     }
 }
 
