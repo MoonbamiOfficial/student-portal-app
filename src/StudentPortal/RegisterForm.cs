@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace StudentPortal
@@ -18,6 +18,11 @@ namespace StudentPortal
             LoginForm.Show();
         }
 
+        // Globals
+        string fnPlaceholder = "Aa";
+        string mnPlaceholder = "Aa";
+        string lnPlaceholder = "Aa";
+        string emailPlaceholder = "student_portal@gmail.com";
 
         // Background panel events
         private void FirstNameBg_Click(object sender, EventArgs e)
@@ -104,22 +109,18 @@ namespace StudentPortal
         }
 
         // Simple placeholders
-        string fnPlaceholder = "Aa";
-        string mnPlaceholder = "Aa";
-        string lnPlaceholder = "Aa";
-        string emailPlaceholder= "student_portal@gmail.com";
-
         private void FirstNameTextbox_Enter(object sender, EventArgs e)
         {
             if (FirstNameTextbox.Text == fnPlaceholder || FirstNameTextbox.Text == fnPlaceholder.ToLower() || FirstNameTextbox.Text == fnPlaceholder.ToUpper())
             {
                 FirstNameTextbox.Text = "";
+                WrongFirstNameLabel.Text = null;
             }
         }
 
         private void FirstNameTextbox_Leave(object sender, EventArgs e)
         {
-            if(FirstNameTextbox.Text == "")
+            if (FirstNameTextbox.Text == "")
             {
                 FirstNameTextbox.Text = fnPlaceholder;
             }
@@ -146,6 +147,7 @@ namespace StudentPortal
             if (LastNameTextbox.Text == lnPlaceholder || LastNameTextbox.Text == lnPlaceholder.ToLower() || LastNameTextbox.Text == lnPlaceholder.ToUpper())
             {
                 LastNameTextbox.Text = "";
+                WrongLastNameLabel.Text = null;
             }
         }
 
@@ -162,6 +164,7 @@ namespace StudentPortal
             if (EmailTextbox.Text == emailPlaceholder || EmailTextbox.Text == emailPlaceholder.ToLower() || EmailTextbox.Text == emailPlaceholder.ToUpper())
             {
                 EmailTextbox.Text = "";
+                WrongEmailLabel.Text = null;
             }
         }
 
@@ -171,6 +174,38 @@ namespace StudentPortal
             {
                 EmailTextbox.Text = emailPlaceholder;
             }
+        }
+
+        // Sign Up btn
+        private void SignUpBtn_Click(object sender, EventArgs e)
+        {
+            if (FirstNameTextbox.Text == fnPlaceholder || FirstNameTextbox.Text == fnPlaceholder.ToLower() || FirstNameTextbox.Text == fnPlaceholder.ToUpper())
+            {
+                WrongFirstNameLabel.Text = "* Please enter a valid first name.";
+            }
+            else WrongFirstNameLabel.Text = null;
+
+            if (LastNameTextbox.Text == lnPlaceholder || LastNameTextbox.Text == lnPlaceholder.ToLower() || LastNameTextbox.Text == lnPlaceholder.ToUpper())
+            {
+                WrongLastNameLabel.Text = "* Please enter a valid last name.";
+            }
+            else WrongLastNameLabel.Text = null;
+
+            if (EmailTextbox.Text == emailPlaceholder || EmailTextbox.Text == emailPlaceholder.ToLower() || EmailTextbox.Text == emailPlaceholder.ToUpper())
+            {
+                WrongEmailLabel.Text = "* Please enter a different email.";
+            }
+            else WrongEmailLabel.Text = null;
+
+            char[] chars = EmailTextbox.Text.ToCharArray();
+            for (int i = 0; i < EmailTextbox.Text.Length; i++)
+            {
+
+                if (!chars.Contains('@'))
+                {
+                    WrongEmailLabel.Text = "* Please enter a proper email.";
+                }
+            };
         }
     }
 }

@@ -57,11 +57,14 @@
             this.StatusBg = new System.Windows.Forms.Panel();
             this.SexBg = new System.Windows.Forms.Panel();
             this.LoginBg = new System.Windows.Forms.Panel();
+            this.SignUpBtn = new System.Windows.Forms.Button();
+            this.WrongFirstNameLabel = new System.Windows.Forms.Label();
+            this.WrongLastNameLabel = new System.Windows.Forms.Label();
+            this.WrongEmailLabel = new System.Windows.Forms.Label();
             this.BirthdayPicker = new StudentPortal.DatePickerCustom();
             this.CourseComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
             this.StatusComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
             this.SexComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
-            this.button1 = new System.Windows.Forms.Button();
             this.RegisterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrandIcon)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +72,9 @@
             // RegisterPanel
             // 
             this.RegisterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.RegisterPanel.Controls.Add(this.WrongEmailLabel);
+            this.RegisterPanel.Controls.Add(this.WrongLastNameLabel);
+            this.RegisterPanel.Controls.Add(this.WrongFirstNameLabel);
             this.RegisterPanel.Controls.Add(this.BrandIcon);
             this.RegisterPanel.Controls.Add(this.SexLabel);
             this.RegisterPanel.Controls.Add(this.StatusLabel);
@@ -91,7 +97,7 @@
             this.RegisterPanel.Controls.Add(this.StatusComboBox);
             this.RegisterPanel.Controls.Add(this.SexComboBox);
             this.RegisterPanel.Controls.Add(this.LoginBtn);
-            this.RegisterPanel.Controls.Add(this.button1);
+            this.RegisterPanel.Controls.Add(this.SignUpBtn);
             this.RegisterPanel.Controls.Add(this.FirstNameBg);
             this.RegisterPanel.Controls.Add(this.MiddleNameBg);
             this.RegisterPanel.Controls.Add(this.BirthdayBg);
@@ -434,6 +440,57 @@
             this.LoginBg.Size = new System.Drawing.Size(440, 1024);
             this.LoginBg.TabIndex = 0;
             // 
+            // SignUpBtn
+            // 
+            this.SignUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SignUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SignUpBtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpBtn.ForeColor = System.Drawing.Color.White;
+            this.SignUpBtn.Location = new System.Drawing.Point(790, 893);
+            this.SignUpBtn.Name = "SignUpBtn";
+            this.SignUpBtn.Size = new System.Drawing.Size(300, 80);
+            this.SignUpBtn.TabIndex = 19;
+            this.SignUpBtn.Text = "Sign Up";
+            this.SignUpBtn.UseVisualStyleBackColor = false;
+            this.SignUpBtn.Click += new System.EventHandler(this.SignUpBtn_Click);
+            // 
+            // WrongFirstNameLabel
+            // 
+            this.WrongFirstNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongFirstNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongFirstNameLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongFirstNameLabel.Location = new System.Drawing.Point(515, 213);
+            this.WrongFirstNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongFirstNameLabel.Name = "WrongFirstNameLabel";
+            this.WrongFirstNameLabel.Size = new System.Drawing.Size(400, 34);
+            this.WrongFirstNameLabel.TabIndex = 20;
+            this.WrongFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // WrongLastNameLabel
+            // 
+            this.WrongLastNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongLastNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongLastNameLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongLastNameLabel.Location = new System.Drawing.Point(965, 213);
+            this.WrongLastNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongLastNameLabel.Name = "WrongLastNameLabel";
+            this.WrongLastNameLabel.Size = new System.Drawing.Size(400, 34);
+            this.WrongLastNameLabel.TabIndex = 21;
+            this.WrongLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // WrongEmailLabel
+            // 
+            this.WrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongEmailLabel.Location = new System.Drawing.Point(965, 364);
+            this.WrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongEmailLabel.Name = "WrongEmailLabel";
+            this.WrongEmailLabel.Size = new System.Drawing.Size(400, 34);
+            this.WrongEmailLabel.TabIndex = 22;
+            this.WrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // BirthdayPicker
             // 
             this.BirthdayPicker.BorderColor = System.Drawing.Color.Transparent;
@@ -537,19 +594,6 @@
             this.SexComboBox.TabIndex = 18;
             this.SexComboBox.Texts = "Male";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(790, 893);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 80);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Sign Up";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -601,6 +645,9 @@
         private System.Windows.Forms.Label SexLabel;
         private StudentPortalControls.ComboBoxCustom SexComboBox;
         private System.Windows.Forms.Panel SexBg;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SignUpBtn;
+        private System.Windows.Forms.Label WrongFirstNameLabel;
+        private System.Windows.Forms.Label WrongLastNameLabel;
+        private System.Windows.Forms.Label WrongEmailLabel;
     }
 }
