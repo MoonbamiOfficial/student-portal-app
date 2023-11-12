@@ -115,7 +115,7 @@ namespace StudentPortal
         }
         private void FirstNameTextbox_TextChanged(object sender, EventArgs e)
         {
-            WrongFirstNameLabel.Text = null;
+            WrongFirstNameLabel.Text = null;        
         }
         private void LastNameTextbox_Click(object sender, EventArgs e)
         {
@@ -221,13 +221,24 @@ namespace StudentPortal
             }
             else WrongEmailLabel.Text = null;
 
-            char[] chars = EmailTextbox.Text.ToCharArray();
+            char[] emailChars = EmailTextbox.Text.ToCharArray();
+            if (EmailTextbox.Text == emailPlaceholder || EmailTextbox.Text == emailPlaceholder.ToLower() || EmailTextbox.Text == emailPlaceholder.ToUpper())
+            {
+                WrongEmailLabel.Text = "* Please enter a different email.";
+            }
+            else if (!EmailTextbox.Text.EndsWith("gmail.com") &&
+                !EmailTextbox.Text.EndsWith("yahoo.com") &&
+                !EmailTextbox.Text.EndsWith("email.com"))
+            {
+                WrongEmailLabel.Text = "* Please enter a proper domain name";
+            }
+            else WrongEmailLabel.Text = null;
+
             for (int i = 0; i < EmailTextbox.Text.Length; i++)
             {
-
-                if (!chars.Contains('@'))
+                if (!emailChars.Contains('@'))
                 {
-                    WrongEmailLabel.Text = "* Please enter a proper email.";
+                    WrongEmailLabel.Text = "* Please enter proper a email.";
                 }
             };
         }
