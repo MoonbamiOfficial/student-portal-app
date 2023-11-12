@@ -16,7 +16,14 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
+        private void SignUpBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegisterForm RegisterForm = new RegisterForm();
+            RegisterForm.Show();
+        }
 
+        // Background panel events
         private void EmailBg_Click(object sender, EventArgs e)
         {
             EmailTextbox.Focus();
@@ -27,11 +34,5 @@ namespace StudentPortal
             PasswordTextbox.Focus();
         }
 
-        private void SignUpBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            RegisterForm RegisterForm = new RegisterForm();
-            RegisterForm.Show();
-        }
     }
 }
