@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace StudentPortal
@@ -100,6 +101,76 @@ namespace StudentPortal
         private void SexLabel_Click(object sender, EventArgs e)
         {
             SexComboBox.Focus();
+        }
+
+        // Simple placeholders
+        string fnPlaceholder = "Aa";
+        string mnPlaceholder = "Aa";
+        string lnPlaceholder = "Aa";
+        string emailPlaceholder= "student_portal@gmail.com";
+
+        private void FirstNameTextbox_Enter(object sender, EventArgs e)
+        {
+            if (FirstNameTextbox.Text == fnPlaceholder || FirstNameTextbox.Text == fnPlaceholder.ToLower() || FirstNameTextbox.Text == fnPlaceholder.ToUpper())
+            {
+                FirstNameTextbox.Text = "";
+            }
+        }
+
+        private void FirstNameTextbox_Leave(object sender, EventArgs e)
+        {
+            if(FirstNameTextbox.Text == "")
+            {
+                FirstNameTextbox.Text = fnPlaceholder;
+            }
+        }
+
+        private void MiddleNameTextbox_Enter(object sender, EventArgs e)
+        {
+            if (MiddleNameTextbox.Text == mnPlaceholder || MiddleNameTextbox.Text == mnPlaceholder.ToLower() || MiddleNameTextbox.Text == mnPlaceholder.ToUpper())
+            {
+                MiddleNameTextbox.Text = "";
+            }
+        }
+
+        private void MiddleNameTextbox_Leave(object sender, EventArgs e)
+        {
+            if (MiddleNameTextbox.Text == "")
+            {
+                MiddleNameTextbox.Text = mnPlaceholder;
+            }
+        }
+
+        private void LastNameTextbox_Click(object sender, EventArgs e)
+        {
+            if (LastNameTextbox.Text == lnPlaceholder || LastNameTextbox.Text == lnPlaceholder.ToLower() || LastNameTextbox.Text == lnPlaceholder.ToUpper())
+            {
+                LastNameTextbox.Text = "";
+            }
+        }
+
+        private void LastNameTextbox_Leave(object sender, EventArgs e)
+        {
+            if (LastNameTextbox.Text == "")
+            {
+                LastNameTextbox.Text = lnPlaceholder;
+            }
+        }
+
+        private void EmailTextbox_Enter(object sender, EventArgs e)
+        {
+            if (EmailTextbox.Text == emailPlaceholder || EmailTextbox.Text == emailPlaceholder.ToLower() || EmailTextbox.Text == emailPlaceholder.ToUpper())
+            {
+                EmailTextbox.Text = "";
+            }
+        }
+
+        private void EmailTextbox_Leave(object sender, EventArgs e)
+        {
+            if (EmailTextbox.Text == "")
+            {
+                EmailTextbox.Text = emailPlaceholder;
+            }
         }
     }
 }
