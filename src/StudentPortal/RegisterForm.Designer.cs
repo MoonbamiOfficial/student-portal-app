@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.RegisterPanel = new System.Windows.Forms.Panel();
+            this.WrongEmailLabel = new System.Windows.Forms.Label();
+            this.WrongLastNameLabel = new System.Windows.Forms.Label();
+            this.WrongFirstNameLabel = new System.Windows.Forms.Label();
             this.BrandIcon = new System.Windows.Forms.PictureBox();
             this.SexLabel = new System.Windows.Forms.Label();
             this.StatusLabel = new System.Windows.Forms.Label();
@@ -47,7 +50,12 @@
             this.MiddleNameTextbox = new System.Windows.Forms.TextBox();
             this.EmailTextbox = new System.Windows.Forms.TextBox();
             this.LastNameTextbox = new System.Windows.Forms.TextBox();
+            this.BirthdayPicker = new StudentPortal.DatePickerCustom();
+            this.CourseComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
+            this.StatusComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
+            this.SexComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
             this.LoginBtn = new System.Windows.Forms.Button();
+            this.SignUpBtn = new System.Windows.Forms.Button();
             this.FirstNameBg = new System.Windows.Forms.Panel();
             this.MiddleNameBg = new System.Windows.Forms.Panel();
             this.BirthdayBg = new System.Windows.Forms.Panel();
@@ -57,14 +65,6 @@
             this.StatusBg = new System.Windows.Forms.Panel();
             this.SexBg = new System.Windows.Forms.Panel();
             this.LoginBg = new System.Windows.Forms.Panel();
-            this.SignUpBtn = new System.Windows.Forms.Button();
-            this.WrongFirstNameLabel = new System.Windows.Forms.Label();
-            this.WrongLastNameLabel = new System.Windows.Forms.Label();
-            this.WrongEmailLabel = new System.Windows.Forms.Label();
-            this.BirthdayPicker = new StudentPortal.DatePickerCustom();
-            this.CourseComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
-            this.StatusComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
-            this.SexComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
             this.RegisterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrandIcon)).BeginInit();
             this.SuspendLayout();
@@ -111,6 +111,42 @@
             this.RegisterPanel.Name = "RegisterPanel";
             this.RegisterPanel.Size = new System.Drawing.Size(1440, 1024);
             this.RegisterPanel.TabIndex = 0;
+            // 
+            // WrongEmailLabel
+            // 
+            this.WrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongEmailLabel.Location = new System.Drawing.Point(965, 364);
+            this.WrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongEmailLabel.Name = "WrongEmailLabel";
+            this.WrongEmailLabel.Size = new System.Drawing.Size(400, 34);
+            this.WrongEmailLabel.TabIndex = 22;
+            this.WrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // WrongLastNameLabel
+            // 
+            this.WrongLastNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongLastNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongLastNameLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongLastNameLabel.Location = new System.Drawing.Point(965, 213);
+            this.WrongLastNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongLastNameLabel.Name = "WrongLastNameLabel";
+            this.WrongLastNameLabel.Size = new System.Drawing.Size(400, 34);
+            this.WrongLastNameLabel.TabIndex = 21;
+            this.WrongLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // WrongFirstNameLabel
+            // 
+            this.WrongFirstNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WrongFirstNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WrongFirstNameLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.WrongFirstNameLabel.Location = new System.Drawing.Point(515, 213);
+            this.WrongFirstNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.WrongFirstNameLabel.Name = "WrongFirstNameLabel";
+            this.WrongFirstNameLabel.Size = new System.Drawing.Size(400, 34);
+            this.WrongFirstNameLabel.TabIndex = 20;
+            this.WrongFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BrandIcon
             // 
@@ -293,6 +329,8 @@
             this.FirstNameTextbox.Size = new System.Drawing.Size(340, 29);
             this.FirstNameTextbox.TabIndex = 0;
             this.FirstNameTextbox.Text = "Aa";
+            this.FirstNameTextbox.Click += new System.EventHandler(this.FirstNameTextbox_Click);
+            this.FirstNameTextbox.TextChanged += new System.EventHandler(this.FirstNameTextbox_TextChanged);
             this.FirstNameTextbox.Enter += new System.EventHandler(this.FirstNameTextbox_Enter);
             this.FirstNameTextbox.Leave += new System.EventHandler(this.FirstNameTextbox_Leave);
             // 
@@ -321,6 +359,8 @@
             this.EmailTextbox.Size = new System.Drawing.Size(340, 29);
             this.EmailTextbox.TabIndex = 14;
             this.EmailTextbox.Text = "student_portal@gmail.com";
+            this.EmailTextbox.Click += new System.EventHandler(this.EmailTextbox_Click);
+            this.EmailTextbox.TextChanged += new System.EventHandler(this.EmailTextbox_TextChanged);
             this.EmailTextbox.Enter += new System.EventHandler(this.EmailTextbox_Enter);
             this.EmailTextbox.Leave += new System.EventHandler(this.EmailTextbox_Leave);
             // 
@@ -336,160 +376,9 @@
             this.LastNameTextbox.TabIndex = 12;
             this.LastNameTextbox.Text = "Aa";
             this.LastNameTextbox.Click += new System.EventHandler(this.LastNameTextbox_Click);
+            this.LastNameTextbox.TextChanged += new System.EventHandler(this.LastNameTextbox_TextChanged);
+            this.LastNameTextbox.Enter += new System.EventHandler(this.LastNameTextbox_Enter);
             this.LastNameTextbox.Leave += new System.EventHandler(this.LastNameTextbox_Leave);
-            // 
-            // LoginBtn
-            // 
-            this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.LoginBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.LoginBtn.Location = new System.Drawing.Point(70, 614);
-            this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(300, 80);
-            this.LoginBtn.TabIndex = 0;
-            this.LoginBtn.Text = "Login";
-            this.LoginBtn.UseVisualStyleBackColor = true;
-            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
-            // 
-            // FirstNameBg
-            // 
-            this.FirstNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.FirstNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.FirstNameBg.Location = new System.Drawing.Point(515, 281);
-            this.FirstNameBg.Name = "FirstNameBg";
-            this.FirstNameBg.Size = new System.Drawing.Size(400, 80);
-            this.FirstNameBg.TabIndex = 3;
-            this.FirstNameBg.Click += new System.EventHandler(this.FirstNameBg_Click);
-            // 
-            // MiddleNameBg
-            // 
-            this.MiddleNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.MiddleNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MiddleNameBg.Location = new System.Drawing.Point(515, 425);
-            this.MiddleNameBg.Name = "MiddleNameBg";
-            this.MiddleNameBg.Size = new System.Drawing.Size(400, 80);
-            this.MiddleNameBg.TabIndex = 4;
-            this.MiddleNameBg.Click += new System.EventHandler(this.MiddleNameBg_Click);
-            // 
-            // BirthdayBg
-            // 
-            this.BirthdayBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.BirthdayBg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BirthdayBg.Location = new System.Drawing.Point(515, 569);
-            this.BirthdayBg.Name = "BirthdayBg";
-            this.BirthdayBg.Size = new System.Drawing.Size(400, 80);
-            this.BirthdayBg.TabIndex = 5;
-            this.BirthdayBg.Click += new System.EventHandler(this.BirthdayBg_Click);
-            // 
-            // CourseBg
-            // 
-            this.CourseBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.CourseBg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CourseBg.Location = new System.Drawing.Point(515, 713);
-            this.CourseBg.Name = "CourseBg";
-            this.CourseBg.Size = new System.Drawing.Size(400, 80);
-            this.CourseBg.TabIndex = 6;
-            this.CourseBg.Click += new System.EventHandler(this.CourseBg_Click);
-            // 
-            // LastNameBg
-            // 
-            this.LastNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.LastNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LastNameBg.Location = new System.Drawing.Point(965, 281);
-            this.LastNameBg.Name = "LastNameBg";
-            this.LastNameBg.Size = new System.Drawing.Size(400, 80);
-            this.LastNameBg.TabIndex = 4;
-            this.LastNameBg.Click += new System.EventHandler(this.LastNameBg_Click);
-            // 
-            // EmailBg
-            // 
-            this.EmailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.EmailBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EmailBg.Location = new System.Drawing.Point(965, 425);
-            this.EmailBg.Name = "EmailBg";
-            this.EmailBg.Size = new System.Drawing.Size(400, 80);
-            this.EmailBg.TabIndex = 5;
-            this.EmailBg.Click += new System.EventHandler(this.EmailBg_Click);
-            // 
-            // StatusBg
-            // 
-            this.StatusBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.StatusBg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StatusBg.Location = new System.Drawing.Point(965, 569);
-            this.StatusBg.Name = "StatusBg";
-            this.StatusBg.Size = new System.Drawing.Size(400, 80);
-            this.StatusBg.TabIndex = 6;
-            this.StatusBg.Click += new System.EventHandler(this.StatusBg_Click);
-            // 
-            // SexBg
-            // 
-            this.SexBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.SexBg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SexBg.Location = new System.Drawing.Point(965, 713);
-            this.SexBg.Name = "SexBg";
-            this.SexBg.Size = new System.Drawing.Size(400, 80);
-            this.SexBg.TabIndex = 7;
-            this.SexBg.Click += new System.EventHandler(this.SexBg_Click);
-            // 
-            // LoginBg
-            // 
-            this.LoginBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.LoginBg.Location = new System.Drawing.Point(0, 0);
-            this.LoginBg.Name = "LoginBg";
-            this.LoginBg.Size = new System.Drawing.Size(440, 1024);
-            this.LoginBg.TabIndex = 0;
-            // 
-            // SignUpBtn
-            // 
-            this.SignUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SignUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SignUpBtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignUpBtn.ForeColor = System.Drawing.Color.White;
-            this.SignUpBtn.Location = new System.Drawing.Point(790, 893);
-            this.SignUpBtn.Name = "SignUpBtn";
-            this.SignUpBtn.Size = new System.Drawing.Size(300, 80);
-            this.SignUpBtn.TabIndex = 19;
-            this.SignUpBtn.Text = "Sign Up";
-            this.SignUpBtn.UseVisualStyleBackColor = false;
-            this.SignUpBtn.Click += new System.EventHandler(this.SignUpBtn_Click);
-            // 
-            // WrongFirstNameLabel
-            // 
-            this.WrongFirstNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.WrongFirstNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WrongFirstNameLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.WrongFirstNameLabel.Location = new System.Drawing.Point(515, 213);
-            this.WrongFirstNameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.WrongFirstNameLabel.Name = "WrongFirstNameLabel";
-            this.WrongFirstNameLabel.Size = new System.Drawing.Size(400, 34);
-            this.WrongFirstNameLabel.TabIndex = 20;
-            this.WrongFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // WrongLastNameLabel
-            // 
-            this.WrongLastNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.WrongLastNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WrongLastNameLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.WrongLastNameLabel.Location = new System.Drawing.Point(965, 213);
-            this.WrongLastNameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.WrongLastNameLabel.Name = "WrongLastNameLabel";
-            this.WrongLastNameLabel.Size = new System.Drawing.Size(400, 34);
-            this.WrongLastNameLabel.TabIndex = 21;
-            this.WrongLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // WrongEmailLabel
-            // 
-            this.WrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.WrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.WrongEmailLabel.Location = new System.Drawing.Point(965, 364);
-            this.WrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.WrongEmailLabel.Name = "WrongEmailLabel";
-            this.WrongEmailLabel.Size = new System.Drawing.Size(400, 34);
-            this.WrongEmailLabel.TabIndex = 22;
-            this.WrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BirthdayPicker
             // 
@@ -593,6 +482,123 @@
             this.SexComboBox.Size = new System.Drawing.Size(340, 30);
             this.SexComboBox.TabIndex = 18;
             this.SexComboBox.Texts = "Male";
+            // 
+            // LoginBtn
+            // 
+            this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.LoginBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.LoginBtn.Location = new System.Drawing.Point(70, 614);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(300, 80);
+            this.LoginBtn.TabIndex = 0;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
+            // 
+            // SignUpBtn
+            // 
+            this.SignUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SignUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SignUpBtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpBtn.ForeColor = System.Drawing.Color.White;
+            this.SignUpBtn.Location = new System.Drawing.Point(790, 893);
+            this.SignUpBtn.Name = "SignUpBtn";
+            this.SignUpBtn.Size = new System.Drawing.Size(300, 80);
+            this.SignUpBtn.TabIndex = 19;
+            this.SignUpBtn.Text = "Sign Up";
+            this.SignUpBtn.UseVisualStyleBackColor = false;
+            this.SignUpBtn.Click += new System.EventHandler(this.SignUpBtn_Click);
+            // 
+            // FirstNameBg
+            // 
+            this.FirstNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.FirstNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FirstNameBg.Location = new System.Drawing.Point(515, 281);
+            this.FirstNameBg.Name = "FirstNameBg";
+            this.FirstNameBg.Size = new System.Drawing.Size(400, 80);
+            this.FirstNameBg.TabIndex = 3;
+            this.FirstNameBg.Click += new System.EventHandler(this.FirstNameBg_Click);
+            // 
+            // MiddleNameBg
+            // 
+            this.MiddleNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.MiddleNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MiddleNameBg.Location = new System.Drawing.Point(515, 425);
+            this.MiddleNameBg.Name = "MiddleNameBg";
+            this.MiddleNameBg.Size = new System.Drawing.Size(400, 80);
+            this.MiddleNameBg.TabIndex = 4;
+            this.MiddleNameBg.Click += new System.EventHandler(this.MiddleNameBg_Click);
+            // 
+            // BirthdayBg
+            // 
+            this.BirthdayBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.BirthdayBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BirthdayBg.Location = new System.Drawing.Point(515, 569);
+            this.BirthdayBg.Name = "BirthdayBg";
+            this.BirthdayBg.Size = new System.Drawing.Size(400, 80);
+            this.BirthdayBg.TabIndex = 5;
+            this.BirthdayBg.Click += new System.EventHandler(this.BirthdayBg_Click);
+            // 
+            // CourseBg
+            // 
+            this.CourseBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.CourseBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CourseBg.Location = new System.Drawing.Point(515, 713);
+            this.CourseBg.Name = "CourseBg";
+            this.CourseBg.Size = new System.Drawing.Size(400, 80);
+            this.CourseBg.TabIndex = 6;
+            this.CourseBg.Click += new System.EventHandler(this.CourseBg_Click);
+            // 
+            // LastNameBg
+            // 
+            this.LastNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.LastNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LastNameBg.Location = new System.Drawing.Point(965, 281);
+            this.LastNameBg.Name = "LastNameBg";
+            this.LastNameBg.Size = new System.Drawing.Size(400, 80);
+            this.LastNameBg.TabIndex = 4;
+            this.LastNameBg.Click += new System.EventHandler(this.LastNameBg_Click);
+            // 
+            // EmailBg
+            // 
+            this.EmailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.EmailBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailBg.Location = new System.Drawing.Point(965, 425);
+            this.EmailBg.Name = "EmailBg";
+            this.EmailBg.Size = new System.Drawing.Size(400, 80);
+            this.EmailBg.TabIndex = 5;
+            this.EmailBg.Click += new System.EventHandler(this.EmailBg_Click);
+            // 
+            // StatusBg
+            // 
+            this.StatusBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.StatusBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StatusBg.Location = new System.Drawing.Point(965, 569);
+            this.StatusBg.Name = "StatusBg";
+            this.StatusBg.Size = new System.Drawing.Size(400, 80);
+            this.StatusBg.TabIndex = 6;
+            this.StatusBg.Click += new System.EventHandler(this.StatusBg_Click);
+            // 
+            // SexBg
+            // 
+            this.SexBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.SexBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SexBg.Location = new System.Drawing.Point(965, 713);
+            this.SexBg.Name = "SexBg";
+            this.SexBg.Size = new System.Drawing.Size(400, 80);
+            this.SexBg.TabIndex = 7;
+            this.SexBg.Click += new System.EventHandler(this.SexBg_Click);
+            // 
+            // LoginBg
+            // 
+            this.LoginBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.LoginBg.Location = new System.Drawing.Point(0, 0);
+            this.LoginBg.Name = "LoginBg";
+            this.LoginBg.Size = new System.Drawing.Size(440, 1024);
+            this.LoginBg.TabIndex = 0;
             // 
             // RegisterForm
             // 

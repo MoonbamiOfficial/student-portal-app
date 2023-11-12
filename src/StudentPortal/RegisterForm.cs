@@ -108,6 +108,32 @@ namespace StudentPortal
             SexComboBox.Focus();
         }
 
+        // Text field events
+        private void FirstNameTextbox_Click(object sender, EventArgs e)
+        {
+            WrongFirstNameLabel.Text = null;
+        }
+        private void FirstNameTextbox_TextChanged(object sender, EventArgs e)
+        {
+            WrongFirstNameLabel.Text = null;
+        }
+        private void LastNameTextbox_Click(object sender, EventArgs e)
+        {
+            WrongLastNameLabel.Text = null;
+        }
+        private void LastNameTextbox_TextChanged(object sender, EventArgs e)
+        {
+            WrongLastNameLabel.Text = null;
+        }
+        private void EmailTextbox_Click(object sender, EventArgs e)
+        {
+            WrongEmailLabel.Text = null;
+        }
+        private void EmailTextbox_TextChanged(object sender, EventArgs e)
+        {
+            WrongEmailLabel.Text = null;
+        }
+
         // Simple placeholders
         private void FirstNameTextbox_Enter(object sender, EventArgs e)
         {
@@ -141,8 +167,7 @@ namespace StudentPortal
                 MiddleNameTextbox.Text = mnPlaceholder;
             }
         }
-
-        private void LastNameTextbox_Click(object sender, EventArgs e)
+        private void LastNameTextbox_Enter(object sender, EventArgs e)
         {
             if (LastNameTextbox.Text == lnPlaceholder || LastNameTextbox.Text == lnPlaceholder.ToLower() || LastNameTextbox.Text == lnPlaceholder.ToUpper())
             {
@@ -150,7 +175,6 @@ namespace StudentPortal
                 WrongLastNameLabel.Text = null;
             }
         }
-
         private void LastNameTextbox_Leave(object sender, EventArgs e)
         {
             if (LastNameTextbox.Text == "")
@@ -207,5 +231,6 @@ namespace StudentPortal
                 }
             };
         }
+
     }
 }
