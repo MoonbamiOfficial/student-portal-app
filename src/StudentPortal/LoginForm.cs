@@ -118,7 +118,7 @@ namespace StudentPortal
                 !EmailTextbox.Text.EndsWith("yahoo.com") &&
                 !EmailTextbox.Text.EndsWith("email.com"))
             {
-                WrongEmailLabel.Text = "* Please enter a proper domain name";
+                WrongEmailLabel.Text = "* Please enter a proper domain name like (e.g yahoo.com)";
             }
             else WrongEmailLabel.Text = null;
 
