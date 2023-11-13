@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
-            this.LoginPanel = new System.Windows.Forms.Panel();
             this.brandIcon = new System.Windows.Forms.PictureBox();
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.emailTextbox = new System.Windows.Forms.TextBox();
@@ -49,18 +48,6 @@
             this.signUpBg = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // LoginPanel
-            // 
-            this.LoginPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.LoginPanel.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginPanel.Location = new System.Drawing.Point(0, 0);
-            this.LoginPanel.Name = "LoginPanel";
-            this.LoginPanel.Size = new System.Drawing.Size(1424, 985);
-            this.LoginPanel.TabIndex = 0;
             // 
             // brandIcon
             // 
@@ -267,7 +254,7 @@
             this.signUpBg.Size = new System.Drawing.Size(440, 985);
             this.signUpBg.TabIndex = 1;
             // 
-            // LoginForm
+            // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -286,13 +273,12 @@
             this.Controls.Add(this.headerLabel);
             this.Controls.Add(this.signUpBtn);
             this.Controls.Add(this.loginBtn);
+            this.Controls.Add(this.emailBg);
+            this.Controls.Add(this.passwordBg);
             this.Controls.Add(this.signUpBg);
             this.Controls.Add(this.loginBg);
-            this.Controls.Add(this.passwordBg);
-            this.Controls.Add(this.emailBg);
-            this.Controls.Add(this.LoginPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "LoginForm";
+            this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).EndInit();
@@ -302,8 +288,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel LoginPanel;
         private System.Windows.Forms.Panel signUpBg;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Button loginBtn;
