@@ -106,6 +106,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="StudentPortalControls\DatePickerCustom.cs">
       <SubType>Component</SubType>
     </Compile>
