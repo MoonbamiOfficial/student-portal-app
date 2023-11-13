@@ -28,45 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sideNavBg = new System.Windows.Forms.Panel();
-            this.userIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
-            ((System.ComponentModel.ISupportInitialize)(this.userIcon)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // sideNavBg
-            // 
-            this.sideNavBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.sideNavBg.Location = new System.Drawing.Point(0, 0);
-            this.sideNavBg.Name = "sideNavBg";
-            this.sideNavBg.Size = new System.Drawing.Size(440, 1024);
-            this.sideNavBg.TabIndex = 0;
-            // 
-            // userIcon
-            // 
-            this.userIcon.Location = new System.Drawing.Point(134, 50);
-            this.userIcon.Name = "userIcon";
-            this.userIcon.Size = new System.Drawing.Size(150, 150);
-            this.userIcon.TabIndex = 1;
-            this.userIcon.TabStop = false;
-            // 
-            // homeForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(1424, 985);
-            this.Controls.Add(this.userIcon);
-            this.Controls.Add(this.sideNavBg);
-            this.Name = "homeForm";
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "homeForm";
-            ((System.ComponentModel.ISupportInitialize)(this.userIcon)).EndInit();
-            this.ResumeLayout(false);
-
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel sideNavBg;
-        private StudentPortalControls.pictureBoxCustom userIcon;
     }
 }
