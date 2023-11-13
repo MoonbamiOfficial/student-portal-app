@@ -134,37 +134,16 @@ namespace StudentPortal
                 {
                     WrongEmailLabel.Text = "* Please enter proper a email.";
                 }
-            };
 
-            if (PasswordTextbox.Text == passwordPlaceholder || PasswordTextbox.Text == passwordPlaceholder.ToLower() || PasswordTextbox.Text == passwordPlaceholder.ToUpper())
-            {
-                WrongPasswordLabel.Text = "* Please enter a password";
-            }
+        public void clearTxtField()
+        {
+            EmailTextbox.Text = "";
+            PasswordTextbox.Text = "";
+        }
 
-            if(PasswordTextbox.Text.Length < 8)
-            {
-                WrongPasswordLabel.Text = "* Please enter atleast 8 and above characters";
-            }
-            else if (!passChars.Contains('_') &&
-                !passChars.Contains('-') &&
-                !passChars.Contains('.') &&
-                !passChars.Contains('*') &&
-                !passChars.Contains('!') &&
-                !passChars.Contains('#') &&
-                !passChars.Contains('%') &&
-                !passChars.Contains('%') &&
-                !passChars.Contains('@'))
-            {
-                WrongPasswordLabel.Text = "* Low security. Please add characters like (e.g !*@#_$-%.)";
-            }
-
-            // server, user, database, password
-            string connString = "server=localhost;user=root;database=stu_portal;password=";
-            using ( MySqlConnection mySqlConn = new MySqlConnection(connString) ) {
-
-                try
-                {
-                    mySqlConn.Open();
+        // ------------ Btn Login Method ------------
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
                     string email = EmailTextbox.Text;
                     string password = PasswordTextbox.Text;
                     string query = "SELECT * FROM student_info";
