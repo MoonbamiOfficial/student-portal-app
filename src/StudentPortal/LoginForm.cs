@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace StudentPortal
 {
@@ -143,7 +144,38 @@ namespace StudentPortal
             {
                 WrongPasswordLabel.Text = "* Low security. Please add characters like (e.g !*@#_$-%.)";
             }
-            
+
+            // server, user, database, password
+            string connString = "server=localhost;user=root;database=stu_portal;password=";
+            using ( MySqlConnection mySqlConn = new MySqlConnection(connString) ) {
+
+                try
+                {
+                    mySqlConn.Open();
+                    string email = EmailTextbox.Text;
+                    string password = PasswordTextbox.Text;
+                    string query = "SELECT * FROM student_info";
+                    MySqlCommand mySqlCmd = new MySqlCommand(query, mySqlConn);
+                    MySqlDataReader reader = mySqlCmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        if (email.Equals(reader.GetString("email")) && password.Equals(reader.GetString("password")))
+                        {
+                            MessageBox.Show(reader.GetString("student_number"));
+                        } else
+                        {
+                            MessageBox.Show("Login Failed");
+                        }
+                    }
+
+                } catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                } finally { mySqlConn.Close(); }
+            }
+
+
         }
 
         
