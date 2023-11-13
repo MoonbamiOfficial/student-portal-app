@@ -128,6 +128,7 @@
     <Compile Include="StudentPortalControls\ComboBoxCustom.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Validator.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
