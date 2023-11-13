@@ -44,7 +44,6 @@
             this.loginBtn = new System.Windows.Forms.Button();
             this.emailBg = new System.Windows.Forms.Panel();
             this.passwordBg = new System.Windows.Forms.Panel();
-            this.loginBg = new System.Windows.Forms.Panel();
             this.signUpBg = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
@@ -238,13 +237,6 @@
             this.passwordBg.TabIndex = 11;
             this.passwordBg.Click += new System.EventHandler(this.PasswordBg_Click);
             // 
-            // loginBg
-            // 
-            this.loginBg.Location = new System.Drawing.Point(0, 0);
-            this.loginBg.Name = "loginBg";
-            this.loginBg.Size = new System.Drawing.Size(1000, 1024);
-            this.loginBg.TabIndex = 13;
-            // 
             // signUpBg
             // 
             this.signUpBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -276,7 +268,6 @@
             this.Controls.Add(this.emailBg);
             this.Controls.Add(this.passwordBg);
             this.Controls.Add(this.signUpBg);
-            this.Controls.Add(this.loginBg);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -302,7 +293,6 @@
         private System.Windows.Forms.Panel emailBg;
         private System.Windows.Forms.TextBox passwordTextbox;
         private System.Windows.Forms.Panel passwordBg;
-        private System.Windows.Forms.Panel loginBg;
         private System.Windows.Forms.Label wrongEmailLabel;
         private System.Windows.Forms.Label wrongPasswordLabel;
     }
