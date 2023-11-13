@@ -109,22 +109,9 @@ namespace StudentPortal
                 PasswordTextbox.UseSystemPasswordChar = true;
             }
         }
-
-        // Login btn
-        private void LoginBtn_Click(object sender, EventArgs e)
+        // ------------ Wrong Email & Password label Setters ------------
+        public void setWrongEmailLabel(string message)
         {
-            char[] emailChars = EmailTextbox.Text.ToCharArray();
-            char[] passChars = PasswordTextbox.Text.ToCharArray();
-
-            if (EmailTextbox.Text == emailPlaceholder || EmailTextbox.Text == emailPlaceholder.ToLower() || EmailTextbox.Text == emailPlaceholder.ToUpper())
-            {
-                WrongEmailLabel.Text = "* Please enter a different email.";
-            }
-            else if (!EmailTextbox.Text.EndsWith("gmail.com") &&
-                !EmailTextbox.Text.EndsWith("yahoo.com") &&
-                !EmailTextbox.Text.EndsWith("email.com"))
-            {
-                WrongEmailLabel.Text = "* Please enter a proper domain name like (e.g yahoo.com)";
             }
             else WrongEmailLabel.Text = null;
 
