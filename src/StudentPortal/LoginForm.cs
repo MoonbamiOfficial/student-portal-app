@@ -19,7 +19,7 @@ namespace StudentPortal
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RegisterForm RegisterForm = new RegisterForm();
+            registerForm RegisterForm = new registerForm();
             RegisterForm.Show();
         }
 
