@@ -17,6 +17,19 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
+
+        public static LoginForm getInstance()
+        {
+            if (loginForm == null)
+            {
+                loginForm = new LoginForm();
+                return loginForm;
+            }else
+            {
+                return loginForm;
+            }
+        }
+
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
