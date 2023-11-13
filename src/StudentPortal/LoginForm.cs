@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +13,7 @@ namespace StudentPortal
 {
     public partial class LoginForm : Form
     {
-        public LoginForm()
+        private static LoginForm loginForm;
         {
             InitializeComponent();
         }
