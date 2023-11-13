@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StudentPortal
 {
-    public partial class Confirmation : Form
+    public partial class confirmationBox : Form
     {
-        public Confirmation()
+        public confirmationBox()
         {
             InitializeComponent();
         }
