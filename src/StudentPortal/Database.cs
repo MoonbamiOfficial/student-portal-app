@@ -1,9 +1,12 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Forms;
 
 namespace StudentPortal
 {
@@ -15,40 +18,47 @@ namespace StudentPortal
         private static readonly string database = "stu_portal";
         private static string connString = $"server={server};user={user};database={database};password={password};";
 
-        // Initialize connection
-        public MySqlConnection mySqlConn = new MySqlConnection(connString);
-
-        // Method to open connection
-        public bool connectDb()
+        public void ExecuteLogin(string query, string email, string password)
         {
-            try
+            using (MySqlConnection mySqlConn = new MySqlConnection(connString))
             {
-                mySqlConn.Open();
-                return true;
+                try
+                {
+                    mySqlConn.Open();
+                    MySqlCommand mySqlCmd = new MySqlCommand(query, mySqlConn);
+                    MySqlDataReader reader = mySqlCmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        //Check if the email and password column is empty
+                        if (reader.IsDBNull(1) && reader.IsDBNull(2))
+                        {
+                            MessageBox.Show("Email and Password column is Empty");
+                            return;
+                        }
+                        else
+                        {
+                            if (email.Equals(reader.GetString("email")) && password.Equals(reader.GetString("password")))
+                            {
+                                // Code for when login is successful
+                                MessageBox.Show("Login Success");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Login Failed invalid Email or Password");
+                            }
+                        }
+                    }
+                }catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }finally
+                {
+                    mySqlConn.Close();
+                }
             }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return false;
-            }
+
         }
-
-        // Method to close connection
-        public bool closeDb()
-        {
-            try
-            {
-                mySqlConn.Close();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return false;
-            }
-        }
-
-
 
 
 
