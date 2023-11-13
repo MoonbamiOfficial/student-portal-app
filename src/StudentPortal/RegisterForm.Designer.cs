@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registerForm));
-            this.registerPanel = new System.Windows.Forms.Panel();
             this.wrongConfirmPasswordLabel = new System.Windows.Forms.Label();
             this.wrongPasswordLabel = new System.Windows.Forms.Label();
             this.wrongEmailLabel = new System.Windows.Forms.Label();
@@ -75,14 +74,6 @@
             this.sexComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // registerPanel
-            // 
-            this.registerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.registerPanel.Location = new System.Drawing.Point(0, 0);
-            this.registerPanel.Name = "registerPanel";
-            this.registerPanel.Size = new System.Drawing.Size(1440, 1024);
-            this.registerPanel.TabIndex = 0;
             // 
             // wrongConfirmPasswordLabel
             // 
@@ -714,7 +705,6 @@
             this.Controls.Add(this.birthdayBg);
             this.Controls.Add(this.middleNameBg);
             this.Controls.Add(this.firstNameBg);
-            this.Controls.Add(this.registerPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "registerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -726,8 +716,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel registerPanel;
         private System.Windows.Forms.Panel loginBg;
         private System.Windows.Forms.PictureBox brandIcon;
         private System.Windows.Forms.Label brandNameLabel;
