@@ -94,7 +94,7 @@
             this.wrongConfirmPasswordLabel.Name = "wrongConfirmPasswordLabel";
             this.wrongConfirmPasswordLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongConfirmPasswordLabel.TabIndex = 28;
-            this.wrongConfirmPasswordLabel.Text = "sample";
+            this.wrongConfirmPasswordLabel.Text = "* Sample error message";
             this.wrongConfirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wrongPasswordLabel
@@ -107,7 +107,7 @@
             this.wrongPasswordLabel.Name = "wrongPasswordLabel";
             this.wrongPasswordLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongPasswordLabel.TabIndex = 25;
-            this.wrongPasswordLabel.Text = "sample";
+            this.wrongPasswordLabel.Text = "* Sample error message";
             this.wrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wrongEmailLabel
@@ -120,7 +120,7 @@
             this.wrongEmailLabel.Name = "wrongEmailLabel";
             this.wrongEmailLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongEmailLabel.TabIndex = 22;
-            this.wrongEmailLabel.Text = "sample";
+            this.wrongEmailLabel.Text = "* Sample error message";
             this.wrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wrongLastNameLabel
@@ -133,7 +133,7 @@
             this.wrongLastNameLabel.Name = "wrongLastNameLabel";
             this.wrongLastNameLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongLastNameLabel.TabIndex = 21;
-            this.wrongLastNameLabel.Text = "sample";
+            this.wrongLastNameLabel.Text = "* Sample error message";
             this.wrongLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // brandIcon
@@ -559,7 +559,7 @@
             this.wrongFirstNameLabel.Name = "wrongFirstNameLabel";
             this.wrongFirstNameLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongFirstNameLabel.TabIndex = 20;
-            this.wrongFirstNameLabel.Text = "sample";
+            this.wrongFirstNameLabel.Text = "* Sample error message";
             this.wrongFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // courseComboBox
