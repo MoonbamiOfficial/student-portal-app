@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +14,8 @@ namespace StudentPortal
     public partial class LoginForm : Form
     {
         private static LoginForm loginForm;
+
+        private LoginForm()
         {
             InitializeComponent();
         }
@@ -32,7 +34,7 @@ namespace StudentPortal
 
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); 
             RegisterForm RegisterForm = new RegisterForm();
             RegisterForm.Show();
         }
@@ -106,21 +108,18 @@ namespace StudentPortal
             if (PasswordTextbox.Text == "")
             {
                 PasswordTextbox.Text = passwordPlaceholder;
-                PasswordTextbox.UseSystemPasswordChar = true;
+                PasswordTextbox.UseSystemPasswordChar = false;
             }
         }
         // ------------ Wrong Email & Password label Setters ------------
         public void setWrongEmailLabel(string message)
         {
-            }
-            else WrongEmailLabel.Text = null;
-
-            for (int i = 0; i < EmailTextbox.Text.Length; i++)
-            {
-                if (!emailChars.Contains('@'))
-                {
-                    WrongEmailLabel.Text = "* Please enter proper a email.";
-                }
+            WrongEmailLabel.Text = message;
+        }
+        public void setWrongPasswordLabel(string message)
+        {
+            WrongPasswordLabel.Text = message;
+        }
 
         public void clearTxtField()
         {
@@ -131,8 +130,8 @@ namespace StudentPortal
         // ------------ Btn Login Method ------------
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-                    string email = EmailTextbox.Text;
-                    string password = PasswordTextbox.Text;
+            string email = EmailTextbox.Text;
+            string password = PasswordTextbox.Text;
 
             // Check if the email and password is equal to the placeholder text.
             // If true we will will return the function.
