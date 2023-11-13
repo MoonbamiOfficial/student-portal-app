@@ -1,6 +1,6 @@
 ﻿namespace StudentPortal
 {
-    partial class confirmationBox
+    partial class ConfirmationBox
     {
         /// <summary>
         /// Required designer variable.

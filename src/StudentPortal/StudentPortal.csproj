@@ -52,17 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="confirmationBox.cs">
+    <Compile Include="ConfirmationBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="confirmationBox.Designer.cs">
-      <DependentUpon>confirmationBox.cs</DependentUpon>
+    <Compile Include="ConfirmationBox.Designer.cs">
+      <DependentUpon>ConfirmationBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="homeForm.cs">
+    <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="homeForm.Designer.cs">
-      <DependentUpon>homeForm.cs</DependentUpon>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentPortalControls\DatePickerCustom.cs">
       <SubType>Component</SubType>
@@ -87,11 +87,11 @@
     <Compile Include="StudentPortalControls\pictureBoxCustom.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="confirmationBox.resx">
-      <DependentUpon>confirmationBox.cs</DependentUpon>
+    <EmbeddedResource Include="ConfirmationBox.resx">
+      <DependentUpon>ConfirmationBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="homeForm.resx">
-      <DependentUpon>homeForm.cs</DependentUpon>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
