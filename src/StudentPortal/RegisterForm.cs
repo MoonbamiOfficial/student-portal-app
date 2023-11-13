@@ -14,7 +14,7 @@ namespace StudentPortal
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LoginForm LoginForm = new LoginForm();
+            loginForm LoginForm = new loginForm();
             LoginForm.Show();
         }
 
