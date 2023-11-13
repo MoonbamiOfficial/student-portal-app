@@ -146,28 +146,18 @@ namespace StudentPortal
         {
                     string email = EmailTextbox.Text;
                     string password = PasswordTextbox.Text;
-                    string query = "SELECT * FROM student_info";
-                    MySqlCommand mySqlCmd = new MySqlCommand(query, mySqlConn);
-                    MySqlDataReader reader = mySqlCmd.ExecuteReader();
 
-                    while (reader.Read())
-                    {
-                        if (email.Equals(reader.GetString("email")) && password.Equals(reader.GetString("password")))
-                        {
-                            MessageBox.Show(reader.GetString("student_number"));
-                        } else
-                        {
-                            MessageBox.Show("Login Failed");
-                        }
-                    }
-
-                } catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                } finally { mySqlConn.Close(); }
+            // Check if the email and password is equal to the placeholder text.
+            // If true we will will return the function.
+            if (email == emailPlaceholder || password == passwordPlaceholder)
+            {
+                WrongEmailLabel.Text = "Enter email to login";
+                WrongPasswordLabel.Text = "Enter password to login";
+                return;
             }
-
-
+            
+            Validator validator = new Validator();
+            validator.validateLogin(email, password);
         }
 
         
