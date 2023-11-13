@@ -58,6 +58,12 @@
     <Compile Include="confirmationBox.Designer.cs">
       <DependentUpon>confirmationBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="homeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeForm.Designer.cs">
+      <DependentUpon>homeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentPortalControls\DatePickerCustom.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -78,8 +84,14 @@
     <Compile Include="StudentPortalControls\ComboBoxCustom.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="StudentPortalControls\pictureBoxCustom.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="confirmationBox.resx">
       <DependentUpon>confirmationBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeForm.resx">
+      <DependentUpon>homeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
