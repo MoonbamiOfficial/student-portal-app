@@ -37,7 +37,6 @@
             this.schoolHeaderDesc = new System.Windows.Forms.Label();
             this.header = new System.Windows.Forms.Label();
             this.desc = new System.Windows.Forms.Label();
-            this.schoolLogo = new System.Windows.Forms.PictureBox();
             this.schoolCover = new System.Windows.Forms.PictureBox();
             this.userIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
@@ -45,10 +44,11 @@
             this.degreeBtn = new FontAwesome.Sharp.IconButton();
             this.todoBtn = new FontAwesome.Sharp.IconButton();
             this.settingBtn = new FontAwesome.Sharp.IconButton();
+            this.schoolLogo = new System.Windows.Forms.PictureBox();
             this.sideNavBg.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // userName
@@ -161,16 +161,6 @@
     "their activities, home works, projects, grades and many more. ";
             this.desc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.desc.UseMnemonic = false;
-            // 
-            // schoolLogo
-            // 
-            this.schoolLogo.BackColor = System.Drawing.Color.Transparent;
-            this.schoolLogo.Image = global::StudentPortal.Properties.Resources.logo;
-            this.schoolLogo.Location = new System.Drawing.Point(1068, 663);
-            this.schoolLogo.Name = "schoolLogo";
-            this.schoolLogo.Size = new System.Drawing.Size(250, 250);
-            this.schoolLogo.TabIndex = 8;
-            this.schoolLogo.TabStop = false;
             // 
             // schoolCover
             // 
@@ -314,6 +304,17 @@
             this.settingBtn.UseMnemonic = false;
             this.settingBtn.UseVisualStyleBackColor = false;
             // 
+            // schoolLogo
+            // 
+            this.schoolLogo.BackColor = System.Drawing.Color.Transparent;
+            this.schoolLogo.Image = global::StudentPortal.Properties.Resources.logo;
+            this.schoolLogo.Location = new System.Drawing.Point(1068, 663);
+            this.schoolLogo.Name = "schoolLogo";
+            this.schoolLogo.Size = new System.Drawing.Size(250, 250);
+            this.schoolLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.schoolLogo.TabIndex = 8;
+            this.schoolLogo.TabStop = false;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,9 +335,9 @@
             this.Text = "Home";
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.sideNavBg.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
