@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.userName = new System.Windows.Forms.Label();
             this.sideNavBg = new System.Windows.Forms.Panel();
+            this.userIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.userEmail = new System.Windows.Forms.Label();
+            this.homeBtn = new FontAwesome.Sharp.IconButton();
+            this.profileBtn = new FontAwesome.Sharp.IconButton();
+            this.degreeBtn = new FontAwesome.Sharp.IconButton();
+            this.todoBtn = new FontAwesome.Sharp.IconButton();
+            this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.logOutBtn = new System.Windows.Forms.Button();
             this.schoolHeader = new System.Windows.Forms.Label();
             this.schoolHeaderDesc = new System.Windows.Forms.Label();
             this.header = new System.Windows.Forms.Label();
             this.desc = new System.Windows.Forms.Label();
             this.schoolCover = new System.Windows.Forms.PictureBox();
-            this.userIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
-            this.homeBtn = new FontAwesome.Sharp.IconButton();
-            this.profileBtn = new FontAwesome.Sharp.IconButton();
-            this.degreeBtn = new FontAwesome.Sharp.IconButton();
-            this.todoBtn = new FontAwesome.Sharp.IconButton();
-            this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.schoolLogo = new System.Windows.Forms.PictureBox();
             this.sideNavBg.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,98 +80,6 @@
             this.sideNavBg.Size = new System.Drawing.Size(440, 1024);
             this.sideNavBg.TabIndex = 2;
             // 
-            // userEmail
-            // 
-            this.userEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.userEmail.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.userEmail.Location = new System.Drawing.Point(10, 265);
-            this.userEmail.Name = "userEmail";
-            this.userEmail.Size = new System.Drawing.Size(420, 30);
-            this.userEmail.TabIndex = 3;
-            this.userEmail.Text = "user_student@gmail.com";
-            this.userEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // logOutBtn
-            // 
-            this.logOutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.logOutBtn.FlatAppearance.BorderSize = 0;
-            this.logOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logOutBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOutBtn.ForeColor = System.Drawing.Color.White;
-            this.logOutBtn.Location = new System.Drawing.Point(70, 850);
-            this.logOutBtn.Name = "logOutBtn";
-            this.logOutBtn.Size = new System.Drawing.Size(300, 80);
-            this.logOutBtn.TabIndex = 1;
-            this.logOutBtn.Text = "Log Out";
-            this.logOutBtn.UseVisualStyleBackColor = false;
-            // 
-            // schoolHeader
-            // 
-            this.schoolHeader.BackColor = System.Drawing.Color.Transparent;
-            this.schoolHeader.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.schoolHeader.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.schoolHeader.ForeColor = System.Drawing.Color.White;
-            this.schoolHeader.Location = new System.Drawing.Point(679, 200);
-            this.schoolHeader.Name = "schoolHeader";
-            this.schoolHeader.Size = new System.Drawing.Size(514, 116);
-            this.schoolHeader.TabIndex = 4;
-            this.schoolHeader.Text = "GET READY";
-            this.schoolHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // schoolHeaderDesc
-            // 
-            this.schoolHeaderDesc.BackColor = System.Drawing.Color.Transparent;
-            this.schoolHeaderDesc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.schoolHeaderDesc.Font = new System.Drawing.Font("Poppins Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.schoolHeaderDesc.ForeColor = System.Drawing.Color.White;
-            this.schoolHeaderDesc.Location = new System.Drawing.Point(648, 316);
-            this.schoolHeaderDesc.Name = "schoolHeaderDesc";
-            this.schoolHeaderDesc.Size = new System.Drawing.Size(583, 56);
-            this.schoolHeaderDesc.TabIndex = 5;
-            this.schoolHeaderDesc.Text = "TO DREAM, LEARN & DISCOVER";
-            this.schoolHeaderDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.schoolHeaderDesc.UseMnemonic = false;
-            // 
-            // header
-            // 
-            this.header.BackColor = System.Drawing.Color.Transparent;
-            this.header.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.header.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.header.Location = new System.Drawing.Point(481, 650);
-            this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(431, 180);
-            this.header.TabIndex = 6;
-            this.header.Text = "Your Journey Starts Here.";
-            this.header.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.header.UseMnemonic = false;
-            // 
-            // desc
-            // 
-            this.desc.BackColor = System.Drawing.Color.Transparent;
-            this.desc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.desc.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.desc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.desc.Location = new System.Drawing.Point(481, 840);
-            this.desc.Name = "desc";
-            this.desc.Size = new System.Drawing.Size(500, 84);
-            this.desc.TabIndex = 7;
-            this.desc.Text = "The ideal application where students can create their own private space, monitor " +
-    "their activities, home works, projects, grades and many more. ";
-            this.desc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.desc.UseMnemonic = false;
-            // 
-            // schoolCover
-            // 
-            this.schoolCover.Image = global::StudentPortal.Properties.Resources.classroom;
-            this.schoolCover.Location = new System.Drawing.Point(440, 0);
-            this.schoolCover.Name = "schoolCover";
-            this.schoolCover.Size = new System.Drawing.Size(1000, 600);
-            this.schoolCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.schoolCover.TabIndex = 3;
-            this.schoolCover.TabStop = false;
-            // 
             // userIcon
             // 
             this.userIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -188,6 +96,18 @@
             this.userIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.userIcon.TabIndex = 0;
             this.userIcon.TabStop = false;
+            // 
+            // userEmail
+            // 
+            this.userEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.userEmail.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.userEmail.Location = new System.Drawing.Point(10, 265);
+            this.userEmail.Name = "userEmail";
+            this.userEmail.Size = new System.Drawing.Size(420, 30);
+            this.userEmail.TabIndex = 3;
+            this.userEmail.Text = "user_student@gmail.com";
+            this.userEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // homeBtn
             // 
@@ -304,6 +224,86 @@
             this.settingBtn.UseMnemonic = false;
             this.settingBtn.UseVisualStyleBackColor = false;
             // 
+            // logOutBtn
+            // 
+            this.logOutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.logOutBtn.FlatAppearance.BorderSize = 0;
+            this.logOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logOutBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutBtn.ForeColor = System.Drawing.Color.White;
+            this.logOutBtn.Location = new System.Drawing.Point(70, 850);
+            this.logOutBtn.Name = "logOutBtn";
+            this.logOutBtn.Size = new System.Drawing.Size(300, 80);
+            this.logOutBtn.TabIndex = 1;
+            this.logOutBtn.Text = "Log Out";
+            this.logOutBtn.UseVisualStyleBackColor = false;
+            // 
+            // schoolHeader
+            // 
+            this.schoolHeader.BackColor = System.Drawing.Color.Transparent;
+            this.schoolHeader.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.schoolHeader.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.schoolHeader.ForeColor = System.Drawing.Color.White;
+            this.schoolHeader.Location = new System.Drawing.Point(679, 200);
+            this.schoolHeader.Name = "schoolHeader";
+            this.schoolHeader.Size = new System.Drawing.Size(514, 116);
+            this.schoolHeader.TabIndex = 4;
+            this.schoolHeader.Text = "GET READY";
+            this.schoolHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // schoolHeaderDesc
+            // 
+            this.schoolHeaderDesc.BackColor = System.Drawing.Color.Transparent;
+            this.schoolHeaderDesc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.schoolHeaderDesc.Font = new System.Drawing.Font("Poppins Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.schoolHeaderDesc.ForeColor = System.Drawing.Color.White;
+            this.schoolHeaderDesc.Location = new System.Drawing.Point(648, 316);
+            this.schoolHeaderDesc.Name = "schoolHeaderDesc";
+            this.schoolHeaderDesc.Size = new System.Drawing.Size(583, 56);
+            this.schoolHeaderDesc.TabIndex = 5;
+            this.schoolHeaderDesc.Text = "TO DREAM, LEARN & DISCOVER";
+            this.schoolHeaderDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.schoolHeaderDesc.UseMnemonic = false;
+            // 
+            // header
+            // 
+            this.header.BackColor = System.Drawing.Color.Transparent;
+            this.header.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.header.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.header.Location = new System.Drawing.Point(481, 650);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(431, 180);
+            this.header.TabIndex = 6;
+            this.header.Text = "Your Journey Starts Here.";
+            this.header.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.header.UseMnemonic = false;
+            // 
+            // desc
+            // 
+            this.desc.BackColor = System.Drawing.Color.Transparent;
+            this.desc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.desc.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.desc.Location = new System.Drawing.Point(481, 840);
+            this.desc.Name = "desc";
+            this.desc.Size = new System.Drawing.Size(500, 84);
+            this.desc.TabIndex = 7;
+            this.desc.Text = "The ideal application where students can create their own private space, monitor " +
+    "their activities, home works, projects, grades and many more. ";
+            this.desc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.desc.UseMnemonic = false;
+            // 
+            // schoolCover
+            // 
+            this.schoolCover.Image = global::StudentPortal.Properties.Resources.classroom;
+            this.schoolCover.Location = new System.Drawing.Point(440, 0);
+            this.schoolCover.Name = "schoolCover";
+            this.schoolCover.Size = new System.Drawing.Size(1000, 600);
+            this.schoolCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.schoolCover.TabIndex = 3;
+            this.schoolCover.TabStop = false;
+            // 
             // schoolLogo
             // 
             this.schoolLogo.BackColor = System.Drawing.Color.Transparent;
@@ -335,8 +335,8 @@
             this.Text = "Home";
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.sideNavBg.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).EndInit();
             this.ResumeLayout(false);
 
