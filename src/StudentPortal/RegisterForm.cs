@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace StudentPortal
 {
-    public partial class registerForm : Form
+    public partial class RegisterForm : Form
     {
-        public registerForm()
+        public RegisterForm()
         {
             InitializeComponent();
         }
@@ -14,7 +14,7 @@ namespace StudentPortal
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginForm LoginForm = new loginForm();
+            LoginForm LoginForm = new LoginForm();
             LoginForm.Show();
         }
 
