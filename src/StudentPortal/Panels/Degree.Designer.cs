@@ -33,7 +33,7 @@
             this.midtermLabel = new System.Windows.Forms.Label();
             this.courseNameLabel = new System.Windows.Forms.Label();
             this.courseCodeLabel = new System.Windows.Forms.Label();
-            this.cardDegree = new System.Windows.Forms.TableLayoutPanel();
+            this.card = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,19 +79,19 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.courseAnswerDegree = new System.Windows.Forms.Label();
-            this.nameAnswerDegree = new System.Windows.Forms.Label();
-            this.numberAnswerDegree = new System.Windows.Forms.Label();
-            this.statusAnswerDegree = new System.Windows.Forms.Label();
-            this.brandNameDegree = new System.Windows.Forms.Label();
-            this.studentNumLabelDegree = new System.Windows.Forms.Label();
-            this.studentNameLabelDegree = new System.Windows.Forms.Label();
-            this.studentStatusLabelDegree = new System.Windows.Forms.Label();
-            this.studentCourseLabelDegree = new System.Windows.Forms.Label();
-            this.downloadBtnDegree = new System.Windows.Forms.Button();
-            this.logoDegree = new System.Windows.Forms.PictureBox();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.studentCourse = new System.Windows.Forms.Label();
+            this.studentName = new System.Windows.Forms.Label();
+            this.studentNumber = new System.Windows.Forms.Label();
+            this.studentStatus = new System.Windows.Forms.Label();
+            this.brandName = new System.Windows.Forms.Label();
+            this.studentNumberLabel = new System.Windows.Forms.Label();
+            this.studentNameLabel = new System.Windows.Forms.Label();
+            this.studentStatusLabel = new System.Windows.Forms.Label();
+            this.studentCourseLabel = new System.Windows.Forms.Label();
+            this.downloadBtn = new System.Windows.Forms.Button();
             this.cardHolderPanelDegree.SuspendLayout();
-            this.cardDegree.SuspendLayout();
+            this.card.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -101,7 +101,7 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logoDegree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // cardHolderPanelDegree
@@ -110,18 +110,18 @@
             this.cardHolderPanelDegree.Controls.Add(this.midtermLabel);
             this.cardHolderPanelDegree.Controls.Add(this.courseNameLabel);
             this.cardHolderPanelDegree.Controls.Add(this.courseCodeLabel);
-            this.cardHolderPanelDegree.Controls.Add(this.cardDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.logoDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.courseAnswerDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.nameAnswerDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.numberAnswerDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.statusAnswerDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.brandNameDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.studentNumLabelDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.studentNameLabelDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.studentStatusLabelDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.studentCourseLabelDegree);
-            this.cardHolderPanelDegree.Controls.Add(this.downloadBtnDegree);
+            this.cardHolderPanelDegree.Controls.Add(this.card);
+            this.cardHolderPanelDegree.Controls.Add(this.logo);
+            this.cardHolderPanelDegree.Controls.Add(this.studentCourse);
+            this.cardHolderPanelDegree.Controls.Add(this.studentName);
+            this.cardHolderPanelDegree.Controls.Add(this.studentNumber);
+            this.cardHolderPanelDegree.Controls.Add(this.studentStatus);
+            this.cardHolderPanelDegree.Controls.Add(this.brandName);
+            this.cardHolderPanelDegree.Controls.Add(this.studentNumberLabel);
+            this.cardHolderPanelDegree.Controls.Add(this.studentNameLabel);
+            this.cardHolderPanelDegree.Controls.Add(this.studentStatusLabel);
+            this.cardHolderPanelDegree.Controls.Add(this.studentCourseLabel);
+            this.cardHolderPanelDegree.Controls.Add(this.downloadBtn);
             this.cardHolderPanelDegree.Location = new System.Drawing.Point(0, 0);
             this.cardHolderPanelDegree.Name = "cardHolderPanelDegree";
             this.cardHolderPanelDegree.Size = new System.Drawing.Size(1000, 1024);
@@ -171,42 +171,42 @@
             this.courseCodeLabel.Text = "Course Code";
             this.courseCodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cardDegree
+            // card
             // 
-            this.cardDegree.BackColor = System.Drawing.Color.Transparent;
-            this.cardDegree.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.cardDegree.ColumnCount = 1;
-            this.cardDegree.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.64286F));
-            this.cardDegree.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.64286F));
-            this.cardDegree.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
-            this.cardDegree.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
-            this.cardDegree.Controls.Add(this.panel1, 0, 1);
-            this.cardDegree.Controls.Add(this.panel2, 0, 2);
-            this.cardDegree.Controls.Add(this.panel3, 0, 3);
-            this.cardDegree.Controls.Add(this.panel4, 0, 4);
-            this.cardDegree.Controls.Add(this.panel5, 0, 5);
-            this.cardDegree.Controls.Add(this.panel6, 0, 6);
-            this.cardDegree.Controls.Add(this.panel7, 0, 7);
-            this.cardDegree.Controls.Add(this.panel8, 0, 8);
-            this.cardDegree.Controls.Add(this.panel9, 0, 9);
-            this.cardDegree.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cardDegree.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cardDegree.Location = new System.Drawing.Point(34, 373);
-            this.cardDegree.Name = "cardDegree";
-            this.cardDegree.RowCount = 10;
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.cardDegree.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.cardDegree.Size = new System.Drawing.Size(934, 514);
-            this.cardDegree.TabIndex = 35;
+            this.card.BackColor = System.Drawing.Color.Transparent;
+            this.card.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.card.ColumnCount = 1;
+            this.card.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.64286F));
+            this.card.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.64286F));
+            this.card.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
+            this.card.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
+            this.card.Controls.Add(this.panel1, 0, 1);
+            this.card.Controls.Add(this.panel2, 0, 2);
+            this.card.Controls.Add(this.panel3, 0, 3);
+            this.card.Controls.Add(this.panel4, 0, 4);
+            this.card.Controls.Add(this.panel5, 0, 5);
+            this.card.Controls.Add(this.panel6, 0, 6);
+            this.card.Controls.Add(this.panel7, 0, 7);
+            this.card.Controls.Add(this.panel8, 0, 8);
+            this.card.Controls.Add(this.panel9, 0, 9);
+            this.card.Cursor = System.Windows.Forms.Cursors.Default;
+            this.card.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.card.Location = new System.Drawing.Point(34, 373);
+            this.card.Name = "card";
+            this.card.RowCount = 10;
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.card.Size = new System.Drawing.Size(934, 514);
+            this.card.TabIndex = 35;
             // 
             // panel1
             // 
@@ -667,138 +667,138 @@
             this.label36.Text = "N/A";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // courseAnswerDegree
+            // logo
             // 
-            this.courseAnswerDegree.BackColor = System.Drawing.Color.Transparent;
-            this.courseAnswerDegree.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.courseAnswerDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.courseAnswerDegree.Location = new System.Drawing.Point(700, 231);
-            this.courseAnswerDegree.Name = "courseAnswerDegree";
-            this.courseAnswerDegree.Size = new System.Drawing.Size(150, 28);
-            this.courseAnswerDegree.TabIndex = 34;
-            this.courseAnswerDegree.Text = "BSIT";
-            this.courseAnswerDegree.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Image = global::StudentPortal.Properties.Resources.logo;
+            this.logo.Location = new System.Drawing.Point(423, 30);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(150, 150);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo.TabIndex = 5;
+            this.logo.TabStop = false;
             // 
-            // nameAnswerDegree
+            // studentCourse
             // 
-            this.nameAnswerDegree.BackColor = System.Drawing.Color.Transparent;
-            this.nameAnswerDegree.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameAnswerDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.nameAnswerDegree.Location = new System.Drawing.Point(212, 249);
-            this.nameAnswerDegree.Name = "nameAnswerDegree";
-            this.nameAnswerDegree.Size = new System.Drawing.Size(300, 28);
-            this.nameAnswerDegree.TabIndex = 30;
-            this.nameAnswerDegree.Text = "User Username";
-            this.nameAnswerDegree.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentCourse.BackColor = System.Drawing.Color.Transparent;
+            this.studentCourse.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentCourse.Location = new System.Drawing.Point(700, 231);
+            this.studentCourse.Name = "studentCourse";
+            this.studentCourse.Size = new System.Drawing.Size(150, 28);
+            this.studentCourse.TabIndex = 34;
+            this.studentCourse.Text = "BSIT";
+            this.studentCourse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // numberAnswerDegree
+            // studentName
             // 
-            this.numberAnswerDegree.BackColor = System.Drawing.Color.Transparent;
-            this.numberAnswerDegree.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberAnswerDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.numberAnswerDegree.Location = new System.Drawing.Point(212, 282);
-            this.numberAnswerDegree.Name = "numberAnswerDegree";
-            this.numberAnswerDegree.Size = new System.Drawing.Size(300, 28);
-            this.numberAnswerDegree.TabIndex = 31;
-            this.numberAnswerDegree.Text = "202111966";
-            this.numberAnswerDegree.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentName.BackColor = System.Drawing.Color.Transparent;
+            this.studentName.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentName.Location = new System.Drawing.Point(212, 249);
+            this.studentName.Name = "studentName";
+            this.studentName.Size = new System.Drawing.Size(300, 28);
+            this.studentName.TabIndex = 30;
+            this.studentName.Text = "User Username";
+            this.studentName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // statusAnswerDegree
+            // studentNumber
             // 
-            this.statusAnswerDegree.BackColor = System.Drawing.Color.Transparent;
-            this.statusAnswerDegree.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusAnswerDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.statusAnswerDegree.Location = new System.Drawing.Point(212, 315);
-            this.statusAnswerDegree.Name = "statusAnswerDegree";
-            this.statusAnswerDegree.Size = new System.Drawing.Size(300, 28);
-            this.statusAnswerDegree.TabIndex = 32;
-            this.statusAnswerDegree.Text = "Regular";
-            this.statusAnswerDegree.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentNumber.BackColor = System.Drawing.Color.Transparent;
+            this.studentNumber.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentNumber.Location = new System.Drawing.Point(212, 282);
+            this.studentNumber.Name = "studentNumber";
+            this.studentNumber.Size = new System.Drawing.Size(300, 28);
+            this.studentNumber.TabIndex = 31;
+            this.studentNumber.Text = "202111966";
+            this.studentNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // brandNameDegree
+            // studentStatus
             // 
-            this.brandNameDegree.BackColor = System.Drawing.Color.Transparent;
-            this.brandNameDegree.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brandNameDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.brandNameDegree.Location = new System.Drawing.Point(347, 180);
-            this.brandNameDegree.Name = "brandNameDegree";
-            this.brandNameDegree.Size = new System.Drawing.Size(305, 44);
-            this.brandNameDegree.TabIndex = 14;
-            this.brandNameDegree.Text = "STUDENT PORTAL";
-            this.brandNameDegree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.studentStatus.BackColor = System.Drawing.Color.Transparent;
+            this.studentStatus.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentStatus.Location = new System.Drawing.Point(212, 315);
+            this.studentStatus.Name = "studentStatus";
+            this.studentStatus.Size = new System.Drawing.Size(300, 28);
+            this.studentStatus.TabIndex = 32;
+            this.studentStatus.Text = "Regular";
+            this.studentStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // studentNumLabelDegree
+            // brandName
             // 
-            this.studentNumLabelDegree.BackColor = System.Drawing.Color.Transparent;
-            this.studentNumLabelDegree.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNumLabelDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentNumLabelDegree.Location = new System.Drawing.Point(34, 282);
-            this.studentNumLabelDegree.Name = "studentNumLabelDegree";
-            this.studentNumLabelDegree.Size = new System.Drawing.Size(170, 28);
-            this.studentNumLabelDegree.TabIndex = 16;
-            this.studentNumLabelDegree.Text = "Student Number:";
-            this.studentNumLabelDegree.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.brandName.BackColor = System.Drawing.Color.Transparent;
+            this.brandName.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brandName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.brandName.Location = new System.Drawing.Point(347, 180);
+            this.brandName.Name = "brandName";
+            this.brandName.Size = new System.Drawing.Size(305, 44);
+            this.brandName.TabIndex = 14;
+            this.brandName.Text = "STUDENT PORTAL";
+            this.brandName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // studentNameLabelDegree
+            // studentNumberLabel
             // 
-            this.studentNameLabelDegree.BackColor = System.Drawing.Color.Transparent;
-            this.studentNameLabelDegree.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNameLabelDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentNameLabelDegree.Location = new System.Drawing.Point(34, 249);
-            this.studentNameLabelDegree.Name = "studentNameLabelDegree";
-            this.studentNameLabelDegree.Size = new System.Drawing.Size(170, 28);
-            this.studentNameLabelDegree.TabIndex = 28;
-            this.studentNameLabelDegree.Text = "Student Name:";
-            this.studentNameLabelDegree.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentNumberLabel.BackColor = System.Drawing.Color.Transparent;
+            this.studentNumberLabel.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumberLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentNumberLabel.Location = new System.Drawing.Point(34, 282);
+            this.studentNumberLabel.Name = "studentNumberLabel";
+            this.studentNumberLabel.Size = new System.Drawing.Size(170, 28);
+            this.studentNumberLabel.TabIndex = 16;
+            this.studentNumberLabel.Text = "Student Number:";
+            this.studentNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // studentStatusLabelDegree
+            // studentNameLabel
             // 
-            this.studentStatusLabelDegree.BackColor = System.Drawing.Color.Transparent;
-            this.studentStatusLabelDegree.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentStatusLabelDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentStatusLabelDegree.Location = new System.Drawing.Point(34, 315);
-            this.studentStatusLabelDegree.Name = "studentStatusLabelDegree";
-            this.studentStatusLabelDegree.Size = new System.Drawing.Size(170, 28);
-            this.studentStatusLabelDegree.TabIndex = 29;
-            this.studentStatusLabelDegree.Text = "Status:";
-            this.studentStatusLabelDegree.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.studentNameLabel.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentNameLabel.Location = new System.Drawing.Point(34, 249);
+            this.studentNameLabel.Name = "studentNameLabel";
+            this.studentNameLabel.Size = new System.Drawing.Size(170, 28);
+            this.studentNameLabel.TabIndex = 28;
+            this.studentNameLabel.Text = "Student Name:";
+            this.studentNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // studentCourseLabelDegree
+            // studentStatusLabel
             // 
-            this.studentCourseLabelDegree.BackColor = System.Drawing.Color.Transparent;
-            this.studentCourseLabelDegree.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentCourseLabelDegree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentCourseLabelDegree.Location = new System.Drawing.Point(600, 231);
-            this.studentCourseLabelDegree.Name = "studentCourseLabelDegree";
-            this.studentCourseLabelDegree.Size = new System.Drawing.Size(170, 28);
-            this.studentCourseLabelDegree.TabIndex = 33;
-            this.studentCourseLabelDegree.Text = "Course:";
-            this.studentCourseLabelDegree.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentStatusLabel.BackColor = System.Drawing.Color.Transparent;
+            this.studentStatusLabel.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentStatusLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentStatusLabel.Location = new System.Drawing.Point(34, 315);
+            this.studentStatusLabel.Name = "studentStatusLabel";
+            this.studentStatusLabel.Size = new System.Drawing.Size(170, 28);
+            this.studentStatusLabel.TabIndex = 29;
+            this.studentStatusLabel.Text = "Status:";
+            this.studentStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // downloadBtnDegree
+            // studentCourseLabel
             // 
-            this.downloadBtnDegree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.downloadBtnDegree.FlatAppearance.BorderSize = 0;
-            this.downloadBtnDegree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.downloadBtnDegree.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.downloadBtnDegree.ForeColor = System.Drawing.Color.White;
-            this.downloadBtnDegree.Location = new System.Drawing.Point(350, 915);
-            this.downloadBtnDegree.Name = "downloadBtnDegree";
-            this.downloadBtnDegree.Size = new System.Drawing.Size(300, 80);
-            this.downloadBtnDegree.TabIndex = 20;
-            this.downloadBtnDegree.Text = "Download";
-            this.downloadBtnDegree.UseVisualStyleBackColor = false;
+            this.studentCourseLabel.BackColor = System.Drawing.Color.Transparent;
+            this.studentCourseLabel.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentCourseLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentCourseLabel.Location = new System.Drawing.Point(600, 231);
+            this.studentCourseLabel.Name = "studentCourseLabel";
+            this.studentCourseLabel.Size = new System.Drawing.Size(170, 28);
+            this.studentCourseLabel.TabIndex = 33;
+            this.studentCourseLabel.Text = "Course:";
+            this.studentCourseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // logoDegree
+            // downloadBtn
             // 
-            this.logoDegree.BackColor = System.Drawing.Color.Transparent;
-            this.logoDegree.Image = global::StudentPortal.Properties.Resources.logo;
-            this.logoDegree.Location = new System.Drawing.Point(423, 30);
-            this.logoDegree.Name = "logoDegree";
-            this.logoDegree.Size = new System.Drawing.Size(150, 150);
-            this.logoDegree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logoDegree.TabIndex = 5;
-            this.logoDegree.TabStop = false;
+            this.downloadBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.downloadBtn.FlatAppearance.BorderSize = 0;
+            this.downloadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.downloadBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.downloadBtn.ForeColor = System.Drawing.Color.White;
+            this.downloadBtn.Location = new System.Drawing.Point(350, 915);
+            this.downloadBtn.Name = "downloadBtn";
+            this.downloadBtn.Size = new System.Drawing.Size(300, 80);
+            this.downloadBtn.TabIndex = 20;
+            this.downloadBtn.Text = "Download";
+            this.downloadBtn.UseVisualStyleBackColor = false;
             // 
             // Degree
             // 
@@ -809,7 +809,7 @@
             this.Name = "Degree";
             this.Size = new System.Drawing.Size(1000, 1024);
             this.cardHolderPanelDegree.ResumeLayout(false);
-            this.cardDegree.ResumeLayout(false);
+            this.card.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -819,7 +819,7 @@
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.logoDegree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -831,7 +831,7 @@
         private System.Windows.Forms.Label midtermLabel;
         private System.Windows.Forms.Label courseNameLabel;
         private System.Windows.Forms.Label courseCodeLabel;
-        private System.Windows.Forms.TableLayoutPanel cardDegree;
+        private System.Windows.Forms.TableLayoutPanel card;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -877,16 +877,16 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.PictureBox logoDegree;
-        private System.Windows.Forms.Label courseAnswerDegree;
-        private System.Windows.Forms.Label nameAnswerDegree;
-        private System.Windows.Forms.Label numberAnswerDegree;
-        private System.Windows.Forms.Label statusAnswerDegree;
-        private System.Windows.Forms.Label brandNameDegree;
-        private System.Windows.Forms.Label studentNumLabelDegree;
-        private System.Windows.Forms.Label studentNameLabelDegree;
-        private System.Windows.Forms.Label studentStatusLabelDegree;
-        private System.Windows.Forms.Label studentCourseLabelDegree;
-        private System.Windows.Forms.Button downloadBtnDegree;
+        private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.Label studentCourse;
+        private System.Windows.Forms.Label studentName;
+        private System.Windows.Forms.Label studentNumber;
+        private System.Windows.Forms.Label studentStatus;
+        private System.Windows.Forms.Label brandName;
+        private System.Windows.Forms.Label studentNumberLabel;
+        private System.Windows.Forms.Label studentNameLabel;
+        private System.Windows.Forms.Label studentStatusLabel;
+        private System.Windows.Forms.Label studentCourseLabel;
+        private System.Windows.Forms.Button downloadBtn;
     }
 }

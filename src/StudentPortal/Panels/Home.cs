@@ -19,10 +19,10 @@ namespace StudentPortal.Panels
 
         private void Home_Load(object sender, EventArgs e)
         {
-            schoolHeaderHome.Parent = schoolCoverHome;
-            schoolHeaderHome.BackColor = Color.Transparent;
-            schoolHeaderDescHome.Parent = schoolCoverHome;
-            schoolHeaderDescHome.BackColor = Color.Transparent;
+            schoolHeader.Parent = schoolCover;
+            schoolHeader.BackColor = Color.Transparent;
+            schoolHeaderDesc.Parent = schoolCover;
+            schoolHeaderDesc.BackColor = Color.Transparent;
         }
     }
 }

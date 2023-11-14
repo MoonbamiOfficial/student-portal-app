@@ -19,8 +19,8 @@ namespace StudentPortal.Panels
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            logoProfile.Parent = studentCoverProfile;
-            logoProfile.BackColor = Color.Transparent;
+            logo.Parent = studentCover;
+            logo.BackColor = Color.Transparent;
         }
     }
 }

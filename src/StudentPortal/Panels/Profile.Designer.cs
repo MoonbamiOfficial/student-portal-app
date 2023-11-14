@@ -28,265 +28,265 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.passwordLabelProfile = new System.Windows.Forms.Label();
-            this.emaiLabelProfile = new System.Windows.Forms.Label();
-            this.studentNumberProfile = new System.Windows.Forms.Label();
-            this.studentEmailProfile = new System.Windows.Forms.Label();
-            this.studentNameProfile = new System.Windows.Forms.Label();
-            this.confirmPasswordLabelProfile = new System.Windows.Forms.Label();
-            this.editBtnProfile = new System.Windows.Forms.Button();
-            this.emailTextboxProfile = new System.Windows.Forms.TextBox();
-            this.passwordTextboxProfile = new System.Windows.Forms.TextBox();
-            this.confirmPasswordTextboxProfile = new System.Windows.Forms.TextBox();
-            this.emailBgProfile = new System.Windows.Forms.Panel();
-            this.confirmPasswordBgProfile = new System.Windows.Forms.Panel();
-            this.passwordBgProfile = new System.Windows.Forms.Panel();
-            this.studentIconProfile = new StudentPortal.StudentPortalControls.pictureBoxCustom();
-            this.logoProfile = new System.Windows.Forms.PictureBox();
-            this.studentCoverProfile = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.studentIconProfile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoProfile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentCoverProfile)).BeginInit();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.studentNumber = new System.Windows.Forms.Label();
+            this.studentEmail = new System.Windows.Forms.Label();
+            this.studentName = new System.Windows.Forms.Label();
+            this.confirmPasswordLabel = new System.Windows.Forms.Label();
+            this.editBtn = new System.Windows.Forms.Button();
+            this.emailTextbox = new System.Windows.Forms.TextBox();
+            this.passwordTextbox = new System.Windows.Forms.TextBox();
+            this.confirmPasswordTextbox = new System.Windows.Forms.TextBox();
+            this.emailBg = new System.Windows.Forms.Panel();
+            this.confirmPasswordBg = new System.Windows.Forms.Panel();
+            this.passwordBg = new System.Windows.Forms.Panel();
+            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.studentCover = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentCover)).BeginInit();
             this.SuspendLayout();
             // 
-            // passwordLabelProfile
+            // passwordLabel
             // 
-            this.passwordLabelProfile.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabelProfile.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabelProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.passwordLabelProfile.Location = new System.Drawing.Point(80, 652);
-            this.passwordLabelProfile.Name = "passwordLabelProfile";
-            this.passwordLabelProfile.Size = new System.Drawing.Size(117, 34);
-            this.passwordLabelProfile.TabIndex = 18;
-            this.passwordLabelProfile.Text = "Password";
-            this.passwordLabelProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.passwordLabel.Location = new System.Drawing.Point(80, 652);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(117, 34);
+            this.passwordLabel.TabIndex = 18;
+            this.passwordLabel.Text = "Password";
+            this.passwordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // emaiLabelProfile
+            // emailLabel
             // 
-            this.emaiLabelProfile.BackColor = System.Drawing.Color.Transparent;
-            this.emaiLabelProfile.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emaiLabelProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.emaiLabelProfile.Location = new System.Drawing.Point(559, 652);
-            this.emaiLabelProfile.Name = "emaiLabelProfile";
-            this.emaiLabelProfile.Size = new System.Drawing.Size(67, 34);
-            this.emaiLabelProfile.TabIndex = 17;
-            this.emaiLabelProfile.Text = "Email";
-            this.emaiLabelProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.emailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.emailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.emailLabel.Location = new System.Drawing.Point(559, 652);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(67, 34);
+            this.emailLabel.TabIndex = 17;
+            this.emailLabel.Text = "Email";
+            this.emailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // studentNumberProfile
+            // studentNumber
             // 
-            this.studentNumberProfile.BackColor = System.Drawing.Color.Transparent;
-            this.studentNumberProfile.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNumberProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentNumberProfile.Location = new System.Drawing.Point(860, 423);
-            this.studentNumberProfile.Name = "studentNumberProfile";
-            this.studentNumberProfile.Size = new System.Drawing.Size(110, 28);
-            this.studentNumberProfile.TabIndex = 16;
-            this.studentNumberProfile.Text = "#202111966";
-            this.studentNumberProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentNumber.BackColor = System.Drawing.Color.Transparent;
+            this.studentNumber.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentNumber.Location = new System.Drawing.Point(860, 423);
+            this.studentNumber.Name = "studentNumber";
+            this.studentNumber.Size = new System.Drawing.Size(110, 28);
+            this.studentNumber.TabIndex = 16;
+            this.studentNumber.Text = "#202111966";
+            this.studentNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // studentEmailProfile
+            // studentEmail
             // 
-            this.studentEmailProfile.BackColor = System.Drawing.Color.Transparent;
-            this.studentEmailProfile.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentEmailProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentEmailProfile.Location = new System.Drawing.Point(316, 458);
-            this.studentEmailProfile.Name = "studentEmailProfile";
-            this.studentEmailProfile.Size = new System.Drawing.Size(420, 28);
-            this.studentEmailProfile.TabIndex = 15;
-            this.studentEmailProfile.Text = "user_student@gmail.com";
-            this.studentEmailProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentEmail.BackColor = System.Drawing.Color.Transparent;
+            this.studentEmail.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentEmail.Location = new System.Drawing.Point(316, 458);
+            this.studentEmail.Name = "studentEmail";
+            this.studentEmail.Size = new System.Drawing.Size(420, 28);
+            this.studentEmail.TabIndex = 15;
+            this.studentEmail.Text = "user_student@gmail.com";
+            this.studentEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // studentNameProfile
+            // studentName
             // 
-            this.studentNameProfile.BackColor = System.Drawing.Color.Transparent;
-            this.studentNameProfile.Font = new System.Drawing.Font("Poppins SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNameProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentNameProfile.Location = new System.Drawing.Point(316, 410);
-            this.studentNameProfile.Name = "studentNameProfile";
-            this.studentNameProfile.Size = new System.Drawing.Size(420, 48);
-            this.studentNameProfile.TabIndex = 14;
-            this.studentNameProfile.Text = "User Username";
-            this.studentNameProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentName.BackColor = System.Drawing.Color.Transparent;
+            this.studentName.Font = new System.Drawing.Font("Poppins SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentName.Location = new System.Drawing.Point(316, 410);
+            this.studentName.Name = "studentName";
+            this.studentName.Size = new System.Drawing.Size(420, 48);
+            this.studentName.TabIndex = 14;
+            this.studentName.Text = "User Username";
+            this.studentName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // confirmPasswordLabelProfile
+            // confirmPasswordLabel
             // 
-            this.confirmPasswordLabelProfile.BackColor = System.Drawing.Color.Transparent;
-            this.confirmPasswordLabelProfile.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmPasswordLabelProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.confirmPasswordLabelProfile.Location = new System.Drawing.Point(80, 816);
-            this.confirmPasswordLabelProfile.Name = "confirmPasswordLabelProfile";
-            this.confirmPasswordLabelProfile.Size = new System.Drawing.Size(221, 34);
-            this.confirmPasswordLabelProfile.TabIndex = 19;
-            this.confirmPasswordLabelProfile.Text = "Confirm Password";
-            this.confirmPasswordLabelProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.confirmPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.confirmPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.confirmPasswordLabel.Location = new System.Drawing.Point(80, 816);
+            this.confirmPasswordLabel.Name = "confirmPasswordLabel";
+            this.confirmPasswordLabel.Size = new System.Drawing.Size(221, 34);
+            this.confirmPasswordLabel.TabIndex = 19;
+            this.confirmPasswordLabel.Text = "Confirm Password";
+            this.confirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // editBtnProfile
+            // editBtn
             // 
-            this.editBtnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.editBtnProfile.FlatAppearance.BorderSize = 0;
-            this.editBtnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editBtnProfile.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editBtnProfile.ForeColor = System.Drawing.Color.White;
-            this.editBtnProfile.Location = new System.Drawing.Point(599, 850);
-            this.editBtnProfile.Name = "editBtnProfile";
-            this.editBtnProfile.Size = new System.Drawing.Size(300, 80);
-            this.editBtnProfile.TabIndex = 20;
-            this.editBtnProfile.Text = "Edit";
-            this.editBtnProfile.UseVisualStyleBackColor = false;
+            this.editBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.editBtn.FlatAppearance.BorderSize = 0;
+            this.editBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editBtn.ForeColor = System.Drawing.Color.White;
+            this.editBtn.Location = new System.Drawing.Point(599, 850);
+            this.editBtn.Name = "editBtn";
+            this.editBtn.Size = new System.Drawing.Size(300, 80);
+            this.editBtn.TabIndex = 20;
+            this.editBtn.Text = "Edit";
+            this.editBtn.UseVisualStyleBackColor = false;
             // 
-            // emailTextboxProfile
+            // emailTextbox
             // 
-            this.emailTextboxProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.emailTextboxProfile.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.emailTextboxProfile.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextboxProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.emailTextboxProfile.Location = new System.Drawing.Point(579, 712);
-            this.emailTextboxProfile.Name = "emailTextboxProfile";
-            this.emailTextboxProfile.Size = new System.Drawing.Size(340, 29);
-            this.emailTextboxProfile.TabIndex = 26;
-            this.emailTextboxProfile.Text = "Aa";
+            this.emailTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.emailTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emailTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.emailTextbox.Location = new System.Drawing.Point(579, 712);
+            this.emailTextbox.Name = "emailTextbox";
+            this.emailTextbox.Size = new System.Drawing.Size(340, 29);
+            this.emailTextbox.TabIndex = 26;
+            this.emailTextbox.Text = "Aa";
             // 
-            // passwordTextboxProfile
+            // passwordTextbox
             // 
-            this.passwordTextboxProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.passwordTextboxProfile.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextboxProfile.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextboxProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.passwordTextboxProfile.Location = new System.Drawing.Point(80, 712);
-            this.passwordTextboxProfile.Name = "passwordTextboxProfile";
-            this.passwordTextboxProfile.Size = new System.Drawing.Size(340, 29);
-            this.passwordTextboxProfile.TabIndex = 22;
-            this.passwordTextboxProfile.Text = "Aa";
+            this.passwordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.passwordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.passwordTextbox.Location = new System.Drawing.Point(80, 712);
+            this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.Size = new System.Drawing.Size(340, 29);
+            this.passwordTextbox.TabIndex = 22;
+            this.passwordTextbox.Text = "Aa";
             // 
-            // confirmPasswordTextboxProfile
+            // confirmPasswordTextbox
             // 
-            this.confirmPasswordTextboxProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.confirmPasswordTextboxProfile.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.confirmPasswordTextboxProfile.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmPasswordTextboxProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.confirmPasswordTextboxProfile.Location = new System.Drawing.Point(80, 876);
-            this.confirmPasswordTextboxProfile.Name = "confirmPasswordTextboxProfile";
-            this.confirmPasswordTextboxProfile.Size = new System.Drawing.Size(340, 29);
-            this.confirmPasswordTextboxProfile.TabIndex = 24;
-            this.confirmPasswordTextboxProfile.Text = "Aa";
+            this.confirmPasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.confirmPasswordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.confirmPasswordTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.confirmPasswordTextbox.Location = new System.Drawing.Point(80, 876);
+            this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
+            this.confirmPasswordTextbox.Size = new System.Drawing.Size(340, 29);
+            this.confirmPasswordTextbox.TabIndex = 24;
+            this.confirmPasswordTextbox.Text = "Aa";
             // 
-            // emailBgProfile
+            // emailBg
             // 
-            this.emailBgProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.emailBgProfile.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.emailBgProfile.Location = new System.Drawing.Point(549, 686);
-            this.emailBgProfile.Name = "emailBgProfile";
-            this.emailBgProfile.Size = new System.Drawing.Size(400, 80);
-            this.emailBgProfile.TabIndex = 25;
+            this.emailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.emailBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailBg.Location = new System.Drawing.Point(549, 686);
+            this.emailBg.Name = "emailBg";
+            this.emailBg.Size = new System.Drawing.Size(400, 80);
+            this.emailBg.TabIndex = 25;
             // 
-            // confirmPasswordBgProfile
+            // confirmPasswordBg
             // 
-            this.confirmPasswordBgProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.confirmPasswordBgProfile.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.confirmPasswordBgProfile.Location = new System.Drawing.Point(50, 850);
-            this.confirmPasswordBgProfile.Name = "confirmPasswordBgProfile";
-            this.confirmPasswordBgProfile.Size = new System.Drawing.Size(400, 80);
-            this.confirmPasswordBgProfile.TabIndex = 23;
+            this.confirmPasswordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.confirmPasswordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.confirmPasswordBg.Location = new System.Drawing.Point(50, 850);
+            this.confirmPasswordBg.Name = "confirmPasswordBg";
+            this.confirmPasswordBg.Size = new System.Drawing.Size(400, 80);
+            this.confirmPasswordBg.TabIndex = 23;
             // 
-            // passwordBgProfile
+            // passwordBg
             // 
-            this.passwordBgProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.passwordBgProfile.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.passwordBgProfile.Location = new System.Drawing.Point(50, 686);
-            this.passwordBgProfile.Name = "passwordBgProfile";
-            this.passwordBgProfile.Size = new System.Drawing.Size(400, 80);
-            this.passwordBgProfile.TabIndex = 21;
+            this.passwordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.passwordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordBg.Location = new System.Drawing.Point(50, 686);
+            this.passwordBg.Name = "passwordBg";
+            this.passwordBg.Size = new System.Drawing.Size(400, 80);
+            this.passwordBg.TabIndex = 21;
             // 
-            // studentIconProfile
+            // studentIcon
             // 
-            this.studentIconProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentIconProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.studentIconProfile.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.studentIconProfile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIconProfile.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIconProfile.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.studentIconProfile.BorderSize = 8;
-            this.studentIconProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.studentIconProfile.GradientAngle = 0F;
-            this.studentIconProfile.Image = global::StudentPortal.Properties.Resources.maleStudent;
-            this.studentIconProfile.Location = new System.Drawing.Point(50, 285);
-            this.studentIconProfile.Margin = new System.Windows.Forms.Padding(0);
-            this.studentIconProfile.Name = "studentIconProfile";
-            this.studentIconProfile.Size = new System.Drawing.Size(250, 250);
-            this.studentIconProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.studentIconProfile.TabIndex = 14;
-            this.studentIconProfile.TabStop = false;
+            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.studentIcon.BorderSize = 8;
+            this.studentIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.studentIcon.GradientAngle = 0F;
+            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
+            this.studentIcon.Location = new System.Drawing.Point(50, 285);
+            this.studentIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.studentIcon.Name = "studentIcon";
+            this.studentIcon.Size = new System.Drawing.Size(250, 250);
+            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentIcon.TabIndex = 14;
+            this.studentIcon.TabStop = false;
             // 
-            // logoProfile
+            // logo
             // 
-            this.logoProfile.BackColor = System.Drawing.Color.Transparent;
-            this.logoProfile.Image = global::StudentPortal.Properties.Resources.logo;
-            this.logoProfile.Location = new System.Drawing.Point(820, 220);
-            this.logoProfile.Name = "logoProfile";
-            this.logoProfile.Size = new System.Drawing.Size(150, 150);
-            this.logoProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logoProfile.TabIndex = 5;
-            this.logoProfile.TabStop = false;
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Image = global::StudentPortal.Properties.Resources.logo;
+            this.logo.Location = new System.Drawing.Point(820, 220);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(150, 150);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo.TabIndex = 5;
+            this.logo.TabStop = false;
             // 
-            // studentCoverProfile
+            // studentCover
             // 
-            this.studentCoverProfile.Image = global::StudentPortal.Properties.Resources.entrance;
-            this.studentCoverProfile.Location = new System.Drawing.Point(0, 0);
-            this.studentCoverProfile.Name = "studentCoverProfile";
-            this.studentCoverProfile.Size = new System.Drawing.Size(1000, 400);
-            this.studentCoverProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.studentCoverProfile.TabIndex = 4;
-            this.studentCoverProfile.TabStop = false;
+            this.studentCover.Image = global::StudentPortal.Properties.Resources.entrance;
+            this.studentCover.Location = new System.Drawing.Point(0, 0);
+            this.studentCover.Name = "studentCover";
+            this.studentCover.Size = new System.Drawing.Size(1000, 400);
+            this.studentCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentCover.TabIndex = 4;
+            this.studentCover.TabStop = false;
             // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.Controls.Add(this.studentIconProfile);
-            this.Controls.Add(this.logoProfile);
-            this.Controls.Add(this.studentCoverProfile);
-            this.Controls.Add(this.passwordLabelProfile);
-            this.Controls.Add(this.emaiLabelProfile);
-            this.Controls.Add(this.studentNumberProfile);
-            this.Controls.Add(this.studentEmailProfile);
-            this.Controls.Add(this.studentNameProfile);
-            this.Controls.Add(this.confirmPasswordLabelProfile);
-            this.Controls.Add(this.editBtnProfile);
-            this.Controls.Add(this.emailTextboxProfile);
-            this.Controls.Add(this.passwordTextboxProfile);
-            this.Controls.Add(this.confirmPasswordTextboxProfile);
-            this.Controls.Add(this.passwordBgProfile);
-            this.Controls.Add(this.confirmPasswordBgProfile);
-            this.Controls.Add(this.emailBgProfile);
+            this.Controls.Add(this.studentIcon);
+            this.Controls.Add(this.logo);
+            this.Controls.Add(this.studentCover);
+            this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.emailLabel);
+            this.Controls.Add(this.studentNumber);
+            this.Controls.Add(this.studentEmail);
+            this.Controls.Add(this.studentName);
+            this.Controls.Add(this.confirmPasswordLabel);
+            this.Controls.Add(this.editBtn);
+            this.Controls.Add(this.emailTextbox);
+            this.Controls.Add(this.passwordTextbox);
+            this.Controls.Add(this.confirmPasswordTextbox);
+            this.Controls.Add(this.passwordBg);
+            this.Controls.Add(this.confirmPasswordBg);
+            this.Controls.Add(this.emailBg);
             this.Name = "Profile";
             this.Size = new System.Drawing.Size(1000, 1024);
             this.Load += new System.EventHandler(this.Profile_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.studentIconProfile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoProfile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentCoverProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentCover)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private StudentPortalControls.pictureBoxCustom studentIconProfile;
-        private System.Windows.Forms.PictureBox logoProfile;
-        private System.Windows.Forms.PictureBox studentCoverProfile;
-        private System.Windows.Forms.Label passwordLabelProfile;
-        private System.Windows.Forms.Label emaiLabelProfile;
-        private System.Windows.Forms.Label studentNumberProfile;
-        private System.Windows.Forms.Label studentEmailProfile;
-        private System.Windows.Forms.Label studentNameProfile;
-        private System.Windows.Forms.Label confirmPasswordLabelProfile;
-        private System.Windows.Forms.Button editBtnProfile;
-        private System.Windows.Forms.TextBox emailTextboxProfile;
-        private System.Windows.Forms.TextBox passwordTextboxProfile;
-        private System.Windows.Forms.TextBox confirmPasswordTextboxProfile;
-        private System.Windows.Forms.Panel emailBgProfile;
-        private System.Windows.Forms.Panel confirmPasswordBgProfile;
-        private System.Windows.Forms.Panel passwordBgProfile;
+        private StudentPortalControls.pictureBoxCustom studentIcon;
+        private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.PictureBox studentCover;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.Label emailLabel;
+        private System.Windows.Forms.Label studentNumber;
+        private System.Windows.Forms.Label studentEmail;
+        private System.Windows.Forms.Label studentName;
+        private System.Windows.Forms.Label confirmPasswordLabel;
+        private System.Windows.Forms.Button editBtn;
+        private System.Windows.Forms.TextBox emailTextbox;
+        private System.Windows.Forms.TextBox passwordTextbox;
+        private System.Windows.Forms.TextBox confirmPasswordTextbox;
+        private System.Windows.Forms.Panel emailBg;
+        private System.Windows.Forms.Panel confirmPasswordBg;
+        private System.Windows.Forms.Panel passwordBg;
     }
 }
