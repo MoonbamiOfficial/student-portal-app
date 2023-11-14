@@ -16,5 +16,14 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
+
+        // Sets the background of label to transparent when the form loads
+        private void HomeForm_Load(object sender, EventArgs e)
+        {
+            schoolHeader.Parent = schoolCover;
+            schoolCover.BackColor = Color.Transparent;
+            schoolHeaderDesc.Parent = schoolCover;
+            schoolHeaderDesc.BackColor = Color.Transparent;
+        }
     }
 }
