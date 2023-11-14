@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace StudentPortal
 {
-    public partial class loginForm : Form
+    public partial class LoginForm : Form
     {
-        public loginForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            registerForm RegisterForm = new registerForm();
+            RegisterForm RegisterForm = new RegisterForm();
             RegisterForm.Show();
         }
 
