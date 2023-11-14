@@ -1,6 +1,6 @@
 ﻿namespace StudentPortal
 {
-    partial class HomeForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.userName = new System.Windows.Forms.Label();
             this.sideNavBg = new System.Windows.Forms.Panel();
             this.userIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
@@ -45,10 +45,23 @@
             this.desc = new System.Windows.Forms.Label();
             this.schoolCover = new System.Windows.Forms.PictureBox();
             this.schoolLogo = new System.Windows.Forms.PictureBox();
+            this.homePanel = new System.Windows.Forms.Panel();
+            this.profilePanel = new System.Windows.Forms.Panel();
+            this.studentNumber = new System.Windows.Forms.Label();
+            this.studentEmail = new System.Windows.Forms.Label();
+            this.studentName = new System.Windows.Forms.Label();
+            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.userCover = new System.Windows.Forms.PictureBox();
             this.sideNavBg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).BeginInit();
+            this.homePanel.SuspendLayout();
+            this.profilePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userCover)).BeginInit();
             this.SuspendLayout();
             // 
             // userName
@@ -315,22 +328,121 @@
             this.schoolLogo.TabIndex = 8;
             this.schoolLogo.TabStop = false;
             // 
-            // HomeForm
+            // homePanel
+            // 
+            this.homePanel.Controls.Add(this.schoolLogo);
+            this.homePanel.Controls.Add(this.desc);
+            this.homePanel.Controls.Add(this.header);
+            this.homePanel.Controls.Add(this.schoolHeaderDesc);
+            this.homePanel.Controls.Add(this.schoolHeader);
+            this.homePanel.Controls.Add(this.schoolCover);
+            this.homePanel.Location = new System.Drawing.Point(0, 0);
+            this.homePanel.Name = "homePanel";
+            this.homePanel.Size = new System.Drawing.Size(1440, 1024);
+            this.homePanel.TabIndex = 9;
+            // 
+            // profilePanel
+            // 
+            this.profilePanel.Controls.Add(this.studentNumber);
+            this.profilePanel.Controls.Add(this.studentEmail);
+            this.profilePanel.Controls.Add(this.studentName);
+            this.profilePanel.Controls.Add(this.studentIcon);
+            this.profilePanel.Controls.Add(this.logo);
+            this.profilePanel.Controls.Add(this.userCover);
+            this.profilePanel.Location = new System.Drawing.Point(0, 0);
+            this.profilePanel.Name = "profilePanel";
+            this.profilePanel.Size = new System.Drawing.Size(1440, 1024);
+            this.profilePanel.TabIndex = 18;
+            // 
+            // studentNumber
+            // 
+            this.studentNumber.BackColor = System.Drawing.Color.Transparent;
+            this.studentNumber.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentNumber.Location = new System.Drawing.Point(1182, 423);
+            this.studentNumber.Name = "studentNumber";
+            this.studentNumber.Size = new System.Drawing.Size(110, 28);
+            this.studentNumber.TabIndex = 16;
+            this.studentNumber.Text = "#202111966";
+            this.studentNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // studentEmail
+            // 
+            this.studentEmail.BackColor = System.Drawing.Color.Transparent;
+            this.studentEmail.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentEmail.Location = new System.Drawing.Point(756, 458);
+            this.studentEmail.Name = "studentEmail";
+            this.studentEmail.Size = new System.Drawing.Size(420, 28);
+            this.studentEmail.TabIndex = 15;
+            this.studentEmail.Text = "user_student@gmail.com";
+            this.studentEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // studentName
+            // 
+            this.studentName.BackColor = System.Drawing.Color.Transparent;
+            this.studentName.Font = new System.Drawing.Font("Poppins SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentName.Location = new System.Drawing.Point(756, 410);
+            this.studentName.Name = "studentName";
+            this.studentName.Size = new System.Drawing.Size(420, 48);
+            this.studentName.TabIndex = 14;
+            this.studentName.Text = "User Username";
+            this.studentName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // studentIcon
+            // 
+            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.studentIcon.BorderSize = 8;
+            this.studentIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.studentIcon.GradientAngle = 0F;
+            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
+            this.studentIcon.Location = new System.Drawing.Point(490, 285);
+            this.studentIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.studentIcon.Name = "studentIcon";
+            this.studentIcon.Size = new System.Drawing.Size(250, 250);
+            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentIcon.TabIndex = 14;
+            this.studentIcon.TabStop = false;
+            // 
+            // logo
+            // 
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Image = global::StudentPortal.Properties.Resources.logo;
+            this.logo.Location = new System.Drawing.Point(1260, 220);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(150, 150);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo.TabIndex = 5;
+            this.logo.TabStop = false;
+            // 
+            // userCover
+            // 
+            this.userCover.Image = global::StudentPortal.Properties.Resources.entrance;
+            this.userCover.Location = new System.Drawing.Point(440, 0);
+            this.userCover.Name = "userCover";
+            this.userCover.Size = new System.Drawing.Size(1000, 400);
+            this.userCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userCover.TabIndex = 4;
+            this.userCover.TabStop = false;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
-            this.Controls.Add(this.schoolLogo);
-            this.Controls.Add(this.desc);
-            this.Controls.Add(this.header);
-            this.Controls.Add(this.schoolHeaderDesc);
-            this.Controls.Add(this.schoolHeader);
-            this.Controls.Add(this.schoolCover);
             this.Controls.Add(this.sideNavBg);
+            this.Controls.Add(this.homePanel);
+            this.Controls.Add(this.profilePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "HomeForm";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.HomeForm_Load);
@@ -338,6 +450,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.userIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).EndInit();
+            this.homePanel.ResumeLayout(false);
+            this.profilePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userCover)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -359,5 +476,13 @@
         private System.Windows.Forms.Label header;
         private System.Windows.Forms.Label desc;
         private System.Windows.Forms.PictureBox schoolLogo;
+        private System.Windows.Forms.Panel homePanel;
+        private System.Windows.Forms.Panel profilePanel;
+        private System.Windows.Forms.Label studentNumber;
+        private System.Windows.Forms.Label studentEmail;
+        private System.Windows.Forms.Label studentName;
+        private StudentPortalControls.pictureBoxCustom studentIcon;
+        private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.PictureBox userCover;
     }
 }
