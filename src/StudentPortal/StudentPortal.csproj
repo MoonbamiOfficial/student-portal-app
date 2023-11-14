@@ -120,17 +120,29 @@
       <DependentUpon>ConfirmationBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
-    <Compile Include="HomeForm.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeForm.Designer.cs">
-      <DependentUpon>HomeForm.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Panels\Degree.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ProfileForm.Designer.cs">
-      <DependentUpon>ProfileForm.cs</DependentUpon>
+    <Compile Include="Panels\Degree.Designer.cs">
+      <DependentUpon>Degree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="StudentPortalControls\buttonCustom.cs">
@@ -166,14 +178,20 @@
     <EmbeddedResource Include="ConfirmationBox.resx">
       <DependentUpon>ConfirmationBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeForm.resx">
-      <DependentUpon>HomeForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfileForm.resx">
-      <DependentUpon>ProfileForm.cs</DependentUpon>
+    <EmbeddedResource Include="Panels\Degree.resx">
+      <DependentUpon>Degree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
