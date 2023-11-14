@@ -41,6 +41,7 @@
             this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.home = new StudentPortal.Panels.Home();
             this.profile = new StudentPortal.Panels.Profile();
+            this.degree = new StudentPortal.Panels.Degree();
             this.sideNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
             this.SuspendLayout();
@@ -248,6 +249,14 @@
             this.profile.Size = new System.Drawing.Size(1000, 1024);
             this.profile.TabIndex = 4;
             // 
+            // degree
+            // 
+            this.degree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.degree.Location = new System.Drawing.Point(440, 0);
+            this.degree.Name = "degree";
+            this.degree.Size = new System.Drawing.Size(1000, 1024);
+            this.degree.TabIndex = 5;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +266,7 @@
             this.Controls.Add(this.sideNav);
             this.Controls.Add(this.home);
             this.Controls.Add(this.profile);
+            this.Controls.Add(this.degree);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -281,5 +291,6 @@
         private FontAwesome.Sharp.IconButton settingBtn;
         private Panels.Home home;
         private Panels.Profile profile;
+        private Panels.Degree degree;
     }
 }
