@@ -21,10 +21,10 @@ namespace StudentPortal
         private void HomeForm_Load(object sender, EventArgs e)
         {
             // Home specifics
-            schoolHeader.Parent = schoolCover;
-            schoolCover.BackColor = Color.Transparent;
-            schoolHeaderDesc.Parent = schoolCover;
-            schoolHeaderDesc.BackColor = Color.Transparent;
+            schoolHeaderHome.Parent = schoolCoverHome;
+            schoolCoverHome.BackColor = Color.Transparent;
+            schoolHeaderDescHome.Parent = schoolCoverHome;
+            schoolHeaderDescHome.BackColor = Color.Transparent;
 
             // Profile specifics
             logoProfile.Parent = studentCoverProfile;
