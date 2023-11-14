@@ -15,7 +15,7 @@ namespace StudentPortal
     {
         private static LoginForm loginForm;
 
-        private LoginForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
