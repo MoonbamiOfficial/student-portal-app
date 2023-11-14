@@ -27,7 +27,7 @@ namespace StudentPortal
             schoolHeaderDesc.BackColor = Color.Transparent;
 
             // Profile specifics
-            logoProfile.Parent = userCoverProfile;
+            logoProfile.Parent = studentCoverProfile;
             logoProfile.BackColor = Color.Transparent;
         }
     }

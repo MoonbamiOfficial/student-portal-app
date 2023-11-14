@@ -52,7 +52,7 @@
             this.studentNameProfile = new System.Windows.Forms.Label();
             this.studentIconProfile = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.logoProfile = new System.Windows.Forms.PictureBox();
-            this.userCoverProfile = new System.Windows.Forms.PictureBox();
+            this.studentCoverProfile = new System.Windows.Forms.PictureBox();
             this.emaiLabelProfile = new System.Windows.Forms.Label();
             this.passwordLabelProfile = new System.Windows.Forms.Label();
             this.confirmPasswordLabelProfile = new System.Windows.Forms.Label();
@@ -64,15 +64,15 @@
             this.emailBgProfile = new System.Windows.Forms.Panel();
             this.emailTextBoxProfile = new System.Windows.Forms.TextBox();
             this.sideNavProfile = new System.Windows.Forms.Panel();
-            this.pictureBoxCustom1 = new StudentPortal.StudentPortalControls.pictureBoxCustom();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.studentIconProfileSideNav = new StudentPortal.StudentPortalControls.pictureBoxCustom();
+            this.studentEmailProfileSideNav = new System.Windows.Forms.Label();
+            this.studentNameProfileSideNav = new System.Windows.Forms.Label();
+            this.homeBtnProfileSideNav = new FontAwesome.Sharp.IconButton();
+            this.profileBtnProfileSideNav = new FontAwesome.Sharp.IconButton();
+            this.degreeBtnProfileSideNav = new FontAwesome.Sharp.IconButton();
+            this.todoBtnProfileSideNav = new FontAwesome.Sharp.IconButton();
+            this.settingBtnProfileSideNav = new FontAwesome.Sharp.IconButton();
+            this.logOutBtnProfileSideNav = new System.Windows.Forms.Button();
             this.degreePanel = new System.Windows.Forms.Panel();
             this.sideNavDegree = new System.Windows.Forms.Panel();
             this.pictureBoxCustom2 = new StudentPortal.StudentPortalControls.pictureBoxCustom();
@@ -99,9 +99,9 @@
             this.profilePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIconProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoProfile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userCoverProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentCoverProfile)).BeginInit();
             this.sideNavProfile.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCustom1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentIconProfileSideNav)).BeginInit();
             this.degreePanel.SuspendLayout();
             this.sideNavDegree.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCustom2)).BeginInit();
@@ -391,7 +391,7 @@
             this.profilePanel.Controls.Add(this.sideNavProfile);
             this.profilePanel.Controls.Add(this.studentIconProfile);
             this.profilePanel.Controls.Add(this.logoProfile);
-            this.profilePanel.Controls.Add(this.userCoverProfile);
+            this.profilePanel.Controls.Add(this.studentCoverProfile);
             this.profilePanel.Controls.Add(this.passwordLabelProfile);
             this.profilePanel.Controls.Add(this.emaiLabelProfile);
             this.profilePanel.Controls.Add(this.studentNumberProfile);
@@ -477,15 +477,15 @@
             this.logoProfile.TabIndex = 5;
             this.logoProfile.TabStop = false;
             // 
-            // userCoverProfile
+            // studentCoverProfile
             // 
-            this.userCoverProfile.Image = global::StudentPortal.Properties.Resources.entrance;
-            this.userCoverProfile.Location = new System.Drawing.Point(440, 0);
-            this.userCoverProfile.Name = "userCoverProfile";
-            this.userCoverProfile.Size = new System.Drawing.Size(1000, 400);
-            this.userCoverProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userCoverProfile.TabIndex = 4;
-            this.userCoverProfile.TabStop = false;
+            this.studentCoverProfile.Image = global::StudentPortal.Properties.Resources.entrance;
+            this.studentCoverProfile.Location = new System.Drawing.Point(440, 0);
+            this.studentCoverProfile.Name = "studentCoverProfile";
+            this.studentCoverProfile.Size = new System.Drawing.Size(1000, 400);
+            this.studentCoverProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentCoverProfile.TabIndex = 4;
+            this.studentCoverProfile.TabStop = false;
             // 
             // emaiLabelProfile
             // 
@@ -603,189 +603,189 @@
             // sideNavProfile
             // 
             this.sideNavProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.sideNavProfile.Controls.Add(this.pictureBoxCustom1);
-            this.sideNavProfile.Controls.Add(this.label1);
-            this.sideNavProfile.Controls.Add(this.label2);
-            this.sideNavProfile.Controls.Add(this.iconButton1);
-            this.sideNavProfile.Controls.Add(this.iconButton2);
-            this.sideNavProfile.Controls.Add(this.iconButton3);
-            this.sideNavProfile.Controls.Add(this.iconButton4);
-            this.sideNavProfile.Controls.Add(this.iconButton5);
-            this.sideNavProfile.Controls.Add(this.button1);
+            this.sideNavProfile.Controls.Add(this.studentIconProfileSideNav);
+            this.sideNavProfile.Controls.Add(this.studentNameProfileSideNav);
+            this.sideNavProfile.Controls.Add(this.studentEmailProfileSideNav);
+            this.sideNavProfile.Controls.Add(this.homeBtnProfileSideNav);
+            this.sideNavProfile.Controls.Add(this.profileBtnProfileSideNav);
+            this.sideNavProfile.Controls.Add(this.degreeBtnProfileSideNav);
+            this.sideNavProfile.Controls.Add(this.todoBtnProfileSideNav);
+            this.sideNavProfile.Controls.Add(this.settingBtnProfileSideNav);
+            this.sideNavProfile.Controls.Add(this.logOutBtnProfileSideNav);
             this.sideNavProfile.Location = new System.Drawing.Point(0, 0);
             this.sideNavProfile.Name = "sideNavProfile";
             this.sideNavProfile.Size = new System.Drawing.Size(440, 1024);
             this.sideNavProfile.TabIndex = 27;
             // 
-            // pictureBoxCustom1
+            // studentIconProfileSideNav
             // 
-            this.pictureBoxCustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.pictureBoxCustom1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pictureBoxCustom1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.pictureBoxCustom1.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.pictureBoxCustom1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.pictureBoxCustom1.BorderSize = 8;
-            this.pictureBoxCustom1.GradientAngle = 0F;
-            this.pictureBoxCustom1.Image = global::StudentPortal.Properties.Resources.maleStudent;
-            this.pictureBoxCustom1.Location = new System.Drawing.Point(134, 50);
-            this.pictureBoxCustom1.Name = "pictureBoxCustom1";
-            this.pictureBoxCustom1.Size = new System.Drawing.Size(150, 150);
-            this.pictureBoxCustom1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxCustom1.TabIndex = 0;
-            this.pictureBoxCustom1.TabStop = false;
+            this.studentIconProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentIconProfileSideNav.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.studentIconProfileSideNav.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIconProfileSideNav.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIconProfileSideNav.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.studentIconProfileSideNav.BorderSize = 8;
+            this.studentIconProfileSideNav.GradientAngle = 0F;
+            this.studentIconProfileSideNav.Image = global::StudentPortal.Properties.Resources.maleStudent;
+            this.studentIconProfileSideNav.Location = new System.Drawing.Point(134, 50);
+            this.studentIconProfileSideNav.Name = "studentIconProfileSideNav";
+            this.studentIconProfileSideNav.Size = new System.Drawing.Size(150, 150);
+            this.studentIconProfileSideNav.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentIconProfileSideNav.TabIndex = 0;
+            this.studentIconProfileSideNav.TabStop = false;
             // 
-            // label1
+            // studentEmailProfileSideNav
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.label1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.label1.Location = new System.Drawing.Point(10, 265);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 30);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "user_student@gmail.com";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.studentEmailProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentEmailProfileSideNav.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentEmailProfileSideNav.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.studentEmailProfileSideNav.Location = new System.Drawing.Point(10, 265);
+            this.studentEmailProfileSideNav.Name = "studentEmailProfileSideNav";
+            this.studentEmailProfileSideNav.Size = new System.Drawing.Size(420, 30);
+            this.studentEmailProfileSideNav.TabIndex = 3;
+            this.studentEmailProfileSideNav.Text = "user_student@gmail.com";
+            this.studentEmailProfileSideNav.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // studentNameProfileSideNav
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.label2.Location = new System.Drawing.Point(10, 220);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(420, 45);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "User Username";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.studentNameProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentNameProfileSideNav.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNameProfileSideNav.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.studentNameProfileSideNav.Location = new System.Drawing.Point(10, 220);
+            this.studentNameProfileSideNav.Name = "studentNameProfileSideNav";
+            this.studentNameProfileSideNav.Size = new System.Drawing.Size(420, 45);
+            this.studentNameProfileSideNav.TabIndex = 1;
+            this.studentNameProfileSideNav.Text = "User Username";
+            this.studentNameProfileSideNav.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // iconButton1
+            // homeBtnProfileSideNav
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.Location = new System.Drawing.Point(0, 316);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(440, 100);
-            this.iconButton1.TabIndex = 9;
-            this.iconButton1.Text = "HOME";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseMnemonic = false;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.homeBtnProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.homeBtnProfileSideNav.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homeBtnProfileSideNav.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.homeBtnProfileSideNav.FlatAppearance.BorderSize = 0;
+            this.homeBtnProfileSideNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homeBtnProfileSideNav.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeBtnProfileSideNav.ForeColor = System.Drawing.Color.White;
+            this.homeBtnProfileSideNav.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.homeBtnProfileSideNav.IconColor = System.Drawing.Color.White;
+            this.homeBtnProfileSideNav.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.homeBtnProfileSideNav.IconSize = 32;
+            this.homeBtnProfileSideNav.Location = new System.Drawing.Point(0, 316);
+            this.homeBtnProfileSideNav.Name = "homeBtnProfileSideNav";
+            this.homeBtnProfileSideNav.Size = new System.Drawing.Size(440, 100);
+            this.homeBtnProfileSideNav.TabIndex = 9;
+            this.homeBtnProfileSideNav.Text = "HOME";
+            this.homeBtnProfileSideNav.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.homeBtnProfileSideNav.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.homeBtnProfileSideNav.UseMnemonic = false;
+            this.homeBtnProfileSideNav.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // profileBtnProfileSideNav
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.iconButton2.FlatAppearance.BorderSize = 5;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton2.IconSize = 32;
-            this.iconButton2.Location = new System.Drawing.Point(0, 416);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(440, 100);
-            this.iconButton2.TabIndex = 10;
-            this.iconButton2.Text = "PROFILE";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseMnemonic = false;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.profileBtnProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.profileBtnProfileSideNav.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.profileBtnProfileSideNav.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.profileBtnProfileSideNav.FlatAppearance.BorderSize = 5;
+            this.profileBtnProfileSideNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.profileBtnProfileSideNav.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileBtnProfileSideNav.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.profileBtnProfileSideNav.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.profileBtnProfileSideNav.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.profileBtnProfileSideNav.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.profileBtnProfileSideNav.IconSize = 32;
+            this.profileBtnProfileSideNav.Location = new System.Drawing.Point(0, 416);
+            this.profileBtnProfileSideNav.Name = "profileBtnProfileSideNav";
+            this.profileBtnProfileSideNav.Size = new System.Drawing.Size(440, 100);
+            this.profileBtnProfileSideNav.TabIndex = 10;
+            this.profileBtnProfileSideNav.Text = "PROFILE";
+            this.profileBtnProfileSideNav.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.profileBtnProfileSideNav.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.profileBtnProfileSideNav.UseMnemonic = false;
+            this.profileBtnProfileSideNav.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // degreeBtnProfileSideNav
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.GraduationCap;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.Location = new System.Drawing.Point(0, 516);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(440, 100);
-            this.iconButton3.TabIndex = 11;
-            this.iconButton3.Text = "DEGREE";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseMnemonic = false;
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.degreeBtnProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.degreeBtnProfileSideNav.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.degreeBtnProfileSideNav.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.degreeBtnProfileSideNav.FlatAppearance.BorderSize = 0;
+            this.degreeBtnProfileSideNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.degreeBtnProfileSideNav.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.degreeBtnProfileSideNav.ForeColor = System.Drawing.Color.White;
+            this.degreeBtnProfileSideNav.IconChar = FontAwesome.Sharp.IconChar.GraduationCap;
+            this.degreeBtnProfileSideNav.IconColor = System.Drawing.Color.White;
+            this.degreeBtnProfileSideNav.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.degreeBtnProfileSideNav.IconSize = 32;
+            this.degreeBtnProfileSideNav.Location = new System.Drawing.Point(0, 516);
+            this.degreeBtnProfileSideNav.Name = "degreeBtnProfileSideNav";
+            this.degreeBtnProfileSideNav.Size = new System.Drawing.Size(440, 100);
+            this.degreeBtnProfileSideNav.TabIndex = 11;
+            this.degreeBtnProfileSideNav.Text = "DEGREE";
+            this.degreeBtnProfileSideNav.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.degreeBtnProfileSideNav.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.degreeBtnProfileSideNav.UseMnemonic = false;
+            this.degreeBtnProfileSideNav.UseVisualStyleBackColor = false;
             // 
-            // iconButton4
+            // todoBtnProfileSideNav
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton4.IconSize = 32;
-            this.iconButton4.Location = new System.Drawing.Point(0, 616);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(440, 100);
-            this.iconButton4.TabIndex = 12;
-            this.iconButton4.Text = "TO-DO";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseMnemonic = false;
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.todoBtnProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.todoBtnProfileSideNav.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.todoBtnProfileSideNav.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.todoBtnProfileSideNav.FlatAppearance.BorderSize = 0;
+            this.todoBtnProfileSideNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.todoBtnProfileSideNav.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todoBtnProfileSideNav.ForeColor = System.Drawing.Color.White;
+            this.todoBtnProfileSideNav.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.todoBtnProfileSideNav.IconColor = System.Drawing.Color.White;
+            this.todoBtnProfileSideNav.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.todoBtnProfileSideNav.IconSize = 32;
+            this.todoBtnProfileSideNav.Location = new System.Drawing.Point(0, 616);
+            this.todoBtnProfileSideNav.Name = "todoBtnProfileSideNav";
+            this.todoBtnProfileSideNav.Size = new System.Drawing.Size(440, 100);
+            this.todoBtnProfileSideNav.TabIndex = 12;
+            this.todoBtnProfileSideNav.Text = "TO-DO";
+            this.todoBtnProfileSideNav.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.todoBtnProfileSideNav.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.todoBtnProfileSideNav.UseMnemonic = false;
+            this.todoBtnProfileSideNav.UseVisualStyleBackColor = false;
             // 
-            // iconButton5
+            // settingBtnProfileSideNav
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.iconButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton5.IconSize = 32;
-            this.iconButton5.Location = new System.Drawing.Point(0, 716);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(440, 100);
-            this.iconButton5.TabIndex = 13;
-            this.iconButton5.Text = "SETTING";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseMnemonic = false;
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.settingBtnProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.settingBtnProfileSideNav.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingBtnProfileSideNav.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.settingBtnProfileSideNav.FlatAppearance.BorderSize = 0;
+            this.settingBtnProfileSideNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingBtnProfileSideNav.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingBtnProfileSideNav.ForeColor = System.Drawing.Color.White;
+            this.settingBtnProfileSideNav.IconChar = FontAwesome.Sharp.IconChar.Wrench;
+            this.settingBtnProfileSideNav.IconColor = System.Drawing.Color.White;
+            this.settingBtnProfileSideNav.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.settingBtnProfileSideNav.IconSize = 32;
+            this.settingBtnProfileSideNav.Location = new System.Drawing.Point(0, 716);
+            this.settingBtnProfileSideNav.Name = "settingBtnProfileSideNav";
+            this.settingBtnProfileSideNav.Size = new System.Drawing.Size(440, 100);
+            this.settingBtnProfileSideNav.TabIndex = 13;
+            this.settingBtnProfileSideNav.Text = "SETTING";
+            this.settingBtnProfileSideNav.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingBtnProfileSideNav.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.settingBtnProfileSideNav.UseMnemonic = false;
+            this.settingBtnProfileSideNav.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // logOutBtnProfileSideNav
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(70, 850);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 80);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Log Out";
-            this.button1.UseVisualStyleBackColor = false;
+            this.logOutBtnProfileSideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.logOutBtnProfileSideNav.FlatAppearance.BorderSize = 0;
+            this.logOutBtnProfileSideNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logOutBtnProfileSideNav.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutBtnProfileSideNav.ForeColor = System.Drawing.Color.White;
+            this.logOutBtnProfileSideNav.Location = new System.Drawing.Point(70, 850);
+            this.logOutBtnProfileSideNav.Name = "logOutBtnProfileSideNav";
+            this.logOutBtnProfileSideNav.Size = new System.Drawing.Size(300, 80);
+            this.logOutBtnProfileSideNav.TabIndex = 1;
+            this.logOutBtnProfileSideNav.Text = "Log Out";
+            this.logOutBtnProfileSideNav.UseVisualStyleBackColor = false;
             // 
             // degreePanel
             // 
@@ -1077,8 +1077,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
-            this.Controls.Add(this.degreePanel);
             this.Controls.Add(this.profilePanel);
+            this.Controls.Add(this.degreePanel);
             this.Controls.Add(this.homePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1095,9 +1095,9 @@
             this.profilePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIconProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoProfile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userCoverProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentCoverProfile)).EndInit();
             this.sideNavProfile.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCustom1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentIconProfileSideNav)).EndInit();
             this.degreePanel.ResumeLayout(false);
             this.sideNavDegree.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCustom2)).EndInit();
@@ -1130,7 +1130,7 @@
         private System.Windows.Forms.Label studentNameProfile;
         private StudentPortalControls.pictureBoxCustom studentIconProfile;
         private System.Windows.Forms.PictureBox logoProfile;
-        private System.Windows.Forms.PictureBox userCoverProfile;
+        private System.Windows.Forms.PictureBox studentCoverProfile;
         private System.Windows.Forms.Label emaiLabelProfile;
         private System.Windows.Forms.Label confirmPasswordLabelProfile;
         private System.Windows.Forms.Label passwordLabelProfile;
@@ -1142,15 +1142,15 @@
         private System.Windows.Forms.TextBox confirmPasswordTextboxProfile;
         private System.Windows.Forms.Panel confirmPasswordBgProfile;
         private System.Windows.Forms.Panel sideNavProfile;
-        private StudentPortalControls.pictureBoxCustom pictureBoxCustom1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private System.Windows.Forms.Button button1;
+        private StudentPortalControls.pictureBoxCustom studentIconProfileSideNav;
+        private System.Windows.Forms.Label studentEmailProfileSideNav;
+        private System.Windows.Forms.Label studentNameProfileSideNav;
+        private FontAwesome.Sharp.IconButton homeBtnProfileSideNav;
+        private FontAwesome.Sharp.IconButton profileBtnProfileSideNav;
+        private FontAwesome.Sharp.IconButton degreeBtnProfileSideNav;
+        private FontAwesome.Sharp.IconButton todoBtnProfileSideNav;
+        private FontAwesome.Sharp.IconButton settingBtnProfileSideNav;
+        private System.Windows.Forms.Button logOutBtnProfileSideNav;
         private System.Windows.Forms.Panel degreePanel;
         private System.Windows.Forms.Panel sideNavDegree;
         private StudentPortalControls.pictureBoxCustom pictureBoxCustom2;
