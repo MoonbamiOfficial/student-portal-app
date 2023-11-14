@@ -107,38 +107,38 @@ namespace StudentPortal
         {
             if (passwordTextbox.Text == "")
             {
-                PasswordTextbox.Text = passwordPlaceholder;
-                PasswordTextbox.UseSystemPasswordChar = false;
+                passwordTextbox.Text = passwordPlaceholder;
+                passwordTextbox.UseSystemPasswordChar = false;
             }
         }
         // ------------ Wrong Email & Password label Setters ------------
         public void setWrongEmailLabel(string message)
         {
-            WrongEmailLabel.Text = message;
+            wrongEmailLabel.Text = message;
         }
         public void setWrongPasswordLabel(string message)
         {
-            WrongPasswordLabel.Text = message;
+            wrongPasswordLabel.Text = message;
         }
 
         public void clearTxtField()
         {
-            EmailTextbox.Text = "";
-            PasswordTextbox.Text = "";
+            emailTextbox.Text = "";
+            passwordTextbox.Text = "";
         }
 
         // ------------ Btn Login Method ------------
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            string email = EmailTextbox.Text;
-            string password = PasswordTextbox.Text;
+            string email = emailTextbox.Text;
+            string password = passwordTextbox.Text;
 
             // Check if the email and password is equal to the placeholder text.
             // If true we will will return the function.
             if (email == emailPlaceholder || password == passwordPlaceholder)
             {
-                WrongEmailLabel.Text = "Enter email to login";
-                WrongPasswordLabel.Text = "Enter password to login";
+                wrongEmailLabel.Text = "Enter email to login";
+                wrongPasswordLabel.Text = "Enter password to login";
                 return;
             }
             
