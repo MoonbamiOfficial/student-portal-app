@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.userName = new System.Windows.Forms.Label();
-            this.sideNavBg = new System.Windows.Forms.Panel();
+            this.sideNavHome = new System.Windows.Forms.Panel();
             this.userIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.userEmail = new System.Windows.Forms.Label();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
@@ -53,7 +53,27 @@
             this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.logo = new System.Windows.Forms.PictureBox();
             this.userCover = new System.Windows.Forms.PictureBox();
-            this.sideNavBg.SuspendLayout();
+            this.emaiLabel = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.confirmPasswordLabel = new System.Windows.Forms.Label();
+            this.editBtn = new System.Windows.Forms.Button();
+            this.passwordBg = new System.Windows.Forms.Panel();
+            this.passwordTextbox = new System.Windows.Forms.TextBox();
+            this.confirmPasswordBg = new System.Windows.Forms.Panel();
+            this.confirmPasswordTextbox = new System.Windows.Forms.TextBox();
+            this.emailbg = new System.Windows.Forms.Panel();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.sideNavProfile = new System.Windows.Forms.Panel();
+            this.pictureBoxCustom1 = new StudentPortal.StudentPortalControls.pictureBoxCustom();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.sideNavHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).BeginInit();
@@ -62,6 +82,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userCover)).BeginInit();
+            this.sideNavProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCustom1)).BeginInit();
             this.SuspendLayout();
             // 
             // userName
@@ -76,22 +98,22 @@
             this.userName.Text = "User Username";
             this.userName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // sideNavBg
+            // sideNavHome
             // 
-            this.sideNavBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.sideNavBg.Controls.Add(this.userIcon);
-            this.sideNavBg.Controls.Add(this.userEmail);
-            this.sideNavBg.Controls.Add(this.userName);
-            this.sideNavBg.Controls.Add(this.homeBtn);
-            this.sideNavBg.Controls.Add(this.profileBtn);
-            this.sideNavBg.Controls.Add(this.degreeBtn);
-            this.sideNavBg.Controls.Add(this.todoBtn);
-            this.sideNavBg.Controls.Add(this.settingBtn);
-            this.sideNavBg.Controls.Add(this.logOutBtn);
-            this.sideNavBg.Location = new System.Drawing.Point(0, 0);
-            this.sideNavBg.Name = "sideNavBg";
-            this.sideNavBg.Size = new System.Drawing.Size(440, 1024);
-            this.sideNavBg.TabIndex = 2;
+            this.sideNavHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.sideNavHome.Controls.Add(this.userIcon);
+            this.sideNavHome.Controls.Add(this.userEmail);
+            this.sideNavHome.Controls.Add(this.userName);
+            this.sideNavHome.Controls.Add(this.homeBtn);
+            this.sideNavHome.Controls.Add(this.profileBtn);
+            this.sideNavHome.Controls.Add(this.degreeBtn);
+            this.sideNavHome.Controls.Add(this.todoBtn);
+            this.sideNavHome.Controls.Add(this.settingBtn);
+            this.sideNavHome.Controls.Add(this.logOutBtn);
+            this.sideNavHome.Location = new System.Drawing.Point(0, 0);
+            this.sideNavHome.Name = "sideNavHome";
+            this.sideNavHome.Size = new System.Drawing.Size(440, 1024);
+            this.sideNavHome.TabIndex = 2;
             // 
             // userIcon
             // 
@@ -330,11 +352,12 @@
             // 
             // homePanel
             // 
-            this.homePanel.Controls.Add(this.schoolLogo);
+            this.homePanel.Controls.Add(this.sideNavHome);
             this.homePanel.Controls.Add(this.desc);
             this.homePanel.Controls.Add(this.header);
             this.homePanel.Controls.Add(this.schoolHeaderDesc);
             this.homePanel.Controls.Add(this.schoolHeader);
+            this.homePanel.Controls.Add(this.schoolLogo);
             this.homePanel.Controls.Add(this.schoolCover);
             this.homePanel.Location = new System.Drawing.Point(0, 0);
             this.homePanel.Name = "homePanel";
@@ -343,12 +366,23 @@
             // 
             // profilePanel
             // 
-            this.profilePanel.Controls.Add(this.studentNumber);
-            this.profilePanel.Controls.Add(this.studentEmail);
-            this.profilePanel.Controls.Add(this.studentName);
+            this.profilePanel.Controls.Add(this.sideNavProfile);
             this.profilePanel.Controls.Add(this.studentIcon);
             this.profilePanel.Controls.Add(this.logo);
             this.profilePanel.Controls.Add(this.userCover);
+            this.profilePanel.Controls.Add(this.passwordLabel);
+            this.profilePanel.Controls.Add(this.emaiLabel);
+            this.profilePanel.Controls.Add(this.studentNumber);
+            this.profilePanel.Controls.Add(this.studentEmail);
+            this.profilePanel.Controls.Add(this.studentName);
+            this.profilePanel.Controls.Add(this.confirmPasswordLabel);
+            this.profilePanel.Controls.Add(this.editBtn);
+            this.profilePanel.Controls.Add(this.emailTextBox);
+            this.profilePanel.Controls.Add(this.passwordTextbox);
+            this.profilePanel.Controls.Add(this.confirmPasswordTextbox);
+            this.profilePanel.Controls.Add(this.emailbg);
+            this.profilePanel.Controls.Add(this.confirmPasswordBg);
+            this.profilePanel.Controls.Add(this.passwordBg);
             this.profilePanel.Location = new System.Drawing.Point(0, 0);
             this.profilePanel.Name = "profilePanel";
             this.profilePanel.Size = new System.Drawing.Size(1440, 1024);
@@ -431,37 +465,339 @@
             this.userCover.TabIndex = 4;
             this.userCover.TabStop = false;
             // 
+            // emaiLabel
+            // 
+            this.emaiLabel.BackColor = System.Drawing.Color.Transparent;
+            this.emaiLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emaiLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.emaiLabel.Location = new System.Drawing.Point(1019, 600);
+            this.emaiLabel.Name = "emaiLabel";
+            this.emaiLabel.Size = new System.Drawing.Size(67, 34);
+            this.emaiLabel.TabIndex = 17;
+            this.emaiLabel.Text = "Email";
+            this.emaiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // passwordLabel
+            // 
+            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.passwordLabel.Location = new System.Drawing.Point(520, 600);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(117, 34);
+            this.passwordLabel.TabIndex = 18;
+            this.passwordLabel.Text = "Password";
+            this.passwordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // confirmPasswordLabel
+            // 
+            this.confirmPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.confirmPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.confirmPasswordLabel.Location = new System.Drawing.Point(520, 764);
+            this.confirmPasswordLabel.Name = "confirmPasswordLabel";
+            this.confirmPasswordLabel.Size = new System.Drawing.Size(221, 34);
+            this.confirmPasswordLabel.TabIndex = 19;
+            this.confirmPasswordLabel.Text = "Confirm Password";
+            this.confirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // editBtn
+            // 
+            this.editBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.editBtn.FlatAppearance.BorderSize = 0;
+            this.editBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editBtn.ForeColor = System.Drawing.Color.White;
+            this.editBtn.Location = new System.Drawing.Point(1039, 798);
+            this.editBtn.Name = "editBtn";
+            this.editBtn.Size = new System.Drawing.Size(300, 80);
+            this.editBtn.TabIndex = 20;
+            this.editBtn.Text = "Edit";
+            this.editBtn.UseVisualStyleBackColor = false;
+            // 
+            // passwordBg
+            // 
+            this.passwordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.passwordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordBg.Location = new System.Drawing.Point(490, 634);
+            this.passwordBg.Name = "passwordBg";
+            this.passwordBg.Size = new System.Drawing.Size(400, 80);
+            this.passwordBg.TabIndex = 21;
+            // 
+            // passwordTextbox
+            // 
+            this.passwordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.passwordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.passwordTextbox.Location = new System.Drawing.Point(520, 660);
+            this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.Size = new System.Drawing.Size(340, 29);
+            this.passwordTextbox.TabIndex = 22;
+            this.passwordTextbox.Text = "Aa";
+            // 
+            // confirmPasswordBg
+            // 
+            this.confirmPasswordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.confirmPasswordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.confirmPasswordBg.Location = new System.Drawing.Point(490, 798);
+            this.confirmPasswordBg.Name = "confirmPasswordBg";
+            this.confirmPasswordBg.Size = new System.Drawing.Size(400, 80);
+            this.confirmPasswordBg.TabIndex = 23;
+            // 
+            // confirmPasswordTextbox
+            // 
+            this.confirmPasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.confirmPasswordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.confirmPasswordTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.confirmPasswordTextbox.Location = new System.Drawing.Point(520, 824);
+            this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
+            this.confirmPasswordTextbox.Size = new System.Drawing.Size(340, 29);
+            this.confirmPasswordTextbox.TabIndex = 24;
+            this.confirmPasswordTextbox.Text = "Aa";
+            // 
+            // emailbg
+            // 
+            this.emailbg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.emailbg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailbg.Location = new System.Drawing.Point(989, 634);
+            this.emailbg.Name = "emailbg";
+            this.emailbg.Size = new System.Drawing.Size(400, 80);
+            this.emailbg.TabIndex = 25;
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.emailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emailTextBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.emailTextBox.Location = new System.Drawing.Point(1019, 660);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(340, 29);
+            this.emailTextBox.TabIndex = 26;
+            this.emailTextBox.Text = "Aa";
+            // 
+            // sideNavProfile
+            // 
+            this.sideNavProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.sideNavProfile.Controls.Add(this.pictureBoxCustom1);
+            this.sideNavProfile.Controls.Add(this.label1);
+            this.sideNavProfile.Controls.Add(this.label2);
+            this.sideNavProfile.Controls.Add(this.iconButton1);
+            this.sideNavProfile.Controls.Add(this.iconButton2);
+            this.sideNavProfile.Controls.Add(this.iconButton3);
+            this.sideNavProfile.Controls.Add(this.iconButton4);
+            this.sideNavProfile.Controls.Add(this.iconButton5);
+            this.sideNavProfile.Controls.Add(this.button1);
+            this.sideNavProfile.Location = new System.Drawing.Point(0, 0);
+            this.sideNavProfile.Name = "sideNavProfile";
+            this.sideNavProfile.Size = new System.Drawing.Size(440, 1024);
+            this.sideNavProfile.TabIndex = 27;
+            // 
+            // pictureBoxCustom1
+            // 
+            this.pictureBoxCustom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.pictureBoxCustom1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pictureBoxCustom1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.pictureBoxCustom1.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.pictureBoxCustom1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.pictureBoxCustom1.BorderSize = 8;
+            this.pictureBoxCustom1.GradientAngle = 0F;
+            this.pictureBoxCustom1.Image = global::StudentPortal.Properties.Resources.maleStudent;
+            this.pictureBoxCustom1.Location = new System.Drawing.Point(134, 50);
+            this.pictureBoxCustom1.Name = "pictureBoxCustom1";
+            this.pictureBoxCustom1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxCustom1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCustom1.TabIndex = 0;
+            this.pictureBoxCustom1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.label1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.label1.Location = new System.Drawing.Point(10, 265);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(420, 30);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "user_student@gmail.com";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.label2.Location = new System.Drawing.Point(10, 220);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(420, 45);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "User Username";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 32;
+            this.iconButton1.Location = new System.Drawing.Point(0, 316);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(440, 100);
+            this.iconButton1.TabIndex = 9;
+            this.iconButton1.Text = "HOME";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseMnemonic = false;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.iconButton2.FlatAppearance.BorderSize = 5;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton2.IconSize = 32;
+            this.iconButton2.Location = new System.Drawing.Point(0, 416);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(440, 100);
+            this.iconButton2.TabIndex = 10;
+            this.iconButton2.Text = "PROFILE";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseMnemonic = false;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.Color.White;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.GraduationCap;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton3.IconSize = 32;
+            this.iconButton3.Location = new System.Drawing.Point(0, 516);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(440, 100);
+            this.iconButton3.TabIndex = 11;
+            this.iconButton3.Text = "DEGREE";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton3.UseMnemonic = false;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.White;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.iconButton4.IconColor = System.Drawing.Color.White;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton4.IconSize = 32;
+            this.iconButton4.Location = new System.Drawing.Point(0, 616);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(440, 100);
+            this.iconButton4.TabIndex = 12;
+            this.iconButton4.Text = "TO-DO";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton4.UseMnemonic = false;
+            this.iconButton4.UseVisualStyleBackColor = false;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.iconButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton5.ForeColor = System.Drawing.Color.White;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Wrench;
+            this.iconButton5.IconColor = System.Drawing.Color.White;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton5.IconSize = 32;
+            this.iconButton5.Location = new System.Drawing.Point(0, 716);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(440, 100);
+            this.iconButton5.TabIndex = 13;
+            this.iconButton5.Text = "SETTING";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton5.UseMnemonic = false;
+            this.iconButton5.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(70, 850);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(300, 80);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Log Out";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
-            this.Controls.Add(this.sideNavBg);
-            this.Controls.Add(this.homePanel);
             this.Controls.Add(this.profilePanel);
+            this.Controls.Add(this.homePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.HomeForm_Load);
-            this.sideNavBg.ResumeLayout(false);
+            this.sideNavHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.userIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolLogo)).EndInit();
             this.homePanel.ResumeLayout(false);
             this.profilePanel.ResumeLayout(false);
+            this.profilePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userCover)).EndInit();
+            this.sideNavProfile.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCustom1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label userName;
-        private System.Windows.Forms.Panel sideNavBg;
+        private System.Windows.Forms.Panel sideNavHome;
         private StudentPortalControls.pictureBoxCustom userIcon;
         private System.Windows.Forms.Label userEmail;
         private System.Windows.Forms.Button logOutBtn;
@@ -484,5 +820,25 @@
         private StudentPortalControls.pictureBoxCustom studentIcon;
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.PictureBox userCover;
+        private System.Windows.Forms.Label emaiLabel;
+        private System.Windows.Forms.Label confirmPasswordLabel;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.Button editBtn;
+        private System.Windows.Forms.Panel passwordBg;
+        private System.Windows.Forms.TextBox passwordTextbox;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.Panel emailbg;
+        private System.Windows.Forms.TextBox confirmPasswordTextbox;
+        private System.Windows.Forms.Panel confirmPasswordBg;
+        private System.Windows.Forms.Panel sideNavProfile;
+        private StudentPortalControls.pictureBoxCustom pictureBoxCustom1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private System.Windows.Forms.Button button1;
     }
 }
