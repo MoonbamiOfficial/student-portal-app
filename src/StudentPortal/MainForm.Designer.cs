@@ -40,6 +40,7 @@
             this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.home = new StudentPortal.Panels.Home();
+            this.profile = new StudentPortal.Panels.Profile();
             this.sideNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
             this.SuspendLayout();
@@ -239,6 +240,14 @@
             this.home.Size = new System.Drawing.Size(1000, 1024);
             this.home.TabIndex = 3;
             // 
+            // profile
+            // 
+            this.profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.profile.Location = new System.Drawing.Point(440, 0);
+            this.profile.Name = "profile";
+            this.profile.Size = new System.Drawing.Size(1000, 1024);
+            this.profile.TabIndex = 4;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +256,7 @@
             this.ClientSize = new System.Drawing.Size(1424, 985);
             this.Controls.Add(this.sideNav);
             this.Controls.Add(this.home);
+            this.Controls.Add(this.profile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -270,5 +280,6 @@
         private FontAwesome.Sharp.IconButton todoBtn;
         private FontAwesome.Sharp.IconButton settingBtn;
         private Panels.Home home;
+        private Panels.Profile profile;
     }
 }
