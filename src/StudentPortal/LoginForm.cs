@@ -46,66 +46,66 @@ namespace StudentPortal
         // Background panel events
         private void EmailBg_Click(object sender, EventArgs e)
         {
-            EmailTextbox.Focus();
+            emailTextbox.Focus();
         }
 
         private void PasswordBg_Click(object sender, EventArgs e)
         {
-            PasswordTextbox.Focus();
+            passwordTextbox.Focus();
         }
 
         // Label events
         private void EmailLabel_Click(object sender, EventArgs e)
         {
-            EmailTextbox.Focus();
+            emailTextbox.Focus();
         }
 
         private void PasswordLabel_Click(object sender, EventArgs e)
         {
-            PasswordTextbox.Focus();
+            passwordTextbox.Focus();
         }
 
         // Text field events
         private void EmailTextbox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            WrongEmailLabel.Text = null;
+            wrongEmailLabel.Text = null;
         }
         private void PasswordTextbox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            WrongPasswordLabel.Text = null;
+            wrongPasswordLabel.Text = null;
         }
 
         // Simple placeholders
         private void EmailTextbox_Enter(object sender, EventArgs e)
         {
-            if (EmailTextbox.Text == emailPlaceholder || EmailTextbox.Text == emailPlaceholder.ToLower() || EmailTextbox.Text == emailPlaceholder.ToUpper())
+            if (emailTextbox.Text == emailPlaceholder || emailTextbox.Text == emailPlaceholder.ToLower() || emailTextbox.Text == emailPlaceholder.ToUpper())
             {
-                EmailTextbox.Text = "";
-                WrongEmailLabel.Text = null;
+                emailTextbox.Text = "";
+                wrongEmailLabel.Text = null;
             }
         }
 
         private void EmailTextbox_Leave(object sender, EventArgs e)
         {
-            if (EmailTextbox.Text == "")
+            if (emailTextbox.Text == "")
             {
-                EmailTextbox.Text = emailPlaceholder;
+                emailTextbox.Text = emailPlaceholder;
             }
         }
 
         private void PasswordTextbox_Enter(object sender, EventArgs e)
         {
-            if (PasswordTextbox.Text == passwordPlaceholder || PasswordTextbox.Text == passwordPlaceholder.ToLower() || PasswordTextbox.Text == passwordPlaceholder.ToUpper())
+            if (passwordTextbox.Text == passwordPlaceholder || passwordTextbox.Text == passwordPlaceholder.ToLower() || passwordTextbox.Text == passwordPlaceholder.ToUpper())
             {
-                PasswordTextbox.Text = "";
-                WrongPasswordLabel.Text = null;
-                PasswordTextbox.UseSystemPasswordChar = true;
+                passwordTextbox.Text = "";
+                wrongPasswordLabel.Text = null;
+                passwordTextbox.UseSystemPasswordChar = true;
             }
         }
 
         private void PasswordTextbox_Leave(object sender, EventArgs e)
         {
-            if (PasswordTextbox.Text == "")
+            if (passwordTextbox.Text == "")
             {
                 PasswordTextbox.Text = passwordPlaceholder;
                 PasswordTextbox.UseSystemPasswordChar = false;
