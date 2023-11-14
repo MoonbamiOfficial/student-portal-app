@@ -21,6 +21,8 @@ namespace StudentPortal.Panels
         {
             schoolHeaderHome.Parent = schoolCoverHome;
             schoolHeaderHome.BackColor = Color.Transparent;
+            schoolHeaderDescHome.Parent = schoolCoverHome;
+            schoolHeaderDescHome.BackColor = Color.Transparent;
         }
     }
 }
