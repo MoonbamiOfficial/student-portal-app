@@ -17,13 +17,18 @@ namespace StudentPortal
             InitializeComponent();
         }
 
-        // Sets the background of label to transparent when the form loads
+        // Sets the background of variable to transparent when the form loads
         private void HomeForm_Load(object sender, EventArgs e)
         {
+            // Home specifics
             schoolHeader.Parent = schoolCover;
             schoolCover.BackColor = Color.Transparent;
             schoolHeaderDesc.Parent = schoolCover;
             schoolHeaderDesc.BackColor = Color.Transparent;
+
+            // Profile specifics
+            logo.Parent = userCover;
+            logo.BackColor = Color.Transparent;
         }
     }
 }
