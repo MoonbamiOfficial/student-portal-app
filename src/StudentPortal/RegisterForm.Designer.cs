@@ -68,10 +68,10 @@
             this.confirmPasswordBg = new System.Windows.Forms.Panel();
             this.loginBg = new System.Windows.Forms.Panel();
             this.wrongFirstNameLabel = new System.Windows.Forms.Label();
-            this.courseComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
-            this.statusComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
-            this.birthdayPicker = new StudentPortal.DatePickerCustom();
-            this.sexComboBox = new StudentPortal.StudentPortalControls.ComboBoxCustom();
+            this.courseComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
+            this.statusComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
+            this.birthdayPicker = new StudentPortal.datePickerCustom();
+            this.sexComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -731,10 +731,10 @@
         private System.Windows.Forms.Label birthdayLabel;
         private System.Windows.Forms.TextBox middleNameTextbox;
         private System.Windows.Forms.Panel birthdayBg;
-        private DatePickerCustom birthdayPicker;
+        private datePickerCustom birthdayPicker;
         private System.Windows.Forms.Label courseLabel;
         private System.Windows.Forms.Panel courseBg;
-        private StudentPortalControls.ComboBoxCustom courseComboBox;
+        private StudentPortalControls.comboBoxCustom courseComboBox;
         private System.Windows.Forms.Label lastNameLabel;
         private System.Windows.Forms.TextBox lastNameTextbox;
         private System.Windows.Forms.Panel lastNameBg;
@@ -743,9 +743,9 @@
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.Panel emailBg;
         private System.Windows.Forms.Panel statusBg;
-        private StudentPortalControls.ComboBoxCustom statusComboBox;
+        private StudentPortalControls.comboBoxCustom statusComboBox;
         private System.Windows.Forms.Label sexLabel;
-        private StudentPortalControls.ComboBoxCustom sexComboBox;
+        private StudentPortalControls.comboBoxCustom sexComboBox;
         private System.Windows.Forms.Panel sexBg;
         private System.Windows.Forms.Button signUpBtn;
         private System.Windows.Forms.Label wrongLastNameLabel;

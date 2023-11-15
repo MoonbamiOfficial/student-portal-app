@@ -10,7 +10,7 @@ using System.Drawing.Drawing2D;
 
 namespace StudentPortal
 {
-    public class DatePickerCustom : DateTimePicker
+    public class datePickerCustom : DateTimePicker
     {
         //Fields
         // => Appearance
@@ -65,7 +65,7 @@ namespace StudentPortal
         }
 
         // Constructor 
-        public DatePickerCustom()
+        public datePickerCustom()
         {
             this.SetStyle(ControlStyles.UserPaint, true);
             this.MinimumSize = new Size(0, 35);

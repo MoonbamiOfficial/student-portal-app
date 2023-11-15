@@ -145,10 +145,10 @@
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
-    <Compile Include="StudentPortalControls\buttonCustom.cs">
+    <Compile Include="CustomControls\buttonCustom.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="StudentPortalControls\DatePickerCustom.cs">
+    <Compile Include="CustomControls\datePickerCustom.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="LoginForm.cs">
@@ -165,10 +165,10 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentPortalControls\ComboBoxCustom.cs">
+    <Compile Include="CustomControls\comboBoxCustom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StudentPortalControls\pictureBoxCustom.cs">
+    <Compile Include="CustomControls\pictureBoxCustom.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Validator.cs" />
