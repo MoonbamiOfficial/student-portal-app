@@ -18,7 +18,7 @@ namespace StudentPortal
             InitializeComponent();
         }
 
-        // ---------- Sets appearance of active button ----------
+        // ---------- Sets the appearance of active button ----------
         public void setActiveBtn(IconButton btn)
         {
             System.Drawing.Color bgColor = System.Drawing.Color.FromArgb(222, 245, 229);
@@ -30,7 +30,7 @@ namespace StudentPortal
             btn.ForeColor = moodColor;
             btn.IconColor = moodColor;
         }
-        // ---------- Sets appearance of inactive button ----------
+        // ---------- Sets the appearance of inactive button ----------
         public void setInactiveBtn(IconButton btn)
         {
             System.Drawing.Color bgColor = System.Drawing.Color.FromArgb(69, 159, 127);
