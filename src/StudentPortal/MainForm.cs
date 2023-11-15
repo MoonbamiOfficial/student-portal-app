@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
 
 namespace StudentPortal
 {
@@ -15,6 +16,58 @@ namespace StudentPortal
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        // ---------- Sets appearance of active button ----------
+        public void setActiveBtn(IconButton btn)
+        {
+            System.Drawing.Color bgColor = System.Drawing.Color.FromArgb(222, 245, 229);
+            System.Drawing.Color moodColor = System.Drawing.Color.FromArgb(0, 86, 63);
+
+            btn.FlatAppearance.BorderColor = moodColor;
+            btn.FlatAppearance.BorderSize = 5;
+            btn.BackColor = bgColor;
+            btn.ForeColor = moodColor;
+            btn.IconColor = moodColor;
+        }
+        // ---------- Sets appearance of inactive button ----------
+        public void setInactiveBtn(IconButton btn)
+        {
+            System.Drawing.Color bgColor = System.Drawing.Color.FromArgb(69, 159, 127);
+
+            btn.FlatAppearance.BorderSize = 0;
+            btn.BackColor = bgColor;
+            btn.ForeColor = Color.White;
+            btn.IconColor = Color.White;
+        }
+        // ---------- Sets the default visible panel to Home on load ----------
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            home.Visible = true;
+            profile.Visible = false;
+            degree.Visible = false;
+        }
+        // ---------- Side nav button events ----------
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            setActiveBtn(homeBtn);
+            setInactiveBtn(profileBtn);
+            setInactiveBtn(degreeBtn);
+
+            home.Visible = true;
+            profile.Visible = false;
+            degree.Visible = false;
+        }
+
+        private void profileBtn_Click(object sender, EventArgs e)
+        {
+            setInactiveBtn(homeBtn);
+            setActiveBtn(profileBtn);
+            setInactiveBtn(degreeBtn);
+
+            home.Visible = false;
+            profile.Visible = true;
+            degree.Visible = false;
         }
     }
 }

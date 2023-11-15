@@ -126,6 +126,7 @@
             this.homeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.homeBtn.UseMnemonic = false;
             this.homeBtn.UseVisualStyleBackColor = false;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
             // profileBtn
             // 
@@ -149,6 +150,7 @@
             this.profileBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.profileBtn.UseMnemonic = false;
             this.profileBtn.UseVisualStyleBackColor = false;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // degreeBtn
             // 
@@ -272,6 +274,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.sideNav.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).EndInit();
             this.ResumeLayout(false);
