@@ -69,5 +69,16 @@ namespace StudentPortal
             profile.Visible = true;
             degree.Visible = false;
         }
+
+        private void degreeBtn_Click(object sender, EventArgs e)
+        {
+            setInactiveBtn(homeBtn);
+            setInactiveBtn(profileBtn);
+            setActiveBtn(degreeBtn);
+
+            home.Visible = false;
+            profile.Visible = false;
+            degree.Visible = true;
+        }
     }
 }
