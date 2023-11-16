@@ -22,5 +22,67 @@ namespace StudentPortal.Panels
             logo.Parent = studentCover;
             logo.BackColor = Color.Transparent;
         }
+
+        //
+        //  Setters
+        //
+        private void setFocus(TextBox textBox)
+        {
+            textBox.Focus();
+        }
+        //
+        //  Label events
+        private void passwordLabel_Click(object sender, EventArgs e)
+        {
+            setFocus(passwordTextbox);
+        }
+
+        private void emailLabel_Click(object sender, EventArgs e)
+        {
+            setFocus(emailTextbox);
+        }
+
+        private void confirmPasswordLabel_Click(object sender, EventArgs e)
+        {
+            setFocus(confirmPasswordTextbox);
+        }
+
+        private void confirmEmailLabel_Click(object sender, EventArgs e)
+        {
+            setFocus(confirmEmailTextbox);
+        }
+        //
+        //  BG Panel events
+        //
+        private void passwordBg_Click(object sender, EventArgs e)
+        {
+            setFocus(passwordTextbox);
+        }
+
+        private void emailBg_Click(object sender, EventArgs e)
+        {
+            setFocus(emailTextbox);
+        }
+
+        private void confirmPasswordBg_Click(object sender, EventArgs e)
+        {
+            setFocus(confirmPasswordTextbox);
+        }
+
+        private void confirmEmailBg_Click(object sender, EventArgs e)
+        {
+            setFocus(confirmEmailTextbox);
+        }
+        //
+        // Edit btn event
+        //
+        private void editBtn_Click(object sender, EventArgs e)
+        {
+            // ---------- DO SOME VERIFICATIONS HERE BACKENDERIST ----------
+
+            editBtn.Text = "Save";
+            
+        }
+        
     }
 }
