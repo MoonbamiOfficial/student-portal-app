@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.studentName = new System.Windows.Forms.Label();
             this.sideNav = new System.Windows.Forms.Panel();
+            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.studentEmail = new System.Windows.Forms.Label();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.profileBtn = new FontAwesome.Sharp.IconButton();
@@ -38,7 +39,6 @@
             this.todoBtn = new FontAwesome.Sharp.IconButton();
             this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.logOutBtn = new System.Windows.Forms.Button();
-            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.home = new StudentPortal.Panels.Home();
             this.profile = new StudentPortal.Panels.Profile();
             this.degree = new StudentPortal.Panels.Degree();
@@ -55,7 +55,7 @@
             this.studentName.Location = new System.Drawing.Point(10, 220);
             this.studentName.Name = "studentName";
             this.studentName.Size = new System.Drawing.Size(420, 45);
-            this.studentName.TabIndex = 1;
+            this.studentName.TabIndex = 0;
             this.studentName.Text = "User Username";
             this.studentName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -74,7 +74,24 @@
             this.sideNav.Location = new System.Drawing.Point(0, 0);
             this.sideNav.Name = "sideNav";
             this.sideNav.Size = new System.Drawing.Size(440, 1024);
-            this.sideNav.TabIndex = 2;
+            this.sideNav.TabIndex = 0;
+            // 
+            // studentIcon
+            // 
+            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.studentIcon.BorderSize = 8;
+            this.studentIcon.GradientAngle = 0F;
+            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
+            this.studentIcon.Location = new System.Drawing.Point(134, 50);
+            this.studentIcon.Name = "studentIcon";
+            this.studentIcon.Size = new System.Drawing.Size(150, 150);
+            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentIcon.TabIndex = 0;
+            this.studentIcon.TabStop = false;
             // 
             // studentEmail
             // 
@@ -84,7 +101,7 @@
             this.studentEmail.Location = new System.Drawing.Point(10, 265);
             this.studentEmail.Name = "studentEmail";
             this.studentEmail.Size = new System.Drawing.Size(420, 30);
-            this.studentEmail.TabIndex = 3;
+            this.studentEmail.TabIndex = 0;
             this.studentEmail.Text = "user_student@gmail.com";
             this.studentEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -104,7 +121,7 @@
             this.homeBtn.Location = new System.Drawing.Point(0, 316);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(440, 100);
-            this.homeBtn.TabIndex = 9;
+            this.homeBtn.TabIndex = 1;
             this.homeBtn.Text = "HOME";
             this.homeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.homeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -128,7 +145,7 @@
             this.profileBtn.Location = new System.Drawing.Point(0, 416);
             this.profileBtn.Name = "profileBtn";
             this.profileBtn.Size = new System.Drawing.Size(440, 100);
-            this.profileBtn.TabIndex = 10;
+            this.profileBtn.TabIndex = 2;
             this.profileBtn.Text = "PROFILE";
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.profileBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -152,7 +169,7 @@
             this.degreeBtn.Location = new System.Drawing.Point(0, 516);
             this.degreeBtn.Name = "degreeBtn";
             this.degreeBtn.Size = new System.Drawing.Size(440, 100);
-            this.degreeBtn.TabIndex = 11;
+            this.degreeBtn.TabIndex = 3;
             this.degreeBtn.Text = "DEGREE";
             this.degreeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.degreeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -176,7 +193,7 @@
             this.todoBtn.Location = new System.Drawing.Point(0, 616);
             this.todoBtn.Name = "todoBtn";
             this.todoBtn.Size = new System.Drawing.Size(440, 100);
-            this.todoBtn.TabIndex = 12;
+            this.todoBtn.TabIndex = 4;
             this.todoBtn.Text = "TO-DO";
             this.todoBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.todoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -200,7 +217,7 @@
             this.settingBtn.Location = new System.Drawing.Point(0, 716);
             this.settingBtn.Name = "settingBtn";
             this.settingBtn.Size = new System.Drawing.Size(440, 100);
-            this.settingBtn.TabIndex = 13;
+            this.settingBtn.TabIndex = 5;
             this.settingBtn.Text = "SETTING";
             this.settingBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -217,26 +234,9 @@
             this.logOutBtn.Location = new System.Drawing.Point(70, 850);
             this.logOutBtn.Name = "logOutBtn";
             this.logOutBtn.Size = new System.Drawing.Size(300, 80);
-            this.logOutBtn.TabIndex = 1;
+            this.logOutBtn.TabIndex = 6;
             this.logOutBtn.Text = "Log Out";
             this.logOutBtn.UseVisualStyleBackColor = false;
-            // 
-            // studentIcon
-            // 
-            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.studentIcon.BorderSize = 8;
-            this.studentIcon.GradientAngle = 0F;
-            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
-            this.studentIcon.Location = new System.Drawing.Point(134, 50);
-            this.studentIcon.Name = "studentIcon";
-            this.studentIcon.Size = new System.Drawing.Size(150, 150);
-            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.studentIcon.TabIndex = 0;
-            this.studentIcon.TabStop = false;
             // 
             // home
             // 
@@ -252,7 +252,7 @@
             this.profile.Location = new System.Drawing.Point(440, 0);
             this.profile.Name = "profile";
             this.profile.Size = new System.Drawing.Size(1000, 1024);
-            this.profile.TabIndex = 4;
+            this.profile.TabIndex = 0;
             // 
             // degree
             // 
@@ -260,7 +260,7 @@
             this.degree.Location = new System.Drawing.Point(440, 0);
             this.degree.Name = "degree";
             this.degree.Size = new System.Drawing.Size(1000, 1024);
-            this.degree.TabIndex = 5;
+            this.degree.TabIndex = 0;
             // 
             // todo
             // 
@@ -268,7 +268,7 @@
             this.todo.Location = new System.Drawing.Point(440, 0);
             this.todo.Name = "todo";
             this.todo.Size = new System.Drawing.Size(1000, 1024);
-            this.todo.TabIndex = 6;
+            this.todo.TabIndex = 0;
             // 
             // MainForm
             // 
