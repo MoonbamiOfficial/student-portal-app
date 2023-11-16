@@ -139,5 +139,12 @@ namespace StudentPortal
         {
             u.setFocus(confirmPasswordTextbox);
         }
+        //
+        //  Sign up event
+        //
+        private void signUpBtn_Click(object sender, EventArgs e)
+        {
+            new ConfirmationBox().Show();
+        }
     }
 }

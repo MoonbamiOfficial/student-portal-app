@@ -55,29 +55,29 @@
             this.firstNameBg = new System.Windows.Forms.Panel();
             this.middleNameBg = new System.Windows.Forms.Panel();
             this.birthdayBg = new System.Windows.Forms.Panel();
+            this.birthdayPicker = new StudentPortal.datePickerCustom();
             this.courseBg = new System.Windows.Forms.Panel();
+            this.courseComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.lastNameBg = new System.Windows.Forms.Panel();
             this.emailBg = new System.Windows.Forms.Panel();
             this.statusBg = new System.Windows.Forms.Panel();
+            this.statusComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.sexBg = new System.Windows.Forms.Panel();
+            this.sexComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.passwordBg = new System.Windows.Forms.Panel();
             this.confirmPasswordBg = new System.Windows.Forms.Panel();
             this.loginBg = new System.Windows.Forms.Panel();
             this.wrongFirstNameLabel = new System.Windows.Forms.Label();
             this.yearLevelLabel = new System.Windows.Forms.Label();
             this.yearLevelBg = new System.Windows.Forms.Panel();
+            this.yearLevelComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.semesterLabel = new System.Windows.Forms.Label();
             this.semesterBg = new System.Windows.Forms.Panel();
+            this.semesterComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.wrongLastNameLabel = new System.Windows.Forms.Label();
             this.wrongEmailLabel = new System.Windows.Forms.Label();
             this.wrongPasswordLabel = new System.Windows.Forms.Label();
             this.wrongConfirmPasswordLabel = new System.Windows.Forms.Label();
-            this.semesterComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
-            this.yearLevelComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
-            this.sexComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
-            this.statusComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
-            this.courseComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
-            this.birthdayPicker = new StudentPortal.datePickerCustom();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.birthdayBg.SuspendLayout();
             this.courseBg.SuspendLayout();
@@ -402,6 +402,7 @@
             this.signUpBtn.TabIndex = 13;
             this.signUpBtn.Text = "Sign Up";
             this.signUpBtn.UseVisualStyleBackColor = false;
+            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             // 
             // firstNameBg
             // 
@@ -437,6 +438,28 @@
             this.birthdayBg.TabIndex = 0;
             this.birthdayBg.Click += new System.EventHandler(this.birthdayBg_Click);
             // 
+            // birthdayPicker
+            // 
+            this.birthdayPicker.BorderColor = System.Drawing.Color.Transparent;
+            this.birthdayPicker.BorderSize = 0;
+            this.birthdayPicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.birthdayPicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.birthdayPicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.birthdayPicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.birthdayPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.birthdayPicker.CustomFormat = "MMMM dd, yyy";
+            this.birthdayPicker.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthdayPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.birthdayPicker.Location = new System.Drawing.Point(0, 26);
+            this.birthdayPicker.Margin = new System.Windows.Forms.Padding(0);
+            this.birthdayPicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.birthdayPicker.Name = "birthdayPicker";
+            this.birthdayPicker.Size = new System.Drawing.Size(413, 36);
+            this.birthdayPicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.birthdayPicker.TabIndex = 5;
+            this.birthdayPicker.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.birthdayPicker.Value = new System.DateTime(2023, 11, 12, 13, 32, 33, 0);
+            // 
             // courseBg
             // 
             this.courseBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
@@ -448,6 +471,41 @@
             this.courseBg.Size = new System.Drawing.Size(200, 80);
             this.courseBg.TabIndex = 0;
             this.courseBg.Click += new System.EventHandler(this.courseBg_Click);
+            // 
+            // courseComboBox
+            // 
+            this.courseComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.courseComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.courseComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.courseComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.courseComboBox.BorderSize = 0;
+            this.courseComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.courseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.courseComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.courseComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.courseComboBox.Items.AddRange(new object[] {
+            "BSMT",
+            "BSCRIM",
+            "BSTM",
+            "BSIT",
+            "BSCS",
+            "BSCM",
+            "BSESS",
+            "BSPSYCH",
+            "BS Arch",
+            "BSBM",
+            "BSDM",
+            "BSIS"});
+            this.courseComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.courseComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.courseComboBox.Location = new System.Drawing.Point(0, 26);
+            this.courseComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.courseComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.courseComboBox.Name = "courseComboBox";
+            this.courseComboBox.Size = new System.Drawing.Size(200, 30);
+            this.courseComboBox.TabIndex = 7;
+            this.courseComboBox.Texts = "BSIT";
             // 
             // lastNameBg
             // 
@@ -483,6 +541,31 @@
             this.statusBg.TabIndex = 0;
             this.statusBg.Click += new System.EventHandler(this.statusBg_Click);
             // 
+            // statusComboBox
+            // 
+            this.statusComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.statusComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.statusComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.statusComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.statusComboBox.BorderSize = 0;
+            this.statusComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.statusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.statusComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.statusComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.statusComboBox.Items.AddRange(new object[] {
+            "Regular",
+            "Irregular"});
+            this.statusComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.statusComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.statusComboBox.Location = new System.Drawing.Point(0, 26);
+            this.statusComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.statusComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.statusComboBox.Name = "statusComboBox";
+            this.statusComboBox.Size = new System.Drawing.Size(200, 30);
+            this.statusComboBox.TabIndex = 11;
+            this.statusComboBox.Texts = "Regular";
+            // 
             // sexBg
             // 
             this.sexBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
@@ -494,6 +577,31 @@
             this.sexBg.Size = new System.Drawing.Size(200, 80);
             this.sexBg.TabIndex = 0;
             this.sexBg.Click += new System.EventHandler(this.sexBg_Click);
+            // 
+            // sexComboBox
+            // 
+            this.sexComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.sexComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sexComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.sexComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.sexComboBox.BorderSize = 0;
+            this.sexComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sexComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sexComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sexComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.sexComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.sexComboBox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.sexComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.sexComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.sexComboBox.Location = new System.Drawing.Point(0, 26);
+            this.sexComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.sexComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.sexComboBox.Name = "sexComboBox";
+            this.sexComboBox.Size = new System.Drawing.Size(200, 30);
+            this.sexComboBox.TabIndex = 3;
+            this.sexComboBox.Texts = "Male";
             // 
             // passwordBg
             // 
@@ -566,6 +674,33 @@
             this.yearLevelBg.TabIndex = 0;
             this.yearLevelBg.Click += new System.EventHandler(this.yearLevelBg_Click);
             // 
+            // yearLevelComboBox
+            // 
+            this.yearLevelComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.yearLevelComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.yearLevelComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.yearLevelComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.yearLevelComboBox.BorderSize = 0;
+            this.yearLevelComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yearLevelComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.yearLevelComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yearLevelComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.yearLevelComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.yearLevelComboBox.Items.AddRange(new object[] {
+            "1st Year",
+            "2nd Year",
+            "3rd Year",
+            "4th Year"});
+            this.yearLevelComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.yearLevelComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.yearLevelComboBox.Location = new System.Drawing.Point(0, 26);
+            this.yearLevelComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.yearLevelComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.yearLevelComboBox.Name = "yearLevelComboBox";
+            this.yearLevelComboBox.Size = new System.Drawing.Size(200, 30);
+            this.yearLevelComboBox.TabIndex = 8;
+            this.yearLevelComboBox.Texts = "1st Year";
+            // 
             // semesterLabel
             // 
             this.semesterLabel.BackColor = System.Drawing.Color.Transparent;
@@ -592,6 +727,31 @@
             this.semesterBg.Size = new System.Drawing.Size(200, 80);
             this.semesterBg.TabIndex = 0;
             this.semesterBg.Click += new System.EventHandler(this.semesterBg_Click);
+            // 
+            // semesterComboBox
+            // 
+            this.semesterComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.semesterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.semesterComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.semesterComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.semesterComboBox.BorderSize = 0;
+            this.semesterComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.semesterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.semesterComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.semesterComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.semesterComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.semesterComboBox.Items.AddRange(new object[] {
+            "1st Sem",
+            "2nd Sem"});
+            this.semesterComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.semesterComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.semesterComboBox.Location = new System.Drawing.Point(0, 26);
+            this.semesterComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.semesterComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.semesterComboBox.Name = "semesterComboBox";
+            this.semesterComboBox.Size = new System.Drawing.Size(200, 30);
+            this.semesterComboBox.TabIndex = 10;
+            this.semesterComboBox.Texts = "1st Sem";
             // 
             // wrongLastNameLabel
             // 
@@ -644,165 +804,6 @@
             this.wrongConfirmPasswordLabel.TabIndex = 17;
             this.wrongConfirmPasswordLabel.Text = "* Sample error message";
             this.wrongConfirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // semesterComboBox
-            // 
-            this.semesterComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.semesterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.semesterComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.semesterComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.semesterComboBox.BorderSize = 0;
-            this.semesterComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.semesterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.semesterComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.semesterComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.semesterComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.semesterComboBox.Items.AddRange(new object[] {
-            "1st Sem",
-            "2nd Sem"});
-            this.semesterComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.semesterComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.semesterComboBox.Location = new System.Drawing.Point(0, 26);
-            this.semesterComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.semesterComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.semesterComboBox.Name = "semesterComboBox";
-            this.semesterComboBox.Size = new System.Drawing.Size(200, 30);
-            this.semesterComboBox.TabIndex = 10;
-            this.semesterComboBox.Texts = "1st Sem";
-            // 
-            // yearLevelComboBox
-            // 
-            this.yearLevelComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.yearLevelComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.yearLevelComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.yearLevelComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.yearLevelComboBox.BorderSize = 0;
-            this.yearLevelComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yearLevelComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.yearLevelComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLevelComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.yearLevelComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.yearLevelComboBox.Items.AddRange(new object[] {
-            "1st Year",
-            "2nd Year",
-            "3rd Year",
-            "4th Year"});
-            this.yearLevelComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.yearLevelComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.yearLevelComboBox.Location = new System.Drawing.Point(0, 26);
-            this.yearLevelComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.yearLevelComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.yearLevelComboBox.Name = "yearLevelComboBox";
-            this.yearLevelComboBox.Size = new System.Drawing.Size(200, 30);
-            this.yearLevelComboBox.TabIndex = 8;
-            this.yearLevelComboBox.Texts = "1st Year";
-            // 
-            // sexComboBox
-            // 
-            this.sexComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.sexComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.sexComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.sexComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.sexComboBox.BorderSize = 0;
-            this.sexComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sexComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sexComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sexComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.sexComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.sexComboBox.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.sexComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.sexComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.sexComboBox.Location = new System.Drawing.Point(0, 26);
-            this.sexComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.sexComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.sexComboBox.Name = "sexComboBox";
-            this.sexComboBox.Size = new System.Drawing.Size(200, 30);
-            this.sexComboBox.TabIndex = 3;
-            this.sexComboBox.Texts = "Male";
-            // 
-            // statusComboBox
-            // 
-            this.statusComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.statusComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.statusComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.statusComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.statusComboBox.BorderSize = 0;
-            this.statusComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.statusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.statusComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.statusComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.statusComboBox.Items.AddRange(new object[] {
-            "Regular",
-            "Irregular"});
-            this.statusComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.statusComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.statusComboBox.Location = new System.Drawing.Point(0, 26);
-            this.statusComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.statusComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.statusComboBox.Name = "statusComboBox";
-            this.statusComboBox.Size = new System.Drawing.Size(200, 30);
-            this.statusComboBox.TabIndex = 11;
-            this.statusComboBox.Texts = "Regular";
-            // 
-            // courseComboBox
-            // 
-            this.courseComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.courseComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.courseComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.courseComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.courseComboBox.BorderSize = 0;
-            this.courseComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.courseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.courseComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.courseComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.courseComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.courseComboBox.Items.AddRange(new object[] {
-            "BSMT",
-            "BSCRIM",
-            "BSTM",
-            "BSIT",
-            "BSCS",
-            "BSCM",
-            "BSESS",
-            "BSPSYCH",
-            "BS Arch",
-            "BSBM",
-            "BSDM",
-            "BSIS"});
-            this.courseComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.courseComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.courseComboBox.Location = new System.Drawing.Point(0, 26);
-            this.courseComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.courseComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.courseComboBox.Name = "courseComboBox";
-            this.courseComboBox.Size = new System.Drawing.Size(200, 30);
-            this.courseComboBox.TabIndex = 7;
-            this.courseComboBox.Texts = "BSIT";
-            // 
-            // birthdayPicker
-            // 
-            this.birthdayPicker.BorderColor = System.Drawing.Color.Transparent;
-            this.birthdayPicker.BorderSize = 0;
-            this.birthdayPicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.birthdayPicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.birthdayPicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.birthdayPicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.birthdayPicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.birthdayPicker.CustomFormat = "MMMM dd, yyy";
-            this.birthdayPicker.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birthdayPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.birthdayPicker.Location = new System.Drawing.Point(0, 26);
-            this.birthdayPicker.Margin = new System.Windows.Forms.Padding(0);
-            this.birthdayPicker.MinimumSize = new System.Drawing.Size(4, 35);
-            this.birthdayPicker.Name = "birthdayPicker";
-            this.birthdayPicker.Size = new System.Drawing.Size(413, 36);
-            this.birthdayPicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.birthdayPicker.TabIndex = 5;
-            this.birthdayPicker.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.birthdayPicker.Value = new System.DateTime(2023, 11, 12, 13, 32, 33, 0);
             // 
             // RegisterForm
             // 
