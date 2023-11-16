@@ -42,6 +42,7 @@
             this.headerLabel.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.headerLabel.Location = new System.Drawing.Point(260, 139);
+            this.headerLabel.Margin = new System.Windows.Forms.Padding(0);
             this.headerLabel.Name = "headerLabel";
             this.headerLabel.Size = new System.Drawing.Size(759, 154);
             this.headerLabel.TabIndex = 0;
@@ -54,9 +55,10 @@
             this.descLabel.Font = new System.Drawing.Font("Poppins Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.descLabel.Location = new System.Drawing.Point(327, 323);
+            this.descLabel.Margin = new System.Windows.Forms.Padding(0);
             this.descLabel.Name = "descLabel";
             this.descLabel.Size = new System.Drawing.Size(626, 90);
-            this.descLabel.TabIndex = 1;
+            this.descLabel.TabIndex = 0;
             this.descLabel.Text = "Some information cannot be changed \nonce you confirm";
             this.descLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -68,9 +70,10 @@
             this.cancelBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelBtn.ForeColor = System.Drawing.Color.White;
             this.cancelBtn.Location = new System.Drawing.Point(665, 443);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(0);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(300, 80);
-            this.cancelBtn.TabIndex = 2;
+            this.cancelBtn.TabIndex = 1;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = false;
             // 
@@ -83,9 +86,10 @@
             this.confirmBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.confirmBtn.Location = new System.Drawing.Point(315, 443);
+            this.confirmBtn.Margin = new System.Windows.Forms.Padding(30);
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(300, 80);
-            this.confirmBtn.TabIndex = 3;
+            this.confirmBtn.TabIndex = 2;
             this.confirmBtn.Text = "Confirm";
             this.confirmBtn.UseVisualStyleBackColor = false;
             // 
@@ -95,9 +99,10 @@
             this.reminderLabel.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reminderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.reminderLabel.Location = new System.Drawing.Point(361, 553);
+            this.reminderLabel.Margin = new System.Windows.Forms.Padding(0);
             this.reminderLabel.Name = "reminderLabel";
             this.reminderLabel.Size = new System.Drawing.Size(558, 28);
-            this.reminderLabel.TabIndex = 4;
+            this.reminderLabel.TabIndex = 0;
             this.reminderLabel.Text = "After signing up, student number will be auto generated";
             this.reminderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
