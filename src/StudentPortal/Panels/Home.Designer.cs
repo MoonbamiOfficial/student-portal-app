@@ -40,6 +40,8 @@
             // 
             // headerDesc
             // 
+            this.headerDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.headerDesc.BackColor = System.Drawing.Color.Transparent;
             this.headerDesc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.headerDesc.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -55,6 +57,8 @@
             // 
             // header
             // 
+            this.header.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.header.BackColor = System.Drawing.Color.Transparent;
             this.header.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.header.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -69,6 +73,8 @@
             // 
             // schoolHeaderDesc
             // 
+            this.schoolHeaderDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.schoolHeaderDesc.BackColor = System.Drawing.Color.Transparent;
             this.schoolHeaderDesc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.schoolHeaderDesc.Font = new System.Drawing.Font("Poppins Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,6 +89,8 @@
             // 
             // schoolHeader
             // 
+            this.schoolHeader.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.schoolHeader.BackColor = System.Drawing.Color.Transparent;
             this.schoolHeader.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.schoolHeader.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,6 +104,8 @@
             // 
             // logo
             // 
+            this.logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.Image = global::StudentPortal.Properties.Resources.logo;
             this.logo.Location = new System.Drawing.Point(628, 663);
@@ -107,6 +117,8 @@
             // 
             // schoolCover
             // 
+            this.schoolCover.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.schoolCover.Image = global::StudentPortal.Properties.Resources.classroom;
             this.schoolCover.Location = new System.Drawing.Point(0, 0);
             this.schoolCover.Name = "schoolCover";
