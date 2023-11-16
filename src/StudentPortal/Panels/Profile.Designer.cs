@@ -44,9 +44,6 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.studentCover = new System.Windows.Forms.PictureBox();
             this.studentNameNumber = new System.Windows.Forms.FlowLayoutPanel();
-            this.confirmEmailLabel = new System.Windows.Forms.Label();
-            this.confirmEmailBg = new System.Windows.Forms.Panel();
-            this.confirmEmailTextbox = new System.Windows.Forms.TextBox();
             this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentCover)).BeginInit();
@@ -138,7 +135,7 @@
             this.editBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editBtn.ForeColor = System.Drawing.Color.White;
-            this.editBtn.Location = new System.Drawing.Point(350, 880);
+            this.editBtn.Location = new System.Drawing.Point(604, 764);
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(300, 80);
             this.editBtn.TabIndex = 20;
@@ -245,40 +242,6 @@
             this.studentNameNumber.Size = new System.Drawing.Size(654, 55);
             this.studentNameNumber.TabIndex = 27;
             // 
-            // confirmEmailLabel
-            // 
-            this.confirmEmailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.confirmEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmEmailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.confirmEmailLabel.Location = new System.Drawing.Point(580, 730);
-            this.confirmEmailLabel.Name = "confirmEmailLabel";
-            this.confirmEmailLabel.Size = new System.Drawing.Size(170, 34);
-            this.confirmEmailLabel.TabIndex = 28;
-            this.confirmEmailLabel.Text = "Confirm Email";
-            this.confirmEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.confirmEmailLabel.Click += new System.EventHandler(this.confirmEmailLabel_Click);
-            // 
-            // confirmEmailBg
-            // 
-            this.confirmEmailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.confirmEmailBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.confirmEmailBg.Location = new System.Drawing.Point(550, 764);
-            this.confirmEmailBg.Name = "confirmEmailBg";
-            this.confirmEmailBg.Size = new System.Drawing.Size(400, 80);
-            this.confirmEmailBg.TabIndex = 29;
-            this.confirmEmailBg.Click += new System.EventHandler(this.confirmEmailBg_Click);
-            // 
-            // confirmEmailTextbox
-            // 
-            this.confirmEmailTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.confirmEmailTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.confirmEmailTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmEmailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.confirmEmailTextbox.Location = new System.Drawing.Point(580, 790);
-            this.confirmEmailTextbox.Name = "confirmEmailTextbox";
-            this.confirmEmailTextbox.Size = new System.Drawing.Size(340, 29);
-            this.confirmEmailTextbox.TabIndex = 30;
-            // 
             // studentIcon
             // 
             this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -310,10 +273,8 @@
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.confirmPasswordLabel);
             this.Controls.Add(this.emailLabel);
-            this.Controls.Add(this.confirmEmailLabel);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.emailTextbox);
-            this.Controls.Add(this.confirmEmailTextbox);
             this.Controls.Add(this.passwordTextbox);
             this.Controls.Add(this.confirmPasswordTextbox);
             this.Controls.Add(this.logo);
@@ -321,7 +282,6 @@
             this.Controls.Add(this.passwordBg);
             this.Controls.Add(this.confirmPasswordBg);
             this.Controls.Add(this.emailBg);
-            this.Controls.Add(this.confirmEmailBg);
             this.Name = "Profile";
             this.Size = new System.Drawing.Size(1000, 1024);
             this.Load += new System.EventHandler(this.Profile_Load);
@@ -353,8 +313,5 @@
         private System.Windows.Forms.Panel confirmPasswordBg;
         private System.Windows.Forms.Panel passwordBg;
         private System.Windows.Forms.FlowLayoutPanel studentNameNumber;
-        private System.Windows.Forms.Label confirmEmailLabel;
-        private System.Windows.Forms.Panel confirmEmailBg;
-        private System.Windows.Forms.TextBox confirmEmailTextbox;
     }
 }

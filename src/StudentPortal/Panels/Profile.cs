@@ -16,69 +16,52 @@ namespace StudentPortal.Panels
         {
             InitializeComponent();
         }
-
+        Utils u = new Utils();
         private void Profile_Load(object sender, EventArgs e)
         {
             logo.Parent = studentCover;
             logo.BackColor = Color.Transparent;
         }
-
-        //
-        //  Setters
-        //
-        private void setFocus(TextBox textBox)
-        {
-            textBox.Focus();
-        }
         //
         //  Label events
+        //
         private void passwordLabel_Click(object sender, EventArgs e)
         {
-            setFocus(passwordTextbox);
+            u.setFocus(passwordTextbox);
         }
 
         private void emailLabel_Click(object sender, EventArgs e)
         {
-            setFocus(emailTextbox);
+            u.setFocus(emailTextbox);
         }
 
         private void confirmPasswordLabel_Click(object sender, EventArgs e)
         {
-            setFocus(confirmPasswordTextbox);
-        }
-
-        private void confirmEmailLabel_Click(object sender, EventArgs e)
-        {
-            setFocus(confirmEmailTextbox);
+            u.setFocus(confirmPasswordTextbox);
         }
         //
         //  BG Panel events
         //
         private void passwordBg_Click(object sender, EventArgs e)
         {
-            setFocus(passwordTextbox);
+            u.setFocus(passwordTextbox);
         }
 
         private void emailBg_Click(object sender, EventArgs e)
         {
-            setFocus(emailTextbox);
+            u.setFocus(emailTextbox);
         }
 
         private void confirmPasswordBg_Click(object sender, EventArgs e)
         {
-            setFocus(confirmPasswordTextbox);
-        }
-
-        private void confirmEmailBg_Click(object sender, EventArgs e)
-        {
-            setFocus(confirmEmailTextbox);
+            u.setFocus(confirmPasswordTextbox);
         }
         //
         // Edit btn event
         //
         private void editBtn_Click(object sender, EventArgs e)
         {
-            // ---------- DO SOME VERIFICATIONS HERE BACKENDERIST ----------
+            // ---------- DO SOME VERIFICATIONS HERE BACKENDERIST - JAM ----------
 
             editBtn.Text = "Save";
             
