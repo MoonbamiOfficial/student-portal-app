@@ -17,18 +17,18 @@ namespace StudentPortal.Panels.TodoPanels
         {
             InitializeComponent();
         }
-        View view = new View();
+        Utils u = new Utils();
 
         //
         //  On load event
         //
         private void ActivitiesPanel_Load(object sender, EventArgs e)
         {
-            view.setPanelNotVisible(actOne);
-            view.setPanelNotVisible(actTwo);
-            view.setPanelNotVisible(actThree);
+            u.setPanelNotVisible(actOne);
+            u.setPanelNotVisible(actTwo);
+            u.setPanelNotVisible(actThree);
 
-            view.setBtnNotVisible(backBtn);
+            u.setBtnNotVisible(backBtn);
 
         }
         //
@@ -36,69 +36,69 @@ namespace StudentPortal.Panels.TodoPanels
         //
         private void actOneLabel_Click(object sender, EventArgs e)
         {
-            view.setPanelVisible(actOne);
-            view.setPanelNotVisible(actTwo);
-            view.setPanelVisible(actThree);
+            u.setPanelVisible(actOne);
+            u.setPanelNotVisible(actTwo);
+            u.setPanelVisible(actThree);
 
             activityList.Visible = false;
-            view.setBtnVisible(backBtn);
+            u.setBtnVisible(backBtn);
         }
         private void dateOneLabel_Click(object sender, EventArgs e)
         {
-            view.setPanelVisible(actOne);
-            view.setPanelNotVisible(actTwo);
-            view.setPanelVisible(actThree);
+            u.setPanelVisible(actOne);
+            u.setPanelNotVisible(actTwo);
+            u.setPanelVisible(actThree);
 
             activityList.Visible = false;
-            view.setBtnVisible(backBtn);
+            u.setBtnVisible(backBtn);
         }
         private void actTwoLabel_Click(object sender, EventArgs e)
         {
-            view.setPanelNotVisible(actOne);
-            view.setPanelVisible(actTwo);
-            view.setPanelVisible(actThree);
+            u.setPanelNotVisible(actOne);
+            u.setPanelVisible(actTwo);
+            u.setPanelVisible(actThree);
 
             activityList.Visible = false;
-            view.setBtnVisible(backBtn);
+            u.setBtnVisible(backBtn);
         }
         private void dateTwoLabel_Click(object sender, EventArgs e)
         {
-            view.setPanelNotVisible(actOne);
-            view.setPanelVisible(actTwo);
-            view.setPanelVisible(actThree);
+            u.setPanelNotVisible(actOne);
+            u.setPanelVisible(actTwo);
+            u.setPanelVisible(actThree);
 
             activityList.Visible = false;
-            view.setBtnVisible(backBtn);
+            u.setBtnVisible(backBtn);
         }
         private void actThreeLabel_Click(object sender, EventArgs e)
         {
-            view.setPanelNotVisible(actOne);
-            view.setPanelNotVisible(actTwo);
-            view.setPanelVisible(actThree);
+            u.setPanelNotVisible(actOne);
+            u.setPanelNotVisible(actTwo);
+            u.setPanelVisible(actThree);
 
             activityList.Visible = false;
-            view.setBtnVisible(backBtn);
+            u.setBtnVisible(backBtn);
         }
         private void dateThreeLabel_Click(object sender, EventArgs e)
         {
-            view.setPanelNotVisible(actOne);
-            view.setPanelNotVisible(actTwo);
-            view.setPanelVisible(actThree);
+            u.setPanelNotVisible(actOne);
+            u.setPanelNotVisible(actTwo);
+            u.setPanelVisible(actThree);
 
             activityList.Visible = false;
-            view.setBtnVisible(backBtn);
+            u.setBtnVisible(backBtn);
         }
         //
         // Back button
         //
         private void backBtn_Click(object sender, EventArgs e)
         {
-            view.setPanelNotVisible(actOne);
-            view.setPanelNotVisible(actTwo);
-            view.setPanelNotVisible(actThree);
+            u.setPanelNotVisible(actOne);
+            u.setPanelNotVisible(actTwo);
+            u.setPanelNotVisible(actThree);
 
             activityList.Visible = true;
-            view.setBtnNotVisible(backBtn);
+            u.setBtnNotVisible(backBtn);
 
         }
         //

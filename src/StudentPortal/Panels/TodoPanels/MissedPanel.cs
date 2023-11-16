@@ -17,7 +17,7 @@ namespace StudentPortal.Panels.TodoPanels
         {
             InitializeComponent();
         }
-        View view = new View();
+        Utils view = new Utils();
 
         //
         //  On load event

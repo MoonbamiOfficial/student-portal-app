@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentPortal.StudentPortalControls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +8,11 @@ using System.Windows.Forms;
 
 namespace StudentPortal.Panels
 {
-    internal class View
+    internal class Utils
     {
+        //
+        //  Visible functions
+        //
         public void setPanelVisible(UserControl panel)
         {
             panel.Visible = true;
@@ -24,6 +28,24 @@ namespace StudentPortal.Panels
         public void setBtnNotVisible(Button btn)
         {
             btn.Visible = false;
+        }
+        //
+        //  Focus function
+        //
+        public void setFocus(TextBox tb)
+        {
+            tb.Focus();
+        }
+        // 
+        //  Select function
+        //
+        public void setSelect(comboBoxCustom cb)
+        {
+            cb.Select();
+        }
+        public void setOpen(datePickerCustom dp)
+        {
+            dp.Select();
         }
     }
 }
