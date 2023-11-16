@@ -227,6 +227,7 @@
             // logOutBtn
             // 
             this.logOutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.logOutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logOutBtn.FlatAppearance.BorderSize = 0;
             this.logOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOutBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,6 +238,7 @@
             this.logOutBtn.TabIndex = 6;
             this.logOutBtn.Text = "Log Out";
             this.logOutBtn.UseVisualStyleBackColor = false;
+            this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
             // 
             // home
             // 

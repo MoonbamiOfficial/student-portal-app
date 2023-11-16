@@ -17,8 +17,9 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
-
-        // ---------- Sets the appearance of active button ----------
+        //
+        //  Sets the appearance of active button
+        //
         public void setActiveBtn(IconButton btn)
         {
             System.Drawing.Color bgColor = System.Drawing.Color.FromArgb(222, 245, 229);
@@ -30,7 +31,9 @@ namespace StudentPortal
             btn.ForeColor = moodColor;
             btn.IconColor = moodColor;
         }
-        // ---------- Sets the appearance of inactive button ----------
+        //
+        //  Sets the appearance of inactive button
+        //
         public void setInactiveBtn(IconButton btn)
         {
             System.Drawing.Color bgColor = System.Drawing.Color.FromArgb(69, 159, 127);
@@ -40,14 +43,18 @@ namespace StudentPortal
             btn.ForeColor = Color.White;
             btn.IconColor = Color.White;
         }
-        // ---------- Sets the default visible panel to Home on load ----------
+        //
+        //  Sets the default visible panel to Home on load
+        //
         private void MainForm_Load(object sender, EventArgs e)
         {
             home.Visible = true;
             profile.Visible = false;
             degree.Visible = false;
         }
-        // ---------- Side nav button events ----------
+        //
+        //  Side nav button events
+        //
         private void homeBtn_Click(object sender, EventArgs e)
         {
             setActiveBtn(homeBtn);
@@ -100,6 +107,15 @@ namespace StudentPortal
             profile.Visible = false;
             degree.Visible = false;
             todo.Visible = true;
+        }
+
+        //
+        //  Temporary code - logs out to after clicking log out
+        //
+        private void logOutBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new LoginForm().Show();
         }
     }
 }

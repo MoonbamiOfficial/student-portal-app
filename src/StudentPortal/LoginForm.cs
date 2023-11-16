@@ -145,6 +145,8 @@ namespace StudentPortal
             Validator validator = new Validator();
             validator.validateLogin(email, password);
 
+
+            // Temporary code - opens the main form after logging in
             this.Hide();
             new MainForm().Show();
         }
