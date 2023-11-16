@@ -14,7 +14,7 @@ namespace StudentPortal
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
             new LoginForm().Show();
         }
         Utils u = new Utils();

@@ -114,7 +114,7 @@ namespace StudentPortal
         //
         private void logOutBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
             new LoginForm().Show();
         }
     }
