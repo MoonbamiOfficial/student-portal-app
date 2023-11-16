@@ -144,6 +144,79 @@
     <Compile Include="Panels\Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Todo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Todo.Designer.cs">
+      <DependentUpon>Todo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\FinishedPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\FinishedPanel.Designer.cs">
+      <DependentUpon>FinishedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\MissedPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\MissedPanel.Designer.cs">
+      <DependentUpon>MissedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\ActivityThree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\ActivityThree.Designer.cs">
+      <DependentUpon>ActivityThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\ActivityTwo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\ActivityTwo.Designer.cs">
+      <DependentUpon>ActivityTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\ActivitiesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\ActivitiesPanel.Designer.cs">
+      <DependentUpon>ActivitiesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\ActivityOne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\ActivityOne.Designer.cs">
+      <DependentUpon>ActivityOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\ProjectsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\ProjectsPanel.Designer.cs">
+      <DependentUpon>ProjectsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\RelaxPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\RelaxPanel.Designer.cs">
+      <DependentUpon>RelaxPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\MissedOne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\MissedOne.Designer.cs">
+      <DependentUpon>MissedOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\ProjectOne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\ProjectOne.Designer.cs">
+      <DependentUpon>ProjectOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\FinishedOne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TodoPanels\TodosFolder\FinishedOne.Designer.cs">
+      <DependentUpon>FinishedOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="CustomControls\buttonCustom.cs">
       <SubType>Component</SubType>
@@ -193,6 +266,42 @@
     <EmbeddedResource Include="Panels\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Todo.resx">
+      <DependentUpon>Todo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\FinishedPanel.resx">
+      <DependentUpon>FinishedPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\MissedPanel.resx">
+      <DependentUpon>MissedPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\TodosFolder\ActivityThree.resx">
+      <DependentUpon>ActivityThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\TodosFolder\ActivityTwo.resx">
+      <DependentUpon>ActivityTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\ActivitiesPanel.resx">
+      <DependentUpon>ActivitiesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\TodosFolder\ActivityOne.resx">
+      <DependentUpon>ActivityOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\ProjectsPanel.resx">
+      <DependentUpon>ProjectsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\RelaxPanel.resx">
+      <DependentUpon>RelaxPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\TodosFolder\MissedOne.resx">
+      <DependentUpon>MissedOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\TodosFolder\ProjectOne.resx">
+      <DependentUpon>ProjectOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TodoPanels\TodosFolder\FinishedOne.resx">
+      <DependentUpon>FinishedOne.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -234,6 +343,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\femaleStudent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

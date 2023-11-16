@@ -42,6 +42,7 @@
             this.home = new StudentPortal.Panels.Home();
             this.profile = new StudentPortal.Panels.Profile();
             this.degree = new StudentPortal.Panels.Degree();
+            this.todo = new StudentPortal.Panels.Todo();
             this.sideNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
             this.SuspendLayout();
@@ -181,6 +182,7 @@
             this.todoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.todoBtn.UseMnemonic = false;
             this.todoBtn.UseVisualStyleBackColor = false;
+            this.todoBtn.Click += new System.EventHandler(this.todoBtn_Click);
             // 
             // settingBtn
             // 
@@ -260,6 +262,14 @@
             this.degree.Size = new System.Drawing.Size(1000, 1024);
             this.degree.TabIndex = 5;
             // 
+            // todo
+            // 
+            this.todo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.todo.Location = new System.Drawing.Point(440, 0);
+            this.todo.Name = "todo";
+            this.todo.Size = new System.Drawing.Size(1000, 1024);
+            this.todo.TabIndex = 6;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,6 +280,7 @@
             this.Controls.Add(this.home);
             this.Controls.Add(this.profile);
             this.Controls.Add(this.degree);
+            this.Controls.Add(this.todo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -296,5 +307,6 @@
         private Panels.Home home;
         private Panels.Profile profile;
         private Panels.Degree degree;
+        private Panels.Todo todo;
     }
 }

@@ -53,10 +53,12 @@ namespace StudentPortal
             setActiveBtn(homeBtn);
             setInactiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
+            setInactiveBtn(todoBtn);
 
             home.Visible = true;
             profile.Visible = false;
             degree.Visible = false;
+            todo.Visible = false;
         }
 
         private void profileBtn_Click(object sender, EventArgs e)
@@ -64,10 +66,13 @@ namespace StudentPortal
             setInactiveBtn(homeBtn);
             setActiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
+            setInactiveBtn(todoBtn);
 
             home.Visible = false;
             profile.Visible = true;
             degree.Visible = false;
+            todo.Visible = false;
+
         }
 
         private void degreeBtn_Click(object sender, EventArgs e)
@@ -75,10 +80,26 @@ namespace StudentPortal
             setInactiveBtn(homeBtn);
             setInactiveBtn(profileBtn);
             setActiveBtn(degreeBtn);
+            setInactiveBtn(todoBtn);
 
             home.Visible = false;
             profile.Visible = false;
             degree.Visible = true;
+            todo.Visible = false;
+
+        }
+
+        private void todoBtn_Click(object sender, EventArgs e)
+        {
+            setInactiveBtn(homeBtn);
+            setInactiveBtn(profileBtn);
+            setInactiveBtn(degreeBtn);
+            setActiveBtn(todoBtn);
+
+            home.Visible = false;
+            profile.Visible = false;
+            degree.Visible = false;
+            todo.Visible = true;
         }
     }
 }

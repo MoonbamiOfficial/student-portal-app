@@ -191,7 +191,7 @@
             this.card.Controls.Add(this.panel9, 0, 9);
             this.card.Cursor = System.Windows.Forms.Cursors.Default;
             this.card.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.card.Location = new System.Drawing.Point(34, 373);
+            this.card.Location = new System.Drawing.Point(34, 350);
             this.card.Name = "card";
             this.card.RowCount = 10;
             this.card.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -793,7 +793,7 @@
             this.downloadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.downloadBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.downloadBtn.ForeColor = System.Drawing.Color.White;
-            this.downloadBtn.Location = new System.Drawing.Point(350, 915);
+            this.downloadBtn.Location = new System.Drawing.Point(350, 880);
             this.downloadBtn.Name = "downloadBtn";
             this.downloadBtn.Size = new System.Drawing.Size(300, 80);
             this.downloadBtn.TabIndex = 20;
