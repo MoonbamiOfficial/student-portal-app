@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using StudentPortal.Panels;
 
 namespace StudentPortal
 {
@@ -19,7 +20,7 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
-
+        Utils u = new Utils();
         public static LoginForm getInstance()
         {
             if (loginForm == null)
@@ -34,82 +35,30 @@ namespace StudentPortal
 
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
-            RegisterForm RegisterForm = new RegisterForm();
-            RegisterForm.Show();
+            this.Hide();
+            new RegisterForm().Show();
         }
-
-        // Globals
-        string emailPlaceholder = "student_portal@gmail.com";
-        string passwordPlaceholder = "Password";
-
-        // Background panel events
-        private void EmailBg_Click(object sender, EventArgs e)
+        //
+        //  Click label events
+        //
+        private void emailLabel_Click(object sender, EventArgs e)
         {
-            emailTextbox.Focus();
+            u.setFocus(emailTextbox);
         }
-
-        private void PasswordBg_Click(object sender, EventArgs e)
+        private void passwordLabel_Click(object sender, EventArgs e)
         {
-            passwordTextbox.Focus();
+            u.setFocus(passwordTextbox);
         }
-
-        // Label events
-        private void EmailLabel_Click(object sender, EventArgs e)
+        //
+        //  Click bg panel events
+        //
+        private void emailBg_Click(object sender, EventArgs e)
         {
-            emailTextbox.Focus();
+            u.setFocus(emailTextbox);
         }
-
-        private void PasswordLabel_Click(object sender, EventArgs e)
+        private void passwordBg_Click(object sender, EventArgs e)
         {
-            passwordTextbox.Focus();
-        }
-
-        // Text field events
-        private void EmailTextbox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            wrongEmailLabel.Text = null;
-        }
-        private void PasswordTextbox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            wrongPasswordLabel.Text = null;
-        }
-
-        // Simple placeholders
-        private void EmailTextbox_Enter(object sender, EventArgs e)
-        {
-            if (emailTextbox.Text == emailPlaceholder || emailTextbox.Text == emailPlaceholder.ToLower() || emailTextbox.Text == emailPlaceholder.ToUpper())
-            {
-                emailTextbox.Text = "";
-                wrongEmailLabel.Text = null;
-            }
-        }
-
-        private void EmailTextbox_Leave(object sender, EventArgs e)
-        {
-            if (emailTextbox.Text == "")
-            {
-                emailTextbox.Text = emailPlaceholder;
-            }
-        }
-
-        private void PasswordTextbox_Enter(object sender, EventArgs e)
-        {
-            if (passwordTextbox.Text == passwordPlaceholder || passwordTextbox.Text == passwordPlaceholder.ToLower() || passwordTextbox.Text == passwordPlaceholder.ToUpper())
-            {
-                passwordTextbox.Text = "";
-                wrongPasswordLabel.Text = null;
-                passwordTextbox.UseSystemPasswordChar = true;
-            }
-        }
-
-        private void PasswordTextbox_Leave(object sender, EventArgs e)
-        {
-            if (passwordTextbox.Text == "")
-            {
-                passwordTextbox.Text = passwordPlaceholder;
-                passwordTextbox.UseSystemPasswordChar = false;
-            }
+            u.setFocus(passwordTextbox);
         }
         // ------------ Wrong Email & Password label Setters ------------
         public void setWrongEmailLabel(string message)
@@ -133,15 +82,6 @@ namespace StudentPortal
             string email = emailTextbox.Text;
             string password = passwordTextbox.Text;
 
-            // Check if the email and password is equal to the placeholder text.
-            // If true we will will return the function.
-            if (email == emailPlaceholder || password == passwordPlaceholder)
-            {
-                wrongEmailLabel.Text = "Enter email to login";
-                wrongPasswordLabel.Text = "Enter password to login";
-                return;
-            }
-            
             Validator validator = new Validator();
             validator.validateLogin(email, password);
 
@@ -151,6 +91,5 @@ namespace StudentPortal
             new MainForm().Show();
         }
 
-        
     }
 }
