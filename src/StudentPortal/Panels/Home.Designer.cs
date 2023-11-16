@@ -47,7 +47,7 @@
             this.headerDesc.Location = new System.Drawing.Point(41, 840);
             this.headerDesc.Name = "headerDesc";
             this.headerDesc.Size = new System.Drawing.Size(500, 84);
-            this.headerDesc.TabIndex = 7;
+            this.headerDesc.TabIndex = 0;
             this.headerDesc.Text = "The ideal application where students can create their own private space, monitor " +
     "their activities, home works, projects, grades and many more. ";
             this.headerDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -62,7 +62,7 @@
             this.header.Location = new System.Drawing.Point(41, 650);
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(431, 180);
-            this.header.TabIndex = 6;
+            this.header.TabIndex = 0;
             this.header.Text = "Your Journey Starts Here.";
             this.header.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.header.UseMnemonic = false;
@@ -76,7 +76,7 @@
             this.schoolHeaderDesc.Location = new System.Drawing.Point(208, 316);
             this.schoolHeaderDesc.Name = "schoolHeaderDesc";
             this.schoolHeaderDesc.Size = new System.Drawing.Size(583, 56);
-            this.schoolHeaderDesc.TabIndex = 5;
+            this.schoolHeaderDesc.TabIndex = 0;
             this.schoolHeaderDesc.Text = "TO DREAM, LEARN & DISCOVER";
             this.schoolHeaderDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.schoolHeaderDesc.UseMnemonic = false;
@@ -90,7 +90,7 @@
             this.schoolHeader.Location = new System.Drawing.Point(239, 200);
             this.schoolHeader.Name = "schoolHeader";
             this.schoolHeader.Size = new System.Drawing.Size(514, 116);
-            this.schoolHeader.TabIndex = 4;
+            this.schoolHeader.TabIndex = 0;
             this.schoolHeader.Text = "GET READY";
             this.schoolHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
