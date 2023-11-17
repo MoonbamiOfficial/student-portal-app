@@ -54,6 +54,7 @@
             // passwordLabel
             // 
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.passwordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.passwordLabel.Location = new System.Drawing.Point(80, 566);
@@ -67,6 +68,7 @@
             // emailLabel
             // 
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.emailLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.emailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.emailLabel.Location = new System.Drawing.Point(580, 566);
@@ -82,7 +84,8 @@
             this.studentNumber.BackColor = System.Drawing.Color.Transparent;
             this.studentNumber.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentNumber.Location = new System.Drawing.Point(240, 0);
+            this.studentNumber.Location = new System.Drawing.Point(240, 3);
+            this.studentNumber.Margin = new System.Windows.Forms.Padding(3);
             this.studentNumber.Name = "studentNumber";
             this.studentNumber.Size = new System.Drawing.Size(100, 48);
             this.studentNumber.TabIndex = 16;
@@ -94,9 +97,10 @@
             this.studentEmail.BackColor = System.Drawing.Color.Transparent;
             this.studentEmail.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentEmail.Location = new System.Drawing.Point(323, 458);
+            this.studentEmail.Location = new System.Drawing.Point(3, 57);
+            this.studentEmail.Margin = new System.Windows.Forms.Padding(3);
             this.studentEmail.Name = "studentEmail";
-            this.studentEmail.Size = new System.Drawing.Size(420, 28);
+            this.studentEmail.Size = new System.Drawing.Size(631, 32);
             this.studentEmail.TabIndex = 15;
             this.studentEmail.Text = "user_student@gmail.com";
             this.studentEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,7 +111,8 @@
             this.studentName.BackColor = System.Drawing.Color.Transparent;
             this.studentName.Font = new System.Drawing.Font("Poppins SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentName.Location = new System.Drawing.Point(3, 0);
+            this.studentName.Location = new System.Drawing.Point(3, 3);
+            this.studentName.Margin = new System.Windows.Forms.Padding(3);
             this.studentName.Name = "studentName";
             this.studentName.Size = new System.Drawing.Size(231, 48);
             this.studentName.TabIndex = 14;
@@ -117,6 +122,7 @@
             // confirmPasswordLabel
             // 
             this.confirmPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.confirmPasswordLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.confirmPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.confirmPasswordLabel.Location = new System.Drawing.Point(80, 730);
@@ -236,10 +242,11 @@
             this.studentNameNumber.BackColor = System.Drawing.Color.Transparent;
             this.studentNameNumber.Controls.Add(this.studentName);
             this.studentNameNumber.Controls.Add(this.studentNumber);
+            this.studentNameNumber.Controls.Add(this.studentEmail);
             this.studentNameNumber.Location = new System.Drawing.Point(316, 410);
             this.studentNameNumber.Margin = new System.Windows.Forms.Padding(0);
             this.studentNameNumber.Name = "studentNameNumber";
-            this.studentNameNumber.Size = new System.Drawing.Size(654, 55);
+            this.studentNameNumber.Size = new System.Drawing.Size(654, 100);
             this.studentNameNumber.TabIndex = 27;
             // 
             // studentIcon
@@ -268,7 +275,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.Controls.Add(this.studentNameNumber);
-            this.Controls.Add(this.studentEmail);
             this.Controls.Add(this.studentIcon);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.confirmPasswordLabel);
