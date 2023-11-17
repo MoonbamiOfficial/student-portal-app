@@ -94,7 +94,7 @@
             this.studentEmail.BackColor = System.Drawing.Color.Transparent;
             this.studentEmail.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentEmail.Location = new System.Drawing.Point(316, 458);
+            this.studentEmail.Location = new System.Drawing.Point(323, 458);
             this.studentEmail.Name = "studentEmail";
             this.studentEmail.Size = new System.Drawing.Size(420, 28);
             this.studentEmail.TabIndex = 15;

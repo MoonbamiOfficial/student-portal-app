@@ -221,7 +221,7 @@
     <Compile Include="CustomControls\buttonCustom.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CustomControls\datePickerCustom.cs">
+    <Compile Include="CustomControls\CustomDatePicker.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="LoginForm.cs">
@@ -238,10 +238,10 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomControls\comboBoxCustom.cs">
+    <Compile Include="CustomControls\CustomComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CustomControls\pictureBoxCustom.cs">
+    <Compile Include="CustomControls\CustomPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Validator.cs" />
@@ -333,9 +333,6 @@
     <None Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\caret-down.png" />
   </ItemGroup>
   <ItemGroup>
@@ -346,6 +343,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

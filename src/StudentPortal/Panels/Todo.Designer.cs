@@ -45,6 +45,7 @@
             this.relax = new StudentPortal.Panels.TodoPanels.RelaxPanel();
             this.missedPanel = new StudentPortal.Panels.TodoPanels.MissedPanel();
             this.finishedPanel = new StudentPortal.Panels.TodoPanels.FinishedPanel();
+            this.verticalLineTwo = new System.Windows.Forms.Panel();
             this.sideNavLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -323,6 +324,14 @@
             this.finishedPanel.Size = new System.Drawing.Size(715, 878);
             this.finishedPanel.TabIndex = 11;
             // 
+            // verticalLineTwo
+            // 
+            this.verticalLineTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(207)))), ((int)(((byte)(191)))));
+            this.verticalLineTwo.Location = new System.Drawing.Point(995, 126);
+            this.verticalLineTwo.Name = "verticalLineTwo";
+            this.verticalLineTwo.Size = new System.Drawing.Size(5, 1000);
+            this.verticalLineTwo.TabIndex = 12;
+            // 
             // Todo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,6 +339,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.Controls.Add(this.todoHeader);
             this.Controls.Add(this.horizontalLine);
+            this.Controls.Add(this.verticalLineTwo);
             this.Controls.Add(this.verticalLine);
             this.Controls.Add(this.activitiesPanel);
             this.Controls.Add(this.projectsPanel);
@@ -364,5 +374,6 @@
         private FontAwesome.Sharp.IconButton finishedBtn;
         private TodoPanels.MissedPanel missedPanel;
         private TodoPanels.FinishedPanel finishedPanel;
+        private System.Windows.Forms.Panel verticalLineTwo;
     }
 }

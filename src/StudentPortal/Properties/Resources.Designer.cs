@@ -123,9 +123,9 @@ namespace StudentPortal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap maleStudent {
+        public static System.Drawing.Bitmap logo1 {
             get {
-                object obj = ResourceManager.GetObject("maleStudent", resourceCulture);
+                object obj = ResourceManager.GetObject("logo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace StudentPortal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap preview {
+        public static System.Drawing.Bitmap maleStudent {
             get {
-                object obj = ResourceManager.GetObject("preview", resourceCulture);
+                object obj = ResourceManager.GetObject("maleStudent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
