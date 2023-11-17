@@ -55,6 +55,18 @@ namespace StudentPortal
         //
         //  Side nav button events
         //
+        private void studentIcon_Click(object sender, EventArgs e)
+        {
+            setInactiveBtn(homeBtn);
+            setActiveBtn(profileBtn);
+            setInactiveBtn(degreeBtn);
+            setInactiveBtn(todoBtn);
+
+            home.Visible = false;
+            profile.Visible = true;
+            degree.Visible = false;
+            todo.Visible = false;
+        }
         private void homeBtn_Click(object sender, EventArgs e)
         {
             setActiveBtn(homeBtn);
@@ -117,5 +129,6 @@ namespace StudentPortal
             this.Dispose();
             new LoginForm().Show();
         }
+
     }
 }

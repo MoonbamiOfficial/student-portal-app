@@ -86,6 +86,7 @@
             this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.studentIcon.BorderSize = 8;
+            this.studentIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.studentIcon.GradientAngle = 0F;
             this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
             this.studentIcon.Location = new System.Drawing.Point(134, 50);
@@ -94,6 +95,7 @@
             this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.studentIcon.TabIndex = 0;
             this.studentIcon.TabStop = false;
+            this.studentIcon.Click += new System.EventHandler(this.studentIcon_Click);
             // 
             // studentEmail
             // 
