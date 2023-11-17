@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.studentName = new System.Windows.Forms.Label();
             this.sideNav = new System.Windows.Forms.Panel();
+            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.studentEmail = new System.Windows.Forms.Label();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.profileBtn = new FontAwesome.Sharp.IconButton();
@@ -38,7 +39,6 @@
             this.todoBtn = new FontAwesome.Sharp.IconButton();
             this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.logOutBtn = new System.Windows.Forms.Button();
-            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.degree = new StudentPortal.Panels.Degree();
             this.home = new StudentPortal.Panels.Home();
             this.profile = new StudentPortal.Panels.Profile();
@@ -61,6 +61,8 @@
             // 
             // sideNav
             // 
+            this.sideNav.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.sideNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.sideNav.Controls.Add(this.studentIcon);
             this.sideNav.Controls.Add(this.studentName);
@@ -76,6 +78,23 @@
             this.sideNav.Size = new System.Drawing.Size(440, 1024);
             this.sideNav.TabIndex = 0;
             // 
+            // studentIcon
+            // 
+            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.studentIcon.BorderSize = 8;
+            this.studentIcon.GradientAngle = 0F;
+            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
+            this.studentIcon.Location = new System.Drawing.Point(134, 50);
+            this.studentIcon.Name = "studentIcon";
+            this.studentIcon.Size = new System.Drawing.Size(150, 150);
+            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentIcon.TabIndex = 0;
+            this.studentIcon.TabStop = false;
+            // 
             // studentEmail
             // 
             this.studentEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -90,6 +109,7 @@
             // 
             // homeBtn
             // 
+            this.homeBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.homeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.homeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.homeBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
@@ -114,6 +134,7 @@
             // 
             // profileBtn
             // 
+            this.profileBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.profileBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.profileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.profileBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -138,6 +159,7 @@
             // 
             // degreeBtn
             // 
+            this.degreeBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.degreeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.degreeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.degreeBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -162,6 +184,7 @@
             // 
             // todoBtn
             // 
+            this.todoBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.todoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.todoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.todoBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -186,6 +209,7 @@
             // 
             // settingBtn
             // 
+            this.settingBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.settingBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.settingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -209,6 +233,7 @@
             // 
             // logOutBtn
             // 
+            this.logOutBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.logOutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.logOutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logOutBtn.FlatAppearance.BorderSize = 0;
@@ -222,23 +247,6 @@
             this.logOutBtn.Text = "Log Out";
             this.logOutBtn.UseVisualStyleBackColor = false;
             this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
-            // 
-            // studentIcon
-            // 
-            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.studentIcon.BorderSize = 8;
-            this.studentIcon.GradientAngle = 0F;
-            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
-            this.studentIcon.Location = new System.Drawing.Point(134, 50);
-            this.studentIcon.Name = "studentIcon";
-            this.studentIcon.Size = new System.Drawing.Size(150, 150);
-            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.studentIcon.TabIndex = 0;
-            this.studentIcon.TabStop = false;
             // 
             // degree
             // 

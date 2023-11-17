@@ -55,29 +55,29 @@
             this.firstNameBg = new System.Windows.Forms.Panel();
             this.middleNameBg = new System.Windows.Forms.Panel();
             this.birthdayBg = new System.Windows.Forms.Panel();
-            this.birthdayPicker = new StudentPortal.datePickerCustom();
             this.courseBg = new System.Windows.Forms.Panel();
-            this.courseComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.lastNameBg = new System.Windows.Forms.Panel();
             this.emailBg = new System.Windows.Forms.Panel();
             this.statusBg = new System.Windows.Forms.Panel();
-            this.statusComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.sexBg = new System.Windows.Forms.Panel();
-            this.sexComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.passwordBg = new System.Windows.Forms.Panel();
             this.confirmPasswordBg = new System.Windows.Forms.Panel();
             this.loginBg = new System.Windows.Forms.Panel();
             this.wrongFirstNameLabel = new System.Windows.Forms.Label();
             this.yearLevelLabel = new System.Windows.Forms.Label();
             this.yearLevelBg = new System.Windows.Forms.Panel();
-            this.yearLevelComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.semesterLabel = new System.Windows.Forms.Label();
             this.semesterBg = new System.Windows.Forms.Panel();
-            this.semesterComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
             this.wrongLastNameLabel = new System.Windows.Forms.Label();
             this.wrongEmailLabel = new System.Windows.Forms.Label();
             this.wrongPasswordLabel = new System.Windows.Forms.Label();
             this.wrongConfirmPasswordLabel = new System.Windows.Forms.Label();
+            this.semesterComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
+            this.yearLevelComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
+            this.sexComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
+            this.statusComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
+            this.courseComboBox = new StudentPortal.StudentPortalControls.comboBoxCustom();
+            this.birthdayPicker = new StudentPortal.datePickerCustom();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.birthdayBg.SuspendLayout();
             this.courseBg.SuspendLayout();
@@ -101,6 +101,7 @@
             // 
             // confirmPasswordLabel
             // 
+            this.confirmPasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.confirmPasswordLabel.BackColor = System.Drawing.Color.Transparent;
             this.confirmPasswordLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.confirmPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,6 +117,7 @@
             // 
             // passwordLabel
             // 
+            this.passwordLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.passwordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,6 +133,7 @@
             // 
             // sexLabel
             // 
+            this.sexLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.sexLabel.BackColor = System.Drawing.Color.Transparent;
             this.sexLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sexLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,6 +149,7 @@
             // 
             // statusLabel
             // 
+            this.statusLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.statusLabel.BackColor = System.Drawing.Color.Transparent;
             this.statusLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.statusLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,6 +165,7 @@
             // 
             // emailLabel
             // 
+            this.emailLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
             this.emailLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.emailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,6 +181,7 @@
             // 
             // lastNameLabel
             // 
+            this.lastNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lastNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.lastNameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lastNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -191,6 +197,7 @@
             // 
             // courseLabel
             // 
+            this.courseLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.courseLabel.BackColor = System.Drawing.Color.Transparent;
             this.courseLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.courseLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,11 +213,12 @@
             // 
             // birthdayLabel
             // 
+            this.birthdayLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.birthdayLabel.BackColor = System.Drawing.Color.Transparent;
             this.birthdayLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.birthdayLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.birthdayLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.birthdayLabel.Location = new System.Drawing.Point(975, 388);
+            this.birthdayLabel.Location = new System.Drawing.Point(968, 388);
             this.birthdayLabel.Margin = new System.Windows.Forms.Padding(0);
             this.birthdayLabel.Name = "birthdayLabel";
             this.birthdayLabel.Size = new System.Drawing.Size(103, 34);
@@ -221,6 +229,7 @@
             // 
             // middleNameLabel
             // 
+            this.middleNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.middleNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.middleNameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.middleNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,6 +245,7 @@
             // 
             // firstNameLabel
             // 
+            this.firstNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.firstNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.firstNameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.firstNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -276,6 +286,7 @@
             // 
             // alreadyHaveLabel
             // 
+            this.alreadyHaveLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.alreadyHaveLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.alreadyHaveLabel.Font = new System.Drawing.Font("Poppins SemiBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alreadyHaveLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
@@ -289,6 +300,7 @@
             // 
             // descLabel
             // 
+            this.descLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.descLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.descLabel.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
@@ -302,6 +314,7 @@
             // 
             // firstNameTextbox
             // 
+            this.firstNameTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.firstNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.firstNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.firstNameTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -314,6 +327,7 @@
             // 
             // middleNameTextbox
             // 
+            this.middleNameTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.middleNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.middleNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.middleNameTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -326,6 +340,7 @@
             // 
             // emailTextbox
             // 
+            this.emailTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.emailTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.emailTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emailTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -338,6 +353,7 @@
             // 
             // lastNameTextbox
             // 
+            this.lastNameTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lastNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.lastNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lastNameTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,6 +366,7 @@
             // 
             // passwordTextbox
             // 
+            this.passwordTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.passwordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.passwordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -362,6 +379,7 @@
             // 
             // confirmPasswordTextbox
             // 
+            this.confirmPasswordTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.confirmPasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.confirmPasswordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.confirmPasswordTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -374,6 +392,7 @@
             // 
             // loginBtn
             // 
+            this.loginBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginBtn.FlatAppearance.BorderSize = 0;
             this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -383,13 +402,14 @@
             this.loginBtn.Margin = new System.Windows.Forms.Padding(0);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(300, 80);
-            this.loginBtn.TabIndex = 0;
+            this.loginBtn.TabIndex = 14;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = true;
             this.loginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // signUpBtn
             // 
+            this.signUpBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.signUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.signUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signUpBtn.FlatAppearance.BorderSize = 0;
@@ -406,6 +426,7 @@
             // 
             // firstNameBg
             // 
+            this.firstNameBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.firstNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.firstNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.firstNameBg.Location = new System.Drawing.Point(528, 274);
@@ -417,6 +438,7 @@
             // 
             // middleNameBg
             // 
+            this.middleNameBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.middleNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.middleNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.middleNameBg.Location = new System.Drawing.Point(938, 274);
@@ -428,6 +450,7 @@
             // 
             // birthdayBg
             // 
+            this.birthdayBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.birthdayBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.birthdayBg.Controls.Add(this.birthdayPicker);
             this.birthdayBg.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -438,30 +461,9 @@
             this.birthdayBg.TabIndex = 0;
             this.birthdayBg.Click += new System.EventHandler(this.birthdayBg_Click);
             // 
-            // birthdayPicker
-            // 
-            this.birthdayPicker.BorderColor = System.Drawing.Color.Transparent;
-            this.birthdayPicker.BorderSize = 0;
-            this.birthdayPicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.birthdayPicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.birthdayPicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.birthdayPicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.birthdayPicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.birthdayPicker.CustomFormat = "MMMM dd, yyy";
-            this.birthdayPicker.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birthdayPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.birthdayPicker.Location = new System.Drawing.Point(0, 26);
-            this.birthdayPicker.Margin = new System.Windows.Forms.Padding(0);
-            this.birthdayPicker.MinimumSize = new System.Drawing.Size(4, 35);
-            this.birthdayPicker.Name = "birthdayPicker";
-            this.birthdayPicker.Size = new System.Drawing.Size(413, 36);
-            this.birthdayPicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.birthdayPicker.TabIndex = 5;
-            this.birthdayPicker.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.birthdayPicker.Value = new System.DateTime(2023, 11, 12, 13, 32, 33, 0);
-            // 
             // courseBg
             // 
+            this.courseBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.courseBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.courseBg.Controls.Add(this.courseComboBox);
             this.courseBg.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -472,8 +474,328 @@
             this.courseBg.TabIndex = 0;
             this.courseBg.Click += new System.EventHandler(this.courseBg_Click);
             // 
+            // lastNameBg
+            // 
+            this.lastNameBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lastNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.lastNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lastNameBg.Location = new System.Drawing.Point(528, 422);
+            this.lastNameBg.Margin = new System.Windows.Forms.Padding(0);
+            this.lastNameBg.Name = "lastNameBg";
+            this.lastNameBg.Size = new System.Drawing.Size(400, 80);
+            this.lastNameBg.TabIndex = 0;
+            this.lastNameBg.Click += new System.EventHandler(this.lastNameBg_Click);
+            // 
+            // emailBg
+            // 
+            this.emailBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.emailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.emailBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailBg.Location = new System.Drawing.Point(528, 566);
+            this.emailBg.Margin = new System.Windows.Forms.Padding(0);
+            this.emailBg.Name = "emailBg";
+            this.emailBg.Size = new System.Drawing.Size(400, 80);
+            this.emailBg.TabIndex = 0;
+            this.emailBg.Click += new System.EventHandler(this.emailBg_Click);
+            // 
+            // statusBg
+            // 
+            this.statusBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.statusBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.statusBg.Controls.Add(this.statusComboBox);
+            this.statusBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.statusBg.Location = new System.Drawing.Point(1151, 714);
+            this.statusBg.Margin = new System.Windows.Forms.Padding(0);
+            this.statusBg.Name = "statusBg";
+            this.statusBg.Size = new System.Drawing.Size(200, 80);
+            this.statusBg.TabIndex = 0;
+            this.statusBg.Click += new System.EventHandler(this.statusBg_Click);
+            // 
+            // sexBg
+            // 
+            this.sexBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.sexBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.sexBg.Controls.Add(this.sexComboBox);
+            this.sexBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sexBg.Location = new System.Drawing.Point(1151, 274);
+            this.sexBg.Margin = new System.Windows.Forms.Padding(0);
+            this.sexBg.Name = "sexBg";
+            this.sexBg.Size = new System.Drawing.Size(200, 80);
+            this.sexBg.TabIndex = 0;
+            this.sexBg.Click += new System.EventHandler(this.sexBg_Click);
+            // 
+            // passwordBg
+            // 
+            this.passwordBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.passwordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.passwordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordBg.Location = new System.Drawing.Point(528, 714);
+            this.passwordBg.Margin = new System.Windows.Forms.Padding(0);
+            this.passwordBg.Name = "passwordBg";
+            this.passwordBg.Size = new System.Drawing.Size(400, 80);
+            this.passwordBg.TabIndex = 0;
+            this.passwordBg.Click += new System.EventHandler(this.passwordBg_Click);
+            // 
+            // confirmPasswordBg
+            // 
+            this.confirmPasswordBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.confirmPasswordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.confirmPasswordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.confirmPasswordBg.Location = new System.Drawing.Point(528, 862);
+            this.confirmPasswordBg.Margin = new System.Windows.Forms.Padding(0);
+            this.confirmPasswordBg.Name = "confirmPasswordBg";
+            this.confirmPasswordBg.Size = new System.Drawing.Size(400, 80);
+            this.confirmPasswordBg.TabIndex = 0;
+            this.confirmPasswordBg.Click += new System.EventHandler(this.confirmPasswordBg_Click);
+            // 
+            // loginBg
+            // 
+            this.loginBg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.loginBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.loginBg.Location = new System.Drawing.Point(0, 0);
+            this.loginBg.Margin = new System.Windows.Forms.Padding(0);
+            this.loginBg.Name = "loginBg";
+            this.loginBg.Size = new System.Drawing.Size(440, 1024);
+            this.loginBg.TabIndex = 0;
+            // 
+            // wrongFirstNameLabel
+            // 
+            this.wrongFirstNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.wrongFirstNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.wrongFirstNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrongFirstNameLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.wrongFirstNameLabel.Location = new System.Drawing.Point(528, 206);
+            this.wrongFirstNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.wrongFirstNameLabel.Name = "wrongFirstNameLabel";
+            this.wrongFirstNameLabel.Size = new System.Drawing.Size(400, 34);
+            this.wrongFirstNameLabel.TabIndex = 0;
+            this.wrongFirstNameLabel.Text = "* Sample error message";
+            this.wrongFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // yearLevelLabel
+            // 
+            this.yearLevelLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.yearLevelLabel.BackColor = System.Drawing.Color.Transparent;
+            this.yearLevelLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yearLevelLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yearLevelLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.yearLevelLabel.Location = new System.Drawing.Point(1181, 530);
+            this.yearLevelLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.yearLevelLabel.Name = "yearLevelLabel";
+            this.yearLevelLabel.Size = new System.Drawing.Size(122, 34);
+            this.yearLevelLabel.TabIndex = 0;
+            this.yearLevelLabel.Text = "Year Level";
+            this.yearLevelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.yearLevelLabel.Click += new System.EventHandler(this.yearLevelLabel_Click);
+            // 
+            // yearLevelBg
+            // 
+            this.yearLevelBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.yearLevelBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.yearLevelBg.Controls.Add(this.yearLevelComboBox);
+            this.yearLevelBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yearLevelBg.Location = new System.Drawing.Point(1151, 566);
+            this.yearLevelBg.Margin = new System.Windows.Forms.Padding(0);
+            this.yearLevelBg.Name = "yearLevelBg";
+            this.yearLevelBg.Size = new System.Drawing.Size(200, 80);
+            this.yearLevelBg.TabIndex = 0;
+            this.yearLevelBg.Click += new System.EventHandler(this.yearLevelBg_Click);
+            // 
+            // semesterLabel
+            // 
+            this.semesterLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.semesterLabel.BackColor = System.Drawing.Color.Transparent;
+            this.semesterLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.semesterLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.semesterLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.semesterLabel.Location = new System.Drawing.Point(968, 680);
+            this.semesterLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.semesterLabel.Name = "semesterLabel";
+            this.semesterLabel.Size = new System.Drawing.Size(122, 34);
+            this.semesterLabel.TabIndex = 0;
+            this.semesterLabel.Text = "Semester";
+            this.semesterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.semesterLabel.Click += new System.EventHandler(this.semesterLabel_Click);
+            // 
+            // semesterBg
+            // 
+            this.semesterBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.semesterBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.semesterBg.Controls.Add(this.semesterComboBox);
+            this.semesterBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.semesterBg.Location = new System.Drawing.Point(938, 714);
+            this.semesterBg.Margin = new System.Windows.Forms.Padding(0);
+            this.semesterBg.Name = "semesterBg";
+            this.semesterBg.Size = new System.Drawing.Size(200, 80);
+            this.semesterBg.TabIndex = 0;
+            this.semesterBg.Click += new System.EventHandler(this.semesterBg_Click);
+            // 
+            // wrongLastNameLabel
+            // 
+            this.wrongLastNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.wrongLastNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.wrongLastNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrongLastNameLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.wrongLastNameLabel.Location = new System.Drawing.Point(528, 354);
+            this.wrongLastNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.wrongLastNameLabel.Name = "wrongLastNameLabel";
+            this.wrongLastNameLabel.Size = new System.Drawing.Size(400, 34);
+            this.wrongLastNameLabel.TabIndex = 14;
+            this.wrongLastNameLabel.Text = "* Sample error message";
+            this.wrongLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // wrongEmailLabel
+            // 
+            this.wrongEmailLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.wrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.wrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.wrongEmailLabel.Location = new System.Drawing.Point(528, 502);
+            this.wrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.wrongEmailLabel.Name = "wrongEmailLabel";
+            this.wrongEmailLabel.Size = new System.Drawing.Size(400, 34);
+            this.wrongEmailLabel.TabIndex = 15;
+            this.wrongEmailLabel.Text = "* Sample error message";
+            this.wrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // wrongPasswordLabel
+            // 
+            this.wrongPasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.wrongPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.wrongPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrongPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.wrongPasswordLabel.Location = new System.Drawing.Point(528, 646);
+            this.wrongPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.wrongPasswordLabel.Name = "wrongPasswordLabel";
+            this.wrongPasswordLabel.Size = new System.Drawing.Size(400, 34);
+            this.wrongPasswordLabel.TabIndex = 16;
+            this.wrongPasswordLabel.Text = "* Sample error message";
+            this.wrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // wrongConfirmPasswordLabel
+            // 
+            this.wrongConfirmPasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.wrongConfirmPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.wrongConfirmPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrongConfirmPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.wrongConfirmPasswordLabel.Location = new System.Drawing.Point(528, 794);
+            this.wrongConfirmPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.wrongConfirmPasswordLabel.Name = "wrongConfirmPasswordLabel";
+            this.wrongConfirmPasswordLabel.Size = new System.Drawing.Size(400, 34);
+            this.wrongConfirmPasswordLabel.TabIndex = 17;
+            this.wrongConfirmPasswordLabel.Text = "* Sample error message";
+            this.wrongConfirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // semesterComboBox
+            // 
+            this.semesterComboBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.semesterComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.semesterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.semesterComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.semesterComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.semesterComboBox.BorderSize = 0;
+            this.semesterComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.semesterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.semesterComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.semesterComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.semesterComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.semesterComboBox.Items.AddRange(new object[] {
+            "1st Sem",
+            "2nd Sem"});
+            this.semesterComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.semesterComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.semesterComboBox.Location = new System.Drawing.Point(0, 26);
+            this.semesterComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.semesterComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.semesterComboBox.Name = "semesterComboBox";
+            this.semesterComboBox.Size = new System.Drawing.Size(200, 30);
+            this.semesterComboBox.TabIndex = 10;
+            this.semesterComboBox.Texts = "1st Sem";
+            // 
+            // yearLevelComboBox
+            // 
+            this.yearLevelComboBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.yearLevelComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.yearLevelComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.yearLevelComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.yearLevelComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.yearLevelComboBox.BorderSize = 0;
+            this.yearLevelComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yearLevelComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.yearLevelComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yearLevelComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.yearLevelComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.yearLevelComboBox.Items.AddRange(new object[] {
+            "1st Year",
+            "2nd Year",
+            "3rd Year",
+            "4th Year"});
+            this.yearLevelComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.yearLevelComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.yearLevelComboBox.Location = new System.Drawing.Point(0, 26);
+            this.yearLevelComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.yearLevelComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.yearLevelComboBox.Name = "yearLevelComboBox";
+            this.yearLevelComboBox.Size = new System.Drawing.Size(200, 30);
+            this.yearLevelComboBox.TabIndex = 8;
+            this.yearLevelComboBox.Texts = "1st Year";
+            // 
+            // sexComboBox
+            // 
+            this.sexComboBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.sexComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.sexComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sexComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.sexComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.sexComboBox.BorderSize = 0;
+            this.sexComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sexComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sexComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sexComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.sexComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.sexComboBox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.sexComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.sexComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.sexComboBox.Location = new System.Drawing.Point(0, 26);
+            this.sexComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.sexComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.sexComboBox.Name = "sexComboBox";
+            this.sexComboBox.Size = new System.Drawing.Size(200, 30);
+            this.sexComboBox.TabIndex = 3;
+            this.sexComboBox.Texts = "Male";
+            // 
+            // statusComboBox
+            // 
+            this.statusComboBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.statusComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.statusComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.statusComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.statusComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.statusComboBox.BorderSize = 0;
+            this.statusComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.statusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.statusComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.statusComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.statusComboBox.Items.AddRange(new object[] {
+            "Regular",
+            "Irregular"});
+            this.statusComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.statusComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.statusComboBox.Location = new System.Drawing.Point(0, 26);
+            this.statusComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.statusComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.statusComboBox.Name = "statusComboBox";
+            this.statusComboBox.Size = new System.Drawing.Size(200, 30);
+            this.statusComboBox.TabIndex = 11;
+            this.statusComboBox.Texts = "Regular";
+            // 
             // courseComboBox
             // 
+            this.courseComboBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.courseComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.courseComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.courseComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
@@ -507,303 +829,28 @@
             this.courseComboBox.TabIndex = 7;
             this.courseComboBox.Texts = "BSIT";
             // 
-            // lastNameBg
+            // birthdayPicker
             // 
-            this.lastNameBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.lastNameBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lastNameBg.Location = new System.Drawing.Point(528, 422);
-            this.lastNameBg.Margin = new System.Windows.Forms.Padding(0);
-            this.lastNameBg.Name = "lastNameBg";
-            this.lastNameBg.Size = new System.Drawing.Size(400, 80);
-            this.lastNameBg.TabIndex = 0;
-            this.lastNameBg.Click += new System.EventHandler(this.lastNameBg_Click);
-            // 
-            // emailBg
-            // 
-            this.emailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.emailBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.emailBg.Location = new System.Drawing.Point(528, 566);
-            this.emailBg.Margin = new System.Windows.Forms.Padding(0);
-            this.emailBg.Name = "emailBg";
-            this.emailBg.Size = new System.Drawing.Size(400, 80);
-            this.emailBg.TabIndex = 0;
-            this.emailBg.Click += new System.EventHandler(this.emailBg_Click);
-            // 
-            // statusBg
-            // 
-            this.statusBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.statusBg.Controls.Add(this.statusComboBox);
-            this.statusBg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.statusBg.Location = new System.Drawing.Point(1151, 714);
-            this.statusBg.Margin = new System.Windows.Forms.Padding(0);
-            this.statusBg.Name = "statusBg";
-            this.statusBg.Size = new System.Drawing.Size(200, 80);
-            this.statusBg.TabIndex = 0;
-            this.statusBg.Click += new System.EventHandler(this.statusBg_Click);
-            // 
-            // statusComboBox
-            // 
-            this.statusComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.statusComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.statusComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.statusComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.statusComboBox.BorderSize = 0;
-            this.statusComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.statusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.statusComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.statusComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.statusComboBox.Items.AddRange(new object[] {
-            "Regular",
-            "Irregular"});
-            this.statusComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.statusComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.statusComboBox.Location = new System.Drawing.Point(0, 26);
-            this.statusComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.statusComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.statusComboBox.Name = "statusComboBox";
-            this.statusComboBox.Size = new System.Drawing.Size(200, 30);
-            this.statusComboBox.TabIndex = 11;
-            this.statusComboBox.Texts = "Regular";
-            // 
-            // sexBg
-            // 
-            this.sexBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.sexBg.Controls.Add(this.sexComboBox);
-            this.sexBg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sexBg.Location = new System.Drawing.Point(1151, 274);
-            this.sexBg.Margin = new System.Windows.Forms.Padding(0);
-            this.sexBg.Name = "sexBg";
-            this.sexBg.Size = new System.Drawing.Size(200, 80);
-            this.sexBg.TabIndex = 0;
-            this.sexBg.Click += new System.EventHandler(this.sexBg_Click);
-            // 
-            // sexComboBox
-            // 
-            this.sexComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.sexComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.sexComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.sexComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.sexComboBox.BorderSize = 0;
-            this.sexComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sexComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sexComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sexComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.sexComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.sexComboBox.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.sexComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.sexComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.sexComboBox.Location = new System.Drawing.Point(0, 26);
-            this.sexComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.sexComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.sexComboBox.Name = "sexComboBox";
-            this.sexComboBox.Size = new System.Drawing.Size(200, 30);
-            this.sexComboBox.TabIndex = 3;
-            this.sexComboBox.Texts = "Male";
-            // 
-            // passwordBg
-            // 
-            this.passwordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.passwordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.passwordBg.Location = new System.Drawing.Point(528, 714);
-            this.passwordBg.Margin = new System.Windows.Forms.Padding(0);
-            this.passwordBg.Name = "passwordBg";
-            this.passwordBg.Size = new System.Drawing.Size(400, 80);
-            this.passwordBg.TabIndex = 0;
-            this.passwordBg.Click += new System.EventHandler(this.passwordBg_Click);
-            // 
-            // confirmPasswordBg
-            // 
-            this.confirmPasswordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.confirmPasswordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.confirmPasswordBg.Location = new System.Drawing.Point(528, 862);
-            this.confirmPasswordBg.Margin = new System.Windows.Forms.Padding(0);
-            this.confirmPasswordBg.Name = "confirmPasswordBg";
-            this.confirmPasswordBg.Size = new System.Drawing.Size(400, 80);
-            this.confirmPasswordBg.TabIndex = 0;
-            this.confirmPasswordBg.Click += new System.EventHandler(this.confirmPasswordBg_Click);
-            // 
-            // loginBg
-            // 
-            this.loginBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.loginBg.Location = new System.Drawing.Point(0, 0);
-            this.loginBg.Margin = new System.Windows.Forms.Padding(0);
-            this.loginBg.Name = "loginBg";
-            this.loginBg.Size = new System.Drawing.Size(440, 1024);
-            this.loginBg.TabIndex = 0;
-            // 
-            // wrongFirstNameLabel
-            // 
-            this.wrongFirstNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongFirstNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrongFirstNameLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.wrongFirstNameLabel.Location = new System.Drawing.Point(528, 206);
-            this.wrongFirstNameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.wrongFirstNameLabel.Name = "wrongFirstNameLabel";
-            this.wrongFirstNameLabel.Size = new System.Drawing.Size(400, 34);
-            this.wrongFirstNameLabel.TabIndex = 0;
-            this.wrongFirstNameLabel.Text = "* Sample error message";
-            this.wrongFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // yearLevelLabel
-            // 
-            this.yearLevelLabel.BackColor = System.Drawing.Color.Transparent;
-            this.yearLevelLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yearLevelLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLevelLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.yearLevelLabel.Location = new System.Drawing.Point(1181, 530);
-            this.yearLevelLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.yearLevelLabel.Name = "yearLevelLabel";
-            this.yearLevelLabel.Size = new System.Drawing.Size(122, 34);
-            this.yearLevelLabel.TabIndex = 0;
-            this.yearLevelLabel.Text = "Year Level";
-            this.yearLevelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.yearLevelLabel.Click += new System.EventHandler(this.yearLevelLabel_Click);
-            // 
-            // yearLevelBg
-            // 
-            this.yearLevelBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.yearLevelBg.Controls.Add(this.yearLevelComboBox);
-            this.yearLevelBg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yearLevelBg.Location = new System.Drawing.Point(1151, 566);
-            this.yearLevelBg.Margin = new System.Windows.Forms.Padding(0);
-            this.yearLevelBg.Name = "yearLevelBg";
-            this.yearLevelBg.Size = new System.Drawing.Size(200, 80);
-            this.yearLevelBg.TabIndex = 0;
-            this.yearLevelBg.Click += new System.EventHandler(this.yearLevelBg_Click);
-            // 
-            // yearLevelComboBox
-            // 
-            this.yearLevelComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.yearLevelComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.yearLevelComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.yearLevelComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.yearLevelComboBox.BorderSize = 0;
-            this.yearLevelComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yearLevelComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.yearLevelComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLevelComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.yearLevelComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.yearLevelComboBox.Items.AddRange(new object[] {
-            "1st Year",
-            "2nd Year",
-            "3rd Year",
-            "4th Year"});
-            this.yearLevelComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.yearLevelComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.yearLevelComboBox.Location = new System.Drawing.Point(0, 26);
-            this.yearLevelComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.yearLevelComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.yearLevelComboBox.Name = "yearLevelComboBox";
-            this.yearLevelComboBox.Size = new System.Drawing.Size(200, 30);
-            this.yearLevelComboBox.TabIndex = 8;
-            this.yearLevelComboBox.Texts = "1st Year";
-            // 
-            // semesterLabel
-            // 
-            this.semesterLabel.BackColor = System.Drawing.Color.Transparent;
-            this.semesterLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.semesterLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.semesterLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.semesterLabel.Location = new System.Drawing.Point(968, 680);
-            this.semesterLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.semesterLabel.Name = "semesterLabel";
-            this.semesterLabel.Size = new System.Drawing.Size(122, 34);
-            this.semesterLabel.TabIndex = 0;
-            this.semesterLabel.Text = "Semester";
-            this.semesterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.semesterLabel.Click += new System.EventHandler(this.semesterLabel_Click);
-            // 
-            // semesterBg
-            // 
-            this.semesterBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.semesterBg.Controls.Add(this.semesterComboBox);
-            this.semesterBg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.semesterBg.Location = new System.Drawing.Point(938, 714);
-            this.semesterBg.Margin = new System.Windows.Forms.Padding(0);
-            this.semesterBg.Name = "semesterBg";
-            this.semesterBg.Size = new System.Drawing.Size(200, 80);
-            this.semesterBg.TabIndex = 0;
-            this.semesterBg.Click += new System.EventHandler(this.semesterBg_Click);
-            // 
-            // semesterComboBox
-            // 
-            this.semesterComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.semesterComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.semesterComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.semesterComboBox.BorderColor = System.Drawing.Color.Transparent;
-            this.semesterComboBox.BorderSize = 0;
-            this.semesterComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.semesterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.semesterComboBox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.semesterComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.semesterComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
-            this.semesterComboBox.Items.AddRange(new object[] {
-            "1st Sem",
-            "2nd Sem"});
-            this.semesterComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
-            this.semesterComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.semesterComboBox.Location = new System.Drawing.Point(0, 26);
-            this.semesterComboBox.Margin = new System.Windows.Forms.Padding(0);
-            this.semesterComboBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.semesterComboBox.Name = "semesterComboBox";
-            this.semesterComboBox.Size = new System.Drawing.Size(200, 30);
-            this.semesterComboBox.TabIndex = 10;
-            this.semesterComboBox.Texts = "1st Sem";
-            // 
-            // wrongLastNameLabel
-            // 
-            this.wrongLastNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongLastNameLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrongLastNameLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.wrongLastNameLabel.Location = new System.Drawing.Point(528, 354);
-            this.wrongLastNameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.wrongLastNameLabel.Name = "wrongLastNameLabel";
-            this.wrongLastNameLabel.Size = new System.Drawing.Size(400, 34);
-            this.wrongLastNameLabel.TabIndex = 14;
-            this.wrongLastNameLabel.Text = "* Sample error message";
-            this.wrongLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // wrongEmailLabel
-            // 
-            this.wrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.wrongEmailLabel.Location = new System.Drawing.Point(528, 502);
-            this.wrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.wrongEmailLabel.Name = "wrongEmailLabel";
-            this.wrongEmailLabel.Size = new System.Drawing.Size(400, 34);
-            this.wrongEmailLabel.TabIndex = 15;
-            this.wrongEmailLabel.Text = "* Sample error message";
-            this.wrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // wrongPasswordLabel
-            // 
-            this.wrongPasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrongPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.wrongPasswordLabel.Location = new System.Drawing.Point(528, 646);
-            this.wrongPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.wrongPasswordLabel.Name = "wrongPasswordLabel";
-            this.wrongPasswordLabel.Size = new System.Drawing.Size(400, 34);
-            this.wrongPasswordLabel.TabIndex = 16;
-            this.wrongPasswordLabel.Text = "* Sample error message";
-            this.wrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // wrongConfirmPasswordLabel
-            // 
-            this.wrongConfirmPasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongConfirmPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrongConfirmPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.wrongConfirmPasswordLabel.Location = new System.Drawing.Point(528, 794);
-            this.wrongConfirmPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.wrongConfirmPasswordLabel.Name = "wrongConfirmPasswordLabel";
-            this.wrongConfirmPasswordLabel.Size = new System.Drawing.Size(400, 34);
-            this.wrongConfirmPasswordLabel.TabIndex = 17;
-            this.wrongConfirmPasswordLabel.Text = "* Sample error message";
-            this.wrongConfirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.birthdayPicker.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.birthdayPicker.BorderColor = System.Drawing.Color.Transparent;
+            this.birthdayPicker.BorderSize = 0;
+            this.birthdayPicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.birthdayPicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.birthdayPicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.birthdayPicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.birthdayPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.birthdayPicker.CustomFormat = "MMMM dd, yyy";
+            this.birthdayPicker.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthdayPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.birthdayPicker.Location = new System.Drawing.Point(0, 26);
+            this.birthdayPicker.Margin = new System.Windows.Forms.Padding(0);
+            this.birthdayPicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.birthdayPicker.Name = "birthdayPicker";
+            this.birthdayPicker.Size = new System.Drawing.Size(413, 36);
+            this.birthdayPicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.birthdayPicker.TabIndex = 5;
+            this.birthdayPicker.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.birthdayPicker.Value = new System.DateTime(2023, 11, 12, 13, 32, 33, 0);
             // 
             // RegisterForm
             // 
@@ -854,6 +901,7 @@
             this.Controls.Add(this.birthdayBg);
             this.Controls.Add(this.middleNameBg);
             this.Controls.Add(this.firstNameBg);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

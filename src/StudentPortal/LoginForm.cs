@@ -90,6 +90,5 @@ namespace StudentPortal
             this.Hide();
             new MainForm().Show();
         }
-
     }
 }
