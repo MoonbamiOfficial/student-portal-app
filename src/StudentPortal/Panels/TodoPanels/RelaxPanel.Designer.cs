@@ -62,6 +62,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.Controls.Add(this.emoticon);
             this.Controls.Add(this.relaxMessage);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "RelaxPanel";
             this.Size = new System.Drawing.Size(715, 878);
             this.ResumeLayout(false);

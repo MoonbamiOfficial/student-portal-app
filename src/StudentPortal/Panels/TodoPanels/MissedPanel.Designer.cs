@@ -110,6 +110,7 @@
             // 
             this.missedOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.missedOne.Location = new System.Drawing.Point(0, 0);
+            this.missedOne.Margin = new System.Windows.Forms.Padding(0);
             this.missedOne.Name = "missedOne";
             this.missedOne.Size = new System.Drawing.Size(715, 878);
             this.missedOne.TabIndex = 5;
@@ -122,6 +123,7 @@
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.missedList);
             this.Controls.Add(this.missedOne);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "MissedPanel";
             this.Size = new System.Drawing.Size(715, 878);
             this.Load += new System.EventHandler(this.MissedPanel_Load);

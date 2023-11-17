@@ -296,6 +296,7 @@
             // 
             this.relaxPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.relaxPanel.Location = new System.Drawing.Point(283, 129);
+            this.relaxPanel.Margin = new System.Windows.Forms.Padding(0);
             this.relaxPanel.Name = "relaxPanel";
             this.relaxPanel.Size = new System.Drawing.Size(715, 878);
             this.relaxPanel.TabIndex = 9;
@@ -304,6 +305,7 @@
             // 
             this.relax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.relax.Location = new System.Drawing.Point(285, 132);
+            this.relax.Margin = new System.Windows.Forms.Padding(0);
             this.relax.Name = "relax";
             this.relax.Size = new System.Drawing.Size(715, 878);
             this.relax.TabIndex = 4;
@@ -312,6 +314,7 @@
             // 
             this.missedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.missedPanel.Location = new System.Drawing.Point(283, 129);
+            this.missedPanel.Margin = new System.Windows.Forms.Padding(0);
             this.missedPanel.Name = "missedPanel";
             this.missedPanel.Size = new System.Drawing.Size(715, 878);
             this.missedPanel.TabIndex = 10;
@@ -319,7 +322,8 @@
             // finishedPanel
             // 
             this.finishedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.finishedPanel.Location = new System.Drawing.Point(285, 129);
+            this.finishedPanel.Location = new System.Drawing.Point(283, 129);
+            this.finishedPanel.Margin = new System.Windows.Forms.Padding(0);
             this.finishedPanel.Name = "finishedPanel";
             this.finishedPanel.Size = new System.Drawing.Size(715, 878);
             this.finishedPanel.TabIndex = 11;

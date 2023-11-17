@@ -110,6 +110,7 @@
             // 
             this.finishedOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.finishedOne.Location = new System.Drawing.Point(0, 0);
+            this.finishedOne.Margin = new System.Windows.Forms.Padding(0);
             this.finishedOne.Name = "finishedOne";
             this.finishedOne.Size = new System.Drawing.Size(715, 878);
             this.finishedOne.TabIndex = 2;
@@ -122,6 +123,7 @@
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.finishedList);
             this.Controls.Add(this.finishedOne);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "FinishedPanel";
             this.Size = new System.Drawing.Size(715, 878);
             this.Load += new System.EventHandler(this.FinishedPanel_Load);
