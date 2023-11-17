@@ -35,7 +35,7 @@
             // relaxMessage
             // 
             this.relaxMessage.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.relaxMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.relaxMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.relaxMessage.Location = new System.Drawing.Point(114, 470);
             this.relaxMessage.Name = "relaxMessage";
             this.relaxMessage.Size = new System.Drawing.Size(519, 48);
@@ -47,7 +47,7 @@
             // 
             this.emoticon.BackColor = System.Drawing.Color.Transparent;
             this.emoticon.Font = new System.Drawing.Font("Poppins SemiBold", 63.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emoticon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.emoticon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.emoticon.Location = new System.Drawing.Point(113, 319);
             this.emoticon.Name = "emoticon";
             this.emoticon.Size = new System.Drawing.Size(521, 128);
