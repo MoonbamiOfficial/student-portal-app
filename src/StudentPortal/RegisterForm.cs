@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentPortal.Panels;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -13,235 +14,137 @@ namespace StudentPortal
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LoginForm LoginForm = new LoginForm();
-            LoginForm.Show();
+            this.Dispose();
+            new LoginForm().Show();
         }
+        Utils u = new Utils();
 
-        // Globals
-        string fnPlaceholder = "Aa";
-        string mnPlaceholder = "Aa";
-        string lnPlaceholder = "Aa";
-        string emailPlaceholder = "student_portal@gmail.com";
-
-        // Background panel events
-        private void FirstNameBg_Click(object sender, EventArgs e)
+        //
+        //  Click label events
+        //
+        private void firstNameLabel_Click(object sender, EventArgs e)
         {
-            firstNameTextbox.Focus();
+            u.setFocus(firstNameTextbox);
         }
 
-        private void MiddleNameBg_Click(object sender, EventArgs e)
+        private void middleNameLabel_Click(object sender, EventArgs e)
         {
-            middleNameTextbox.Focus();
+            u.setFocus(middleNameTextbox);
         }
 
-        private void BirthdayBg_Click(object sender, EventArgs e)
+        private void sexLabel_Click(object sender, EventArgs e)
         {
-            birthdayPicker.Select();
-
+            u.setSelect(sexComboBox);
         }
 
-        private void CourseBg_Click(object sender, EventArgs e)
+        private void lastNameLabel_Click(object sender, EventArgs e)
         {
-            courseComboBox.Focus();
+            u.setFocus(lastNameTextbox);
         }
 
-        private void LastNameBg_Click(object sender, EventArgs e)
+        private void birthdayLabel_Click(object sender, EventArgs e)
         {
-            lastNameTextbox.Focus();
+            u.setOpen(birthdayPicker);
         }
 
-        private void EmailBg_Click(object sender, EventArgs e)
+        private void emailLabel_Click(object sender, EventArgs e)
         {
-            emailTextbox.Focus();
+            u.setFocus(emailTextbox);
         }
 
-        private void StatusBg_Click(object sender, EventArgs e)
+        private void courseLabel_Click(object sender, EventArgs e)
         {
-            statusComboBox.Focus();
+            u.setSelect(courseComboBox);
         }
 
-        private void SexBg_Click(object sender, EventArgs e)
+        private void yearLevelLabel_Click(object sender, EventArgs e)
         {
-            sexComboBox.Focus();
+            u.setSelect(yearLevelComboBox);
         }
 
-
-        // Label events
-        private void FirstNameLabel_Click(object sender, EventArgs e)
+        private void statusLabel_Click(object sender, EventArgs e)
         {
-            firstNameTextbox.Focus();
+            u.setSelect(statusComboBox);
         }
 
-        private void MiddleNameLabel_Click(object sender, EventArgs e)
+        private void semesterLabel_Click(object sender, EventArgs e)
         {
-            middleNameTextbox.Focus();
+            u.setSelect(semesterComboBox);
         }
 
-        private void BirthdayLabel_Click(object sender, EventArgs e)
+        private void passwordLabel_Click(object sender, EventArgs e)
         {
-            birthdayLabel.Focus();
+            u.setFocus(passwordTextbox);
         }
 
-        private void CourseLabel_Click(object sender, EventArgs e)
+        private void confirmPasswordLabel_Click(object sender, EventArgs e)
         {
-            courseComboBox.Show();
+            u.setFocus(confirmPasswordTextbox);
+        }
+        //
+        //  Click bg panel events
+        private void firstNameBg_Click(object sender, EventArgs e)
+        {
+            u.setFocus(firstNameTextbox);
         }
 
-        private void LastNameLabel_Click(object sender, EventArgs e)
+        private void middleNameBg_Click(object sender, EventArgs e)
         {
-            lastNameTextbox.Focus();
+            u.setFocus(middleNameTextbox);
         }
 
-        private void EmailLabel_Click(object sender, EventArgs e)
+        private void sexBg_Click(object sender, EventArgs e)
         {
-            emailTextbox.Focus();
+            u.setSelect(sexComboBox);
         }
 
-        private void StatusLabel_Click(object sender, EventArgs e)
+        private void lastNameBg_Click(object sender, EventArgs e)
         {
-            statusComboBox.Focus();
+            u.setFocus(lastNameTextbox);
         }
 
-        private void SexLabel_Click(object sender, EventArgs e)
+        private void birthdayBg_Click(object sender, EventArgs e)
         {
-            sexComboBox.Focus();
+            u.setOpen(birthdayPicker);
         }
 
-        // Text field events
-        private void FirstNameTextbox_Click(object sender, EventArgs e)
+        private void emailBg_Click(object sender, EventArgs e)
         {
-            wrongFirstNameLabel.Text = null;
-        }
-        private void FirstNameTextbox_TextChanged(object sender, EventArgs e)
-        {
-            wrongFirstNameLabel.Text = null;        
-        }
-        private void LastNameTextbox_Click(object sender, EventArgs e)
-        {
-            wrongLastNameLabel.Text = null;
-        }
-        private void LastNameTextbox_TextChanged(object sender, EventArgs e)
-        {
-            wrongLastNameLabel.Text = null;
-        }
-        private void EmailTextbox_Click(object sender, EventArgs e)
-        {
-            wrongEmailLabel.Text = null;
-        }
-        private void EmailTextbox_TextChanged(object sender, EventArgs e)
-        {
-            wrongEmailLabel.Text = null;
+            u.setFocus(emailTextbox);
         }
 
-        // Simple placeholders
-        private void FirstNameTextbox_Enter(object sender, EventArgs e)
+        private void courseBg_Click(object sender, EventArgs e)
         {
-            if (firstNameTextbox.Text == fnPlaceholder || firstNameTextbox.Text == fnPlaceholder.ToLower() || firstNameTextbox.Text == fnPlaceholder.ToUpper())
-            {
-                firstNameTextbox.Text = "";
-                wrongFirstNameLabel.Text = null;
-            }
+            u.setSelect(courseComboBox);
         }
 
-        private void FirstNameTextbox_Leave(object sender, EventArgs e)
+        private void yearLevelBg_Click(object sender, EventArgs e)
         {
-            if (firstNameTextbox.Text == "")
-            {
-                firstNameTextbox.Text = fnPlaceholder;
-            }
+            u.setSelect(yearLevelComboBox);
         }
-
-        private void MiddleNameTextbox_Enter(object sender, EventArgs e)
+        private void statusBg_Click(object sender, EventArgs e)
         {
-            if (middleNameTextbox.Text == mnPlaceholder || middleNameTextbox.Text == mnPlaceholder.ToLower() || middleNameTextbox.Text == mnPlaceholder.ToUpper())
-            {
-                middleNameTextbox.Text = "";
-            }
-        }
+            u.setSelect(statusComboBox);
 
-        private void MiddleNameTextbox_Leave(object sender, EventArgs e)
+        }
+        private void semesterBg_Click(object sender, EventArgs e)
         {
-            if (middleNameTextbox.Text == "")
-            {
-                middleNameTextbox.Text = mnPlaceholder;
-            }
-        }
-        private void LastNameTextbox_Enter(object sender, EventArgs e)
+            u.setSelect(semesterComboBox);
+        }  
+        private void passwordBg_Click(object sender, EventArgs e)
         {
-            if (lastNameTextbox.Text == lnPlaceholder || lastNameTextbox.Text == lnPlaceholder.ToLower() || lastNameTextbox.Text == lnPlaceholder.ToUpper())
-            {
-                lastNameTextbox.Text = "";
-                wrongLastNameLabel.Text = null;
-            }
+            u.setFocus(passwordTextbox);
         }
-        private void LastNameTextbox_Leave(object sender, EventArgs e)
+        private void confirmPasswordBg_Click(object sender, EventArgs e)
         {
-            if (lastNameTextbox.Text == "")
-            {
-                lastNameTextbox.Text = lnPlaceholder;
-            }
+            u.setFocus(confirmPasswordTextbox);
         }
-
-        private void EmailTextbox_Enter(object sender, EventArgs e)
+        //
+        //  Sign up event
+        //
+        private void signUpBtn_Click(object sender, EventArgs e)
         {
-            if (emailTextbox.Text == emailPlaceholder || emailTextbox.Text == emailPlaceholder.ToLower() || emailTextbox.Text == emailPlaceholder.ToUpper())
-            {
-                emailTextbox.Text = "";
-                wrongEmailLabel.Text = null;
-            }
+            new ConfirmationBox().Show();
         }
-
-        private void EmailTextbox_Leave(object sender, EventArgs e)
-        {
-            if (emailTextbox.Text == "")
-            {
-                emailTextbox.Text = emailPlaceholder;
-            }
-        }
-
-        // Sign Up btn
-        private void SignUpBtn_Click(object sender, EventArgs e)
-        {
-            if (firstNameTextbox.Text == fnPlaceholder || firstNameTextbox.Text == fnPlaceholder.ToLower() || firstNameTextbox.Text == fnPlaceholder.ToUpper())
-            {
-                wrongFirstNameLabel.Text = "* Please enter a valid first name.";
-            }
-            else wrongFirstNameLabel.Text = null;
-
-            if (lastNameTextbox.Text == lnPlaceholder || lastNameTextbox.Text == lnPlaceholder.ToLower() || lastNameTextbox.Text == lnPlaceholder.ToUpper())
-            {
-                wrongLastNameLabel.Text = "* Please enter a valid last name.";
-            }
-            else wrongLastNameLabel.Text = null;
-
-            if (emailTextbox.Text == emailPlaceholder || emailTextbox.Text == emailPlaceholder.ToLower() || emailTextbox.Text == emailPlaceholder.ToUpper())
-            {
-                wrongEmailLabel.Text = "* Please enter a different email.";
-            }
-            else wrongEmailLabel.Text = null;
-
-            char[] emailChars = emailTextbox.Text.ToCharArray();
-            if (emailTextbox.Text == emailPlaceholder || emailTextbox.Text == emailPlaceholder.ToLower() || emailTextbox.Text == emailPlaceholder.ToUpper())
-            {
-                wrongEmailLabel.Text = "* Please enter a different email.";
-            }
-            else if (!emailTextbox.Text.EndsWith("gmail.com") &&
-                !emailTextbox.Text.EndsWith("yahoo.com") &&
-                !emailTextbox.Text.EndsWith("email.com"))
-            {
-                wrongEmailLabel.Text = "* Please enter a proper domain name";
-            }
-            else wrongEmailLabel.Text = null;
-
-            for (int i = 0; i < emailTextbox.Text.Length; i++)
-            {
-                if (!emailChars.Contains('@'))
-                {
-                    wrongEmailLabel.Text = "* Please enter proper a email.";
-                }
-            };
-        }
-
     }
 }
