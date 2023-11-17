@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.logo = new System.Windows.Forms.PictureBox();
             this.studentCourse = new System.Windows.Forms.Label();
             this.studentName = new System.Windows.Forms.Label();
             this.studentNumber = new System.Windows.Forms.Label();
@@ -59,22 +58,9 @@
             this.verticalTwo = new System.Windows.Forms.Panel();
             this.verticalThree = new System.Windows.Forms.Panel();
             this.verticalFour = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.logoDegree = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.logoDegree)).BeginInit();
             this.SuspendLayout();
-            // 
-            // logo
-            // 
-            this.logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logo.BackColor = System.Drawing.Color.Transparent;
-            this.logo.Image = global::StudentPortal.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(423, 30);
-            this.logo.Margin = new System.Windows.Forms.Padding(0);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(150, 150);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo.TabIndex = 5;
-            this.logo.TabStop = false;
             // 
             // studentCourse
             // 
@@ -459,11 +445,22 @@
             this.verticalFour.Size = new System.Drawing.Size(3, 500);
             this.verticalFour.TabIndex = 0;
             // 
+            // logoDegree
+            // 
+            this.logoDegree.Image = global::StudentPortal.Properties.Resources.logo;
+            this.logoDegree.Location = new System.Drawing.Point(423, 30);
+            this.logoDegree.Name = "logoDegree";
+            this.logoDegree.Size = new System.Drawing.Size(150, 150);
+            this.logoDegree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoDegree.TabIndex = 2;
+            this.logoDegree.TabStop = false;
+            // 
             // Degree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.Controls.Add(this.logoDegree);
             this.Controls.Add(this.horizontalTop);
             this.Controls.Add(this.horizontalMid);
             this.Controls.Add(this.horizontalBottom);
@@ -476,7 +473,6 @@
             this.Controls.Add(this.midterms);
             this.Controls.Add(this.courseNames);
             this.Controls.Add(this.courseCodes);
-            this.Controls.Add(this.logo);
             this.Controls.Add(this.courseCodeHeader);
             this.Controls.Add(this.courseNameHeader);
             this.Controls.Add(this.midtermsHeader);
@@ -497,13 +493,12 @@
             this.Controls.Add(this.downloadBtn);
             this.Name = "Degree";
             this.Size = new System.Drawing.Size(1000, 1024);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoDegree)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.Label studentCourse;
         private System.Windows.Forms.Label studentName;
         private System.Windows.Forms.Label studentNumber;
@@ -534,5 +529,6 @@
         private System.Windows.Forms.Panel verticalTwo;
         private System.Windows.Forms.Panel verticalThree;
         private System.Windows.Forms.Panel verticalFour;
+        private System.Windows.Forms.PictureBox logoDegree;
     }
 }
