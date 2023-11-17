@@ -216,7 +216,7 @@
     <Compile Include="Panels\TodoPanels\TodosFolder\FinishedOne.Designer.cs">
       <DependentUpon>FinishedOne.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utils.cs" />
+    <Compile Include="Utilities\Utils.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="CustomControls\buttonCustom.cs">
       <SubType>Component</SubType>
