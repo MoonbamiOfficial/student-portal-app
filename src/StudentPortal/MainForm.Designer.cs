@@ -232,6 +232,7 @@
             this.settingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.settingBtn.UseMnemonic = false;
             this.settingBtn.UseVisualStyleBackColor = false;
+            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
             // 
             // logOutBtn
             // 

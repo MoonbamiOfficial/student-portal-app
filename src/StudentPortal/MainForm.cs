@@ -61,6 +61,7 @@ namespace StudentPortal
             setActiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
+            setInactiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = true;
@@ -73,6 +74,7 @@ namespace StudentPortal
             setInactiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
+            setInactiveBtn(settingBtn);
 
             home.Visible = true;
             profile.Visible = false;
@@ -86,6 +88,7 @@ namespace StudentPortal
             setActiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
+            setInactiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = true;
@@ -100,6 +103,7 @@ namespace StudentPortal
             setInactiveBtn(profileBtn);
             setActiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
+            setInactiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = false;
@@ -114,6 +118,7 @@ namespace StudentPortal
             setInactiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setActiveBtn(todoBtn);
+            setInactiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = false;
@@ -121,6 +126,19 @@ namespace StudentPortal
             todo.Visible = true;
         }
 
+        private void settingBtn_Click(object sender, EventArgs e)
+        {
+            setInactiveBtn(homeBtn);
+            setInactiveBtn(profileBtn);
+            setInactiveBtn(degreeBtn);
+            setInactiveBtn(todoBtn);
+            setActiveBtn(settingBtn);
+
+            home.Visible = false;
+            profile.Visible = false;
+            degree.Visible = false;
+            todo.Visible = false;
+        }
         //
         //  Temporary code - logs out to after clicking log out
         //
