@@ -54,10 +54,11 @@ namespace StudentPortal
         //
         private void confirmBtn_Click(object sender, EventArgs e)
         {
-            // once confirmed, you know what to do with database
+            // once confirmed, you know what to do with the database
             // this also closes the confirmation box and return to login form
             this.Dispose();
-            
+            RegisterForm registerForm = (RegisterForm)Application.OpenForms["RegisterForm"];
+            registerForm.Dispose();
             new LoginForm().Show();
         }
 
