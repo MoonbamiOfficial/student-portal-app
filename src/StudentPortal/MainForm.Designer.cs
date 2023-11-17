@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.studentName = new System.Windows.Forms.Label();
             this.sideNav = new System.Windows.Forms.Panel();
-            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
             this.studentEmail = new System.Windows.Forms.Label();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.profileBtn = new FontAwesome.Sharp.IconButton();
@@ -39,9 +38,10 @@
             this.todoBtn = new FontAwesome.Sharp.IconButton();
             this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.logOutBtn = new System.Windows.Forms.Button();
+            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
+            this.degree = new StudentPortal.Panels.Degree();
             this.home = new StudentPortal.Panels.Home();
             this.profile = new StudentPortal.Panels.Profile();
-            this.degree = new StudentPortal.Panels.Degree();
             this.todo = new StudentPortal.Panels.Todo();
             this.sideNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
@@ -75,23 +75,6 @@
             this.sideNav.Name = "sideNav";
             this.sideNav.Size = new System.Drawing.Size(440, 1024);
             this.sideNav.TabIndex = 0;
-            // 
-            // studentIcon
-            // 
-            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.studentIcon.BorderSize = 8;
-            this.studentIcon.GradientAngle = 0F;
-            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
-            this.studentIcon.Location = new System.Drawing.Point(134, 50);
-            this.studentIcon.Name = "studentIcon";
-            this.studentIcon.Size = new System.Drawing.Size(150, 150);
-            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.studentIcon.TabIndex = 0;
-            this.studentIcon.TabStop = false;
             // 
             // studentEmail
             // 
@@ -240,10 +223,37 @@
             this.logOutBtn.UseVisualStyleBackColor = false;
             this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
             // 
+            // studentIcon
+            // 
+            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.studentIcon.BorderSize = 8;
+            this.studentIcon.GradientAngle = 0F;
+            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
+            this.studentIcon.Location = new System.Drawing.Point(134, 50);
+            this.studentIcon.Name = "studentIcon";
+            this.studentIcon.Size = new System.Drawing.Size(150, 150);
+            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentIcon.TabIndex = 0;
+            this.studentIcon.TabStop = false;
+            // 
+            // degree
+            // 
+            this.degree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.degree.Location = new System.Drawing.Point(440, -20);
+            this.degree.Margin = new System.Windows.Forms.Padding(0);
+            this.degree.Name = "degree";
+            this.degree.Size = new System.Drawing.Size(1000, 1024);
+            this.degree.TabIndex = 0;
+            // 
             // home
             // 
             this.home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.home.Location = new System.Drawing.Point(440, 0);
+            this.home.Margin = new System.Windows.Forms.Padding(0);
             this.home.Name = "home";
             this.home.Size = new System.Drawing.Size(1000, 1024);
             this.home.TabIndex = 3;
@@ -252,22 +262,16 @@
             // 
             this.profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.profile.Location = new System.Drawing.Point(440, 0);
+            this.profile.Margin = new System.Windows.Forms.Padding(0);
             this.profile.Name = "profile";
             this.profile.Size = new System.Drawing.Size(1000, 1024);
             this.profile.TabIndex = 0;
-            // 
-            // degree
-            // 
-            this.degree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.degree.Location = new System.Drawing.Point(440, 0);
-            this.degree.Name = "degree";
-            this.degree.Size = new System.Drawing.Size(1000, 1024);
-            this.degree.TabIndex = 0;
             // 
             // todo
             // 
             this.todo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.todo.Location = new System.Drawing.Point(440, 0);
+            this.todo.Margin = new System.Windows.Forms.Padding(0);
             this.todo.Name = "todo";
             this.todo.Size = new System.Drawing.Size(1000, 1024);
             this.todo.TabIndex = 0;
