@@ -12,7 +12,7 @@ using System.Drawing.Design;
 
 namespace StudentPortal.StudentPortalControls
 {
-    class comboBoxCustom : UserControl
+    class CustomComboBox : UserControl
     {
         //Fields
         private Color backColor = Color.WhiteSmoke;
@@ -32,7 +32,7 @@ namespace StudentPortal.StudentPortalControls
         public event EventHandler OnSelectedIndexChanged;//Default event
 
         //Constructor
-        public comboBoxCustom()
+        public CustomComboBox()
         {
             cmbList = new ComboBox();
             lblText = new Label();

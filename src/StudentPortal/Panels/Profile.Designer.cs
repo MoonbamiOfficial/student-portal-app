@@ -44,7 +44,7 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.studentCover = new System.Windows.Forms.PictureBox();
             this.studentNameNumber = new System.Windows.Forms.FlowLayoutPanel();
-            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
+            this.studentIcon = new StudentPortal.StudentPortalControls.CustomPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentCover)).BeginInit();
             this.studentNameNumber.SuspendLayout();
@@ -296,7 +296,7 @@
         }
 
         #endregion
-        private StudentPortalControls.pictureBoxCustom studentIcon;
+        private StudentPortalControls.CustomPictureBox studentIcon;
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.PictureBox studentCover;
         private System.Windows.Forms.Label passwordLabel;

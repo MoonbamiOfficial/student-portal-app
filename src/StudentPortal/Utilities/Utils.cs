@@ -39,11 +39,11 @@ namespace StudentPortal.Panels
         // 
         //  Select function
         //
-        public void setSelect(comboBoxCustom cb)
+        public void setSelect(CustomComboBox cb)
         {
             cb.Select();
         }
-        public void setOpen(datePickerCustom dp)
+        public void setOpen(CustomDatePicker dp)
         {
             dp.Select();
         }

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.studentName = new System.Windows.Forms.Label();
             this.sideNav = new System.Windows.Forms.Panel();
-            this.studentIcon = new StudentPortal.StudentPortalControls.pictureBoxCustom();
+            this.studentIcon = new StudentPortal.StudentPortalControls.CustomPictureBox();
             this.studentEmail = new System.Windows.Forms.Label();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.profileBtn = new FontAwesome.Sharp.IconButton();
@@ -310,7 +310,7 @@
         #endregion
         private System.Windows.Forms.Label studentName;
         private System.Windows.Forms.Panel sideNav;
-        private StudentPortalControls.pictureBoxCustom studentIcon;
+        private StudentPortalControls.CustomPictureBox studentIcon;
         private System.Windows.Forms.Label studentEmail;
         private System.Windows.Forms.Button logOutBtn;
         private FontAwesome.Sharp.IconButton homeBtn;

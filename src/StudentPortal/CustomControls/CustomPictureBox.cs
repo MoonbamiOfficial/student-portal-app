@@ -10,7 +10,7 @@ using System.ComponentModel;
 
 namespace StudentPortal.StudentPortalControls
 {
-    internal class pictureBoxCustom : PictureBox
+    internal class CustomPictureBox : PictureBox
     {
         //Fields
         private int borderSize = 2;
@@ -21,7 +21,7 @@ namespace StudentPortal.StudentPortalControls
         private float gradientAngle = 50F;
 
         //Constructor
-        public pictureBoxCustom()
+        public CustomPictureBox()
         {
             this.Size = new Size(100, 100);
             this.SizeMode = PictureBoxSizeMode.StretchImage;
