@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -90,6 +90,11 @@ namespace StudentPortal
             // Temporary code - opens the main form after logging in
             this.Hide();
             new MainForm().Show();
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
         }
     }
 }
