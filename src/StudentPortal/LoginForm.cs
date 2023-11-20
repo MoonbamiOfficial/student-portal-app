@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,7 +36,8 @@ namespace StudentPortal
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new RegisterForm().Show();
+            var registerForm = RegisterForm.getInstance();
+            registerForm.Show();
         }
         //
         //  Click label events
