@@ -60,7 +60,12 @@ namespace StudentPortal
             RegisterForm registerForm = (RegisterForm)Application.OpenForms["RegisterForm"];
             registerForm.Dispose();
             new LoginForm().Show();
+            
         }
 
+        private void ConfirmationBox_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+        }
     }
 }
