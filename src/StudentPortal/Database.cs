@@ -18,6 +18,43 @@ namespace StudentPortal
         private static readonly string database = "stu_portal";
         private static string connString = $"server={server};user={user};database={database};password={password};";
 
+        public void executeRegister(
+            string fullName, string email, string password, string sex, string birthday,
+            string course, int yearLevel, int semester, string status, string query = ""
+            )
+        {
+            using (MySqlConnection mySqlConn = new MySqlConnection(connString))
+            {
+                try
+                {
+                    query = "INSERT INTO stu_info (fullname, email, password, sex, birthday, course, yearLevel, semester, status) " +
+                        "VALUES (@fullname, @email, @password, @sex, @birthday, @course, @yearLevel, @semester, @status)";
+                    MySqlCommand cmd = new MySqlCommand(query, mySqlConn);
+                    cmd.Parameters.AddWithValue("@fullname", fullName);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.Parameters.AddWithValue("@sex", sex);
+                    cmd.Parameters.AddWithValue("@birthday", birthday);
+                    cmd.Parameters.AddWithValue("@course", course);
+                    cmd.Parameters.AddWithValue("@yearLevel", yearLevel);
+                    cmd.Parameters.AddWithValue("@semester", semester);
+                    cmd.Parameters.AddWithValue("@status", status);
+
+                    mySqlConn.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    MessageBox.Show(rowsAffected.ToString());
+
+                }catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+
+
+
+
         public void ExecuteLogin(string query, string email, string password)
         {
             using (MySqlConnection mySqlConn = new MySqlConnection(connString))
