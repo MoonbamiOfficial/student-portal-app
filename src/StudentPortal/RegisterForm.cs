@@ -206,5 +206,32 @@ namespace StudentPortal
         {
             Application.ExitThread();
         }
+
+        private void firstNameTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongFirstNameLabel.Text = "";
+        }
+
+        private void lastNameTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongLastNameLabel.Text = "";
+        }
+
+        private void emailTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongEmailLabel.Text = "";
+        }
+
+        private void passwordTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongPasswordLabel.Text = "";
+        }
+
+        private void confirmPasswordTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongConfirmPasswordLabel.Text = "";
+        }
+
+        
     }
 }
