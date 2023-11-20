@@ -1,4 +1,4 @@
-using StudentPortal.Panels;
+﻿using StudentPortal.Panels;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -7,9 +7,22 @@ namespace StudentPortal
 {
     public partial class RegisterForm : Form
     {
+        private static RegisterForm registerForm;
         public RegisterForm()
         {
             InitializeComponent();
+        }
+        public static RegisterForm getInstance()
+        {
+            if (registerForm == null)
+            {
+                registerForm = new RegisterForm();
+                return registerForm;
+            }
+            else
+            {
+                return registerForm;
+            }
         }
         private void RegisterForm_Load(object sender, EventArgs e)
         {
@@ -196,8 +209,8 @@ namespace StudentPortal
                 yearLvl, semester, status
                 );
             if (isRegisteredSuccefully)
-        {
-            new ConfirmationBox().Show();
+            {
+                new ConfirmationBox().Show();
             }
         }
 
