@@ -324,6 +324,7 @@
             this.firstNameTextbox.Name = "firstNameTextbox";
             this.firstNameTextbox.Size = new System.Drawing.Size(340, 29);
             this.firstNameTextbox.TabIndex = 1;
+            this.firstNameTextbox.Enter += new System.EventHandler(this.firstNameTextbox_Enter);
             // 
             // middleNameTextbox
             // 
@@ -350,6 +351,7 @@
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(340, 29);
             this.emailTextbox.TabIndex = 6;
+            this.emailTextbox.Enter += new System.EventHandler(this.emailTextbox_Enter);
             // 
             // lastNameTextbox
             // 
@@ -363,6 +365,7 @@
             this.lastNameTextbox.Name = "lastNameTextbox";
             this.lastNameTextbox.Size = new System.Drawing.Size(340, 29);
             this.lastNameTextbox.TabIndex = 4;
+            this.lastNameTextbox.Enter += new System.EventHandler(this.lastNameTextbox_Enter);
             // 
             // passwordTextbox
             // 
@@ -376,6 +379,7 @@
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.Size = new System.Drawing.Size(340, 29);
             this.passwordTextbox.TabIndex = 9;
+            this.passwordTextbox.Enter += new System.EventHandler(this.passwordTextbox_Enter);
             // 
             // confirmPasswordTextbox
             // 
@@ -389,6 +393,7 @@
             this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
             this.confirmPasswordTextbox.Size = new System.Drawing.Size(340, 29);
             this.confirmPasswordTextbox.TabIndex = 12;
+            this.confirmPasswordTextbox.Enter += new System.EventHandler(this.confirmPasswordTextbox_Enter);
             // 
             // loginBtn
             // 
@@ -482,7 +487,7 @@
             this.birthdayPicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.birthdayPicker.TabIndex = 5;
             this.birthdayPicker.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.birthdayPicker.Value = new System.DateTime(2023, 11, 12, 13, 32, 33, 0);
+            this.birthdayPicker.Value = new System.DateTime(1998, 1, 6, 0, 0, 0, 0);
             // 
             // courseBg
             // 
@@ -511,18 +516,10 @@
             this.courseComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.courseComboBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
             this.courseComboBox.Items.AddRange(new object[] {
-            "BSMT",
-            "BSCRIM",
-            "BSTM",
             "BSIT",
             "BSCS",
-            "BSCM",
-            "BSESS",
-            "BSPSYCH",
-            "BS Arch",
-            "BSBM",
-            "BSDM",
-            "BSIS"});
+            "BSCRIM",
+            "BSPSYCH"});
             this.courseComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.courseComboBox.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.courseComboBox.Location = new System.Drawing.Point(0, 26);
@@ -531,7 +528,7 @@
             this.courseComboBox.Name = "courseComboBox";
             this.courseComboBox.Size = new System.Drawing.Size(200, 30);
             this.courseComboBox.TabIndex = 7;
-            this.courseComboBox.Texts = "BSIT";
+            this.courseComboBox.Texts = "";
             // 
             // lastNameBg
             // 
@@ -594,7 +591,7 @@
             this.statusComboBox.Name = "statusComboBox";
             this.statusComboBox.Size = new System.Drawing.Size(200, 30);
             this.statusComboBox.TabIndex = 11;
-            this.statusComboBox.Texts = "Regular";
+            this.statusComboBox.Texts = "";
             // 
             // sexBg
             // 
@@ -633,7 +630,7 @@
             this.sexComboBox.Name = "sexComboBox";
             this.sexComboBox.Size = new System.Drawing.Size(200, 30);
             this.sexComboBox.TabIndex = 3;
-            this.sexComboBox.Texts = "Male";
+            this.sexComboBox.Texts = "";
             // 
             // passwordBg
             // 
@@ -681,7 +678,6 @@
             this.wrongFirstNameLabel.Name = "wrongFirstNameLabel";
             this.wrongFirstNameLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongFirstNameLabel.TabIndex = 0;
-            this.wrongFirstNameLabel.Text = "* Sample error message";
             this.wrongFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // yearLevelLabel
@@ -739,7 +735,7 @@
             this.yearLevelComboBox.Name = "yearLevelComboBox";
             this.yearLevelComboBox.Size = new System.Drawing.Size(200, 30);
             this.yearLevelComboBox.TabIndex = 8;
-            this.yearLevelComboBox.Texts = "1st Year";
+            this.yearLevelComboBox.Texts = "";
             // 
             // semesterLabel
             // 
@@ -794,7 +790,7 @@
             this.semesterComboBox.Name = "semesterComboBox";
             this.semesterComboBox.Size = new System.Drawing.Size(200, 30);
             this.semesterComboBox.TabIndex = 10;
-            this.semesterComboBox.Texts = "1st Sem";
+            this.semesterComboBox.Texts = "";
             // 
             // wrongLastNameLabel
             // 
@@ -807,7 +803,6 @@
             this.wrongLastNameLabel.Name = "wrongLastNameLabel";
             this.wrongLastNameLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongLastNameLabel.TabIndex = 14;
-            this.wrongLastNameLabel.Text = "* Sample error message";
             this.wrongLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wrongEmailLabel
@@ -821,7 +816,6 @@
             this.wrongEmailLabel.Name = "wrongEmailLabel";
             this.wrongEmailLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongEmailLabel.TabIndex = 15;
-            this.wrongEmailLabel.Text = "* Sample error message";
             this.wrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wrongPasswordLabel
@@ -835,7 +829,6 @@
             this.wrongPasswordLabel.Name = "wrongPasswordLabel";
             this.wrongPasswordLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongPasswordLabel.TabIndex = 16;
-            this.wrongPasswordLabel.Text = "* Sample error message";
             this.wrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wrongConfirmPasswordLabel
@@ -849,7 +842,6 @@
             this.wrongConfirmPasswordLabel.Name = "wrongConfirmPasswordLabel";
             this.wrongConfirmPasswordLabel.Size = new System.Drawing.Size(400, 34);
             this.wrongConfirmPasswordLabel.TabIndex = 17;
-            this.wrongConfirmPasswordLabel.Text = "* Sample error message";
             this.wrongConfirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // RegisterForm
@@ -907,6 +899,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegisterForm_FormClosed);
+            this.Load += new System.EventHandler(this.RegisterForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).EndInit();
             this.birthdayBg.ResumeLayout(false);
             this.courseBg.ResumeLayout(false);
