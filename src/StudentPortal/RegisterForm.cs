@@ -176,7 +176,29 @@ namespace StudentPortal
         //
         private void signUpBtn_Click(object sender, EventArgs e)
         {
+            string firstName = firstNameTextbox.Text;
+            string lastName = lastNameTextbox.Text;
+            string middleName = middleNameTextbox.Text;
+            string email = emailTextbox.Text;
+            string password = passwordTextbox.Text;
+            string confirmPassword = confirmPasswordTextbox.Text;
+            string sex = sexComboBox.SelectedItem.ToString();
+            string birthday = birthdayPicker.Value.ToString("MM-dd-yyyy");
+            string course = courseComboBox.SelectedItem.ToString();
+            string yearLvl = yearLevelComboBox.SelectedItem.ToString();
+            string semester = semesterComboBox.SelectedItem.ToString();
+            string status = statusComboBox.SelectedItem.ToString();
+
+
+            Validator validator = new Validator();
+            bool isRegisteredSuccefully = validator.validateRegister(
+                firstName, lastName, email, password, confirmPassword, sex, birthday, course,
+                yearLvl, semester, status
+                );
+            if (isRegisteredSuccefully)
+        {
             new ConfirmationBox().Show();
+            }
         }
 
         // Function to close the application on exit
