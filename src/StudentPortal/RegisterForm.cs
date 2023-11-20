@@ -146,5 +146,11 @@ namespace StudentPortal
         {
             new ConfirmationBox().Show();
         }
+
+        // Function to close the application on exit
+        private void RegisterForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+        }
     }
 }
