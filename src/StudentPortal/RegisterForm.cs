@@ -146,6 +146,31 @@ namespace StudentPortal
         {
             u.setFocus(confirmPasswordTextbox);
         }
+
+        //
+        //  Getters and Setters for Wrong Label
+        //
+        public void setWrongLabelFirstName(string input)
+        {
+            wrongFirstNameLabel.Text = input;
+        }
+        public void setWrongLabelLastName(string input)
+        {
+            wrongLastNameLabel.Text = input;
+        }
+        public void setWrongLabelEmail(string input)
+        {
+            wrongEmailLabel.Text = input;
+        }
+        public void setWrongLabelPassword(string input)
+        {
+            wrongPasswordLabel.Text = input;
+        }
+        public void setWrongLabelConfirmPassword(string input)
+        {
+            wrongConfirmPasswordLabel.Text = input;
+        }
+
         //
         //  Sign up event
         //
