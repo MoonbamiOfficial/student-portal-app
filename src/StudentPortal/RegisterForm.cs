@@ -1,4 +1,4 @@
-﻿using StudentPortal.Panels;
+using StudentPortal.Panels;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -11,7 +11,14 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
-
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+            sexComboBox.SelectedIndex = 0;
+            courseComboBox.SelectedIndex = 0;
+            yearLevelComboBox.SelectedIndex = 0;
+            semesterComboBox.SelectedIndex = 0;
+            statusComboBox.SelectedIndex = 0;
+        }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             this.Dispose();
