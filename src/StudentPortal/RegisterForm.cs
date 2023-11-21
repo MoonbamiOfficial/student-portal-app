@@ -252,6 +252,19 @@ namespace StudentPortal
             semesterComboBox.SelectedIndex = 0;
             statusComboBox.SelectedIndex = 0;
         }
+        public void setBirthdayPickerToDefault()
+        {
+            string defaultDateString = "01-01-1991";
+            DateTime defaultDate;
+            if (DateTime.TryParse(defaultDateString, out defaultDate))
+            {
+                birthdayPicker.Value = defaultDate;
+            }
+            else
+            {
+                MessageBox.Show("Failed to set Birthday Picker to default");
+            }
+        }
         public void clearInputs()
         {
             firstNameTextbox.Clear();
