@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -147,6 +147,9 @@ namespace StudentPortal
             this.Dispose();
             new LoginForm().Show();
         }
-
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+        }
     }
 }
