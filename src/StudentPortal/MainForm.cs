@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,9 +48,14 @@ namespace StudentPortal
         //
         private void MainForm_Load(object sender, EventArgs e)
         {
+            studentName.Text = StudentInfo.fullname;
+            studentEmail.Text = StudentInfo.email;
             home.Visible = true;
             profile.Visible = false;
             degree.Visible = false;
+
+
+
         }
         //
         //  Side nav button events
