@@ -1,4 +1,4 @@
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,15 +20,15 @@ namespace StudentPortal
 
         public void executeRegister(
             string fullName, string email, string password, string sex, string birthday,
-            string course, int yearLevel, int semester, string status, string query = ""
+            string course, int yearLevel, int semester, string status, long stuNumber, string query = ""
             )
         {
             using (MySqlConnection mySqlConn = new MySqlConnection(connString))
             {
                 try
                 {
-                    query = "INSERT INTO stu_info (fullname, email, password, sex, birthday, course, yearLevel, semester, status) " +
-                        "VALUES (@fullname, @email, @password, @sex, @birthday, @course, @yearLevel, @semester, @status)";
+                    query = "INSERT INTO stu_info (fullname, email, password, sex, birthday, course, yearLevel, semester, status, stu_number) " +
+                        "VALUES (@fullname, @email, @password, @sex, @birthday, @course, @yearLevel, @semester, @status, @stuNumber)";
                     MySqlCommand cmd = new MySqlCommand(query, mySqlConn);
                     cmd.Parameters.AddWithValue("@fullname", fullName);
                     cmd.Parameters.AddWithValue("@email", email);
@@ -39,15 +39,19 @@ namespace StudentPortal
                     cmd.Parameters.AddWithValue("@yearLevel", yearLevel);
                     cmd.Parameters.AddWithValue("@semester", semester);
                     cmd.Parameters.AddWithValue("@status", status);
+                    cmd.Parameters.AddWithValue("@stuNumber", stuNumber);
+
 
                     mySqlConn.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show(rowsAffected.ToString());
+                    MessageBox.Show("Query successful rows affected: " + rowsAffected.ToString());
 
-                }catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
+                finally { mySqlConn.Close(); }
             }
         }
         public bool ExecuteLogin(string email, string password)
@@ -64,12 +68,12 @@ namespace StudentPortal
                         cmd.Parameters.AddWithValue("@password", password);
 
                         using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
+                        {
                             // check if there is rows in the reader.
                             if (reader.HasRows)
                             {
                                 while (reader.Read())
-                        {
+                                {
                                     StudentInfo.fullname = reader.GetString("fullname");
                                     StudentInfo.email = reader.GetString("email");
                                     StudentInfo.sex = reader.GetString("sex");
@@ -100,8 +104,6 @@ namespace StudentPortal
             }
 
         }
-
-
 
     }
 }
