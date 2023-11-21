@@ -136,7 +136,7 @@
             this.Name = "ConfirmationBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmation";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ConfirmationBox_FormClosing);
+           
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ConfirmationBox_FormClosed);
             this.ResumeLayout(false);
 
