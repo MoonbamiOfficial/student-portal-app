@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.brandIcon = new System.Windows.Forms.PictureBox();
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.wrongPasswordLabel = new System.Windows.Forms.Label();
@@ -45,19 +44,7 @@
             this.emailBg = new System.Windows.Forms.Panel();
             this.passwordBg = new System.Windows.Forms.Panel();
             this.signUpBg = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // brandIcon
-            // 
-            this.brandIcon.Image = global::StudentPortal.Properties.Resources.icon;
-            this.brandIcon.Location = new System.Drawing.Point(29, 30);
-            this.brandIcon.Margin = new System.Windows.Forms.Padding(0);
-            this.brandIcon.Name = "brandIcon";
-            this.brandIcon.Size = new System.Drawing.Size(100, 100);
-            this.brandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.brandIcon.TabIndex = 0;
-            this.brandIcon.TabStop = false;
             // 
             // passwordTextbox
             // 
@@ -286,7 +273,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
-            this.Controls.Add(this.brandIcon);
             this.Controls.Add(this.brandNameLabel);
             this.Controls.Add(this.passwordTextbox);
             this.Controls.Add(this.emailTextbox);
@@ -308,7 +294,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,7 +306,6 @@
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.Label brandNameLabel;
         private System.Windows.Forms.Label headerLabel;
-        private System.Windows.Forms.PictureBox brandIcon;
         private System.Windows.Forms.Button signUpBtn;
         private System.Windows.Forms.Label descLabel;
         private System.Windows.Forms.Label newHereLabel;
