@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +19,13 @@ namespace StudentPortal.Panels
         Utils u = new Utils();
         private void Profile_Load(object sender, EventArgs e)
         {
+            studentName.Text = StudentInfo.fullname;
+            studentNumber.Text = StudentInfo.stuNumber.ToString();
+            studentEmail.Text = StudentInfo.email;
+
+            emailTextbox.Text = StudentInfo.email;
+            passwordTextbox.Text = StudentInfo.password;
+
             logo.Parent = studentCover;
             logo.BackColor = Color.Transparent;
         }
