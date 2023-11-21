@@ -1,4 +1,4 @@
-﻿using Google.Protobuf.WellKnownTypes;
+using Google.Protobuf.WellKnownTypes;
 using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
@@ -218,6 +218,29 @@ namespace StudentPortal
                 }
             }
             return false;
+        }
+        public void validateLogin(string email, string password)
+        {
+            Database db = new Database();
+
+            // Check if fields are Empty or Blank
+            if (String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(password))
+            {
+                loginForm.setWrongEmailLabel("Fields cannot be Blank");
+                loginForm.setWrongPasswordLabel("Fields cannot be Blank");
+                loginForm.clearTxtField();
+                return;
+            }
+            // Execute query to the database
+            bool isSucessfull = db.ExecuteLogin(email, password);
+
+            if (isSucessfull)
+            {
+                LoginForm loginForm = (LoginForm)Application.OpenForms["LoginForm"];
+                loginForm.Hide();
+                new MainForm().Show();
+            }
+
         }
     }
 }
