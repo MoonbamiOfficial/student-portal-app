@@ -87,9 +87,6 @@ namespace StudentPortal
             validator.validateLogin(email, password);
 
 
-            // Temporary code - opens the main form after logging in
-            this.Hide();
-            new MainForm().Show();
         }
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
