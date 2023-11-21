@@ -1,4 +1,4 @@
-using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf.WellKnownTypes;
 using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
@@ -12,77 +12,46 @@ namespace StudentPortal
 {
     internal class Validator
     {
-        private string name = null;
-        private string email = null;
-        private string password = null;
-        private string sex = null;
-        private string birthday = null;
-        private string course = null;
-        private int yearLvl = 0;
-        private int semester = 0;
-        private string status = null;
-        
-
-
-
         private RegisterForm registerForm = RegisterForm.getInstance();
         private LoginForm loginForm = LoginForm.getInstance();
-
-        public void validateLogin(string email, string password)
-        {
-            
-            // Instantiate Database
-            Database db = new Database();
-
-            // Check if fields are Empty or Blank
-            if (String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(password))
-            {
-                loginForm.setWrongEmailLabel("Fields cannot be Blank");
-                loginForm.setWrongPasswordLabel("Fields cannot be Blank");
-                loginForm.clearTxtField();
-                return;
-            }
-
-            string query = "SELECT * FROM student_info";
-
-            // Execute query to the database
-            db.ExecuteLogin(query, email, password);
-        }
-
-        //###############################################################################
         
+
         public bool validateRegister(
             string firstName, string lastName, string email, string pass, string confirmPass,
             string sex, string birthday, string course, string yearLvl, string semester, 
             string status,string middleName = ""
             )
         {
-            string[] values = { 
+
+            // Array to store all raw data that will 
+            // be checked if it contains a null value
+            string[] datas = { 
                 firstName, lastName, email, pass, confirmPass, sex, 
                 birthday, course, yearLvl, semester, status
             };
 
+            // Use methods to validate and set data
             setName(firstName, lastName, middleName);
             setEmail(email);
             setPassword(pass, confirmPass);
             setOtherInformation(sex, birthday, course, yearLvl, semester, status);
-
-            if (containsNullOrEmptyValue(values))
+            UserData.GenerateStudentNumber();
+            if (containsNullOrEmptyValue(datas))
                 return false;
 
+            // Array to store the user's information.
             object[] userInfo = {
-                this.name, this.email, this.password, this.sex, this.birthday,
-                this.course, this.yearLvl, this.semester, this.status
+                UserData.name, UserData.email, UserData.password, UserData.sex, UserData.birthday,
+                UserData.course, UserData.yearLvl, UserData.semester, UserData.status
             };
+
+            // Check if the userInfo array contains a null value.
             bool hasNullValue = Array.Exists(userInfo, info => info == null);
             if (hasNullValue)
                 return false;
 
-            //MessageBox.Show($"name: {this.name} email: {this.email} pass: {this.password} sex: {this.sex}" +
-            //        $"bday: {this.birthday} course: {this.course} year: {this.yearLvl} sem: {this.semester} status: {this.status}");
             
-            Database db = new Database();
-            db.executeRegister(this.name, this.email, this.password, this.sex, this.birthday, this.course, this.yearLvl, this.semester, this.status);
+            
             
             return true;
         }
@@ -116,12 +85,12 @@ namespace StudentPortal
                 if (!string.IsNullOrEmpty(middleName))
                 {
                     // set full name with middle name.
-                    this.name = $"{firstName} {middleName} {lastName}";
+                    UserData.name = $"{firstName} {middleName} {lastName}";
                 }
                 else
                 {
                     // set full name without middle name.
-                    this.name = $"{firstName} {lastName}";
+                    UserData.name = $"{firstName} {lastName}";
                 }
             }
         }
@@ -138,7 +107,7 @@ namespace StudentPortal
             else
             {
                 // set email value.
-                this.email = email;
+                UserData.email = email;
             }
         }
         private void setPassword(string pass, string confirmPass)
@@ -163,9 +132,9 @@ namespace StudentPortal
             else
             {
                 // set password value.
-                password = pass;
+                UserData.password = pass;
             }
-        }
+        }   
         public bool isStrongPassword(string password)
         {
             string pattern = @"^(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{8,}$";
@@ -173,40 +142,40 @@ namespace StudentPortal
         }
         public void setOtherInformation(string sex, string bday, string course, string yearLvl, string sem, string status)
         {
-            this.sex = sex;
-            this.birthday = bday;
-            this.course = course;
+            UserData.sex = sex;
+            UserData.birthday = bday;
+            UserData.course = course;
             switch (yearLvl)
             {
                 case "1st Year":
-                    this.yearLvl = 1;
+                    UserData.yearLvl = 1;
                     break;
                 case "2nd Year":
-                    this.yearLvl = 2;
+                    UserData.yearLvl = 2;
                     break;
                 case "3rd Year":
-                    this.yearLvl = 3;
+                    UserData.yearLvl = 3;
                     break;
                 case "4th Year":
-                    this.yearLvl = 4;
+                    UserData.yearLvl = 4;
                     break;
-                default: 
-                    this.yearLvl = 0;
+                default:
+                    UserData.yearLvl = 0;
                     break;
             }
             switch (sem)
             {
                 case "1st Sem":
-                    this.semester = 1;
+                    UserData.semester = 1;
                     break;
                 case "2nd Sem":
-                    this.semester = 2;
+                    UserData.semester = 2;
                     break;
                 default:
-                    this.semester = 0;
+                    UserData.semester = 0;
                     break;
             }
-            this.status = status;
+            UserData.status = status;
         }
         private bool containsNullOrEmptyValue(string[] values)
         {
