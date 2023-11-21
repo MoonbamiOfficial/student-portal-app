@@ -216,8 +216,14 @@
     <Compile Include="Panels\TodoPanels\TodosFolder\FinishedOne.Designer.cs">
       <DependentUpon>FinishedOne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subjects\BscrimSubjects.cs" />
+    <Compile Include="Subjects\BscsSubjects.cs" />
+    <Compile Include="Subjects\BsitSubjects.cs" />
+    <Compile Include="Subjects\BspsychSubjects.cs" />
+    <Compile Include="Subjects\StudentSubject.cs" />
+    <Compile Include="UserData.cs" />
     <Compile Include="Utilities\Utils.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="StudentInfo.cs" />
     <Compile Include="CustomControls\buttonCustom.cs">
       <SubType>Component</SubType>
     </Compile>
