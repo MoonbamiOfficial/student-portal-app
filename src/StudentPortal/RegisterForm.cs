@@ -244,6 +244,14 @@ namespace StudentPortal
         {
             wrongConfirmPasswordLabel.Text = "";
         }
+        public void clearComboBox()
+        {
+            sexComboBox.SelectedIndex = 0;
+            courseComboBox.SelectedIndex = 0;
+            yearLevelComboBox.SelectedIndex = 0;
+            semesterComboBox.SelectedIndex = 0;
+            statusComboBox.SelectedIndex = 0;
+        }
         public void clearInputs()
         {
             firstNameTextbox.Clear();
