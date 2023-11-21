@@ -1,4 +1,4 @@
-﻿using StudentPortal.Panels;
+using StudentPortal.Panels;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -244,7 +244,17 @@ namespace StudentPortal
         {
             wrongConfirmPasswordLabel.Text = "";
         }
-
+        public void clearInputs()
+        {
+            firstNameTextbox.Clear();
+            middleNameTextbox.Clear();
+            lastNameTextbox.Clear();
+            emailTextbox.Clear();
+            passwordTextbox.Clear();
+            confirmPasswordTextbox.Clear();
+            setBirthdayPickerToDefault();
+            clearComboBox();
+        }
         
     }
 }
