@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -50,48 +50,52 @@ namespace StudentPortal
                 }
             }
         }
-
-
-
-
-
-        public void ExecuteLogin(string query, string email, string password)
+        public bool ExecuteLogin(string email, string password)
         {
             using (MySqlConnection mySqlConn = new MySqlConnection(connString))
             {
                 try
                 {
                     mySqlConn.Open();
-                    MySqlCommand mySqlCmd = new MySqlCommand(query, mySqlConn);
-                    MySqlDataReader reader = mySqlCmd.ExecuteReader();
-
-                    while (reader.Read())
+                    string query = "SELECT * FROM stu_info WHERE Email = @email AND Password = @password";
+                    using (MySqlCommand cmd = new MySqlCommand(query, mySqlConn))
                     {
-                        //Check if the email and password column is empty
-                        if (reader.IsDBNull(1) && reader.IsDBNull(2))
-                        {
-                            MessageBox.Show("Email and Password column is Empty");
-                            return;
-                        }
-                        else
-                        {
-                            if (email.Equals(reader.GetString("email")) && password.Equals(reader.GetString("password")))
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@password", password);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                            // check if there is rows in the reader.
+                            if (reader.HasRows)
                             {
-                                // Code for when login is successful
-                                MessageBox.Show("Login Success");
+                                while (reader.Read())
+                        {
+                                    StudentInfo.fullname = reader.GetString("fullname");
+                                    StudentInfo.email = reader.GetString("email");
+                                    StudentInfo.sex = reader.GetString("sex");
+                                    StudentInfo.birthday = reader.GetString("birthday");
+                                    StudentInfo.course = reader.GetString("course");
+                                    StudentInfo.yearLvl = reader.GetInt32("yearLevel");
+                                    StudentInfo.semester = reader.GetInt32("semester");
+                                    StudentInfo.status = reader.GetString("status");
+                                    StudentInfo.stuNumber = reader.GetInt64("stu_number");
+                                    StudentInfo.password = reader.GetString("password");
+                                }
+                                MessageBox.Show("Login Successful!");
+                                return true;
                             }
                             else
                             {
-                                MessageBox.Show("Login Failed invalid Email or Password");
+                                MessageBox.Show("No rows found in query");
+                                return false;
                             }
                         }
                     }
-                }catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }finally
-                {
-                    mySqlConn.Close();
+                    return false;
                 }
             }
 
