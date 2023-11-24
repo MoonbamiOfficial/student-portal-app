@@ -827,7 +827,7 @@
             this.wrongPasswordLabel.Location = new System.Drawing.Point(528, 646);
             this.wrongPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
             this.wrongPasswordLabel.Name = "wrongPasswordLabel";
-            this.wrongPasswordLabel.Size = new System.Drawing.Size(400, 34);
+            this.wrongPasswordLabel.Size = new System.Drawing.Size(474, 34);
             this.wrongPasswordLabel.TabIndex = 16;
             this.wrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 

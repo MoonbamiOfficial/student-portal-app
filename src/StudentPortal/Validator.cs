@@ -122,7 +122,7 @@ namespace StudentPortal
             }
             else if (!isStrongPassword(pass))
             {
-                registerForm.setWrongLabelPassword("Password is too weak");
+                registerForm.setWrongLabelPassword("Password is too weak, use uppercase or special character");
             }
             else if (!pass.Equals(confirmPass))
             {
