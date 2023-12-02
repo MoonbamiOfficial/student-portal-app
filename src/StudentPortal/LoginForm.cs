@@ -36,8 +36,7 @@ namespace StudentPortal
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var registerForm = RegisterForm.getInstance();
-            registerForm.Show();
+            Forms.registerForm.Show();
         }
         //
         //  Click label events
