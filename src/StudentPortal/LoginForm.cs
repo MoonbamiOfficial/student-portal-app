@@ -85,7 +85,7 @@ namespace StudentPortal
 
             Validator validator = new Validator();
             validator.validateLogin(email, password);
-
+            this.Hide();
 
         }
 

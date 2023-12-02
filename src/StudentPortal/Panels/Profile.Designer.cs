@@ -41,12 +41,10 @@
             this.emailBg = new System.Windows.Forms.Panel();
             this.confirmPasswordBg = new System.Windows.Forms.Panel();
             this.passwordBg = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.PictureBox();
             this.studentCover = new System.Windows.Forms.PictureBox();
             this.studentNameNumber = new System.Windows.Forms.FlowLayoutPanel();
             this.studentIcon = new StudentPortal.StudentPortalControls.CustomPictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentCover)).BeginInit();
             this.studentNameNumber.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
@@ -145,7 +143,7 @@
             this.editBtn.Location = new System.Drawing.Point(546, 764);
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(157, 80);
-            this.editBtn.TabIndex = 20;
+            this.editBtn.TabIndex = 4;
             this.editBtn.Text = "Edit";
             this.editBtn.UseVisualStyleBackColor = false;
             this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
@@ -159,8 +157,8 @@
             this.emailTextbox.Location = new System.Drawing.Point(580, 626);
             this.emailTextbox.Multiline = true;
             this.emailTextbox.Name = "emailTextbox";
-            this.emailTextbox.Size = new System.Drawing.Size(340, 20);
-            this.emailTextbox.TabIndex = 26;
+            this.emailTextbox.Size = new System.Drawing.Size(340, 29);
+            this.emailTextbox.TabIndex = 2;
             // 
             // passwordTextbox
             // 
@@ -171,8 +169,8 @@
             this.passwordTextbox.Location = new System.Drawing.Point(80, 626);
             this.passwordTextbox.Multiline = true;
             this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.Size = new System.Drawing.Size(340, 20);
-            this.passwordTextbox.TabIndex = 22;
+            this.passwordTextbox.Size = new System.Drawing.Size(340, 29);
+            this.passwordTextbox.TabIndex = 1;
             // 
             // confirmPasswordTextbox
             // 
@@ -183,8 +181,8 @@
             this.confirmPasswordTextbox.Location = new System.Drawing.Point(80, 790);
             this.confirmPasswordTextbox.Multiline = true;
             this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
-            this.confirmPasswordTextbox.Size = new System.Drawing.Size(340, 20);
-            this.confirmPasswordTextbox.TabIndex = 24;
+            this.confirmPasswordTextbox.Size = new System.Drawing.Size(340, 29);
+            this.confirmPasswordTextbox.TabIndex = 3;
             // 
             // emailBg
             // 
@@ -216,19 +214,6 @@
             this.passwordBg.TabIndex = 21;
             this.passwordBg.Click += new System.EventHandler(this.passwordBg_Click);
             // 
-            // logo
-            // 
-            this.logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logo.BackColor = System.Drawing.Color.Transparent;
-            this.logo.Image = global::StudentPortal.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(820, 220);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(150, 150);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo.TabIndex = 5;
-            this.logo.TabStop = false;
-            // 
             // studentCover
             // 
             this.studentCover.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -251,7 +236,7 @@
             this.studentNameNumber.Margin = new System.Windows.Forms.Padding(0);
             this.studentNameNumber.Name = "studentNameNumber";
             this.studentNameNumber.Size = new System.Drawing.Size(654, 100);
-            this.studentNameNumber.TabIndex = 27;
+            this.studentNameNumber.TabIndex = 0;
             // 
             // studentIcon
             // 
@@ -284,7 +269,7 @@
             this.button1.Location = new System.Drawing.Point(793, 764);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 80);
-            this.button1.TabIndex = 20;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -304,7 +289,6 @@
             this.Controls.Add(this.emailTextbox);
             this.Controls.Add(this.passwordTextbox);
             this.Controls.Add(this.confirmPasswordTextbox);
-            this.Controls.Add(this.logo);
             this.Controls.Add(this.studentCover);
             this.Controls.Add(this.passwordBg);
             this.Controls.Add(this.confirmPasswordBg);
@@ -312,7 +296,6 @@
             this.Name = "Profile";
             this.Size = new System.Drawing.Size(1000, 1024);
             this.Load += new System.EventHandler(this.Profile_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentCover)).EndInit();
             this.studentNameNumber.ResumeLayout(false);
             this.studentNameNumber.PerformLayout();
@@ -324,7 +307,6 @@
 
         #endregion
         private StudentPortalControls.CustomPictureBox studentIcon;
-        private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.PictureBox studentCover;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Label emailLabel;

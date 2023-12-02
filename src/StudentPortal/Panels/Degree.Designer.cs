@@ -58,8 +58,6 @@
             this.verticalTwo = new System.Windows.Forms.Panel();
             this.verticalThree = new System.Windows.Forms.Panel();
             this.verticalFour = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // studentCourse
@@ -445,23 +443,11 @@
             this.verticalFour.Size = new System.Drawing.Size(3, 500);
             this.verticalFour.TabIndex = 0;
             // 
-            // logo
-            // 
-            this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.logo.Image = global::StudentPortal.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(423, 25);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(150, 150);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo.TabIndex = 6;
-            this.logo.TabStop = false;
-            // 
             // Degree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.Controls.Add(this.logo);
             this.Controls.Add(this.horizontalTop);
             this.Controls.Add(this.horizontalMid);
             this.Controls.Add(this.horizontalBottom);
@@ -495,7 +481,6 @@
             this.Name = "Degree";
             this.Size = new System.Drawing.Size(1000, 1024);
             this.Load += new System.EventHandler(this.Degree_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -531,6 +516,5 @@
         private System.Windows.Forms.Panel verticalTwo;
         private System.Windows.Forms.Panel verticalThree;
         private System.Windows.Forms.Panel verticalFour;
-        private System.Windows.Forms.PictureBox logo;
     }
 }

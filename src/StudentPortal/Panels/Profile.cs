@@ -19,15 +19,15 @@ namespace StudentPortal.Panels
         Utils u = new Utils();
         private void Profile_Load(object sender, EventArgs e)
         {
+            if (StudentInfo.sex == "Female") studentIcon.Image = StudentPortal.Properties.Resources.femaleStudent;
+            else if (StudentInfo.sex == "Male") studentIcon.Image = StudentPortal.Properties.Resources.maleStudent;
+
             studentName.Text = StudentInfo.fullname;
             studentNumber.Text = StudentInfo.stuNumber.ToString();
             studentEmail.Text = StudentInfo.email;
 
             emailTextbox.Text = StudentInfo.email;
             passwordTextbox.Text = StudentInfo.password;
-
-            logo.Parent = studentCover;
-            logo.BackColor = Color.Transparent;
         }
         //
         //  Label events

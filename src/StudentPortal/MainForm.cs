@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,9 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
+
+        
+
         //
         //  Sets the appearance of active button
         //
@@ -48,13 +52,16 @@ namespace StudentPortal
         //
         private void MainForm_Load(object sender, EventArgs e)
         {
+
+            if (StudentInfo.sex == "Female") studentIcon.Image = StudentPortal.Properties.Resources.femaleStudent;
+            else if (StudentInfo.sex == "Male") studentIcon.Image = StudentPortal.Properties.Resources.maleStudent;
+
             studentName.Text = StudentInfo.fullname;
             studentEmail.Text = StudentInfo.email;
             home.Visible = true;
             profile.Visible = false;
             degree.Visible = false;
-
-
+            todo.Visible = false;
 
         }
         //

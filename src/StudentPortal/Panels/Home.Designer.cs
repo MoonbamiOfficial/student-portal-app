@@ -32,9 +32,7 @@
             this.header = new System.Windows.Forms.Label();
             this.schoolHeaderDesc = new System.Windows.Forms.Label();
             this.schoolHeader = new System.Windows.Forms.Label();
-            this.logo = new System.Windows.Forms.PictureBox();
             this.schoolCover = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,19 +100,6 @@
             this.schoolHeader.Text = "GET READY";
             this.schoolHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // logo
-            // 
-            this.logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logo.BackColor = System.Drawing.Color.Transparent;
-            this.logo.Image = global::StudentPortal.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(628, 663);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(250, 250);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo.TabIndex = 8;
-            this.logo.TabStop = false;
-            // 
             // schoolCover
             // 
             this.schoolCover.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -136,12 +121,10 @@
             this.Controls.Add(this.schoolHeaderDesc);
             this.Controls.Add(this.header);
             this.Controls.Add(this.headerDesc);
-            this.Controls.Add(this.logo);
             this.Controls.Add(this.schoolCover);
             this.Name = "Home";
             this.Size = new System.Drawing.Size(1000, 1024);
             this.Load += new System.EventHandler(this.Home_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).EndInit();
             this.ResumeLayout(false);
 
@@ -152,7 +135,6 @@
         private System.Windows.Forms.Label header;
         private System.Windows.Forms.Label schoolHeaderDesc;
         private System.Windows.Forms.Label schoolHeader;
-        private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.PictureBox schoolCover;
     }
 }
