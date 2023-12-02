@@ -215,6 +215,7 @@ namespace StudentPortal
             Application.ExitThread();
         }
 
+        // Resets the wrong input label when input fields are clicked
         private void firstNameTextbox_Enter(object sender, EventArgs e)
         {
             wrongFirstNameLabel.Text = "";

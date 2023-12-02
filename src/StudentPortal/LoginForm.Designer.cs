@@ -63,6 +63,7 @@
             this.passwordTextbox.PasswordChar = '●';
             this.passwordTextbox.Size = new System.Drawing.Size(739, 32);
             this.passwordTextbox.TabIndex = 2;
+            this.passwordTextbox.Enter += new System.EventHandler(this.passwordTextbox_Enter);
             // 
             // emailTextbox
             // 
@@ -77,6 +78,7 @@
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(739, 32);
             this.emailTextbox.TabIndex = 1;
+            this.emailTextbox.Enter += new System.EventHandler(this.emailTextbox_Enter);
             // 
             // wrongPasswordLabel
             // 
@@ -90,7 +92,6 @@
             this.wrongPasswordLabel.Name = "wrongPasswordLabel";
             this.wrongPasswordLabel.Size = new System.Drawing.Size(800, 34);
             this.wrongPasswordLabel.TabIndex = 24;
-            this.wrongPasswordLabel.Text = "* Sample error message";
             this.wrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wrongEmailLabel
@@ -105,7 +106,6 @@
             this.wrongEmailLabel.Name = "wrongEmailLabel";
             this.wrongEmailLabel.Size = new System.Drawing.Size(800, 34);
             this.wrongEmailLabel.TabIndex = 23;
-            this.wrongEmailLabel.Text = "* Sample error message";
             this.wrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // emailLabel

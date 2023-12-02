@@ -61,6 +61,18 @@ namespace StudentPortal
         {
             u.setFocus(passwordTextbox);
         }
+        // Resets the wrong input label when input fields are clicked
+
+        private void emailTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongEmailLabel.Text = "";
+        }
+
+        private void passwordTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongPasswordLabel.Text = "";
+        }
+
         // ------------ Wrong Email & Password label Setters ------------
         public void setWrongEmailLabel(string message)
         {
