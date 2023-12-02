@@ -31,9 +31,8 @@ namespace StudentPortal
         }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var loginForm = new LoginForm();
-            loginForm.Show();
+            this.Dispose();
+            Forms.loginForm.Show();
         }
         Utils u = new Utils();
 

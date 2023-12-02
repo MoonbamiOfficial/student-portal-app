@@ -157,7 +157,7 @@ namespace StudentPortal
         private void logOutBtn_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            new LoginForm().Show();
+            Forms.loginForm.Show();
         }
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {

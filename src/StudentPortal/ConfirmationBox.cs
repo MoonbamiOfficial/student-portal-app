@@ -60,11 +60,11 @@ namespace StudentPortal
             Database db = new Database();
             db.executeRegister(UserData.name, UserData.email, UserData.password, UserData.sex,
                 UserData.birthday, UserData.course, UserData.yearLvl, UserData.semester, UserData.status, UserData.idNumber);
+            
             this.Dispose();
-            RegisterForm registerForm = (RegisterForm)Application.OpenForms["RegisterForm"];
-            registerForm.clearInputs();
-            registerForm.Hide();
-            new LoginForm().Show();
+            Forms.registerForm.clearInputs();
+            Forms.registerForm.Dispose();
+            Forms.loginForm.Show();
         }
         
         private void ConfirmationBox_FormClosed(object sender, FormClosedEventArgs e)
