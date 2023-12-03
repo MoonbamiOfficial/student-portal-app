@@ -12,6 +12,8 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
+        private LoginForm loginForm = LoginForm.getInstance();
+
         public static RegisterForm getInstance()
         {
             if (registerForm == null)
@@ -31,8 +33,12 @@ namespace StudentPortal
         }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            Forms.loginForm.Show();
+            this.Hide();
+            wrongFirstNameLabel.Text = "";
+            wrongLastNameLabel.Text = "";
+            wrongEmailLabel.Text = "";
+            wrongPasswordLabel.Text = "";
+            loginForm.Show();
         }
         Utils u = new Utils();
 
@@ -160,25 +166,25 @@ namespace StudentPortal
         //
         //  Getters and Setters for Wrong Label
         //
-        public void setWrongLabelFirstName(string input)
+        public void setWrongLabelFirstName(string message)
         {
-            wrongFirstNameLabel.Text = input;
+            wrongFirstNameLabel.Text = message;
         }
-        public void setWrongLabelLastName(string input)
+        public void setWrongLabelLastName(string message)
         {
-            wrongLastNameLabel.Text = input;
+            wrongLastNameLabel.Text = message;
         }
-        public void setWrongLabelEmail(string input)
+        public void setWrongLabelEmail(string message)
         {
-            wrongEmailLabel.Text = input;
+            wrongEmailLabel.Text = message;
         }
-        public void setWrongLabelPassword(string input)
+        public void setWrongLabelPassword(string message)
         {
-            wrongPasswordLabel.Text = input;
+            wrongPasswordLabel.Text = message;
         }
-        public void setWrongLabelConfirmPassword(string input)
+        public void setWrongLabelConfirmPassword(string message)
         {
-            wrongConfirmPasswordLabel.Text = input;
+            wrongConfirmPasswordLabel.Text = message;
         }
 
         //
@@ -205,8 +211,9 @@ namespace StudentPortal
                 firstName, lastName, email, password, confirmPassword, sex, birthday, course,
                 yearLvl, semester, status
                 );
-            if (isRegisteredSuccefully)
-                new ConfirmationBox().Show();
+            if (isRegisteredSuccefully) new ConfirmationBox().Show();
+                
+
         }
 
         // Function to close the application on exit

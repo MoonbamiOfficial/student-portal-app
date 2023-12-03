@@ -89,6 +89,11 @@ namespace StudentPortal
         }
 
         // ------------ Btn Login Method ------------
+        public void clearInputs()
+        {
+            emailTextbox.Clear();
+            passwordTextbox.Clear();
+        }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             string email = emailTextbox.Text;
@@ -96,7 +101,6 @@ namespace StudentPortal
 
             Validator validator = new Validator();
             validator.validateLogin(email, password);
-            this.Hide();
 
         }
 

@@ -152,12 +152,14 @@ namespace StudentPortal
             todo.Visible = false;
         }
         //
-        //  Temporary code - logs out to after clicking log out
+        //  Logs out to after clicking log out
         //
+        private LoginForm loginForm = LoginForm.getInstance();
         private void logOutBtn_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            Forms.loginForm.Show();
+            this.Hide();
+            loginForm.clearInputs();
+            loginForm.Show();
         }
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {

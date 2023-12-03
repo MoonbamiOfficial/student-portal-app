@@ -12,10 +12,6 @@ namespace StudentPortal
 {
     internal class Validator
     {
-        private RegisterForm registerForm = RegisterForm.getInstance();
-        private LoginForm loginForm = LoginForm.getInstance();
-        
-
         public bool validateRegister(
             string firstName, string lastName, string email, string pass, string confirmPass,
             string sex, string birthday, string course, string yearLvl, string semester, 
@@ -66,19 +62,19 @@ namespace StudentPortal
 
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrWhiteSpace(firstName))
             {
-                registerForm.setWrongLabelFirstName("First name cannot be empty");
+                Forms.registerForm.setWrongLabelFirstName("First name cannot be empty");
             }
             else if (string.IsNullOrEmpty(lastName) || string.IsNullOrWhiteSpace(lastName))
             {
-                registerForm.setWrongLabelLastName("Last name cannot be empty");
+                Forms.registerForm.setWrongLabelLastName("Last name cannot be empty");
             }
             else if (Regex.IsMatch(firstName, pattern) || Regex.IsMatch(firstName, @"\d"))
             {
-                registerForm.setWrongLabelFirstName("Enter a valid first name");
+                Forms.registerForm.setWrongLabelFirstName("Enter a valid first name");
             }
             else if (Regex.IsMatch(lastName, pattern) || Regex.IsMatch(lastName, @"\d"))
             {
-                registerForm.setWrongLabelLastName("Enter a valid last name");
+                Forms.registerForm.setWrongLabelLastName("Enter a valid last name");
             }
             else
             {
@@ -98,11 +94,11 @@ namespace StudentPortal
         {
             if (string.IsNullOrEmpty(email))
             {
-                registerForm.setWrongLabelEmail("Email cannot be empty");
+                Forms.registerForm.setWrongLabelEmail("Email cannot be empty");
             }
             else if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
             {
-                registerForm.setWrongLabelEmail("Enter a valid email address");
+                Forms.registerForm.setWrongLabelEmail("Enter a valid email address");
             }
             else
             {
@@ -114,20 +110,20 @@ namespace StudentPortal
         {
             if (string.IsNullOrEmpty(pass) || string.IsNullOrWhiteSpace(pass))
             {
-                registerForm.setWrongLabelPassword("Password cannot be empty");
+                Forms.registerForm.setWrongLabelPassword("Password cannot be empty");
             }
             else if (pass.Length < 8)
             {
-                registerForm.setWrongLabelPassword("Atleast more then 8 Character");
+                Forms.registerForm.setWrongLabelPassword("Atleast more then 8 Character");
             }
             else if (!isStrongPassword(pass))
             {
-                registerForm.setWrongLabelPassword("Password is too weak, use uppercase or special character");
+                Forms.registerForm.setWrongLabelPassword("Password is too weak, use uppercase or special character");
             }
             else if (!pass.Equals(confirmPass))
             {
-                registerForm.setWrongLabelPassword("Password does not match");
-                registerForm.setWrongLabelConfirmPassword("Password does not match");
+                Forms.registerForm.setWrongLabelPassword("Password does not match");
+                Forms.registerForm.setWrongLabelConfirmPassword("Password does not match");
             }
             else
             {
@@ -188,6 +184,7 @@ namespace StudentPortal
             }
             return false;
         }
+        private LoginForm loginForm = LoginForm.getInstance();
         public void validateLogin(string email, string password)
         {
             Database db = new Database();
@@ -205,11 +202,9 @@ namespace StudentPortal
 
             if (isSucessfull)
             {
-                LoginForm loginForm = (LoginForm)Application.OpenForms["LoginForm"];
                 loginForm.Hide();
                 new MainForm().Show();
             }
-
         }
     }
 }

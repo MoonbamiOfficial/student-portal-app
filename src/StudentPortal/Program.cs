@@ -12,7 +12,6 @@ namespace StudentPortal
         public static LoginForm loginForm = new LoginForm();
         public static RegisterForm registerForm = new RegisterForm();
         public static MainForm mainForm = new MainForm();
-        public static ConfirmationBox confirmationBox = new ConfirmationBox();
     }
     internal static class Program
     {

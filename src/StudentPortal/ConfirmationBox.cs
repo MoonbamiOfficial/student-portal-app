@@ -63,7 +63,7 @@ namespace StudentPortal
             
             this.Dispose();
             Forms.registerForm.clearInputs();
-            Forms.registerForm.Dispose();
+            Forms.registerForm.Hide();
             Forms.loginForm.Show();
         }
         
