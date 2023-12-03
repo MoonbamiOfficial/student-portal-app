@@ -58,8 +58,6 @@
             this.verticalTwo = new System.Windows.Forms.Panel();
             this.verticalThree = new System.Windows.Forms.Panel();
             this.verticalFour = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // studentCourse
@@ -67,7 +65,7 @@
             this.studentCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.studentCourse.BackColor = System.Drawing.Color.Transparent;
-            this.studentCourse.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.studentCourse.Location = new System.Drawing.Point(702, 249);
             this.studentCourse.Name = "studentCourse";
@@ -81,7 +79,7 @@
             this.studentName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.studentName.BackColor = System.Drawing.Color.Transparent;
-            this.studentName.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.studentName.Location = new System.Drawing.Point(181, 249);
             this.studentName.Name = "studentName";
@@ -95,7 +93,7 @@
             this.studentNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.studentNumber.BackColor = System.Drawing.Color.Transparent;
-            this.studentNumber.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.studentNumber.Location = new System.Drawing.Point(181, 282);
             this.studentNumber.Name = "studentNumber";
@@ -109,7 +107,7 @@
             this.studentStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.studentStatus.BackColor = System.Drawing.Color.Transparent;
-            this.studentStatus.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.studentStatus.Location = new System.Drawing.Point(181, 315);
             this.studentStatus.Name = "studentStatus";
@@ -138,7 +136,7 @@
             this.labelStudentNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelStudentNumber.BackColor = System.Drawing.Color.Transparent;
-            this.labelStudentNumber.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudentNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStudentNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.labelStudentNumber.Location = new System.Drawing.Point(34, 282);
             this.labelStudentNumber.Name = "labelStudentNumber";
@@ -152,7 +150,7 @@
             this.labelStudentName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelStudentName.BackColor = System.Drawing.Color.Transparent;
-            this.labelStudentName.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStudentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.labelStudentName.Location = new System.Drawing.Point(34, 249);
             this.labelStudentName.Margin = new System.Windows.Forms.Padding(0);
@@ -167,7 +165,7 @@
             this.labelStudentStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelStudentStatus.BackColor = System.Drawing.Color.Transparent;
-            this.labelStudentStatus.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudentStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStudentStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.labelStudentStatus.Location = new System.Drawing.Point(34, 315);
             this.labelStudentStatus.Name = "labelStudentStatus";
@@ -181,7 +179,7 @@
             this.labelStudentCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelStudentCourse.BackColor = System.Drawing.Color.Transparent;
-            this.labelStudentCourse.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudentCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStudentCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.labelStudentCourse.Location = new System.Drawing.Point(600, 249);
             this.labelStudentCourse.Name = "labelStudentCourse";
@@ -198,7 +196,7 @@
             this.downloadBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.downloadBtn.FlatAppearance.BorderSize = 0;
             this.downloadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.downloadBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.downloadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.downloadBtn.ForeColor = System.Drawing.Color.White;
             this.downloadBtn.Location = new System.Drawing.Point(350, 900);
             this.downloadBtn.Margin = new System.Windows.Forms.Padding(0);
@@ -214,7 +212,7 @@
             this.labelYearLevel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelYearLevel.BackColor = System.Drawing.Color.Transparent;
-            this.labelYearLevel.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelYearLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelYearLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.labelYearLevel.Location = new System.Drawing.Point(600, 282);
             this.labelYearLevel.Name = "labelYearLevel";
@@ -228,7 +226,7 @@
             this.studentYearLevel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.studentYearLevel.BackColor = System.Drawing.Color.Transparent;
-            this.studentYearLevel.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentYearLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentYearLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.studentYearLevel.Location = new System.Drawing.Point(702, 282);
             this.studentYearLevel.Name = "studentYearLevel";
@@ -242,7 +240,7 @@
             this.labelSemester.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSemester.BackColor = System.Drawing.Color.Transparent;
-            this.labelSemester.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSemester.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.labelSemester.Location = new System.Drawing.Point(600, 315);
             this.labelSemester.Name = "labelSemester";
@@ -256,7 +254,7 @@
             this.studentSemester.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.studentSemester.BackColor = System.Drawing.Color.Transparent;
-            this.studentSemester.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentSemester.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.studentSemester.Location = new System.Drawing.Point(702, 315);
             this.studentSemester.Name = "studentSemester";
@@ -267,7 +265,7 @@
             // 
             // finalsHeader
             // 
-            this.finalsHeader.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalsHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finalsHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.finalsHeader.Location = new System.Drawing.Point(833, 377);
             this.finalsHeader.Margin = new System.Windows.Forms.Padding(3);
@@ -279,7 +277,7 @@
             // 
             // midtermsHeader
             // 
-            this.midtermsHeader.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.midtermsHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.midtermsHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.midtermsHeader.Location = new System.Drawing.Point(693, 377);
             this.midtermsHeader.Margin = new System.Windows.Forms.Padding(3);
@@ -291,7 +289,7 @@
             // 
             // courseNameHeader
             // 
-            this.courseNameHeader.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseNameHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.courseNameHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.courseNameHeader.Location = new System.Drawing.Point(226, 377);
             this.courseNameHeader.Margin = new System.Windows.Forms.Padding(3);
@@ -303,7 +301,7 @@
             // 
             // courseCodeHeader
             // 
-            this.courseCodeHeader.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseCodeHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.courseCodeHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.courseCodeHeader.Location = new System.Drawing.Point(40, 377);
             this.courseCodeHeader.Margin = new System.Windows.Forms.Padding(3);
@@ -445,23 +443,11 @@
             this.verticalFour.Size = new System.Drawing.Size(3, 500);
             this.verticalFour.TabIndex = 0;
             // 
-            // logo
-            // 
-            this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.logo.Image = global::StudentPortal.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(423, 25);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(150, 150);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo.TabIndex = 6;
-            this.logo.TabStop = false;
-            // 
             // Degree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.Controls.Add(this.logo);
             this.Controls.Add(this.horizontalTop);
             this.Controls.Add(this.horizontalMid);
             this.Controls.Add(this.horizontalBottom);
@@ -494,7 +480,7 @@
             this.Controls.Add(this.downloadBtn);
             this.Name = "Degree";
             this.Size = new System.Drawing.Size(1000, 1024);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.Load += new System.EventHandler(this.Degree_Load);
             this.ResumeLayout(false);
 
         }
@@ -530,6 +516,5 @@
         private System.Windows.Forms.Panel verticalTwo;
         private System.Windows.Forms.Panel verticalThree;
         private System.Windows.Forms.Panel verticalFour;
-        private System.Windows.Forms.PictureBox logo;
     }
 }

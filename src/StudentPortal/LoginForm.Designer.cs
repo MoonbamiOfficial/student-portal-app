@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.brandIcon = new System.Windows.Forms.PictureBox();
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.wrongPasswordLabel = new System.Windows.Forms.Label();
@@ -45,19 +44,9 @@
             this.emailBg = new System.Windows.Forms.Panel();
             this.passwordBg = new System.Windows.Forms.Panel();
             this.signUpBg = new System.Windows.Forms.Panel();
+            this.brandIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // brandIcon
-            // 
-            this.brandIcon.Image = global::StudentPortal.Properties.Resources.icon;
-            this.brandIcon.Location = new System.Drawing.Point(29, 30);
-            this.brandIcon.Margin = new System.Windows.Forms.Padding(0);
-            this.brandIcon.Name = "brandIcon";
-            this.brandIcon.Size = new System.Drawing.Size(100, 100);
-            this.brandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.brandIcon.TabIndex = 0;
-            this.brandIcon.TabStop = false;
             // 
             // passwordTextbox
             // 
@@ -74,6 +63,7 @@
             this.passwordTextbox.PasswordChar = '●';
             this.passwordTextbox.Size = new System.Drawing.Size(739, 32);
             this.passwordTextbox.TabIndex = 2;
+            this.passwordTextbox.Enter += new System.EventHandler(this.passwordTextbox_Enter);
             // 
             // emailTextbox
             // 
@@ -88,20 +78,20 @@
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(739, 32);
             this.emailTextbox.TabIndex = 1;
+            this.emailTextbox.Enter += new System.EventHandler(this.emailTextbox_Enter);
             // 
             // wrongPasswordLabel
             // 
             this.wrongPasswordLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.wrongPasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongPasswordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrongPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrongPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
             this.wrongPasswordLabel.Location = new System.Drawing.Point(100, 538);
             this.wrongPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
             this.wrongPasswordLabel.Name = "wrongPasswordLabel";
             this.wrongPasswordLabel.Size = new System.Drawing.Size(800, 34);
             this.wrongPasswordLabel.TabIndex = 24;
-            this.wrongPasswordLabel.Text = "* Sample error message";
             this.wrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wrongEmailLabel
@@ -109,14 +99,13 @@
             this.wrongEmailLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.wrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongEmailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrongEmailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
             this.wrongEmailLabel.Location = new System.Drawing.Point(100, 361);
             this.wrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
             this.wrongEmailLabel.Name = "wrongEmailLabel";
             this.wrongEmailLabel.Size = new System.Drawing.Size(800, 34);
             this.wrongEmailLabel.TabIndex = 23;
-            this.wrongEmailLabel.Text = "* Sample error message";
             this.wrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // emailLabel
@@ -124,7 +113,7 @@
             this.emailLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.emailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.emailLabel.Location = new System.Drawing.Point(130, 395);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(0);
@@ -140,7 +129,7 @@
             this.passwordLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.passwordLabel.Location = new System.Drawing.Point(130, 569);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(0);
@@ -155,7 +144,7 @@
             // 
             this.newHereLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.newHereLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.newHereLabel.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newHereLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newHereLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.newHereLabel.Location = new System.Drawing.Point(1052, 349);
             this.newHereLabel.Margin = new System.Windows.Forms.Padding(0);
@@ -196,7 +185,7 @@
             // 
             this.headerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.headerLabel.Font = new System.Drawing.Font("Poppins SemiBold", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.headerLabel.Location = new System.Drawing.Point(280, 199);
             this.headerLabel.Margin = new System.Windows.Forms.Padding(0);
@@ -213,7 +202,7 @@
             this.signUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signUpBtn.FlatAppearance.BorderSize = 0;
             this.signUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.signUpBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.signUpBtn.Location = new System.Drawing.Point(1070, 594);
             this.signUpBtn.Margin = new System.Windows.Forms.Padding(0);
@@ -232,7 +221,7 @@
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginBtn.FlatAppearance.BorderSize = 0;
             this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginBtn.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
             this.loginBtn.Location = new System.Drawing.Point(350, 809);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(0);
@@ -280,6 +269,18 @@
             this.signUpBg.Size = new System.Drawing.Size(440, 985);
             this.signUpBg.TabIndex = 0;
             // 
+            // brandIcon
+            // 
+            this.brandIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.brandIcon.Image = global::StudentPortal.Properties.Resources.icon;
+            this.brandIcon.Location = new System.Drawing.Point(29, 30);
+            this.brandIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.brandIcon.Name = "brandIcon";
+            this.brandIcon.Size = new System.Drawing.Size(100, 100);
+            this.brandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.brandIcon.TabIndex = 25;
+            this.brandIcon.TabStop = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,6 +308,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -320,7 +322,6 @@
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.Label brandNameLabel;
         private System.Windows.Forms.Label headerLabel;
-        private System.Windows.Forms.PictureBox brandIcon;
         private System.Windows.Forms.Button signUpBtn;
         private System.Windows.Forms.Label descLabel;
         private System.Windows.Forms.Label newHereLabel;
@@ -330,6 +331,7 @@
         private System.Windows.Forms.Panel passwordBg;
         private System.Windows.Forms.Label wrongEmailLabel;
         private System.Windows.Forms.Label wrongPasswordLabel;
+        private System.Windows.Forms.PictureBox brandIcon;
     }
 }
 

@@ -6,6 +6,13 @@ using System.Windows.Forms;
 
 namespace StudentPortal
 {
+    //  Creates a global variable for form instances
+    public static class Forms
+    {
+        public static LoginForm loginForm = new LoginForm();
+        public static RegisterForm registerForm = new RegisterForm();
+        public static MainForm mainForm = new MainForm();
+    }
     internal static class Program
     {
         /// <summary>

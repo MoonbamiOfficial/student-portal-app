@@ -7,15 +7,38 @@ namespace StudentPortal
 {
     public partial class RegisterForm : Form
     {
+        private static RegisterForm registerForm;
         public RegisterForm()
         {
             InitializeComponent();
         }
+        private LoginForm loginForm = LoginForm.getInstance();
 
+        public static RegisterForm getInstance()
+        {
+            if (registerForm == null)
+            {
+                registerForm = new RegisterForm();
+                return registerForm;
+            }
+            else
+            {
+                return registerForm;
+            }
+        }
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+            clearComboBox();
+            setBirthdayPickerToDefault();
+        }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            new LoginForm().Show();
+            this.Hide();
+            wrongFirstNameLabel.Text = "";
+            wrongLastNameLabel.Text = "";
+            wrongEmailLabel.Text = "";
+            wrongPasswordLabel.Text = "";
+            loginForm.Show();
         }
         Utils u = new Utils();
 
@@ -139,12 +162,123 @@ namespace StudentPortal
         {
             u.setFocus(confirmPasswordTextbox);
         }
+
+        //
+        //  Getters and Setters for Wrong Label
+        //
+        public void setWrongLabelFirstName(string message)
+        {
+            wrongFirstNameLabel.Text = message;
+        }
+        public void setWrongLabelLastName(string message)
+        {
+            wrongLastNameLabel.Text = message;
+        }
+        public void setWrongLabelEmail(string message)
+        {
+            wrongEmailLabel.Text = message;
+        }
+        public void setWrongLabelPassword(string message)
+        {
+            wrongPasswordLabel.Text = message;
+        }
+        public void setWrongLabelConfirmPassword(string message)
+        {
+            wrongConfirmPasswordLabel.Text = message;
+        }
+
         //
         //  Sign up event
         //
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            new ConfirmationBox().Show();
+            string firstName = firstNameTextbox.Text;
+            string lastName = lastNameTextbox.Text;
+            string middleName = middleNameTextbox.Text;
+            string email = emailTextbox.Text;
+            string password = passwordTextbox.Text;
+            string confirmPassword = confirmPasswordTextbox.Text;
+            string sex = sexComboBox.SelectedItem.ToString();
+            string birthday = birthdayPicker.Value.ToString("MM-dd-yyyy");
+            string course = courseComboBox.SelectedItem.ToString();
+            string yearLvl = yearLevelComboBox.SelectedItem.ToString();
+            string semester = semesterComboBox.SelectedItem.ToString();
+            string status = statusComboBox.SelectedItem.ToString();
+
+
+            Validator validator = new Validator();
+            bool isRegisteredSuccefully = validator.validateRegister(
+                firstName, lastName, email, password, confirmPassword, sex, birthday, course,
+                yearLvl, semester, status
+                );
+            if (isRegisteredSuccefully) new ConfirmationBox().Show();
+                
+
         }
+
+        // Function to close the application on exit
+        private void RegisterForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+        }
+
+        // Resets the wrong input label when input fields are clicked
+        private void firstNameTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongFirstNameLabel.Text = "";
+        }
+
+        private void lastNameTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongLastNameLabel.Text = "";
+        }
+
+        private void emailTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongEmailLabel.Text = "";
+        }
+
+        private void passwordTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongPasswordLabel.Text = "";
+        }
+
+        private void confirmPasswordTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongConfirmPasswordLabel.Text = "";
+        }
+        public void clearComboBox()
+        {
+            sexComboBox.SelectedIndex = 0;
+            courseComboBox.SelectedIndex = 0;
+            yearLevelComboBox.SelectedIndex = 0;
+            semesterComboBox.SelectedIndex = 0;
+            statusComboBox.SelectedIndex = 0;
+        }
+        public void setBirthdayPickerToDefault()
+        {
+            string defaultDateString = "01-01-1991";
+            DateTime defaultDate;
+            if (DateTime.TryParse(defaultDateString, out defaultDate))
+            {
+                birthdayPicker.Value = defaultDate;
+            }
+            else
+            {
+                MessageBox.Show("Failed to set Birthday Picker to default");
+            }
+        }
+        public void clearInputs()
+        {
+            firstNameTextbox.Clear();
+            middleNameTextbox.Clear();
+            lastNameTextbox.Clear();
+            emailTextbox.Clear();
+            passwordTextbox.Clear();
+            confirmPasswordTextbox.Clear();
+            setBirthdayPickerToDefault();
+            clearComboBox();
+        }
+        
     }
 }

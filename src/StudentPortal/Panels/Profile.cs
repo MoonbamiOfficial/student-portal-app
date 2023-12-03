@@ -19,8 +19,15 @@ namespace StudentPortal.Panels
         Utils u = new Utils();
         private void Profile_Load(object sender, EventArgs e)
         {
-            logo.Parent = studentCover;
-            logo.BackColor = Color.Transparent;
+            if (StudentInfo.sex == "Female") studentIcon.Image = StudentPortal.Properties.Resources.femaleStudent;
+            else if (StudentInfo.sex == "Male") studentIcon.Image = StudentPortal.Properties.Resources.maleStudent;
+
+            studentName.Text = StudentInfo.fullname;
+            studentNumber.Text = StudentInfo.stuNumber.ToString();
+            studentEmail.Text = StudentInfo.email;
+
+            emailTextbox.Text = StudentInfo.email;
+            passwordTextbox.Text = StudentInfo.password;
         }
         //
         //  Label events
@@ -59,13 +66,28 @@ namespace StudentPortal.Panels
         //
         // Edit btn event
         //
+        bool isClicked = false;
         private void editBtn_Click(object sender, EventArgs e)
         {
             // ---------- DO SOME VERIFICATIONS HERE BACKENDERIST - JAM ----------
-
-            editBtn.Text = "Save";
             
+
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string email = emailTextbox.Text;
+            string password = passwordTextbox.Text;
+            string confirmPassword = confirmPasswordTextbox.Text;
+
+            // Check if the fields are null or blank.
+            if ( String.IsNullOrWhiteSpace(email) && String.IsNullOrWhiteSpace(password) && String.IsNullOrWhiteSpace(confirmPassword) )
+            {
+                
+            }else
+            {
+                MessageBox.Show("A Field cannot be empty");
+            }
+        }
     }
 }

@@ -47,7 +47,6 @@ namespace StudentPortal
         private void cancelBtn_Click(object sender, EventArgs e)
         {
             this.Dispose();
-
         }
         //
         //  Confirmed
@@ -56,11 +55,21 @@ namespace StudentPortal
         {
             // once confirmed, you know what to do with the database
             // this also closes the confirmation box and return to login form
-            this.Dispose();
-            RegisterForm registerForm = (RegisterForm)Application.OpenForms["RegisterForm"];
-            registerForm.Dispose();
-            new LoginForm().Show();
-        }
 
+            // On confirm initialize database and execute register method
+            Database db = new Database();
+            db.executeRegister(UserData.name, UserData.email, UserData.password, UserData.sex,
+                UserData.birthday, UserData.course, UserData.yearLvl, UserData.semester, UserData.status, UserData.idNumber);
+            
+            this.Dispose();
+            Forms.registerForm.clearInputs();
+            Forms.registerForm.Hide();
+            Forms.loginForm.Show();
+        }
+        
+        private void ConfirmationBox_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+        }
     }
 }

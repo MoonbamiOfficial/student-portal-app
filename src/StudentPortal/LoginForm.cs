@@ -36,7 +36,7 @@ namespace StudentPortal
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new RegisterForm().Show();
+            Forms.registerForm.Show();
         }
         //
         //  Click label events
@@ -60,6 +60,18 @@ namespace StudentPortal
         {
             u.setFocus(passwordTextbox);
         }
+        // Resets the wrong input label when input fields are clicked
+
+        private void emailTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongEmailLabel.Text = "";
+        }
+
+        private void passwordTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongPasswordLabel.Text = "";
+        }
+
         // ------------ Wrong Email & Password label Setters ------------
         public void setWrongEmailLabel(string message)
         {
@@ -77,6 +89,11 @@ namespace StudentPortal
         }
 
         // ------------ Btn Login Method ------------
+        public void clearInputs()
+        {
+            emailTextbox.Clear();
+            passwordTextbox.Clear();
+        }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             string email = emailTextbox.Text;
@@ -85,10 +102,11 @@ namespace StudentPortal
             Validator validator = new Validator();
             validator.validateLogin(email, password);
 
+        }
 
-            // Temporary code - opens the main form after logging in
-            this.Hide();
-            new MainForm().Show();
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
         }
     }
 }
