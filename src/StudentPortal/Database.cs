@@ -103,39 +103,96 @@ namespace StudentPortal
             }
         }
 
-        public void UpdateEmailAndPassword(string email, string pass, string stuNumber)
+        public void UpdateEmailAndPassword(string stuNumber, string email = "", string pass = "")
         {
             using (MySqlConnection mySqlConn = new MySqlConnection(connString))
             {
                 try
                 {
                     mySqlConn.Open();
-                    string query = "UPDATE stu_info SET email = @email, password = @pass WHERE stu_number = @stuNumber";
-                    using (MySqlCommand cmd = new MySqlCommand(query, mySqlConn))
+                    
+                    // Route to Update Password Only
+                    if (String.IsNullOrEmpty(email))
                     {
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@pass", pass);
-                        cmd.Parameters.AddWithValue("@stuNumber", stuNumber);
-
-                        // Check if query is successful
-                        int rowsAffected = cmd.ExecuteNonQuery();
-
-                        if (rowsAffected > 0)
+                        String updatePassQuery = "UPDATE stu_info SET password = @pass WHERE stu_number = @stuNumber";
+                        using (MySqlCommand cmd = new MySqlCommand(updatePassQuery, mySqlConn))
                         {
-                            MessageBox.Show("Email and Password updated Successfully");
+                            cmd.Parameters.AddWithValue("@pass", pass);
+                            cmd.Parameters.AddWithValue("@stuNumber", stuNumber);
 
-                            StudentInfo.email = email;
-                            StudentInfo.password = pass;
+                            // Check if query is successful
+                            int rowsAffected = cmd.ExecuteNonQuery();
 
-                            var mainForm = MainForm.getInstance();
-                            mainForm.ReloadForm();
-                            
-                            return;
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Password updated Successfully");
+                                StudentInfo.password = pass;
+                                return;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Updating Password failed error in query");
+                                return;
+                            }
                         }
-                        else
+                    }
+                    // Route to Update Email Only
+                    else if (String.IsNullOrEmpty(pass))
+                    {
+                        String updateEmailQuery = "UPDATE stu_info SET email = @email WHERE stu_number = @stuNumber";
+                        using (MySqlCommand cmd = new MySqlCommand(updateEmailQuery, mySqlConn))
                         {
-                            MessageBox.Show("Updating information failed error in query");
-                            return;
+                            cmd.Parameters.AddWithValue("@email", email);
+                            cmd.Parameters.AddWithValue("@stuNumber", stuNumber);
+
+                            // Check if query is successful
+                            int rowsAffected = cmd.ExecuteNonQuery();
+
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Email updated Successfully");
+                                StudentInfo.email = email;
+                                var mainForm = MainForm.getInstance();
+                                mainForm.setUpdatedEmail(StudentInfo.email);
+                                return;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Updating Email failed error in query");
+                                return;
+                            }
+                        }
+                    }
+                    // Route to Update both Email and Password
+                    else
+                    {
+                        String updateEmailAndPassQuery = "UPDATE stu_info SET email = @email, password = @pass WHERE stu_number = @stuNumber";
+                        using (MySqlCommand cmd = new MySqlCommand(updateEmailAndPassQuery, mySqlConn))
+                        {
+                            cmd.Parameters.AddWithValue("@email", email);
+                            cmd.Parameters.AddWithValue("@pass", pass);
+                            cmd.Parameters.AddWithValue("@stuNumber", stuNumber);
+
+                            // Check if query is successful
+                            int rowsAffected = cmd.ExecuteNonQuery();
+
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Email and Password updated Successfully");
+
+                                StudentInfo.email = email;
+                                StudentInfo.password = pass;
+
+                                var mainForm = MainForm.getInstance();
+                                mainForm.setUpdatedEmail(StudentInfo.email);
+
+                                return;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Updating Information failed error in query");
+                                return;
+                            }
                         }
                     }
                 }
