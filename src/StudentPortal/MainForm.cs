@@ -14,12 +14,18 @@ namespace StudentPortal
 {
     public partial class MainForm : Form
     {
+        private static MainForm mainForm;
         public MainForm()
         {
             InitializeComponent();
         }
-
-        
+        public static MainForm getInstance() {
+            if (mainForm == null)
+            {
+                mainForm = new MainForm();
+                return mainForm;
+            }else { return mainForm; }
+        }   
 
         //
         //  Sets the appearance of active button
@@ -55,9 +61,7 @@ namespace StudentPortal
 
             if (StudentInfo.sex == "Female") studentIcon.Image = StudentPortal.Properties.Resources.femaleStudent;
             else if (StudentInfo.sex == "Male") studentIcon.Image = StudentPortal.Properties.Resources.maleStudent;
-
-            studentName.Text = StudentInfo.fullname;
-            studentEmail.Text = StudentInfo.email;
+            loadInformation(StudentInfo.fullname, StudentInfo.email);
             home.Visible = true;
             profile.Visible = false;
             degree.Visible = false;
@@ -67,6 +71,11 @@ namespace StudentPortal
         //
         //  Side nav button events
         //
+        private void loadInformation(string fullname, string email)
+        {
+            studentName.Text = fullname;
+            studentEmail.Text = email;
+        }
         private void studentIcon_Click(object sender, EventArgs e)
         {
             setInactiveBtn(homeBtn);
@@ -160,6 +169,11 @@ namespace StudentPortal
             this.Hide();
             loginForm.clearInputs();
             loginForm.Show();
+        }
+        public void ReloadForm()
+        {
+            this.Refresh();
+            studentEmail.Text = StudentInfo.email;
         }
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {

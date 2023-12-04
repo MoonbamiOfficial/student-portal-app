@@ -12,6 +12,7 @@ namespace StudentPortal.Panels
 {
     public partial class Profile : UserControl
     {
+        bool isEditable = false;
         public Profile()
         {
             InitializeComponent();
@@ -69,11 +70,31 @@ namespace StudentPortal.Panels
         bool isClicked = false;
         private void editBtn_Click(object sender, EventArgs e)
         {
-            // ---------- DO SOME VERIFICATIONS HERE BACKENDERIST - JAM ----------
-            
-
+            if (editBtn.Text.Equals("Cancel"))
+            {
+                emailTextbox.Text = StudentInfo.email;
+                passwordTextbox.Text = StudentInfo.password;
+                confirmPasswordTextbox.Text = "";
+                editBtn.Text = "Edit";
+                isEditable = false;
+                emailTextbox.ReadOnly = true;
+                passwordTextbox.ReadOnly = true;
+                confirmPasswordTextbox.ReadOnly = true;
+            }
+            else if (isEditable == false)
+            {
+                emailTextbox.ReadOnly = false;
+                passwordTextbox.ReadOnly = false;
+                confirmPasswordTextbox.ReadOnly = false;
+                editBtn.Text = "Cancel";
+                isEditable = true;
+            }
         }
-
+        public void clearConfirmPasswordTxtBox()
+        {
+            confirmPasswordTextbox.Text = "";
+        }
+        // Save Button
         private void button1_Click(object sender, EventArgs e)
         {
             string email = emailTextbox.Text;
@@ -81,12 +102,16 @@ namespace StudentPortal.Panels
             string confirmPassword = confirmPasswordTextbox.Text;
 
             // Check if the fields are null or blank.
-            if ( String.IsNullOrWhiteSpace(email) && String.IsNullOrWhiteSpace(password) && String.IsNullOrWhiteSpace(confirmPassword) )
+            if ( String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(password) || String.IsNullOrWhiteSpace(confirmPassword) )
             {
-                
-            }else
+                MessageBox.Show("Fields cannot be empty");
+                return;
+            }
+            Validator validator = new Validator();
+            bool isSuccessful = validator.validateEmailAndPassword(emailTextbox.Text, passwordTextbox.Text, confirmPasswordTextbox.Text);
+            if (isSuccessful)
             {
-                MessageBox.Show("A Field cannot be empty");
+                studentEmail.Text = StudentInfo.email;
             }
         }
     }

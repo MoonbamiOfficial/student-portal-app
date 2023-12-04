@@ -15,7 +15,7 @@ namespace StudentPortal
         public bool validateRegister(
             string firstName, string lastName, string email, string pass, string confirmPass,
             string sex, string birthday, string course, string yearLvl, string semester, 
-            string status,string middleName = ""
+            string status, string middleName = ""
             )
         {
 
@@ -198,12 +198,59 @@ namespace StudentPortal
                 return;
             }
             // Execute query to the database
-            bool isSucessfull = db.ExecuteLogin(email, password);
+            bool isSuccessful = db.ExecuteLogin(email, password);
 
-            if (isSucessfull)
+            if (isSuccessful)
             {
                 loginForm.Hide();
-                new MainForm().Show();
+                var mainForm = MainForm.getInstance();
+                mainForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Error Logging In");
+            }
+        }
+        public bool validateEmailAndPassword(string email, string pass, string confirmPass)
+        {
+            // Check if email and password is similar to previous email
+            if( email.Equals(StudentInfo.email) ) 
+            {
+                MessageBox.Show("New email is similar to the current Email");
+                return false;
+            }
+            else if ( pass.Equals(StudentInfo.password) )
+            {
+                MessageBox.Show("New password is similar to the current Password");
+                return false;
+            }else 
+            {
+                bool isPassStrong = isStrongPassword(pass);
+                // Check if email is valid
+                if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                {
+                    MessageBox.Show("Enter a valid email");
+                    return false;
+                }
+                // Check if password is strong
+                else if(!isPassStrong)
+                {
+                    MessageBox.Show("Enter a Strong Password");
+                    return false;
+                }
+                // Check if password matches the confirm password
+                else if (!pass.Equals(confirmPass))
+                {
+                    MessageBox.Show("Password does not Match");
+                    return false;
+                }
+                else
+                {
+                    string stuNumber = StudentInfo.stuNumber.ToString();
+                    Database db = new Database();
+                    db.UpdateEmailAndPassword(email, pass, stuNumber);
+                    return true;
+                }
             }
         }
     }

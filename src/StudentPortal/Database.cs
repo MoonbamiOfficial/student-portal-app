@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Windows.Forms;
+using StudentPortal.Panels;
 
 namespace StudentPortal
 {
@@ -89,10 +90,7 @@ namespace StudentPortal
                                 return true;
                             }
                             else
-                            {
-                                MessageBox.Show("No rows found in query");
                                 return false;
-                            }
                         }
                     }
                 }
@@ -101,9 +99,53 @@ namespace StudentPortal
                     MessageBox.Show(ex.Message);
                     return false;
                 }
+                finally { mySqlConn.Close(); }
             }
-
         }
 
+        public void UpdateEmailAndPassword(string email, string pass, string stuNumber)
+        {
+            using (MySqlConnection mySqlConn = new MySqlConnection(connString))
+            {
+                try
+                {
+                    mySqlConn.Open();
+                    string query = "UPDATE stu_info SET email = @email, password = @pass WHERE stu_number = @stuNumber";
+                    using (MySqlCommand cmd = new MySqlCommand(query, mySqlConn))
+                    {
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@pass", pass);
+                        cmd.Parameters.AddWithValue("@stuNumber", stuNumber);
+
+                        // Check if query is successful
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Email and Password updated Successfully");
+
+                            StudentInfo.email = email;
+                            StudentInfo.password = pass;
+
+                            var mainForm = MainForm.getInstance();
+                            mainForm.ReloadForm();
+                            
+                            return;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Updating information failed error in query");
+                            return;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                finally { mySqlConn.Close(); }
+            }
+        }
     }
 }
