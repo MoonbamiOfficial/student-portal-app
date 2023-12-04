@@ -105,9 +105,8 @@ namespace StudentPortal.Panels
             string confirmPassword = confirmPasswordTextbox.Text;
 
             // Check if the fields are null or blank.
-            if (String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(password) || String.IsNullOrWhiteSpace(confirmPassword))
+            if (String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(password) && String.IsNullOrWhiteSpace(confirmPassword))
             {
-
                 MessageBox.Show("Fields cannot be empty");
                 return;
             }
@@ -116,11 +115,17 @@ namespace StudentPortal.Panels
             if (isSuccessful)
             {
                 studentEmail.Text = StudentInfo.email;
+                confirmPasswordTextbox.Text = "";
                 editBtn.Text = "Edit";
+                isEditable = false;
+                emailTextbox.ReadOnly = true;
+                passwordTextbox.ReadOnly = true;
+                confirmPasswordTextbox.ReadOnly = true;
             }
         }
         //
         //  Eye btn
+        //
         private void eyeIcon_MouseClick(object sender, MouseEventArgs e)
         {
             if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
