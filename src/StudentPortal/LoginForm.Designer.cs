@@ -45,6 +45,7 @@
             this.passwordBg = new System.Windows.Forms.Panel();
             this.signUpBg = new System.Windows.Forms.Panel();
             this.brandIcon = new System.Windows.Forms.PictureBox();
+            this.eyeIcon = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -281,6 +282,27 @@
             this.brandIcon.TabIndex = 25;
             this.brandIcon.TabStop = false;
             // 
+            // eyeIcon
+            // 
+            this.eyeIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.eyeIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.eyeIcon.FlatAppearance.BorderSize = 0;
+            this.eyeIcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.eyeIcon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.eyeIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eyeIcon.Font = new System.Drawing.Font("Poppins", 15.75F);
+            this.eyeIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.eyeIcon.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.eyeIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.eyeIcon.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.eyeIcon.Location = new System.Drawing.Point(834, 642);
+            this.eyeIcon.Name = "eyeIcon";
+            this.eyeIcon.Size = new System.Drawing.Size(40, 32);
+            this.eyeIcon.TabIndex = 0;
+            this.eyeIcon.UseMnemonic = false;
+            this.eyeIcon.UseVisualStyleBackColor = false;
+            this.eyeIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.eyeIcon_MouseClick);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,6 +310,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
             this.Controls.Add(this.brandIcon);
+            this.Controls.Add(this.eyeIcon);
             this.Controls.Add(this.brandNameLabel);
             this.Controls.Add(this.passwordTextbox);
             this.Controls.Add(this.emailTextbox);
@@ -332,6 +355,7 @@
         private System.Windows.Forms.Label wrongEmailLabel;
         private System.Windows.Forms.Label wrongPasswordLabel;
         private System.Windows.Forms.PictureBox brandIcon;
+        private FontAwesome.Sharp.IconButton eyeIcon;
     }
 }
 
