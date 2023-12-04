@@ -14,12 +14,18 @@ namespace StudentPortal
 {
     public partial class MainForm : Form
     {
+        private static MainForm mainForm;
         public MainForm()
         {
             InitializeComponent();
         }
-
-        
+        public static MainForm getInstance() {
+            if (mainForm == null)
+            {
+                mainForm = new MainForm();
+                return mainForm;
+            }else { return mainForm; }
+        }   
 
         //
         //  Sets the appearance of active button
