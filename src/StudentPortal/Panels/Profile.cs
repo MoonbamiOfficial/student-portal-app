@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,11 +69,31 @@ namespace StudentPortal.Panels
         bool isClicked = false;
         private void editBtn_Click(object sender, EventArgs e)
         {
-            // ---------- DO SOME VERIFICATIONS HERE BACKENDERIST - JAM ----------
-            
-
+            if (editBtn.Text.Equals("Cancel"))
+            {
+                emailTextbox.Text = StudentInfo.email;
+                passwordTextbox.Text = StudentInfo.password;
+                confirmPasswordTextbox.Text = "";
+                editBtn.Text = "Edit";
+                isEditable = false;
+                emailTextbox.ReadOnly = true;
+                passwordTextbox.ReadOnly = true;
+                confirmPasswordTextbox.ReadOnly = true;
+            }
+            else if (isEditable == false)
+            {
+                emailTextbox.ReadOnly = false;
+                passwordTextbox.ReadOnly = false;
+                confirmPasswordTextbox.ReadOnly = false;
+                editBtn.Text = "Cancel";
+                isEditable = true;
+            }
         }
-
+        public void clearConfirmPasswordTxtBox()
+        {
+            confirmPasswordTextbox.Text = "";
+        }
+        // Save Button
         private void button1_Click(object sender, EventArgs e)
         {
             string email = emailTextbox.Text;
