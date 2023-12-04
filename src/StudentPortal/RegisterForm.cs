@@ -13,7 +13,18 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
-
+        public static RegisterForm getInstance()
+        {
+            if (registerForm == null)
+            {
+                registerForm = new RegisterForm();
+                return registerForm;
+            }
+            else
+            {
+                return registerForm;
+            }
+        }
         private void RegisterForm_Load(object sender, EventArgs e)
         {
             clearComboBox();
