@@ -51,6 +51,7 @@ namespace StudentPortal
         //
         //  Confirmed
         //
+        private LoginForm loginForm = LoginForm.getInstance();
         private void confirmBtn_Click(object sender, EventArgs e)
         {
             // once confirmed, you know what to do with the database
@@ -64,7 +65,7 @@ namespace StudentPortal
             this.Dispose();
             Forms.registerForm.clearInputs();
             Forms.registerForm.Hide();
-            Forms.loginForm.Show();
+            loginForm.Show();
         }
         
         private void ConfirmationBox_FormClosed(object sender, FormClosedEventArgs e)

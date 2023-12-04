@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
 using MySql.Data.MySqlClient;
 using StudentPortal.Panels;
 
@@ -27,7 +28,7 @@ namespace StudentPortal
             {
                 loginForm = new LoginForm();
                 return loginForm;
-            }else
+            } else
             {
                 return loginForm;
             }
@@ -36,6 +37,10 @@ namespace StudentPortal
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            wrongEmailLabel.Text = "";
+            wrongPasswordLabel.Text = "";
+            passwordTextbox.PasswordChar = '●';
+            eyeIcon.IconChar = IconChar.Eye;
             Forms.registerForm.Show();
         }
         //
@@ -107,6 +112,26 @@ namespace StudentPortal
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.ExitThread();
+        }
+
+        //
+        //  Eye btn 
+        //
+
+        private void eyeIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+            if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
+            {
+                passwordTextbox.PasswordChar = '\0';
+                eyeIcon.IconChar = IconChar.EyeSlash;
+                
+            }
+            else if (passwordTextbox.PasswordChar == '\0' && eyeIcon.IconChar == IconChar.EyeSlash)
+            {
+                passwordTextbox.PasswordChar = '●';
+                eyeIcon.IconChar = IconChar.Eye;
+            }
         }
     }
 }

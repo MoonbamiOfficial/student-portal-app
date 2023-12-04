@@ -1,4 +1,5 @@
-﻿using StudentPortal.Panels;
+﻿using FontAwesome.Sharp;
+using StudentPortal.Panels;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -12,8 +13,6 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
-        private LoginForm loginForm = LoginForm.getInstance();
-
         public static RegisterForm getInstance()
         {
             if (registerForm == null)
@@ -38,7 +37,11 @@ namespace StudentPortal
             wrongLastNameLabel.Text = "";
             wrongEmailLabel.Text = "";
             wrongPasswordLabel.Text = "";
-            loginForm.Show();
+            passwordTextbox.PasswordChar = '\0';
+            regEyeIcon.IconChar = IconChar.EyeSlash;
+            confirmPasswordTextbox.PasswordChar = '\0';
+            regEyeIconConfirm.IconChar = IconChar.EyeSlash;
+            Forms.loginForm.Show();
         }
         Utils u = new Utils();
 
@@ -279,6 +282,35 @@ namespace StudentPortal
             setBirthdayPickerToDefault();
             clearComboBox();
         }
-        
+        //
+        //  Eye btn
+        //
+        private void eyeIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (passwordTextbox.PasswordChar == '\0' && regEyeIcon.IconChar == IconChar.EyeSlash)
+            {
+                passwordTextbox.PasswordChar = '●';
+                regEyeIcon.IconChar = IconChar.Eye;
+            }
+            else if (passwordTextbox.PasswordChar == '●' && regEyeIcon.IconChar == IconChar.Eye)
+            {
+                passwordTextbox.PasswordChar = '\0';
+                regEyeIcon.IconChar = IconChar.EyeSlash;
+            }
+        }
+
+        private void eyeIconConfirm_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (confirmPasswordTextbox.PasswordChar == '\0' && regEyeIconConfirm.IconChar == IconChar.EyeSlash)
+            {
+                confirmPasswordTextbox.PasswordChar = '●';
+                regEyeIconConfirm.IconChar = IconChar.Eye;
+            }
+            else if (confirmPasswordTextbox.PasswordChar == '●' && regEyeIconConfirm.IconChar == IconChar.Eye)
+            {
+                confirmPasswordTextbox.PasswordChar = '\0';
+                regEyeIconConfirm.IconChar = IconChar.EyeSlash;
+            }
+        }
     }
 }

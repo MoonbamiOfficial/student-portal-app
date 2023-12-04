@@ -78,6 +78,8 @@
             this.wrongEmailLabel = new System.Windows.Forms.Label();
             this.wrongPasswordLabel = new System.Windows.Forms.Label();
             this.wrongConfirmPasswordLabel = new System.Windows.Forms.Label();
+            this.regEyeIcon = new FontAwesome.Sharp.IconButton();
+            this.regEyeIconConfirm = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.birthdayBg.SuspendLayout();
             this.courseBg.SuspendLayout();
@@ -377,7 +379,7 @@
             this.passwordTextbox.Location = new System.Drawing.Point(558, 740);
             this.passwordTextbox.Margin = new System.Windows.Forms.Padding(0);
             this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.Size = new System.Drawing.Size(340, 29);
+            this.passwordTextbox.Size = new System.Drawing.Size(307, 29);
             this.passwordTextbox.TabIndex = 9;
             this.passwordTextbox.Enter += new System.EventHandler(this.passwordTextbox_Enter);
             // 
@@ -391,7 +393,7 @@
             this.confirmPasswordTextbox.Location = new System.Drawing.Point(558, 888);
             this.confirmPasswordTextbox.Margin = new System.Windows.Forms.Padding(0);
             this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
-            this.confirmPasswordTextbox.Size = new System.Drawing.Size(340, 29);
+            this.confirmPasswordTextbox.Size = new System.Drawing.Size(307, 29);
             this.confirmPasswordTextbox.TabIndex = 12;
             this.confirmPasswordTextbox.Enter += new System.EventHandler(this.confirmPasswordTextbox_Enter);
             // 
@@ -664,7 +666,7 @@
             this.loginBg.Location = new System.Drawing.Point(0, 0);
             this.loginBg.Margin = new System.Windows.Forms.Padding(0);
             this.loginBg.Name = "loginBg";
-            this.loginBg.Size = new System.Drawing.Size(440, 1024);
+            this.loginBg.Size = new System.Drawing.Size(440, 985);
             this.loginBg.TabIndex = 0;
             // 
             // wrongFirstNameLabel
@@ -844,12 +846,58 @@
             this.wrongConfirmPasswordLabel.TabIndex = 17;
             this.wrongConfirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // regEyeIcon
+            // 
+            this.regEyeIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.regEyeIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.regEyeIcon.FlatAppearance.BorderSize = 0;
+            this.regEyeIcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.regEyeIcon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.regEyeIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.regEyeIcon.Font = new System.Drawing.Font("Poppins", 14.25F);
+            this.regEyeIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.regEyeIcon.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.regEyeIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.regEyeIcon.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.regEyeIcon.IconSize = 44;
+            this.regEyeIcon.Location = new System.Drawing.Point(868, 741);
+            this.regEyeIcon.Name = "regEyeIcon";
+            this.regEyeIcon.Size = new System.Drawing.Size(40, 29);
+            this.regEyeIcon.TabIndex = 0;
+            this.regEyeIcon.UseMnemonic = false;
+            this.regEyeIcon.UseVisualStyleBackColor = false;
+            this.regEyeIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.eyeIcon_MouseClick);
+            // 
+            // regEyeIconConfirm
+            // 
+            this.regEyeIconConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.regEyeIconConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.regEyeIconConfirm.FlatAppearance.BorderSize = 0;
+            this.regEyeIconConfirm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.regEyeIconConfirm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.regEyeIconConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.regEyeIconConfirm.Font = new System.Drawing.Font("Poppins", 14.25F);
+            this.regEyeIconConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.regEyeIconConfirm.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.regEyeIconConfirm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
+            this.regEyeIconConfirm.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.regEyeIconConfirm.IconSize = 44;
+            this.regEyeIconConfirm.Location = new System.Drawing.Point(868, 888);
+            this.regEyeIconConfirm.Name = "regEyeIconConfirm";
+            this.regEyeIconConfirm.Size = new System.Drawing.Size(40, 29);
+            this.regEyeIconConfirm.TabIndex = 0;
+            this.regEyeIconConfirm.UseMnemonic = false;
+            this.regEyeIconConfirm.UseVisualStyleBackColor = false;
+            this.regEyeIconConfirm.MouseClick += new System.Windows.Forms.MouseEventHandler(this.eyeIconConfirm_MouseClick);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
+            this.Controls.Add(this.regEyeIconConfirm);
+            this.Controls.Add(this.regEyeIcon);
             this.Controls.Add(this.brandIcon);
             this.Controls.Add(this.wrongConfirmPasswordLabel);
             this.Controls.Add(this.wrongPasswordLabel);
@@ -962,5 +1010,7 @@
         private System.Windows.Forms.Label wrongEmailLabel;
         private System.Windows.Forms.Label wrongPasswordLabel;
         private System.Windows.Forms.Label wrongConfirmPasswordLabel;
+        private FontAwesome.Sharp.IconButton regEyeIcon;
+        private FontAwesome.Sharp.IconButton regEyeIconConfirm;
     }
 }
