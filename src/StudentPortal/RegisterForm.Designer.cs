@@ -664,7 +664,7 @@
             this.loginBg.Location = new System.Drawing.Point(0, 0);
             this.loginBg.Margin = new System.Windows.Forms.Padding(0);
             this.loginBg.Name = "loginBg";
-            this.loginBg.Size = new System.Drawing.Size(440, 1024);
+            this.loginBg.Size = new System.Drawing.Size(440, 985);
             this.loginBg.TabIndex = 0;
             // 
             // wrongFirstNameLabel
