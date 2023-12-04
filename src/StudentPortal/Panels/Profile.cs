@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +12,7 @@ namespace StudentPortal.Panels
 {
     public partial class Profile : UserControl
     {
+        bool isEditable = false;
         public Profile()
         {
             InitializeComponent();
@@ -101,12 +102,16 @@ namespace StudentPortal.Panels
             string confirmPassword = confirmPasswordTextbox.Text;
 
             // Check if the fields are null or blank.
-            if ( String.IsNullOrWhiteSpace(email) && String.IsNullOrWhiteSpace(password) && String.IsNullOrWhiteSpace(confirmPassword) )
+            if ( String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(password) || String.IsNullOrWhiteSpace(confirmPassword) )
             {
-                
-            }else
+                MessageBox.Show("Fields cannot be empty");
+                return;
+            }
+            Validator validator = new Validator();
+            bool isSuccessful = validator.validateEmailAndPassword(emailTextbox.Text, passwordTextbox.Text, confirmPasswordTextbox.Text);
+            if (isSuccessful)
             {
-                MessageBox.Show("A Field cannot be empty");
+                studentEmail.Text = StudentInfo.email;
             }
         }
     }
