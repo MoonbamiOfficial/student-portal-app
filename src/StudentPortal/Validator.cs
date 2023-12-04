@@ -203,7 +203,8 @@ namespace StudentPortal
             if (isSuccessful)
             {
                 loginForm.Hide();
-                new MainForm().Show();
+                var mainForm = MainForm.getInstance();
+                mainForm.Show();
             }
             else
             {
@@ -212,44 +213,76 @@ namespace StudentPortal
         }
         public bool validateEmailAndPassword(string email, string pass, string confirmPass)
         {
-            // Check if email and password is similar to previous email
-            if( email.Equals(StudentInfo.email) ) 
+            bool isPassStrong = isStrongPassword(pass);
+            string stuNumber = StudentInfo.stuNumber.ToString();
+            Database db = new Database();
+            if (email.Equals(StudentInfo.email) && pass.Equals(StudentInfo.password))
             {
-                MessageBox.Show("New email is similar to the current Email");
+                MessageBox.Show("No changes made");
                 return false;
             }
-            else if ( pass.Equals(StudentInfo.password) )
+            // Route to change Password Only
+            else if (email.Equals(StudentInfo.email) && !pass.Equals(StudentInfo.password))
             {
-                MessageBox.Show("New password is similar to the current Password");
-                return false;
-            }else 
-            {
-                bool isPassStrong = isStrongPassword(pass);
-                // Check if email is valid
-                if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                if (!isPassStrong) 
                 {
-                    MessageBox.Show("Enter a valid email");
+                    MessageBox.Show("Password must be at least 8 characters long and contains at least one uppercase letter and a special character ");
                     return false;
                 }
-                // Check if password is strong
-                else if(!isPassStrong)
-                {
-                    MessageBox.Show("Enter a Strong Password");
-                    return false;
-                }
-                // Check if password matches the confirm password
                 else if (!pass.Equals(confirmPass))
                 {
                     MessageBox.Show("Password does not Match");
                     return false;
                 }
-                else
+                DialogResult result = MessageBox.Show("Do you want to Change Password Only?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
                 {
-                    string stuNumber = StudentInfo.stuNumber.ToString();
-                    Database db = new Database();
-                    db.UpdateEmailAndPassword(email, pass, stuNumber);
+                    db.UpdateEmailAndPassword(stuNumber: stuNumber, pass: pass);
                     return true;
                 }
+                else { return false; }
+            }
+            // Route to change Email Only
+            else if (pass.Equals(StudentInfo.password) && !email.Equals(StudentInfo.email))
+            {
+                if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                {
+                    MessageBox.Show("Enter a valid email");
+                    return false;
+                }
+                DialogResult result = MessageBox.Show("Do you want to Change Email Only?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    db.UpdateEmailAndPassword(stuNumber: stuNumber, email: email);
+                    return true;
+                }
+                else { return false; }
+            }
+            // Route to change both
+            else
+            {
+                if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                {
+                    MessageBox.Show("Enter a valid email");
+                    return false;
+                }
+                else if (!isPassStrong)
+                {
+                    MessageBox.Show("Password must be at least 8 characters long and contains at least one uppercase letter and a special character ");
+                    return false;
+                }
+                else if (!pass.Equals(confirmPass))
+                {
+                    MessageBox.Show("Password does not Match");
+                    return false;
+                }
+                DialogResult result = MessageBox.Show("Do you want to Change both Email and Password?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    db.UpdateEmailAndPassword(stuNumber: stuNumber, email: email, pass: pass);
+                    return true;
+                }
+                else { return false; }
             }
         }
     }
