@@ -170,10 +170,9 @@ namespace StudentPortal
             loginForm.clearInputs();
             loginForm.Show();
         }
-        public void ReloadForm()
+        public void setUpdatedEmail(string email)
         {
-            this.Refresh();
-            studentEmail.Text = StudentInfo.email;
+            studentEmail.Text = email;
         }
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
