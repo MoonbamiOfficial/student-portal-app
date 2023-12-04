@@ -45,9 +45,6 @@
             this.studentNameNumber = new System.Windows.Forms.FlowLayoutPanel();
             this.saveBtn = new System.Windows.Forms.Button();
             this.studentIcon = new StudentPortal.StudentPortalControls.CustomPictureBox();
-            this.wrongPasswordLabel = new System.Windows.Forms.Label();
-            this.wrongEmailLabel = new System.Windows.Forms.Label();
-            this.wrongConfirmPasswordLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.studentCover)).BeginInit();
             this.studentNameNumber.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
@@ -280,53 +277,11 @@
             this.studentIcon.TabIndex = 14;
             this.studentIcon.TabStop = false;
             // 
-            // wrongPasswordLabel
-            // 
-            this.wrongPasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.wrongPasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrongPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.wrongPasswordLabel.Location = new System.Drawing.Point(46, 535);
-            this.wrongPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.wrongPasswordLabel.Name = "wrongPasswordLabel";
-            this.wrongPasswordLabel.Size = new System.Drawing.Size(474, 34);
-            this.wrongPasswordLabel.TabIndex = 0;
-            this.wrongPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // wrongEmailLabel
-            // 
-            this.wrongEmailLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.wrongEmailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongEmailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrongEmailLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.wrongEmailLabel.Location = new System.Drawing.Point(542, 535);
-            this.wrongEmailLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.wrongEmailLabel.Name = "wrongEmailLabel";
-            this.wrongEmailLabel.Size = new System.Drawing.Size(400, 34);
-            this.wrongEmailLabel.TabIndex = 0;
-            this.wrongEmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // wrongConfirmPasswordLabel
-            // 
-            this.wrongConfirmPasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.wrongConfirmPasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.wrongConfirmPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wrongConfirmPasswordLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.wrongConfirmPasswordLabel.Location = new System.Drawing.Point(46, 696);
-            this.wrongConfirmPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.wrongConfirmPasswordLabel.Name = "wrongConfirmPasswordLabel";
-            this.wrongConfirmPasswordLabel.Size = new System.Drawing.Size(400, 34);
-            this.wrongConfirmPasswordLabel.TabIndex = 0;
-            this.wrongConfirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.Controls.Add(this.wrongConfirmPasswordLabel);
-            this.Controls.Add(this.wrongEmailLabel);
-            this.Controls.Add(this.wrongPasswordLabel);
             this.Controls.Add(this.studentNameNumber);
             this.Controls.Add(this.studentIcon);
             this.Controls.Add(this.passwordLabel);
@@ -371,8 +326,5 @@
         private System.Windows.Forms.Panel passwordBg;
         private System.Windows.Forms.FlowLayoutPanel studentNameNumber;
         private System.Windows.Forms.Button saveBtn;
-        private System.Windows.Forms.Label wrongPasswordLabel;
-        private System.Windows.Forms.Label wrongEmailLabel;
-        private System.Windows.Forms.Label wrongConfirmPasswordLabel;
     }
 }
