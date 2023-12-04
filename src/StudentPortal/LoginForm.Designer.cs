@@ -62,7 +62,7 @@
             this.passwordTextbox.MaxLength = 50;
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PasswordChar = '●';
-            this.passwordTextbox.Size = new System.Drawing.Size(739, 32);
+            this.passwordTextbox.Size = new System.Drawing.Size(701, 32);
             this.passwordTextbox.TabIndex = 2;
             this.passwordTextbox.Enter += new System.EventHandler(this.passwordTextbox_Enter);
             // 

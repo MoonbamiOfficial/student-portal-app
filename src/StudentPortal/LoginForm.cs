@@ -120,19 +120,18 @@ namespace StudentPortal
 
         private void eyeIcon_MouseClick(object sender, MouseEventArgs e)
         {
-            if (passwordTextbox.PasswordChar == '\0' && eyeIcon.IconChar == IconChar.EyeSlash)
+            
+            if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
+            {
+                passwordTextbox.PasswordChar = '\0';
+                eyeIcon.IconChar = IconChar.EyeSlash;
+                
+            }
+            else if (passwordTextbox.PasswordChar == '\0' && eyeIcon.IconChar == IconChar.EyeSlash)
             {
                 passwordTextbox.PasswordChar = '●';
                 eyeIcon.IconChar = IconChar.Eye;
             }
-            else if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
-            {
-                passwordTextbox.PasswordChar = '\0';
-                eyeIcon.IconChar = IconChar.EyeSlash;
-            }
         }
-
-        
-
     }
 }
