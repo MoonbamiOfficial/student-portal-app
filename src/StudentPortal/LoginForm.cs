@@ -36,6 +36,8 @@ namespace StudentPortal
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            wrongEmailLabel.Text = "";
+            wrongPasswordLabel.Text = "";
             Forms.registerForm.Show();
         }
         //
