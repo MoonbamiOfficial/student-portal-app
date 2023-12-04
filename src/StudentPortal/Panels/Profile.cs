@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -116,6 +117,35 @@ namespace StudentPortal.Panels
             {
                 studentEmail.Text = StudentInfo.email;
                 editBtn.Text = "Edit";
+            }
+        }
+        //
+        //  Eye btn
+        private void eyeIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
+            {
+                passwordTextbox.PasswordChar = '\0';
+                eyeIcon.IconChar = IconChar.EyeSlash;
+            }
+            else if(passwordTextbox.PasswordChar == '\0' && eyeIcon.IconChar == IconChar.EyeSlash)
+            {
+                passwordTextbox.PasswordChar = '●';
+                eyeIcon.IconChar = IconChar.Eye;
+            }
+        }
+
+        private void eyeIconConfirm_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (confirmPasswordTextbox.PasswordChar == '●' && eyeIconConfirm.IconChar == IconChar.Eye)
+            {
+                confirmPasswordTextbox.PasswordChar = '\0';
+                eyeIconConfirm.IconChar = IconChar.EyeSlash;
+            }
+            else if (confirmPasswordTextbox.PasswordChar == '\0' && eyeIconConfirm.IconChar == IconChar.EyeSlash)
+            {
+                confirmPasswordTextbox.PasswordChar = '●';
+                eyeIconConfirm.IconChar = IconChar.Eye;
             }
         }
     }
