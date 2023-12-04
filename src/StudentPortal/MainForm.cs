@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,9 +61,7 @@ namespace StudentPortal
 
             if (StudentInfo.sex == "Female") studentIcon.Image = StudentPortal.Properties.Resources.femaleStudent;
             else if (StudentInfo.sex == "Male") studentIcon.Image = StudentPortal.Properties.Resources.maleStudent;
-
-            studentName.Text = StudentInfo.fullname;
-            studentEmail.Text = StudentInfo.email;
+            loadInformation(StudentInfo.fullname, StudentInfo.email);
             home.Visible = true;
             profile.Visible = false;
             degree.Visible = false;
@@ -73,6 +71,11 @@ namespace StudentPortal
         //
         //  Side nav button events
         //
+        private void loadInformation(string fullname, string email)
+        {
+            studentName.Text = fullname;
+            studentEmail.Text = email;
+        }
         private void studentIcon_Click(object sender, EventArgs e)
         {
             setInactiveBtn(homeBtn);
