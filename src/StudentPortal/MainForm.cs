@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -160,6 +160,11 @@ namespace StudentPortal
             this.Hide();
             loginForm.clearInputs();
             loginForm.Show();
+        }
+        public void ReloadForm()
+        {
+            this.Refresh();
+            studentEmail.Text = StudentInfo.email;
         }
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
