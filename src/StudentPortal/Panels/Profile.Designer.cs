@@ -157,6 +157,7 @@
             this.emailTextbox.Location = new System.Drawing.Point(580, 626);
             this.emailTextbox.Multiline = true;
             this.emailTextbox.Name = "emailTextbox";
+            this.emailTextbox.ReadOnly = true;
             this.emailTextbox.Size = new System.Drawing.Size(340, 29);
             this.emailTextbox.TabIndex = 2;
             // 
@@ -169,6 +170,7 @@
             this.passwordTextbox.Location = new System.Drawing.Point(80, 626);
             this.passwordTextbox.Multiline = true;
             this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.ReadOnly = true;
             this.passwordTextbox.Size = new System.Drawing.Size(340, 29);
             this.passwordTextbox.TabIndex = 1;
             // 
@@ -181,6 +183,7 @@
             this.confirmPasswordTextbox.Location = new System.Drawing.Point(80, 790);
             this.confirmPasswordTextbox.Multiline = true;
             this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
+            this.confirmPasswordTextbox.ReadOnly = true;
             this.confirmPasswordTextbox.Size = new System.Drawing.Size(340, 29);
             this.confirmPasswordTextbox.TabIndex = 3;
             // 
