@@ -209,7 +209,7 @@ namespace StudentPortal
             Validator validator = new Validator();
             bool isRegisteredSuccefully = validator.validateRegister(
                 firstName, lastName, email, password, confirmPassword, sex, birthday, course,
-                yearLvl, semester, status
+                yearLvl, semester, status, middleName
                 );
             if (isRegisteredSuccefully) new ConfirmationBox().Show();
                 
