@@ -184,6 +184,9 @@ namespace StudentPortal
             }
             return false;
         }
+        //
+        //  Login
+        //
         private LoginForm loginForm = LoginForm.getInstance();
         public void validateLogin(string email, string password)
         {
@@ -210,6 +213,9 @@ namespace StudentPortal
                 MessageBox.Show("Error Logging In");
             }
         }
+        //
+        //  Update
+        //
         public bool validateEmailAndPassword(string email, string pass, string confirmPass)
         {
             bool isPassStrong = isStrongPassword(pass);
