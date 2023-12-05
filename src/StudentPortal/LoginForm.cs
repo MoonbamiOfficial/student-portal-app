@@ -7,145 +7,133 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
+using MySql.Data.MySqlClient;
+using StudentPortal.Panels;
 
 namespace StudentPortal
 {
     public partial class LoginForm : Form
     {
+        private static LoginForm loginForm;
+
         public LoginForm()
         {
             InitializeComponent();
         }
+        Utils u = new Utils();
+        public static LoginForm getInstance()
+        {
+            if (loginForm == null)
+            {
+                loginForm = new LoginForm();
+                return loginForm;
+            } else
+            {
+                return loginForm;
+            }
+        }
+
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RegisterForm RegisterForm = new RegisterForm();
-            RegisterForm.Show();
+            wrongEmailLabel.Text = "";
+            wrongPasswordLabel.Text = "";
+            passwordTextbox.PasswordChar = '●';
+            eyeIcon.IconChar = IconChar.Eye;
+            Forms.registerForm.Show();
         }
-
-        // Globals
-        string emailPlaceholder = "student_portal@gmail.com";
-        string passwordPlaceholder = "Password";
-
-        // Background panel events
-        private void EmailBg_Click(object sender, EventArgs e)
+        //
+        //  Click label events
+        //
+        private void emailLabel_Click(object sender, EventArgs e)
         {
-            emailTextbox.Focus();
+            u.setFocus(emailTextbox);
+        }
+        private void passwordLabel_Click(object sender, EventArgs e)
+        {
+            u.setFocus(passwordTextbox);
+        }
+        //
+        //  Click bg panel events
+        //
+        private void emailBg_Click(object sender, EventArgs e)
+        {
+            u.setFocus(emailTextbox);
+        }
+        private void passwordBg_Click(object sender, EventArgs e)
+        {
+            u.setFocus(passwordTextbox);
+        }
+        // Resets the wrong input label when input fields are clicked
+
+        private void emailTextbox_Enter(object sender, EventArgs e)
+        {
+            wrongEmailLabel.Text = "";
         }
 
-        private void PasswordBg_Click(object sender, EventArgs e)
+        private void passwordTextbox_Enter(object sender, EventArgs e)
         {
-            passwordTextbox.Focus();
+            wrongPasswordLabel.Text = "";
         }
 
-        // Label events
-        private void EmailLabel_Click(object sender, EventArgs e)
+        // ------------ Wrong Email & Password label Setters ------------
+        public void setWrongEmailLabel(string message)
         {
-            emailTextbox.Focus();
+            wrongEmailLabel.Text = message;
+        }
+        public void setWrongPasswordLabel(string message)
+        {
+            wrongPasswordLabel.Text = message;
         }
 
-        private void PasswordLabel_Click(object sender, EventArgs e)
+        public void clearTxtField()
         {
-            passwordTextbox.Focus();
+            emailTextbox.Text = "";
+            passwordTextbox.Text = "";
         }
 
-        // Text field events
-        private void EmailTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        // ------------ Btn Login Method ------------
+        public void clearInputs()
         {
-            wrongEmailLabel.Text = null;
+            emailTextbox.Clear();
+            passwordTextbox.Clear();
         }
-        private void PasswordTextbox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            wrongPasswordLabel.Text = null;
-        }
-
-        // Simple placeholders
-        private void EmailTextbox_Enter(object sender, EventArgs e)
-        {
-            if (emailTextbox.Text == emailPlaceholder || emailTextbox.Text == emailPlaceholder.ToLower() || emailTextbox.Text == emailPlaceholder.ToUpper())
-            {
-                emailTextbox.Text = "";
-                wrongEmailLabel.Text = null;
-            }
-        }
-
-        private void EmailTextbox_Leave(object sender, EventArgs e)
-        {
-            if (emailTextbox.Text == "")
-            {
-                emailTextbox.Text = emailPlaceholder;
-            }
-        }
-
-        private void PasswordTextbox_Enter(object sender, EventArgs e)
-        {
-            if (passwordTextbox.Text == passwordPlaceholder || passwordTextbox.Text == passwordPlaceholder.ToLower() || passwordTextbox.Text == passwordPlaceholder.ToUpper())
-            {
-                passwordTextbox.Text = "";
-                wrongPasswordLabel.Text = null;
-                passwordTextbox.UseSystemPasswordChar = true;
-            }
-        }
-
-        private void PasswordTextbox_Leave(object sender, EventArgs e)
-        {
-            if (passwordTextbox.Text == "")
-            {
-                passwordTextbox.Text = passwordPlaceholder;
-                passwordTextbox.UseSystemPasswordChar = true;
-            }
-        }
-
-        // Login btn
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            char[] emailChars = emailTextbox.Text.ToCharArray();
-            char[] passChars = passwordTextbox.Text.ToCharArray();
+            string email = emailTextbox.Text;
+            string password = passwordTextbox.Text;
 
-            if (emailTextbox.Text == emailPlaceholder || emailTextbox.Text == emailPlaceholder.ToLower() || emailTextbox.Text == emailPlaceholder.ToUpper())
-            {
-                wrongEmailLabel.Text = "* Please enter a different email.";
-            }
-            else if (!emailTextbox.Text.EndsWith("gmail.com") &&
-                !emailTextbox.Text.EndsWith("yahoo.com") &&
-                !emailTextbox.Text.EndsWith("email.com"))
-            {
-                wrongEmailLabel.Text = "* Please enter a proper domain name like (e.g yahoo.com)";
-            }
-            else wrongEmailLabel.Text = null;
+            Validator validator = new Validator();
+            validator.validateLogin(email, password);
 
-            for (int i = 0; i < emailTextbox.Text.Length; i++)
-            {
-                if (!emailChars.Contains('@'))
-                {
-                    wrongEmailLabel.Text = "* Please enter proper a email.";
-                }
-            };
-
-            if (passwordTextbox.Text == passwordPlaceholder || passwordTextbox.Text == passwordPlaceholder.ToLower() || passwordTextbox.Text == passwordPlaceholder.ToUpper())
-            {
-                wrongPasswordLabel.Text = "* Please enter a password";
-            }
-
-            if(passwordTextbox.Text.Length < 8)
-            {
-                wrongPasswordLabel.Text = "* Please enter atleast 8 and above characters";
-            }
-            else if (!passChars.Contains('_') &&
-                !passChars.Contains('-') &&
-                !passChars.Contains('.') &&
-                !passChars.Contains('*') &&
-                !passChars.Contains('!') &&
-                !passChars.Contains('#') &&
-                !passChars.Contains('%') &&
-                !passChars.Contains('%') &&
-                !passChars.Contains('@'))
-            {
-                wrongPasswordLabel.Text = "* Low security. Please add characters like (e.g !*@#_$-%.)";
-            }
-            
         }
 
-        
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+        }
+
+        //
+        //  Eye btn 
+        //
+
+        private void eyeIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+            if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
+            {
+                passwordTextbox.Focus();
+                passwordTextbox.PasswordChar = '\0';
+                eyeIcon.IconChar = IconChar.EyeSlash;
+                
+            }
+            else if (passwordTextbox.PasswordChar == '\0' && eyeIcon.IconChar == IconChar.EyeSlash)
+            {
+                passwordTextbox.Focus();
+                passwordTextbox.PasswordChar = '●';
+                eyeIcon.IconChar = IconChar.Eye;
+            }
+        }
     }
 }
