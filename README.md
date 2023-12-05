@@ -43,15 +43,11 @@ To get started with Student Portal, here are the main things you need;
 
 3. In the solution explorer right side), click the _"Switch between solutions and available views"_ button or just find the **StudentPortal.sln** file manually at the src folder and double click it
 
-###
-
-  ![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/268dccd6-a98e-489f-ab2c-7c9a2a1d6d29)
+   ![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/268dccd6-a98e-489f-ab2c-7c9a2a1d6d29)
 
 ###
 
 4. At the top find and click the **tools** > **NuGet Package Manager** > **Manage NuGet Packager for Solution**
-
-###
 
    ![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/a225f528-e68a-4207-b068-2f94249d5393)
 
@@ -66,7 +62,7 @@ To get started with Student Portal, here are the main things you need;
 
 6. Back at the **tools** click **NuGet Package Manager** > **Package Manager Console**
 
-    Install fontawesome package
+   * Install fontawesome package
    ```sh
    NuGet\Install-Package FontAwesome.Sharp -Version 6.3.0
    ```
@@ -74,8 +70,6 @@ To get started with Student Portal, here are the main things you need;
 ###
 
 7. Open **XAMPP**, start  _Apache_ & _MySql_ then click _MySql_ **admin**
-
-###
 
    ![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/2d8dc7e3-421e-40a0-b201-7b1e1ac05f86)
 
@@ -86,25 +80,17 @@ To get started with Student Portal, here are the main things you need;
    stu_portal
    ```
 
-###
-
-![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/988b898e-616e-42ac-8ee3-ea95026b3886)
+   ![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/988b898e-616e-42ac-8ee3-ea95026b3886)
 
 ###
 
 9. Import **stu_info** from src/StudentPortal/database/stu_info.sql
 
-###
-
-![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/cf8a98e8-753e-432c-bb08-2119233e4690)
+   ![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/cf8a98e8-753e-432c-bb08-2119233e4690)
 
 ###
    
-11. Run _**Student Portal**_
-
-###
-
-   ![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/d1e764fd-0ca9-4dc1-8670-63bf6af85868)
+10. Run **Student Portal**
 
 ###
 
