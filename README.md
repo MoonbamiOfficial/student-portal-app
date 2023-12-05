@@ -62,7 +62,7 @@ To get started with Student Portal, here are the main things you need;
 
 6. Back at the **tools** click **NuGet Package Manager** > **Package Manager Console**
 
-   * Install fontawesome package
+   * Install **FontAwesome** package
    ```sh
    NuGet\Install-Package FontAwesome.Sharp -Version 6.3.0
    ```
