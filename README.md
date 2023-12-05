@@ -30,7 +30,7 @@ To get started with Student Portal, here are the main things you need;
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repository
    ```sh
    git clone https://github.com/MoonbamiOfficial/student-portal-app.git
    ```
@@ -104,9 +104,17 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-MoonbamiOfficial - [Discord](https://discord.com/channels/@moonbamioffcl)
+   ### Developers
 
-Project Link: [student-portal-app](https://github.com/MoonbamiOfficial/student-portal-app.git)
+   * MoonbamiOfficial - [Discord](https://discord.com/channels/@moonbamioffcl) | [Facebook](https://www.facebook.com/MoonbamiOffcl) | [Instagram](https://www.instagram.com/moonbamidesu/) | [Twitter](https://twitter.com/Moonbami_)
+
+   * Jireh-Sama - [Facebook](https://www.facebook.com/JirehTumbagahan)
+
+   * satanforbid - [Instagram](https://www.instagram.com/prettyboimaks/)
+
+   ### Studen Portal
+
+   * Project repository: [student-portal-app](https://github.com/MoonbamiOfficial/student-portal-app.git)
 
 ###
 
