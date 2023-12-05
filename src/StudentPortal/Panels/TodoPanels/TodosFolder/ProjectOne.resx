@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="todoDesc.Text" xml:space="preserve">
+    <value>In this project, students will explore diverse global issues, selecting a topic that resonates with them. They will conduct in-depth research, create informative displays, and deliver presentations showcasing their understanding of the chosen subject. The goal is to foster awareness, critical analysis, and effective communication skills, encouraging students to engage with broader global perspectives within the context of the subject matter.</value>
+  </data>
 </root>

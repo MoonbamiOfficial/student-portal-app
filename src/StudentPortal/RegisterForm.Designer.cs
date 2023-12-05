@@ -85,6 +85,8 @@
             this.courseBg.SuspendLayout();
             this.statusBg.SuspendLayout();
             this.sexBg.SuspendLayout();
+            this.passwordBg.SuspendLayout();
+            this.confirmPasswordBg.SuspendLayout();
             this.yearLevelBg.SuspendLayout();
             this.semesterBg.SuspendLayout();
             this.SuspendLayout();
@@ -379,7 +381,7 @@
             this.passwordTextbox.Location = new System.Drawing.Point(558, 740);
             this.passwordTextbox.Margin = new System.Windows.Forms.Padding(0);
             this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.Size = new System.Drawing.Size(307, 29);
+            this.passwordTextbox.Size = new System.Drawing.Size(287, 29);
             this.passwordTextbox.TabIndex = 9;
             this.passwordTextbox.Enter += new System.EventHandler(this.passwordTextbox_Enter);
             // 
@@ -393,7 +395,7 @@
             this.confirmPasswordTextbox.Location = new System.Drawing.Point(558, 888);
             this.confirmPasswordTextbox.Margin = new System.Windows.Forms.Padding(0);
             this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
-            this.confirmPasswordTextbox.Size = new System.Drawing.Size(307, 29);
+            this.confirmPasswordTextbox.Size = new System.Drawing.Size(287, 29);
             this.confirmPasswordTextbox.TabIndex = 12;
             this.confirmPasswordTextbox.Enter += new System.EventHandler(this.confirmPasswordTextbox_Enter);
             // 
@@ -638,6 +640,7 @@
             // 
             this.passwordBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.passwordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.passwordBg.Controls.Add(this.regEyeIcon);
             this.passwordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.passwordBg.Location = new System.Drawing.Point(528, 714);
             this.passwordBg.Margin = new System.Windows.Forms.Padding(0);
@@ -650,6 +653,7 @@
             // 
             this.confirmPasswordBg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.confirmPasswordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.confirmPasswordBg.Controls.Add(this.regEyeIconConfirm);
             this.confirmPasswordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.confirmPasswordBg.Location = new System.Drawing.Point(528, 862);
             this.confirmPasswordBg.Margin = new System.Windows.Forms.Padding(0);
@@ -860,9 +864,9 @@
             this.regEyeIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
             this.regEyeIcon.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.regEyeIcon.IconSize = 44;
-            this.regEyeIcon.Location = new System.Drawing.Point(868, 741);
+            this.regEyeIcon.Location = new System.Drawing.Point(320, 0);
             this.regEyeIcon.Name = "regEyeIcon";
-            this.regEyeIcon.Size = new System.Drawing.Size(40, 29);
+            this.regEyeIcon.Size = new System.Drawing.Size(80, 80);
             this.regEyeIcon.TabIndex = 0;
             this.regEyeIcon.UseMnemonic = false;
             this.regEyeIcon.UseVisualStyleBackColor = false;
@@ -882,9 +886,9 @@
             this.regEyeIconConfirm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
             this.regEyeIconConfirm.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.regEyeIconConfirm.IconSize = 44;
-            this.regEyeIconConfirm.Location = new System.Drawing.Point(868, 888);
+            this.regEyeIconConfirm.Location = new System.Drawing.Point(320, 0);
             this.regEyeIconConfirm.Name = "regEyeIconConfirm";
-            this.regEyeIconConfirm.Size = new System.Drawing.Size(40, 29);
+            this.regEyeIconConfirm.Size = new System.Drawing.Size(80, 80);
             this.regEyeIconConfirm.TabIndex = 0;
             this.regEyeIconConfirm.UseMnemonic = false;
             this.regEyeIconConfirm.UseVisualStyleBackColor = false;
@@ -896,8 +900,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
-            this.Controls.Add(this.regEyeIconConfirm);
-            this.Controls.Add(this.regEyeIcon);
             this.Controls.Add(this.brandIcon);
             this.Controls.Add(this.wrongConfirmPasswordLabel);
             this.Controls.Add(this.wrongPasswordLabel);
@@ -953,6 +955,8 @@
             this.courseBg.ResumeLayout(false);
             this.statusBg.ResumeLayout(false);
             this.sexBg.ResumeLayout(false);
+            this.passwordBg.ResumeLayout(false);
+            this.confirmPasswordBg.ResumeLayout(false);
             this.yearLevelBg.ResumeLayout(false);
             this.semesterBg.ResumeLayout(false);
             this.ResumeLayout(false);

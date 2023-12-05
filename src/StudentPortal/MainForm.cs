@@ -82,7 +82,6 @@ namespace StudentPortal
             setActiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
-            setInactiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = true;
@@ -95,7 +94,6 @@ namespace StudentPortal
             setInactiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
-            setInactiveBtn(settingBtn);
 
             home.Visible = true;
             profile.Visible = false;
@@ -109,7 +107,6 @@ namespace StudentPortal
             setActiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
-            setInactiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = true;
@@ -124,7 +121,6 @@ namespace StudentPortal
             setInactiveBtn(profileBtn);
             setActiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
-            setInactiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = false;
@@ -139,7 +135,6 @@ namespace StudentPortal
             setInactiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setActiveBtn(todoBtn);
-            setInactiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = false;
@@ -153,7 +148,6 @@ namespace StudentPortal
             setInactiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
             setInactiveBtn(todoBtn);
-            setActiveBtn(settingBtn);
 
             home.Visible = false;
             profile.Visible = false;
@@ -168,6 +162,8 @@ namespace StudentPortal
         {
             this.Hide();
             loginForm.clearInputs();
+            loginForm.passwordTextbox.PasswordChar = '●';
+            loginForm.eyeIcon.IconChar = IconChar.Eye;
             loginForm.Show();
         }
         public void setUpdatedEmail(string email)

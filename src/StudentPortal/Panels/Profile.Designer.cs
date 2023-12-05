@@ -47,6 +47,8 @@
             this.eyeIcon = new FontAwesome.Sharp.IconButton();
             this.eyeIconConfirm = new FontAwesome.Sharp.IconButton();
             this.studentIcon = new StudentPortal.StudentPortalControls.CustomPictureBox();
+            this.confirmPasswordBg.SuspendLayout();
+            this.passwordBg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentCover)).BeginInit();
             this.studentNameNumber.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
@@ -58,7 +60,8 @@
             this.passwordLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.passwordLabel.Location = new System.Drawing.Point(80, 566);
+            this.passwordLabel.Location = new System.Drawing.Point(76, 566);
+            this.passwordLabel.Margin = new System.Windows.Forms.Padding(0);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(117, 34);
             this.passwordLabel.TabIndex = 0;
@@ -72,7 +75,8 @@
             this.emailLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.emailLabel.Location = new System.Drawing.Point(580, 566);
+            this.emailLabel.Location = new System.Drawing.Point(576, 566);
+            this.emailLabel.Margin = new System.Windows.Forms.Padding(0);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(67, 34);
             this.emailLabel.TabIndex = 0;
@@ -85,8 +89,8 @@
             this.studentNumber.BackColor = System.Drawing.Color.Transparent;
             this.studentNumber.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentNumber.Location = new System.Drawing.Point(226, 3);
-            this.studentNumber.Margin = new System.Windows.Forms.Padding(3);
+            this.studentNumber.Location = new System.Drawing.Point(217, 0);
+            this.studentNumber.Margin = new System.Windows.Forms.Padding(0);
             this.studentNumber.Name = "studentNumber";
             this.studentNumber.Size = new System.Drawing.Size(100, 48);
             this.studentNumber.TabIndex = 0;
@@ -98,8 +102,8 @@
             this.studentEmail.BackColor = System.Drawing.Color.Transparent;
             this.studentEmail.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentEmail.Location = new System.Drawing.Point(3, 57);
-            this.studentEmail.Margin = new System.Windows.Forms.Padding(3);
+            this.studentEmail.Location = new System.Drawing.Point(0, 48);
+            this.studentEmail.Margin = new System.Windows.Forms.Padding(0);
             this.studentEmail.Name = "studentEmail";
             this.studentEmail.Size = new System.Drawing.Size(631, 32);
             this.studentEmail.TabIndex = 0;
@@ -112,8 +116,8 @@
             this.studentName.BackColor = System.Drawing.Color.Transparent;
             this.studentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentName.Location = new System.Drawing.Point(3, 3);
-            this.studentName.Margin = new System.Windows.Forms.Padding(3);
+            this.studentName.Location = new System.Drawing.Point(0, 0);
+            this.studentName.Margin = new System.Windows.Forms.Padding(0);
             this.studentName.Name = "studentName";
             this.studentName.Size = new System.Drawing.Size(217, 31);
             this.studentName.TabIndex = 0;
@@ -126,12 +130,14 @@
             this.confirmPasswordLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.confirmPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.confirmPasswordLabel.Location = new System.Drawing.Point(80, 730);
+            this.confirmPasswordLabel.Location = new System.Drawing.Point(76, 727);
+            this.confirmPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
             this.confirmPasswordLabel.Name = "confirmPasswordLabel";
             this.confirmPasswordLabel.Size = new System.Drawing.Size(221, 34);
             this.confirmPasswordLabel.TabIndex = 0;
             this.confirmPasswordLabel.Text = "Confirm Password";
             this.confirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.confirmPasswordLabel.Visible = false;
             this.confirmPasswordLabel.Click += new System.EventHandler(this.confirmPasswordLabel_Click);
             // 
             // editBtn
@@ -142,9 +148,10 @@
             this.editBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editBtn.ForeColor = System.Drawing.Color.White;
-            this.editBtn.Location = new System.Drawing.Point(546, 764);
+            this.editBtn.Location = new System.Drawing.Point(550, 763);
+            this.editBtn.Margin = new System.Windows.Forms.Padding(0);
             this.editBtn.Name = "editBtn";
-            this.editBtn.Size = new System.Drawing.Size(157, 80);
+            this.editBtn.Size = new System.Drawing.Size(180, 80);
             this.editBtn.TabIndex = 4;
             this.editBtn.Text = "Edit";
             this.editBtn.UseVisualStyleBackColor = false;
@@ -157,6 +164,7 @@
             this.emailTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.emailTextbox.Location = new System.Drawing.Point(580, 626);
+            this.emailTextbox.Margin = new System.Windows.Forms.Padding(0);
             this.emailTextbox.Multiline = true;
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.ReadOnly = true;
@@ -170,11 +178,12 @@
             this.passwordTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.passwordTextbox.Location = new System.Drawing.Point(80, 626);
+            this.passwordTextbox.Margin = new System.Windows.Forms.Padding(0);
             this.passwordTextbox.Multiline = true;
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PasswordChar = '●';
             this.passwordTextbox.ReadOnly = true;
-            this.passwordTextbox.Size = new System.Drawing.Size(310, 29);
+            this.passwordTextbox.Size = new System.Drawing.Size(290, 29);
             this.passwordTextbox.TabIndex = 1;
             // 
             // confirmPasswordTextbox
@@ -184,18 +193,21 @@
             this.confirmPasswordTextbox.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmPasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
             this.confirmPasswordTextbox.Location = new System.Drawing.Point(80, 790);
+            this.confirmPasswordTextbox.Margin = new System.Windows.Forms.Padding(0);
             this.confirmPasswordTextbox.Multiline = true;
             this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
             this.confirmPasswordTextbox.PasswordChar = '●';
             this.confirmPasswordTextbox.ReadOnly = true;
-            this.confirmPasswordTextbox.Size = new System.Drawing.Size(310, 29);
+            this.confirmPasswordTextbox.Size = new System.Drawing.Size(290, 29);
             this.confirmPasswordTextbox.TabIndex = 3;
+            this.confirmPasswordTextbox.Visible = false;
             // 
             // emailBg
             // 
             this.emailBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.emailBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.emailBg.Location = new System.Drawing.Point(550, 600);
+            this.emailBg.Margin = new System.Windows.Forms.Padding(0);
             this.emailBg.Name = "emailBg";
             this.emailBg.Size = new System.Drawing.Size(400, 80);
             this.emailBg.TabIndex = 0;
@@ -204,18 +216,23 @@
             // confirmPasswordBg
             // 
             this.confirmPasswordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.confirmPasswordBg.Controls.Add(this.eyeIconConfirm);
             this.confirmPasswordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.confirmPasswordBg.Location = new System.Drawing.Point(50, 764);
+            this.confirmPasswordBg.Margin = new System.Windows.Forms.Padding(0);
             this.confirmPasswordBg.Name = "confirmPasswordBg";
             this.confirmPasswordBg.Size = new System.Drawing.Size(400, 80);
             this.confirmPasswordBg.TabIndex = 0;
+            this.confirmPasswordBg.Visible = false;
             this.confirmPasswordBg.Click += new System.EventHandler(this.confirmPasswordBg_Click);
             // 
             // passwordBg
             // 
             this.passwordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.passwordBg.Controls.Add(this.eyeIcon);
             this.passwordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.passwordBg.Location = new System.Drawing.Point(50, 600);
+            this.passwordBg.Margin = new System.Windows.Forms.Padding(0);
             this.passwordBg.Name = "passwordBg";
             this.passwordBg.Size = new System.Drawing.Size(400, 80);
             this.passwordBg.TabIndex = 0;
@@ -227,6 +244,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.studentCover.Image = global::StudentPortal.Properties.Resources.entrance;
             this.studentCover.Location = new System.Drawing.Point(0, 0);
+            this.studentCover.Margin = new System.Windows.Forms.Padding(0);
             this.studentCover.Name = "studentCover";
             this.studentCover.Size = new System.Drawing.Size(1000, 400);
             this.studentCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -253,12 +271,14 @@
             this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBtn.ForeColor = System.Drawing.Color.White;
-            this.saveBtn.Location = new System.Drawing.Point(793, 764);
+            this.saveBtn.Location = new System.Drawing.Point(770, 763);
+            this.saveBtn.Margin = new System.Windows.Forms.Padding(0);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(157, 80);
+            this.saveBtn.Size = new System.Drawing.Size(180, 80);
             this.saveBtn.TabIndex = 5;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = false;
+            this.saveBtn.Visible = false;
             this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // eyeIcon
@@ -275,9 +295,10 @@
             this.eyeIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
             this.eyeIcon.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.eyeIcon.IconSize = 44;
-            this.eyeIcon.Location = new System.Drawing.Point(396, 626);
+            this.eyeIcon.Location = new System.Drawing.Point(320, 0);
+            this.eyeIcon.Margin = new System.Windows.Forms.Padding(0);
             this.eyeIcon.Name = "eyeIcon";
-            this.eyeIcon.Size = new System.Drawing.Size(40, 29);
+            this.eyeIcon.Size = new System.Drawing.Size(80, 80);
             this.eyeIcon.TabIndex = 0;
             this.eyeIcon.UseMnemonic = false;
             this.eyeIcon.UseVisualStyleBackColor = false;
@@ -297,12 +318,14 @@
             this.eyeIconConfirm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
             this.eyeIconConfirm.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.eyeIconConfirm.IconSize = 44;
-            this.eyeIconConfirm.Location = new System.Drawing.Point(396, 790);
+            this.eyeIconConfirm.Location = new System.Drawing.Point(320, -1);
+            this.eyeIconConfirm.Margin = new System.Windows.Forms.Padding(0);
             this.eyeIconConfirm.Name = "eyeIconConfirm";
-            this.eyeIconConfirm.Size = new System.Drawing.Size(40, 29);
+            this.eyeIconConfirm.Size = new System.Drawing.Size(80, 80);
             this.eyeIconConfirm.TabIndex = 0;
             this.eyeIconConfirm.UseMnemonic = false;
             this.eyeIconConfirm.UseVisualStyleBackColor = false;
+            this.eyeIconConfirm.Visible = false;
             this.eyeIconConfirm.MouseClick += new System.Windows.Forms.MouseEventHandler(this.eyeIconConfirm_MouseClick);
             // 
             // studentIcon
@@ -330,8 +353,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.Controls.Add(this.eyeIconConfirm);
-            this.Controls.Add(this.eyeIcon);
             this.Controls.Add(this.studentNameNumber);
             this.Controls.Add(this.studentIcon);
             this.Controls.Add(this.passwordLabel);
@@ -349,6 +370,8 @@
             this.Name = "Profile";
             this.Size = new System.Drawing.Size(1000, 1024);
             this.Load += new System.EventHandler(this.Profile_Load);
+            this.confirmPasswordBg.ResumeLayout(false);
+            this.passwordBg.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.studentCover)).EndInit();
             this.studentNameNumber.ResumeLayout(false);
             this.studentNameNumber.PerformLayout();

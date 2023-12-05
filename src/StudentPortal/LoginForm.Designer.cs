@@ -46,6 +46,7 @@
             this.signUpBg = new System.Windows.Forms.Panel();
             this.brandIcon = new System.Windows.Forms.PictureBox();
             this.eyeIcon = new FontAwesome.Sharp.IconButton();
+            this.passwordBg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             this.passwordTextbox.MaxLength = 50;
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PasswordChar = '●';
-            this.passwordTextbox.Size = new System.Drawing.Size(701, 32);
+            this.passwordTextbox.Size = new System.Drawing.Size(667, 32);
             this.passwordTextbox.TabIndex = 2;
             this.passwordTextbox.Enter += new System.EventHandler(this.passwordTextbox_Enter);
             // 
@@ -251,6 +252,7 @@
             this.passwordBg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.passwordBg.Controls.Add(this.eyeIcon);
             this.passwordBg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.passwordBg.Location = new System.Drawing.Point(100, 609);
             this.passwordBg.Margin = new System.Windows.Forms.Padding(0);
@@ -295,9 +297,9 @@
             this.eyeIcon.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.eyeIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(175)))), ((int)(((byte)(153)))));
             this.eyeIcon.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.eyeIcon.Location = new System.Drawing.Point(834, 642);
+            this.eyeIcon.Location = new System.Drawing.Point(700, 0);
             this.eyeIcon.Name = "eyeIcon";
-            this.eyeIcon.Size = new System.Drawing.Size(40, 32);
+            this.eyeIcon.Size = new System.Drawing.Size(100, 100);
             this.eyeIcon.TabIndex = 0;
             this.eyeIcon.UseMnemonic = false;
             this.eyeIcon.UseVisualStyleBackColor = false;
@@ -310,7 +312,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
             this.Controls.Add(this.brandIcon);
-            this.Controls.Add(this.eyeIcon);
             this.Controls.Add(this.brandNameLabel);
             this.Controls.Add(this.passwordTextbox);
             this.Controls.Add(this.emailTextbox);
@@ -332,6 +333,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
+            this.passwordBg.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -350,12 +352,12 @@
         private System.Windows.Forms.Label newHereLabel;
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Panel emailBg;
-        private System.Windows.Forms.TextBox passwordTextbox;
         private System.Windows.Forms.Panel passwordBg;
         private System.Windows.Forms.Label wrongEmailLabel;
         private System.Windows.Forms.Label wrongPasswordLabel;
         private System.Windows.Forms.PictureBox brandIcon;
-        private FontAwesome.Sharp.IconButton eyeIcon;
+        public FontAwesome.Sharp.IconButton eyeIcon;
+        public System.Windows.Forms.TextBox passwordTextbox;
     }
 }
 

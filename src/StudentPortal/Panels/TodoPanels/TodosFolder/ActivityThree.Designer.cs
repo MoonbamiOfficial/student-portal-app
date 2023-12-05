@@ -42,9 +42,9 @@
             this.todoName.Location = new System.Drawing.Point(25, 30);
             this.todoName.Margin = new System.Windows.Forms.Padding(0);
             this.todoName.Name = "todoName";
-            this.todoName.Size = new System.Drawing.Size(446, 58);
+            this.todoName.Size = new System.Drawing.Size(659, 58);
             this.todoName.TabIndex = 0;
-            this.todoName.Text = "Dolor Ipsum Lorem";
+            this.todoName.Text = "Arnis skills and techniques";
             this.todoName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // todoNumber
@@ -89,9 +89,7 @@
             this.todoDesc.Name = "todoDesc";
             this.todoDesc.Size = new System.Drawing.Size(607, 300);
             this.todoDesc.TabIndex = 0;
-            this.todoDesc.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" +
-    "cididunt ut labore et dolore magna aliqua. Nunc sed augue lacus viverra vitae. U" +
-    "t ornare lectus sit amet.";
+            this.todoDesc.Text = "Compile 8 skills and techniques in arnis with a video description";
             // 
             // ActivityThree
             // 

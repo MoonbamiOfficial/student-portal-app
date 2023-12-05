@@ -22,14 +22,14 @@ namespace StudentPortal
         private void mouseEntered(Button btn)
         {
             btn.FlatAppearance.BorderSize = 0;
-            btn.BackColor = System.Drawing.Color.FromArgb(0, 86, 63);
+            btn.BackColor = Color.FromArgb(0, 86, 63);
             btn.ForeColor = Color.White;
         }
         private void mouseLeave(Button btn)
         {
             btn.FlatAppearance.BorderSize = 3;
             btn.BackColor = Color.Transparent;
-            btn.ForeColor = System.Drawing.Color.FromArgb(0, 86, 63);
+            btn.ForeColor = Color.FromArgb(0, 86, 63);
 
         }
         private void confirmBtn_MouseEnter(object sender, EventArgs e)

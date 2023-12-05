@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActivityOne));
             this.todoName = new System.Windows.Forms.Label();
             this.todoNumber = new System.Windows.Forms.Label();
             this.todoDeadline = new System.Windows.Forms.Label();
@@ -43,9 +42,9 @@
             this.todoName.Location = new System.Drawing.Point(25, 30);
             this.todoName.Margin = new System.Windows.Forms.Padding(0);
             this.todoName.Name = "todoName";
-            this.todoName.Size = new System.Drawing.Size(446, 58);
+            this.todoName.Size = new System.Drawing.Size(659, 58);
             this.todoName.TabIndex = 0;
-            this.todoName.Text = "Ipsum Lorem";
+            this.todoName.Text = "Edit an mp3";
             this.todoName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // todoNumber
@@ -90,7 +89,7 @@
             this.todoDesc.Name = "todoDesc";
             this.todoDesc.Size = new System.Drawing.Size(607, 300);
             this.todoDesc.TabIndex = 0;
-            this.todoDesc.Text = resources.GetString("todoDesc.Text");
+            this.todoDesc.Text = "Using an mp3 editor, cut, trim, merge, combine mp3";
             // 
             // ActivityOne
             // 

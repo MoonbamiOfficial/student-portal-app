@@ -289,11 +289,13 @@ namespace StudentPortal
         {
             if (passwordTextbox.PasswordChar == '\0' && regEyeIcon.IconChar == IconChar.EyeSlash)
             {
+                passwordTextbox.Focus();
                 passwordTextbox.PasswordChar = '●';
                 regEyeIcon.IconChar = IconChar.Eye;
             }
             else if (passwordTextbox.PasswordChar == '●' && regEyeIcon.IconChar == IconChar.Eye)
             {
+                passwordTextbox.Focus();
                 passwordTextbox.PasswordChar = '\0';
                 regEyeIcon.IconChar = IconChar.EyeSlash;
             }
@@ -303,11 +305,13 @@ namespace StudentPortal
         {
             if (confirmPasswordTextbox.PasswordChar == '\0' && regEyeIconConfirm.IconChar == IconChar.EyeSlash)
             {
+                confirmPasswordTextbox.Focus();
                 confirmPasswordTextbox.PasswordChar = '●';
                 regEyeIconConfirm.IconChar = IconChar.Eye;
             }
             else if (confirmPasswordTextbox.PasswordChar == '●' && regEyeIconConfirm.IconChar == IconChar.Eye)
             {
+                confirmPasswordTextbox.Focus();
                 confirmPasswordTextbox.PasswordChar = '\0';
                 regEyeIconConfirm.IconChar = IconChar.EyeSlash;
             }

@@ -69,10 +69,34 @@ namespace StudentPortal.Panels
         // Edit button
         //
         bool isClicked = false;
+        private void hide(Label label, TextBox textBox, Panel bg, IconButton eyeBtn, Button btn)
+        {
+            label.Visible = false;
+            textBox.Visible = false;
+            bg.Visible = false;
+            eyeBtn.Visible = false;
+            btn.Visible = false;
+        }
+        private void show(Label label, TextBox textBox, Panel bg, IconButton eyeBtn, Button btn)
+        {
+            label.Visible = true;
+            textBox.Visible = true;
+            bg.Visible = true;
+            eyeBtn.Visible = true;
+            btn.Visible = true;
+        }
         private void editBtn_Click(object sender, EventArgs e)
         {
             if (editBtn.Text.Equals("Cancel"))
             {
+                hide(
+                    confirmPasswordLabel, 
+                    confirmPasswordTextbox, 
+                    confirmPasswordBg, 
+                    eyeIconConfirm, 
+                    saveBtn
+                );
+
                 emailTextbox.Text = StudentInfo.email;
                 passwordTextbox.Text = StudentInfo.password;
                 confirmPasswordTextbox.Text = "";
@@ -84,6 +108,14 @@ namespace StudentPortal.Panels
             }
             else if (isEditable == false)
             {
+                show(
+                    confirmPasswordLabel,
+                    confirmPasswordTextbox,
+                    confirmPasswordBg,
+                    eyeIconConfirm,
+                    saveBtn
+                );
+
                 passwordTextbox.Focus();
                 emailTextbox.ReadOnly = false;
                 passwordTextbox.ReadOnly = false;
@@ -114,6 +146,14 @@ namespace StudentPortal.Panels
             bool isSuccessful = validator.validateEmailAndPassword(emailTextbox.Text, passwordTextbox.Text, confirmPasswordTextbox.Text);
             if (isSuccessful)
             {
+                hide(
+                    confirmPasswordLabel,
+                    confirmPasswordTextbox,
+                    confirmPasswordBg,
+                    eyeIconConfirm,
+                    saveBtn
+                );
+
                 studentEmail.Text = StudentInfo.email;
                 confirmPasswordTextbox.Text = "";
                 editBtn.Text = "Edit";
@@ -130,11 +170,13 @@ namespace StudentPortal.Panels
         {
             if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
             {
+                passwordTextbox.Focus();
                 passwordTextbox.PasswordChar = '\0';
                 eyeIcon.IconChar = IconChar.EyeSlash;
             }
             else if(passwordTextbox.PasswordChar == '\0' && eyeIcon.IconChar == IconChar.EyeSlash)
             {
+                passwordTextbox.Focus();
                 passwordTextbox.PasswordChar = '●';
                 eyeIcon.IconChar = IconChar.Eye;
             }
@@ -144,11 +186,13 @@ namespace StudentPortal.Panels
         {
             if (confirmPasswordTextbox.PasswordChar == '●' && eyeIconConfirm.IconChar == IconChar.Eye)
             {
+                confirmPasswordTextbox.Focus();
                 confirmPasswordTextbox.PasswordChar = '\0';
                 eyeIconConfirm.IconChar = IconChar.EyeSlash;
             }
             else if (confirmPasswordTextbox.PasswordChar == '\0' && eyeIconConfirm.IconChar == IconChar.EyeSlash)
             {
+                confirmPasswordTextbox.Focus();
                 confirmPasswordTextbox.PasswordChar = '●';
                 eyeIconConfirm.IconChar = IconChar.Eye;
             }

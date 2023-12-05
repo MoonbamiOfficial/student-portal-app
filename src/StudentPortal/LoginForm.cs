@@ -123,12 +123,14 @@ namespace StudentPortal
             
             if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
             {
+                passwordTextbox.Focus();
                 passwordTextbox.PasswordChar = '\0';
                 eyeIcon.IconChar = IconChar.EyeSlash;
                 
             }
             else if (passwordTextbox.PasswordChar == '\0' && eyeIcon.IconChar == IconChar.EyeSlash)
             {
+                passwordTextbox.Focus();
                 passwordTextbox.PasswordChar = '●';
                 eyeIcon.IconChar = IconChar.Eye;
             }

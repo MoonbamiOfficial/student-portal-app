@@ -37,7 +37,6 @@
             this.profileBtn = new FontAwesome.Sharp.IconButton();
             this.degreeBtn = new FontAwesome.Sharp.IconButton();
             this.todoBtn = new FontAwesome.Sharp.IconButton();
-            this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.logOutBtn = new System.Windows.Forms.Button();
             this.home = new StudentPortal.Panels.Home();
             this.profile = new StudentPortal.Panels.Profile();
@@ -71,7 +70,6 @@
             this.sideNav.Controls.Add(this.profileBtn);
             this.sideNav.Controls.Add(this.degreeBtn);
             this.sideNav.Controls.Add(this.todoBtn);
-            this.sideNav.Controls.Add(this.settingBtn);
             this.sideNav.Controls.Add(this.logOutBtn);
             this.sideNav.Location = new System.Drawing.Point(0, 0);
             this.sideNav.Name = "sideNav";
@@ -209,31 +207,6 @@
             this.todoBtn.UseVisualStyleBackColor = false;
             this.todoBtn.Click += new System.EventHandler(this.todoBtn_Click);
             // 
-            // settingBtn
-            // 
-            this.settingBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.settingBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.settingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.settingBtn.FlatAppearance.BorderSize = 0;
-            this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingBtn.ForeColor = System.Drawing.Color.White;
-            this.settingBtn.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.settingBtn.IconColor = System.Drawing.Color.White;
-            this.settingBtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.settingBtn.IconSize = 32;
-            this.settingBtn.Location = new System.Drawing.Point(0, 696);
-            this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(440, 100);
-            this.settingBtn.TabIndex = 5;
-            this.settingBtn.Text = "SETTING";
-            this.settingBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.settingBtn.UseMnemonic = false;
-            this.settingBtn.UseVisualStyleBackColor = false;
-            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
-            // 
             // logOutBtn
             // 
             this.logOutBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -257,7 +230,7 @@
             this.home.Location = new System.Drawing.Point(440, 0);
             this.home.Margin = new System.Windows.Forms.Padding(0);
             this.home.Name = "home";
-            this.home.Size = new System.Drawing.Size(985, 985);
+            this.home.Size = new System.Drawing.Size(1000, 985);
             this.home.TabIndex = 0;
             // 
             // profile
@@ -266,7 +239,7 @@
             this.profile.Location = new System.Drawing.Point(440, 0);
             this.profile.Margin = new System.Windows.Forms.Padding(0);
             this.profile.Name = "profile";
-            this.profile.Size = new System.Drawing.Size(985, 985);
+            this.profile.Size = new System.Drawing.Size(1000, 985);
             this.profile.TabIndex = 0;
             // 
             // degree
@@ -275,7 +248,7 @@
             this.degree.Location = new System.Drawing.Point(440, -20);
             this.degree.Margin = new System.Windows.Forms.Padding(0);
             this.degree.Name = "degree";
-            this.degree.Size = new System.Drawing.Size(985, 985);
+            this.degree.Size = new System.Drawing.Size(1000, 985);
             this.degree.TabIndex = 0;
             // 
             // todo
@@ -284,7 +257,7 @@
             this.todo.Location = new System.Drawing.Point(440, 0);
             this.todo.Margin = new System.Windows.Forms.Padding(0);
             this.todo.Name = "todo";
-            this.todo.Size = new System.Drawing.Size(985, 985);
+            this.todo.Size = new System.Drawing.Size(1000, 985);
             this.todo.TabIndex = 0;
             // 
             // MainForm
@@ -321,7 +294,6 @@
         private FontAwesome.Sharp.IconButton profileBtn;
         private FontAwesome.Sharp.IconButton degreeBtn;
         private FontAwesome.Sharp.IconButton todoBtn;
-        private FontAwesome.Sharp.IconButton settingBtn;
         private Panels.Home home;
         private Panels.Profile profile;
         private Panels.Degree degree;

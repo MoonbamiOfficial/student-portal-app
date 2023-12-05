@@ -34,6 +34,8 @@
             this.todoDeadline = new System.Windows.Forms.Label();
             this.verticalLine = new System.Windows.Forms.Panel();
             this.todoDesc = new System.Windows.Forms.Label();
+            this.sampleVid = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.sampleVid)).BeginInit();
             this.SuspendLayout();
             // 
             // todoName
@@ -43,9 +45,9 @@
             this.todoName.Location = new System.Drawing.Point(25, 30);
             this.todoName.Margin = new System.Windows.Forms.Padding(0);
             this.todoName.Name = "todoName";
-            this.todoName.Size = new System.Drawing.Size(446, 58);
+            this.todoName.Size = new System.Drawing.Size(659, 58);
             this.todoName.TabIndex = 0;
-            this.todoName.Text = "Lorem Ipsum Dolor";
+            this.todoName.Text = "Reflection";
             this.todoName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // todoNumber
@@ -90,13 +92,26 @@
             this.todoDesc.Name = "todoDesc";
             this.todoDesc.Size = new System.Drawing.Size(607, 300);
             this.todoDesc.TabIndex = 0;
-            this.todoDesc.Text = resources.GetString("todoDesc.Text");
+            this.todoDesc.Text = "Make a reflection paper about this video";
+            // 
+            // sampleVid
+            // 
+            this.sampleVid.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sampleVid.Image = ((System.Drawing.Image)(resources.GetObject("sampleVid.Image")));
+            this.sampleVid.Location = new System.Drawing.Point(49, 311);
+            this.sampleVid.Margin = new System.Windows.Forms.Padding(0);
+            this.sampleVid.Name = "sampleVid";
+            this.sampleVid.Size = new System.Drawing.Size(600, 250);
+            this.sampleVid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sampleVid.TabIndex = 1;
+            this.sampleVid.TabStop = false;
             // 
             // ActivityTwo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.Controls.Add(this.sampleVid);
             this.Controls.Add(this.todoDesc);
             this.Controls.Add(this.verticalLine);
             this.Controls.Add(this.todoDeadline);
@@ -105,6 +120,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "ActivityTwo";
             this.Size = new System.Drawing.Size(715, 878);
+            ((System.ComponentModel.ISupportInitialize)(this.sampleVid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,5 +132,6 @@
         private System.Windows.Forms.Label todoDeadline;
         private System.Windows.Forms.Panel verticalLine;
         private System.Windows.Forms.Label todoDesc;
+        private System.Windows.Forms.PictureBox sampleVid;
     }
 }
