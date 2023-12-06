@@ -206,7 +206,8 @@ namespace StudentPortal
             if (isSuccessful)
             {
                 loginForm.Hide();
-                new MainForm().Show();
+                var mainForm = MainForm.getInstance();
+                mainForm.Show();    
             }
             else
             {
