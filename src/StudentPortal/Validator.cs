@@ -211,7 +211,7 @@ namespace StudentPortal
             }
             else
             {
-                MessageBox.Show("Error Logging In");
+                MessageBox.Show("No such account was found, please try again");
             }
         }
         //

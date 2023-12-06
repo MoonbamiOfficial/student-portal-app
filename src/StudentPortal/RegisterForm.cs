@@ -25,6 +25,10 @@ namespace StudentPortal
                 return registerForm;
             }
         }
+        private void RegisterForm_Activated(object sender, EventArgs e)
+        {
+            firstNameTextbox.Focus();
+        }
         private void RegisterForm_Load(object sender, EventArgs e)
         {
             clearComboBox();
@@ -33,6 +37,11 @@ namespace StudentPortal
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            firstNameTextbox.Text = "";
+            lastNameTextbox.Text = "";
+            emailTextbox.Text = "";
+            passwordTextbox.Text = "";
+            confirmPasswordTextbox.Text = "";
             wrongFirstNameLabel.Text = "";
             wrongLastNameLabel.Text = "";
             wrongEmailLabel.Text = "";

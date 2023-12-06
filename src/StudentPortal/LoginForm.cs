@@ -33,10 +33,15 @@ namespace StudentPortal
                 return loginForm;
             }
         }
-
+        private void LoginForm_Activated(object sender, EventArgs e)
+        {
+            emailTextbox.Focus();
+        }
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            emailTextbox.Text = "";
+            passwordTextbox.Text = "";
             wrongEmailLabel.Text = "";
             wrongPasswordLabel.Text = "";
             passwordTextbox.PasswordChar = '●';

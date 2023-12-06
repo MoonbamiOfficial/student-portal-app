@@ -332,6 +332,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Activated += new System.EventHandler(this.LoginForm_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             this.passwordBg.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).EndInit();
