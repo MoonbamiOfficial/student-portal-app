@@ -145,7 +145,7 @@ namespace StudentPortal
 
         private void todoBtn_Click(object sender, EventArgs e)
         {
-            this.Text = "Todo";
+            this.Text = "To-Do";
 
             setInactiveBtn(homeBtn);
             setInactiveBtn(profileBtn);
