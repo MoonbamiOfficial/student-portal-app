@@ -19,21 +19,27 @@ namespace StudentPortal
         {
             InitializeComponent();
         }
+        
+
         public static MainForm getInstance() {
             if (mainForm == null)
             {
                 mainForm = new MainForm();
                 return mainForm;
             }else { return mainForm; }
-        }   
+        }
+        public void clearInstance()
+        {
+            mainForm = null;
+        }
 
         //
         //  Sets the appearance of active button
         //
         public void setActiveBtn(IconButton btn)
         {
-            System.Drawing.Color bgColor = System.Drawing.Color.FromArgb(222, 245, 229);
-            System.Drawing.Color moodColor = System.Drawing.Color.FromArgb(0, 86, 63);
+            Color bgColor = Color.FromArgb(222, 245, 229);
+            Color moodColor = Color.FromArgb(0, 86, 63);
 
             btn.FlatAppearance.BorderColor = moodColor;
             btn.FlatAppearance.BorderSize = 5;
@@ -46,7 +52,7 @@ namespace StudentPortal
         //
         public void setInactiveBtn(IconButton btn)
         {
-            System.Drawing.Color bgColor = System.Drawing.Color.FromArgb(69, 159, 127);
+            Color bgColor = Color.FromArgb(69, 159, 127);
 
             btn.FlatAppearance.BorderSize = 0;
             btn.BackColor = bgColor;
@@ -59,8 +65,8 @@ namespace StudentPortal
         private void MainForm_Load(object sender, EventArgs e)
         {
 
-            if (StudentInfo.sex == "Female") studentIcon.Image = StudentPortal.Properties.Resources.femaleStudent;
-            else if (StudentInfo.sex == "Male") studentIcon.Image = StudentPortal.Properties.Resources.maleStudent;
+            if (StudentInfo.sex == "Female") studentIcon.Image = Properties.Resources.femaleStudent;
+            else if (StudentInfo.sex == "Male") studentIcon.Image = Properties.Resources.maleStudent;
             loadInformation(StudentInfo.fullname, StudentInfo.email);
             home.Visible = true;
             profile.Visible = false;
@@ -78,6 +84,8 @@ namespace StudentPortal
         }
         private void studentIcon_Click(object sender, EventArgs e)
         {
+            this.Text = "Profile";
+
             setInactiveBtn(homeBtn);
             setActiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
@@ -90,6 +98,8 @@ namespace StudentPortal
         }
         private void homeBtn_Click(object sender, EventArgs e)
         {
+            this.Text = "Home";
+
             setActiveBtn(homeBtn);
             setInactiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
@@ -103,6 +113,8 @@ namespace StudentPortal
 
         private void profileBtn_Click(object sender, EventArgs e)
         {
+            this.Text = "Profile";
+
             setInactiveBtn(homeBtn);
             setActiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
@@ -117,6 +129,8 @@ namespace StudentPortal
 
         private void degreeBtn_Click(object sender, EventArgs e)
         {
+            this.Text = "Degree";
+
             setInactiveBtn(homeBtn);
             setInactiveBtn(profileBtn);
             setActiveBtn(degreeBtn);
@@ -131,6 +145,8 @@ namespace StudentPortal
 
         private void todoBtn_Click(object sender, EventArgs e)
         {
+            this.Text = "To-Do";
+
             setInactiveBtn(homeBtn);
             setInactiveBtn(profileBtn);
             setInactiveBtn(degreeBtn);
@@ -141,25 +157,13 @@ namespace StudentPortal
             degree.Visible = false;
             todo.Visible = true;
         }
-
-        private void settingBtn_Click(object sender, EventArgs e)
-        {
-            setInactiveBtn(homeBtn);
-            setInactiveBtn(profileBtn);
-            setInactiveBtn(degreeBtn);
-            setInactiveBtn(todoBtn);
-
-            home.Visible = false;
-            profile.Visible = false;
-            degree.Visible = false;
-            todo.Visible = false;
-        }
         //
         //  Logs out to after clicking log out
         //
         private LoginForm loginForm = LoginForm.getInstance();
         private void logOutBtn_Click(object sender, EventArgs e)
         {
+            clearInstance();
             this.Hide();
             loginForm.clearInputs();
             loginForm.passwordTextbox.PasswordChar = '●';

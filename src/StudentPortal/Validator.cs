@@ -206,11 +206,12 @@ namespace StudentPortal
             if (isSuccessful)
             {
                 loginForm.Hide();
-                new MainForm().Show();
+                var mainForm = MainForm.getInstance();
+                mainForm.Show();    
             }
             else
             {
-                MessageBox.Show("Error Logging In");
+                MessageBox.Show("No such account was found, please try again");
             }
         }
         //

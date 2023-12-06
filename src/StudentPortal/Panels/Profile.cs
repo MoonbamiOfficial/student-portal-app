@@ -36,7 +36,7 @@ namespace StudentPortal.Panels
         //
         private void passwordLabel_Click(object sender, EventArgs e)
         {
-            u.setFocus(passwordTextbox);
+            if(editBtn.Text.Equals("Cancel")) u.setFocus(passwordTextbox);
         }
 
         private void emailLabel_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace StudentPortal.Panels
         //
         private void passwordBg_Click(object sender, EventArgs e)
         {
-            u.setFocus(passwordTextbox);
+            if(editBtn.Text.Equals("Cancel")) u.setFocus(passwordTextbox);
         }
 
         private void emailBg_Click(object sender, EventArgs e)
@@ -97,6 +97,8 @@ namespace StudentPortal.Panels
                     saveBtn
                 );
 
+                passwordTextbox.PasswordChar = '●';
+                eyeIcon.IconChar = IconChar.Eye;
                 emailTextbox.Text = StudentInfo.email;
                 passwordTextbox.Text = StudentInfo.password;
                 confirmPasswordTextbox.Text = "";
@@ -117,6 +119,8 @@ namespace StudentPortal.Panels
                 );
 
                 passwordTextbox.Focus();
+                passwordTextbox.PasswordChar = '\0';
+                eyeIcon.IconChar = IconChar.EyeSlash;
                 emailTextbox.ReadOnly = false;
                 passwordTextbox.ReadOnly = false;
                 confirmPasswordTextbox.ReadOnly = false;
@@ -170,13 +174,13 @@ namespace StudentPortal.Panels
         {
             if (passwordTextbox.PasswordChar == '●' && eyeIcon.IconChar == IconChar.Eye)
             {
-                passwordTextbox.Focus();
+                if(editBtn.Text.Equals("Cancel")) passwordTextbox.Focus();
                 passwordTextbox.PasswordChar = '\0';
                 eyeIcon.IconChar = IconChar.EyeSlash;
             }
             else if(passwordTextbox.PasswordChar == '\0' && eyeIcon.IconChar == IconChar.EyeSlash)
             {
-                passwordTextbox.Focus();
+                if(editBtn.Text.Equals("Cancel")) passwordTextbox.Focus();
                 passwordTextbox.PasswordChar = '●';
                 eyeIcon.IconChar = IconChar.Eye;
             }
@@ -184,17 +188,17 @@ namespace StudentPortal.Panels
 
         private void eyeIconConfirm_MouseClick(object sender, MouseEventArgs e)
         {
-            if (confirmPasswordTextbox.PasswordChar == '●' && eyeIconConfirm.IconChar == IconChar.Eye)
-            {
-                confirmPasswordTextbox.Focus();
-                confirmPasswordTextbox.PasswordChar = '\0';
-                eyeIconConfirm.IconChar = IconChar.EyeSlash;
-            }
-            else if (confirmPasswordTextbox.PasswordChar == '\0' && eyeIconConfirm.IconChar == IconChar.EyeSlash)
+            if (confirmPasswordTextbox.PasswordChar == '\0' && eyeIconConfirm.IconChar == IconChar.EyeSlash)
             {
                 confirmPasswordTextbox.Focus();
                 confirmPasswordTextbox.PasswordChar = '●';
                 eyeIconConfirm.IconChar = IconChar.Eye;
+            }
+            else if (confirmPasswordTextbox.PasswordChar == '●' && eyeIconConfirm.IconChar == IconChar.Eye)
+            {
+                confirmPasswordTextbox.Focus();
+                confirmPasswordTextbox.PasswordChar = '\0';
+                eyeIconConfirm.IconChar = IconChar.EyeSlash;
             }
         }
     }

@@ -43,9 +43,9 @@
             this.loginBtn = new System.Windows.Forms.Button();
             this.emailBg = new System.Windows.Forms.Panel();
             this.passwordBg = new System.Windows.Forms.Panel();
+            this.eyeIcon = new FontAwesome.Sharp.IconButton();
             this.signUpBg = new System.Windows.Forms.Panel();
             this.brandIcon = new System.Windows.Forms.PictureBox();
-            this.eyeIcon = new FontAwesome.Sharp.IconButton();
             this.passwordBg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
@@ -261,29 +261,6 @@
             this.passwordBg.TabIndex = 0;
             this.passwordBg.Click += new System.EventHandler(this.passwordBg_Click);
             // 
-            // signUpBg
-            // 
-            this.signUpBg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.signUpBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.signUpBg.Location = new System.Drawing.Point(984, 0);
-            this.signUpBg.Margin = new System.Windows.Forms.Padding(0);
-            this.signUpBg.Name = "signUpBg";
-            this.signUpBg.Size = new System.Drawing.Size(440, 985);
-            this.signUpBg.TabIndex = 0;
-            // 
-            // brandIcon
-            // 
-            this.brandIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
-            this.brandIcon.Image = global::StudentPortal.Properties.Resources.icon;
-            this.brandIcon.Location = new System.Drawing.Point(29, 30);
-            this.brandIcon.Margin = new System.Windows.Forms.Padding(0);
-            this.brandIcon.Name = "brandIcon";
-            this.brandIcon.Size = new System.Drawing.Size(100, 100);
-            this.brandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.brandIcon.TabIndex = 25;
-            this.brandIcon.TabStop = false;
-            // 
             // eyeIcon
             // 
             this.eyeIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
@@ -305,10 +282,33 @@
             this.eyeIcon.UseVisualStyleBackColor = false;
             this.eyeIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.eyeIcon_MouseClick);
             // 
+            // signUpBg
+            // 
+            this.signUpBg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.signUpBg.Dock = System.Windows.Forms.DockStyle.Right;
+            this.signUpBg.Location = new System.Drawing.Point(984, 0);
+            this.signUpBg.Margin = new System.Windows.Forms.Padding(0);
+            this.signUpBg.Name = "signUpBg";
+            this.signUpBg.Size = new System.Drawing.Size(440, 985);
+            this.signUpBg.TabIndex = 0;
+            // 
+            // brandIcon
+            // 
+            this.brandIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.brandIcon.Image = global::StudentPortal.Properties.Resources.icon;
+            this.brandIcon.Location = new System.Drawing.Point(29, 30);
+            this.brandIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.brandIcon.Name = "brandIcon";
+            this.brandIcon.Size = new System.Drawing.Size(100, 100);
+            this.brandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.brandIcon.TabIndex = 25;
+            this.brandIcon.TabStop = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(1424, 985);
             this.Controls.Add(this.brandIcon);
@@ -332,6 +332,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Activated += new System.EventHandler(this.LoginForm_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             this.passwordBg.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).EndInit();
