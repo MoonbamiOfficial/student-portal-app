@@ -58,6 +58,8 @@
             this.verticalTwo = new System.Windows.Forms.Panel();
             this.verticalThree = new System.Windows.Forms.Panel();
             this.verticalFour = new System.Windows.Forms.Panel();
+            this.brandIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // studentCourse
@@ -443,11 +445,24 @@
             this.verticalFour.Size = new System.Drawing.Size(3, 500);
             this.verticalFour.TabIndex = 0;
             // 
+            // brandIcon
+            // 
+            this.brandIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.brandIcon.Image = global::StudentPortal.Properties.Resources.icon;
+            this.brandIcon.Location = new System.Drawing.Point(422, 30);
+            this.brandIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.brandIcon.Name = "brandIcon";
+            this.brandIcon.Size = new System.Drawing.Size(150, 150);
+            this.brandIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.brandIcon.TabIndex = 26;
+            this.brandIcon.TabStop = false;
+            // 
             // Degree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.Controls.Add(this.brandIcon);
             this.Controls.Add(this.horizontalTop);
             this.Controls.Add(this.horizontalMid);
             this.Controls.Add(this.horizontalBottom);
@@ -481,6 +496,7 @@
             this.Name = "Degree";
             this.Size = new System.Drawing.Size(1000, 1024);
             this.Load += new System.EventHandler(this.Degree_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.brandIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -516,5 +532,6 @@
         private System.Windows.Forms.Panel verticalTwo;
         private System.Windows.Forms.Panel verticalThree;
         private System.Windows.Forms.Panel verticalFour;
+        private System.Windows.Forms.PictureBox brandIcon;
     }
 }

@@ -32,7 +32,18 @@
             this.header = new System.Windows.Forms.Label();
             this.schoolHeaderDesc = new System.Windows.Forms.Label();
             this.schoolHeader = new System.Windows.Forms.Label();
+            this.hallway = new System.Windows.Forms.Label();
+            this.rooftop = new System.Windows.Forms.Label();
+            this.container = new System.Windows.Forms.FlowLayoutPanel();
+            this.backyard = new System.Windows.Forms.Label();
+            this.first = new System.Windows.Forms.PictureBox();
+            this.second = new System.Windows.Forms.PictureBox();
+            this.third = new System.Windows.Forms.PictureBox();
             this.schoolCover = new System.Windows.Forms.PictureBox();
+            this.container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.first)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.second)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.third)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,6 +111,107 @@
             this.schoolHeader.Text = "GET READY";
             this.schoolHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // hallway
+            // 
+            this.hallway.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.hallway.BackColor = System.Drawing.Color.Transparent;
+            this.hallway.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.hallway.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hallway.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.hallway.Location = new System.Drawing.Point(3, 0);
+            this.hallway.Name = "hallway";
+            this.hallway.Size = new System.Drawing.Size(322, 76);
+            this.hallway.TabIndex = 0;
+            this.hallway.Text = "Hallway";
+            this.hallway.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.hallway.UseMnemonic = false;
+            // 
+            // rooftop
+            // 
+            this.rooftop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rooftop.BackColor = System.Drawing.Color.Transparent;
+            this.rooftop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rooftop.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rooftop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.rooftop.Location = new System.Drawing.Point(3, 576);
+            this.rooftop.Name = "rooftop";
+            this.rooftop.Size = new System.Drawing.Size(322, 76);
+            this.rooftop.TabIndex = 0;
+            this.rooftop.Text = "Rooftop";
+            this.rooftop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rooftop.UseMnemonic = false;
+            // 
+            // container
+            // 
+            this.container.Controls.Add(this.hallway);
+            this.container.Controls.Add(this.first);
+            this.container.Controls.Add(this.rooftop);
+            this.container.Controls.Add(this.second);
+            this.container.Controls.Add(this.backyard);
+            this.container.Controls.Add(this.third);
+            this.container.Location = new System.Drawing.Point(0, 976);
+            this.container.Margin = new System.Windows.Forms.Padding(0);
+            this.container.Name = "container";
+            this.container.Size = new System.Drawing.Size(1000, 1745);
+            this.container.TabIndex = 7;
+            // 
+            // backyard
+            // 
+            this.backyard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.backyard.BackColor = System.Drawing.Color.Transparent;
+            this.backyard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.backyard.Font = new System.Drawing.Font("Poppins SemiBold", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backyard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.backyard.Location = new System.Drawing.Point(3, 1152);
+            this.backyard.Name = "backyard";
+            this.backyard.Size = new System.Drawing.Size(322, 76);
+            this.backyard.TabIndex = 7;
+            this.backyard.Text = "Backyard";
+            this.backyard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.backyard.UseMnemonic = false;
+            // 
+            // first
+            // 
+            this.first.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.first.Image = global::StudentPortal.Properties.Resources._03;
+            this.first.Location = new System.Drawing.Point(0, 76);
+            this.first.Margin = new System.Windows.Forms.Padding(0);
+            this.first.Name = "first";
+            this.first.Size = new System.Drawing.Size(1000, 500);
+            this.first.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.first.TabIndex = 4;
+            this.first.TabStop = false;
+            // 
+            // second
+            // 
+            this.second.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.second.Image = global::StudentPortal.Properties.Resources._08;
+            this.second.Location = new System.Drawing.Point(0, 652);
+            this.second.Margin = new System.Windows.Forms.Padding(0);
+            this.second.Name = "second";
+            this.second.Size = new System.Drawing.Size(1000, 500);
+            this.second.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.second.TabIndex = 6;
+            this.second.TabStop = false;
+            // 
+            // third
+            // 
+            this.third.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.third.Image = global::StudentPortal.Properties.Resources._01;
+            this.third.Location = new System.Drawing.Point(0, 1228);
+            this.third.Margin = new System.Windows.Forms.Padding(0);
+            this.third.Name = "third";
+            this.third.Size = new System.Drawing.Size(1000, 500);
+            this.third.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.third.TabIndex = 8;
+            this.third.TabStop = false;
+            // 
             // schoolCover
             // 
             this.schoolCover.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -117,14 +229,20 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.Controls.Add(this.container);
             this.Controls.Add(this.schoolHeader);
             this.Controls.Add(this.schoolHeaderDesc);
             this.Controls.Add(this.header);
             this.Controls.Add(this.headerDesc);
             this.Controls.Add(this.schoolCover);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Home";
-            this.Size = new System.Drawing.Size(1000, 1024);
+            this.Size = new System.Drawing.Size(1000, 2750);
             this.Load += new System.EventHandler(this.Home_Load);
+            this.container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.first)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.second)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.third)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCover)).EndInit();
             this.ResumeLayout(false);
 
@@ -136,5 +254,12 @@
         private System.Windows.Forms.Label schoolHeaderDesc;
         private System.Windows.Forms.Label schoolHeader;
         private System.Windows.Forms.PictureBox schoolCover;
+        private System.Windows.Forms.PictureBox first;
+        private System.Windows.Forms.Label hallway;
+        private System.Windows.Forms.Label rooftop;
+        private System.Windows.Forms.PictureBox second;
+        private System.Windows.Forms.FlowLayoutPanel container;
+        private System.Windows.Forms.Label backyard;
+        private System.Windows.Forms.PictureBox third;
     }
 }

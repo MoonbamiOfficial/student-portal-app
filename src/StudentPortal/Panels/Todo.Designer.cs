@@ -97,6 +97,7 @@
             this.activitiesBtn.BackColor = System.Drawing.Color.Transparent;
             this.activitiesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.activitiesBtn.FlatAppearance.BorderSize = 0;
+            this.activitiesBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(207)))), ((int)(((byte)(191)))));
             this.activitiesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.activitiesBtn.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.activitiesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -123,6 +124,7 @@
             this.homeWorkBtn.BackColor = System.Drawing.Color.Transparent;
             this.homeWorkBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.homeWorkBtn.FlatAppearance.BorderSize = 0;
+            this.homeWorkBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(207)))), ((int)(((byte)(191)))));
             this.homeWorkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeWorkBtn.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.homeWorkBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -149,6 +151,7 @@
             this.projectsBtn.BackColor = System.Drawing.Color.Transparent;
             this.projectsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.projectsBtn.FlatAppearance.BorderSize = 0;
+            this.projectsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(207)))), ((int)(((byte)(191)))));
             this.projectsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.projectsBtn.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.projectsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -175,6 +178,7 @@
             this.quizzesBtn.BackColor = System.Drawing.Color.Transparent;
             this.quizzesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.quizzesBtn.FlatAppearance.BorderSize = 0;
+            this.quizzesBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(207)))), ((int)(((byte)(191)))));
             this.quizzesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quizzesBtn.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.quizzesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -201,6 +205,7 @@
             this.testsBtn.BackColor = System.Drawing.Color.Transparent;
             this.testsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.testsBtn.FlatAppearance.BorderSize = 0;
+            this.testsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(207)))), ((int)(((byte)(191)))));
             this.testsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.testsBtn.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.testsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -227,6 +232,7 @@
             this.missedBtn.BackColor = System.Drawing.Color.Transparent;
             this.missedBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.missedBtn.FlatAppearance.BorderSize = 0;
+            this.missedBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(207)))), ((int)(((byte)(191)))));
             this.missedBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.missedBtn.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.missedBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -253,6 +259,7 @@
             this.finishedBtn.BackColor = System.Drawing.Color.Transparent;
             this.finishedBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.finishedBtn.FlatAppearance.BorderSize = 0;
+            this.finishedBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(207)))), ((int)(((byte)(191)))));
             this.finishedBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishedBtn.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.finishedBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
