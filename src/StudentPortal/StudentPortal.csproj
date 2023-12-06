@@ -362,6 +362,9 @@
   <ItemGroup>
     <None Include="Resources\01.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\stu_info.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
