@@ -1,4 +1,4 @@
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,6 +28,7 @@ namespace StudentPortal
             {
                 try
                 {
+                    mySqlConn.Open();
                     query = "INSERT INTO stu_info (fullname, email, password, sex, birthday, course, yearLevel, semester, status, stu_number) " +
                         "VALUES (@fullname, @email, @password, @sex, @birthday, @course, @yearLevel, @semester, @status, @stuNumber)";
                     MySqlCommand cmd = new MySqlCommand(query, mySqlConn);
@@ -42,10 +43,8 @@ namespace StudentPortal
                     cmd.Parameters.AddWithValue("@status", status);
                     cmd.Parameters.AddWithValue("@stuNumber", stuNumber);
 
-
-                    mySqlConn.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show("Query successful rows affected: " + rowsAffected.ToString());
+                    //MessageBox.Show("Query successful rows affected: " + rowsAffected.ToString());
 
                 }
                 catch (Exception ex)
@@ -96,10 +95,9 @@ namespace StudentPortal
                     {
                         cmd.Parameters.AddWithValue("@email", email);
                         cmd.Parameters.AddWithValue("@password", password);
-
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            // check if there is rows in the reader.
+                            // check if query is successful.
                             if (reader.HasRows)
                             {
                                 while (reader.Read())
@@ -114,12 +112,15 @@ namespace StudentPortal
                                     StudentInfo.status = reader.GetString("status");
                                     StudentInfo.stuNumber = reader.GetInt64("stu_number");
                                     StudentInfo.password = reader.GetString("password");
+                                    MessageBox.Show("Login Successful!");
                                 }
-                                MessageBox.Show("Login Successful!");
                                 return true;
                             }
                             else
+                            {
+                                MessageBox.Show("No such account was found, please try again");
                                 return false;
+                            }
                         }
                     }
                 }
@@ -131,7 +132,6 @@ namespace StudentPortal
                 finally { mySqlConn.Close(); }
             }
         }
-
         public void UpdateEmailAndPassword(string stuNumber, string email = "", string pass = "")
         {
             using (MySqlConnection mySqlConn = new MySqlConnection(connString))
