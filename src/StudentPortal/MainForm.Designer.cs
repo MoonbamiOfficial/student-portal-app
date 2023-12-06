@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.studentName = new System.Windows.Forms.Label();
             this.sideNav = new System.Windows.Forms.Panel();
+            this.studentIcon = new StudentPortal.StudentPortalControls.CustomPictureBox();
             this.studentEmail = new System.Windows.Forms.Label();
-            this.logOutBtn = new System.Windows.Forms.Button();
-            this.container = new System.Windows.Forms.Panel();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.profileBtn = new FontAwesome.Sharp.IconButton();
             this.degreeBtn = new FontAwesome.Sharp.IconButton();
             this.todoBtn = new FontAwesome.Sharp.IconButton();
-            this.studentIcon = new StudentPortal.StudentPortalControls.CustomPictureBox();
+            this.logOutBtn = new System.Windows.Forms.Button();
+            this.container = new System.Windows.Forms.Panel();
             this.home = new StudentPortal.Panels.Home();
             this.todo = new StudentPortal.Panels.Todo();
             this.profile = new StudentPortal.Panels.Profile();
             this.degree = new StudentPortal.Panels.Degree();
             this.sideNav.SuspendLayout();
-            this.container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).BeginInit();
+            this.container.SuspendLayout();
             this.SuspendLayout();
             // 
             // studentName
@@ -79,6 +79,26 @@
             this.sideNav.Size = new System.Drawing.Size(426, 985);
             this.sideNav.TabIndex = 0;
             // 
+            // studentIcon
+            // 
+            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
+            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.studentIcon.BorderSize = 8;
+            this.studentIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.studentIcon.GradientAngle = 0F;
+            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
+            this.studentIcon.Location = new System.Drawing.Point(134, 50);
+            this.studentIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.studentIcon.Name = "studentIcon";
+            this.studentIcon.Size = new System.Drawing.Size(150, 150);
+            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentIcon.TabIndex = 0;
+            this.studentIcon.TabStop = false;
+            this.studentIcon.Click += new System.EventHandler(this.studentIcon_Click);
+            // 
             // studentEmail
             // 
             this.studentEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
@@ -91,37 +111,6 @@
             this.studentEmail.TabIndex = 0;
             this.studentEmail.Text = "user_student@gmail.com";
             this.studentEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // logOutBtn
-            // 
-            this.logOutBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.logOutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.logOutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logOutBtn.FlatAppearance.BorderSize = 0;
-            this.logOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logOutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOutBtn.ForeColor = System.Drawing.Color.White;
-            this.logOutBtn.Location = new System.Drawing.Point(70, 761);
-            this.logOutBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.logOutBtn.Name = "logOutBtn";
-            this.logOutBtn.Size = new System.Drawing.Size(300, 80);
-            this.logOutBtn.TabIndex = 6;
-            this.logOutBtn.Text = "Log Out";
-            this.logOutBtn.UseVisualStyleBackColor = false;
-            this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
-            // 
-            // container
-            // 
-            this.container.AutoScroll = true;
-            this.container.Controls.Add(this.home);
-            this.container.Controls.Add(this.todo);
-            this.container.Controls.Add(this.profile);
-            this.container.Controls.Add(this.degree);
-            this.container.Location = new System.Drawing.Point(426, 0);
-            this.container.Margin = new System.Windows.Forms.Padding(0);
-            this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(999, 1024);
-            this.container.TabIndex = 0;
             // 
             // homeBtn
             // 
@@ -227,25 +216,36 @@
             this.todoBtn.UseVisualStyleBackColor = false;
             this.todoBtn.Click += new System.EventHandler(this.todoBtn_Click);
             // 
-            // studentIcon
+            // logOutBtn
             // 
-            this.studentIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
-            this.studentIcon.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.studentIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIcon.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
-            this.studentIcon.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.studentIcon.BorderSize = 8;
-            this.studentIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.studentIcon.GradientAngle = 0F;
-            this.studentIcon.Image = global::StudentPortal.Properties.Resources.maleStudent;
-            this.studentIcon.Location = new System.Drawing.Point(134, 50);
-            this.studentIcon.Margin = new System.Windows.Forms.Padding(0);
-            this.studentIcon.Name = "studentIcon";
-            this.studentIcon.Size = new System.Drawing.Size(150, 150);
-            this.studentIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.studentIcon.TabIndex = 0;
-            this.studentIcon.TabStop = false;
-            this.studentIcon.Click += new System.EventHandler(this.studentIcon_Click);
+            this.logOutBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.logOutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(63)))));
+            this.logOutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logOutBtn.FlatAppearance.BorderSize = 0;
+            this.logOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logOutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutBtn.ForeColor = System.Drawing.Color.White;
+            this.logOutBtn.Location = new System.Drawing.Point(70, 800);
+            this.logOutBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.logOutBtn.Name = "logOutBtn";
+            this.logOutBtn.Size = new System.Drawing.Size(300, 80);
+            this.logOutBtn.TabIndex = 6;
+            this.logOutBtn.Text = "Log Out";
+            this.logOutBtn.UseVisualStyleBackColor = false;
+            this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
+            // 
+            // container
+            // 
+            this.container.AutoScroll = true;
+            this.container.Controls.Add(this.home);
+            this.container.Controls.Add(this.todo);
+            this.container.Controls.Add(this.profile);
+            this.container.Controls.Add(this.degree);
+            this.container.Location = new System.Drawing.Point(426, 0);
+            this.container.Margin = new System.Windows.Forms.Padding(0);
+            this.container.Name = "container";
+            this.container.Size = new System.Drawing.Size(999, 1024);
+            this.container.TabIndex = 0;
             // 
             // home
             // 
@@ -299,8 +299,8 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.sideNav.ResumeLayout(false);
-            this.container.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.studentIcon)).EndInit();
+            this.container.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
