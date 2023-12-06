@@ -25,7 +25,11 @@ namespace StudentPortal
                 mainForm = new MainForm();
                 return mainForm;
             }else { return mainForm; }
-        }   
+        }
+        public void clearInstance()
+        {
+            mainForm = null;
+        }
 
         //
         //  Sets the appearance of active button
@@ -160,6 +164,7 @@ namespace StudentPortal
         private LoginForm loginForm = LoginForm.getInstance();
         private void logOutBtn_Click(object sender, EventArgs e)
         {
+            clearInstance();
             this.Hide();
             loginForm.clearInputs();
             loginForm.passwordTextbox.PasswordChar = '●';
