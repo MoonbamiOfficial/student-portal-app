@@ -91,7 +91,7 @@ namespace StudentPortal
                 try
                 {
                     mySqlConn.Open();
-                    string query = "SELECT * FROM stu_info WHERE Email = @email AND Password = @password";
+                    string query = "SELECT * FROM stu_info WHERE BINARY Email = @email AND BINARY password = @password";
                     using (MySqlCommand cmd = new MySqlCommand(query, mySqlConn))
                     {
                         cmd.Parameters.AddWithValue("@email", email);
