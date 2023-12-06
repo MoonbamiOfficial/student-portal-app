@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -51,6 +51,35 @@ namespace StudentPortal
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                }
+                finally { mySqlConn.Close(); }
+            }
+        }
+        public bool isEmailAvailable(string email)
+        {
+            using (MySqlConnection mySqlConn = new MySqlConnection(connString))
+            {
+                try
+                {
+                    mySqlConn.Open();
+
+                    string emailQuery = "SELECT * FROM stu_info WHERE Email = @email";
+                    using (MySqlCommand cmd = new MySqlCommand(emailQuery, mySqlConn))
+                    {
+                        cmd.Parameters.AddWithValue("@email", email);
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            // if an existing email is found return true
+                            if (reader.HasRows)
+                                return false;
+                            return true;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return false;
                 }
                 finally { mySqlConn.Close(); }
             }
