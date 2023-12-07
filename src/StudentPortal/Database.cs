@@ -28,6 +28,7 @@ namespace StudentPortal
             {
                 try
                 {
+                    mySqlConn.Open();
                     query = "INSERT INTO stu_info (fullname, email, password, sex, birthday, course, yearLevel, semester, status, stu_number) " +
                         "VALUES (@fullname, @email, @password, @sex, @birthday, @course, @yearLevel, @semester, @status, @stuNumber)";
                     MySqlCommand cmd = new MySqlCommand(query, mySqlConn);
@@ -42,15 +43,42 @@ namespace StudentPortal
                     cmd.Parameters.AddWithValue("@status", status);
                     cmd.Parameters.AddWithValue("@stuNumber", stuNumber);
 
-
-                    mySqlConn.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    MessageBox.Show("Query successful rows affected: " + rowsAffected.ToString());
+                    //MessageBox.Show("Query successful rows affected: " + rowsAffected.ToString());
 
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                }
+                finally { mySqlConn.Close(); }
+            }
+        }
+        public bool isEmailAvailable(string email)
+        {
+            using (MySqlConnection mySqlConn = new MySqlConnection(connString))
+            {
+                try
+                {
+                    mySqlConn.Open();
+
+                    string emailQuery = "SELECT * FROM stu_info WHERE Email = @email";
+                    using (MySqlCommand cmd = new MySqlCommand(emailQuery, mySqlConn))
+                    {
+                        cmd.Parameters.AddWithValue("@email", email);
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            // if an existing email is found return true
+                            if (reader.HasRows)
+                                return false;
+                            return true;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return false;
                 }
                 finally { mySqlConn.Close(); }
             }
@@ -62,15 +90,14 @@ namespace StudentPortal
                 try
                 {
                     mySqlConn.Open();
-                    string query = "SELECT * FROM stu_info WHERE Email = @email AND Password = @password";
+                    string query = "SELECT * FROM stu_info WHERE BINARY Email = @email AND BINARY password = @password";
                     using (MySqlCommand cmd = new MySqlCommand(query, mySqlConn))
                     {
                         cmd.Parameters.AddWithValue("@email", email);
                         cmd.Parameters.AddWithValue("@password", password);
-
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            // check if there is rows in the reader.
+                            // check if query is successful.
                             if (reader.HasRows)
                             {
                                 while (reader.Read())
@@ -85,12 +112,15 @@ namespace StudentPortal
                                     StudentInfo.status = reader.GetString("status");
                                     StudentInfo.stuNumber = reader.GetInt64("stu_number");
                                     StudentInfo.password = reader.GetString("password");
+                                    MessageBox.Show("Login Successful!");
                                 }
-                                MessageBox.Show("Login Successful!");
                                 return true;
                             }
                             else
+                            {
+                                MessageBox.Show("No such account was found, please try again");
                                 return false;
+                            }
                         }
                     }
                 }
@@ -102,7 +132,6 @@ namespace StudentPortal
                 finally { mySqlConn.Close(); }
             }
         }
-
         public void UpdateEmailAndPassword(string stuNumber, string email = "", string pass = "")
         {
             using (MySqlConnection mySqlConn = new MySqlConnection(connString))

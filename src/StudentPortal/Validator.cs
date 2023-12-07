@@ -46,9 +46,14 @@ namespace StudentPortal
             if (hasNullValue)
                 return false;
 
-            
-            
-            
+            Database db = new Database();
+            bool isEmailAvailable = db.isEmailAvailable(UserData.email);
+            if (!isEmailAvailable)
+            {
+                Forms.registerForm.setWrongLabelEmail("Email has already been taken");
+                return false;
+            }
+
             return true;
         }
 
@@ -208,10 +213,6 @@ namespace StudentPortal
                 loginForm.Hide();
                 var mainForm = MainForm.getInstance();
                 mainForm.Show();    
-            }
-            else
-            {
-                MessageBox.Show("No such account was found, please try again");
             }
         }
         //
