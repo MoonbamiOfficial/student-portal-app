@@ -10,7 +10,7 @@
 A simple student portal for students to monitor their academics. This is a project from our subject called _**ITEC 80: Human Computer Interaction**_.
 * **Planning Phase:** October 21, 2023 - October 23, 2023
 * **Designing Phase:** October 24, 2023 - November 9, 2023
-* **Development Phase:** November 9, 2023 - Ongoing
+* **Development Phase:** November 9, 2023 - January 31, 2024
 
 
 ###
