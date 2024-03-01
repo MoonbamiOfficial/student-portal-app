@@ -42,7 +42,7 @@ To get started with Student Portal, here are the main things you need;
 
 ###
 
-3. In the solution explorer right side), click the _"Switch between solutions and available views"_ button or just find the **StudentPortal.sln** file manually at the src folder and double click it
+3. In the solution explorer (right side), click the _"Switch between solutions and available views"_ button or just find the **StudentPortal.sln** file manually at the src folder and double click it
 
    ![image](https://github.com/MoonbamiOfficial/student-portal-app/assets/141120384/268dccd6-a98e-489f-ab2c-7c9a2a1d6d29)
 
@@ -107,13 +107,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
    ### Developers
 
-   * MoonbamiOfficial - [Discord](https://discord.com/channels/@moonbamioffcl) | [Facebook](https://www.facebook.com/MoonbamiOffcl) | [Instagram](https://www.instagram.com/moonbamidesu/) | [Twitter](https://twitter.com/Moonbami_)
+   * MoonbamiOfficial - [Discord](https://discord.com/channels/@moonbamioffcl) | [Facebook](https://www.facebook.com/moonbamijam) | [Instagram](https://www.instagram.com/moonbamidesu/) | [Twitter](https://twitter.com/MoonbamiOffcl)
 
    * Jireh-Sama - [Facebook](https://www.facebook.com/JirehTumbagahan)
 
    * satanforbid - [Instagram](https://www.instagram.com/prettyboimaks/)
 
-   ### Studen Portal
+   ### Student Portal
 
    * Project repository: [student-portal-app](https://github.com/MoonbamiOfficial/student-portal-app.git)
 
